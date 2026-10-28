@@ -3,389 +3,396 @@
   "importer": "gltf",
   "imported": true,
   "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7",
-  "files": [],
+  "files": [
+    "__original-animation-0.bin",
+    "__original-animation-1.bin",
+    "__original-animation-10.bin",
+    "__original-animation-11.bin",
+    "__original-animation-2.bin",
+    "__original-animation-3.bin",
+    "__original-animation-4.bin",
+    "__original-animation-5.bin",
+    "__original-animation-6.bin",
+    "__original-animation-7.bin",
+    "__original-animation-8.bin",
+    "__original-animation-9.bin"
+  ],
   "subMetas": {
-    "27064": {
-      "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@27064",
-      "displayName": "",
-      "id": "27064",
-      "name": "06 · warm mouth cavity.material",
-      "userData": {
-        "gltfIndex": 6
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "48440": {
+    "39772": {
       "importer": "gltf-embeded-image",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@48440",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@39772",
       "displayName": "",
-      "id": "48440",
-      "name": "2-color.image",
-      "userData": {
-        "gltfIndex": 6,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": false,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "50743": {
-      "importer": "texture",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@50743",
-      "displayName": "",
-      "id": "50743",
-      "name": "UnnamedTexture-5.texture",
-      "userData": {
-        "wrapModeS": "repeat",
-        "wrapModeT": "repeat",
-        "minfilter": "linear",
-        "magfilter": "linear",
-        "mipfilter": "linear",
-        "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37b2c"
-      },
-      "ver": "1.0.22",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "52844": {
-      "importer": "gltf-embeded-image",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@52844",
-      "displayName": "",
-      "id": "52844",
-      "name": "0-normal.image",
-      "userData": {
-        "gltfIndex": 1,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": false,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "55666": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@55666",
-      "displayName": "",
-      "id": "55666",
-      "name": "Scarf • plush folded neck wrap.mesh",
-      "userData": {
-        "gltfIndex": 3,
-        "triangleCount": 35000
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "58625": {
-      "importer": "gltf-embeded-image",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@58625",
-      "displayName": "",
-      "id": "58625",
-      "name": "11-normal.image",
-      "userData": {
-        "gltfIndex": 3,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": false,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "75005": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@75005",
-      "displayName": "",
-      "id": "75005",
-      "name": "Smile • small joyful open mouth.mesh",
-      "userData": {
-        "gltfIndex": 6,
-        "triangleCount": 66
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "37d37": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37d37",
-      "displayName": "",
-      "id": "37d37",
-      "name": "Sphere.043.mesh",
+      "id": "39772",
+      "name": "game-shaded-1-srgb.image",
       "userData": {
         "gltfIndex": 0,
-        "triangleCount": 55000
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
       },
-      "ver": "1.1.1",
+      "ver": "1.0.3",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".png"
       ],
       "subMetas": {}
     },
-    "b1f37": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@b1f37",
+    "59284": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@59284",
       "displayName": "",
-      "id": "b1f37",
-      "name": "Head • sculpted tapered hook and slender cheeks.mesh",
-      "userData": {
-        "gltfIndex": 1,
-        "triangleCount": 110000
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "a7fba": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a7fba",
-      "displayName": "",
-      "id": "a7fba",
-      "name": "Forehead • gold inlaid sparkle.mesh",
-      "userData": {
-        "gltfIndex": 2,
-        "triangleCount": 35000
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "d5a7a": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@d5a7a",
-      "displayName": "",
-      "id": "d5a7a",
-      "name": "Cape • wind-swept tailored outer cloth.mesh",
-      "userData": {
-        "gltfIndex": 4,
-        "triangleCount": 25600
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "718b4": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@718b4",
-      "displayName": "",
-      "id": "718b4",
-      "name": "Eye 0 • fine dark lash rim.mesh",
-      "userData": {
-        "gltfIndex": 5,
-        "triangleCount": 4608
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "cf049": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@cf049",
-      "displayName": "",
-      "id": "cf049",
-      "name": "Sphere.042.mesh",
-      "userData": {
-        "gltfIndex": 7,
-        "triangleCount": 2976
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "a1e56": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a1e56",
-      "displayName": "",
-      "id": "a1e56",
-      "name": "Eye 0 • floating star highlight.mesh",
-      "userData": {
-        "gltfIndex": 8,
-        "triangleCount": 12320
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "a5956": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a5956",
-      "displayName": "",
-      "id": "a5956",
-      "name": "Eye 0 • floating star highlight.001.mesh",
+      "id": "59284",
+      "name": "Talk_O.animation",
       "userData": {
         "gltfIndex": 9,
-        "triangleCount": 12992
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
       },
-      "ver": "1.1.1",
+      "ver": "1.0.18",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".bin"
       ],
       "subMetas": {}
     },
-    "825ed": {
+    "502d8": {
       "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@825ed",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@502d8",
       "displayName": "",
-      "id": "825ed",
-      "name": "Sphere.mesh",
-      "userData": {
-        "gltfIndex": 10,
-        "triangleCount": 6720
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "b55e6": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@b55e6",
-      "displayName": "",
-      "id": "b55e6",
-      "name": "Eye 0 • flush sapphire lens.mesh",
-      "userData": {
-        "gltfIndex": 11,
-        "triangleCount": 7488
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "f4bdf": {
-      "importer": "gltf-mesh",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f4bdf",
-      "displayName": "",
-      "id": "f4bdf",
-      "name": "Lantern • delicate glass chamber.mesh",
-      "userData": {
-        "gltfIndex": 12,
-        "triangleCount": 160
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "1e22d": {
-      "importer": "gltf-embeded-image",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1e22d",
-      "displayName": "",
-      "id": "1e22d",
-      "name": "9-normal.image",
+      "id": "502d8",
+      "name": "Face | eight expression controls.mesh",
       "userData": {
         "gltfIndex": 0,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": false,
-        "type": "texture"
+        "triangleCount": 11268
       },
-      "ver": "1.0.3",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
-        ".json",
-        ".png"
+        ".bin",
+        ".json"
       ],
       "subMetas": {}
     },
-    "127d6": {
-      "importer": "gltf-embeded-image",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@127d6",
+    "2c584": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@2c584",
       "displayName": "",
-      "id": "127d6",
-      "name": "0-color.image",
+      "id": "2c584",
+      "name": "Head | reference-traced rounded star.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 160116
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bfeec": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@bfeec",
+      "displayName": "",
+      "id": "bfeec",
+      "name": "Outfit | continuous suit and equipment.mesh",
       "userData": {
         "gltfIndex": 2,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": false,
-        "type": "texture"
+        "triangleCount": 332816
       },
-      "ver": "1.0.3",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
-        ".json",
-        ".png"
+        ".bin",
+        ".json"
       ],
       "subMetas": {}
     },
-    "1b2ab": {
-      "importer": "gltf-embeded-image",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1b2ab",
+    "2f246": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@2f246",
       "displayName": "",
-      "id": "1b2ab",
-      "name": "11-color.image",
+      "id": "2f246",
+      "name": "Celebrate.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "c2696": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@c2696",
+      "displayName": "",
+      "id": "c2696",
+      "name": "Idle.animation",
+      "userData": {
+        "gltfIndex": 1,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 3
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "3f839": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3f839",
+      "displayName": "",
+      "id": "3f839",
+      "name": "TalkGesture.animation",
+      "userData": {
+        "gltfIndex": 2,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 3.0333333015441895
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "667e4": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@667e4",
+      "displayName": "",
+      "id": "667e4",
+      "name": "Wave.animation",
+      "userData": {
+        "gltfIndex": 3,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "3b384": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3b384",
+      "displayName": "",
+      "id": "3b384",
+      "name": "Blink.animation",
       "userData": {
         "gltfIndex": 4,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.5
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "de6d0": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@de6d0",
+      "displayName": "",
+      "id": "de6d0",
+      "name": "Focus.animation",
+      "userData": {
+        "gltfIndex": 5,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "d85fa": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@d85fa",
+      "displayName": "",
+      "id": "d85fa",
+      "name": "Happy.animation",
+      "userData": {
+        "gltfIndex": 6,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "33d88": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@33d88",
+      "displayName": "",
+      "id": "33d88",
+      "name": "Surprise.animation",
+      "userData": {
+        "gltfIndex": 7,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.8333333730697632
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "ce342": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@ce342",
+      "displayName": "",
+      "id": "ce342",
+      "name": "Talk_A.animation",
+      "userData": {
+        "gltfIndex": 8,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.800000011920929
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "e8ccc": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@e8ccc",
+      "displayName": "",
+      "id": "e8ccc",
+      "name": "Think.animation",
+      "userData": {
+        "gltfIndex": 10,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "f800d": {
+      "importer": "gltf-animation",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f800d",
+      "displayName": "",
+      "id": "f800d",
+      "name": "Happy_cheek.animation",
+      "userData": {
+        "gltfIndex": 11,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "0d08d": {
+      "importer": "gltf-skeleton",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@0d08d",
+      "displayName": "",
+      "id": "0d08d",
+      "name": "Xingbao_Rig.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 11
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6a817": {
+      "importer": "gltf-embeded-image",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@6a817",
+      "displayName": "",
+      "id": "6a817",
+      "name": "xingbao_game_0-srgb.image",
+      "userData": {
+        "gltfIndex": 1,
         "fixAlphaTransparencyArtifacts": true,
         "hasAlpha": false,
         "type": "texture"
@@ -398,14 +405,14 @@
       ],
       "subMetas": {}
     },
-    "37b2c": {
+    "c462b": {
       "importer": "gltf-embeded-image",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37b2c",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@c462b",
       "displayName": "",
-      "id": "37b2c",
-      "name": "10-normal.image",
+      "id": "c462b",
+      "name": "game-shaded-2-srgb.image",
       "userData": {
-        "gltfIndex": 5,
+        "gltfIndex": 2,
         "fixAlphaTransparencyArtifacts": true,
         "hasAlpha": false,
         "type": "texture"
@@ -432,7 +439,7 @@
         "mipfilter": "linear",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1e22d"
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@39772"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -455,7 +462,7 @@
         "mipfilter": "linear",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@52844"
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@6a817"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -478,7 +485,7 @@
         "mipfilter": "linear",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@127d6"
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@c462b"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -487,81 +494,12 @@
       ],
       "subMetas": {}
     },
-    "9b633": {
-      "importer": "texture",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@9b633",
-      "displayName": "",
-      "id": "9b633",
-      "name": "UnnamedTexture-3.texture",
-      "userData": {
-        "wrapModeS": "repeat",
-        "wrapModeT": "repeat",
-        "minfilter": "linear",
-        "magfilter": "linear",
-        "mipfilter": "linear",
-        "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@58625"
-      },
-      "ver": "1.0.22",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "9b782": {
-      "importer": "texture",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@9b782",
-      "displayName": "",
-      "id": "9b782",
-      "name": "UnnamedTexture-4.texture",
-      "userData": {
-        "wrapModeS": "repeat",
-        "wrapModeT": "repeat",
-        "minfilter": "linear",
-        "magfilter": "linear",
-        "mipfilter": "linear",
-        "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1b2ab"
-      },
-      "ver": "1.0.22",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "99ea5": {
-      "importer": "texture",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@99ea5",
-      "displayName": "",
-      "id": "99ea5",
-      "name": "UnnamedTexture-6.texture",
-      "userData": {
-        "wrapModeS": "repeat",
-        "wrapModeT": "repeat",
-        "minfilter": "linear",
-        "magfilter": "linear",
-        "mipfilter": "linear",
-        "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@48440"
-      },
-      "ver": "1.0.22",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "65b79": {
+    "05027": {
       "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@65b79",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@05027",
       "displayName": "",
-      "id": "65b79",
-      "name": "01 · warm ivory microfleece • BAKED.material",
+      "id": "05027",
+      "name": "Game soft studio 1.material",
       "userData": {
         "gltfIndex": 0
       },
@@ -572,12 +510,12 @@
       ],
       "subMetas": {}
     },
-    "43d23": {
+    "fdcc2": {
       "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@43d23",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@fdcc2",
       "displayName": "",
-      "id": "43d23",
-      "name": "01b · ivory fleece with integrated cheek blush • BAKED.material",
+      "id": "fdcc2",
+      "name": "Game white clean.material",
       "userData": {
         "gltfIndex": 1
       },
@@ -588,12 +526,12 @@
       ],
       "subMetas": {}
     },
-    "1c9ff": {
+    "f54ac": {
       "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1c9ff",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f54ac",
       "displayName": "",
-      "id": "1c9ff",
-      "name": "02 · polished warm gold.material",
+      "id": "f54ac",
+      "name": "Game gold clean.material",
       "userData": {
         "gltfIndex": 2
       },
@@ -604,12 +542,12 @@
       ],
       "subMetas": {}
     },
-    "35e62": {
+    "cd0bc": {
       "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@35e62",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@cd0bc",
       "displayName": "",
-      "id": "35e62",
-      "name": "03 · deep peacock woven cloth • BAKED.material",
+      "id": "cd0bc",
+      "name": "Game soft studio 0.material",
       "userData": {
         "gltfIndex": 3
       },
@@ -620,12 +558,12 @@
       ],
       "subMetas": {}
     },
-    "1f384": {
+    "12c5d": {
       "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1f384",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@12c5d",
       "displayName": "",
-      "id": "1f384",
-      "name": "04 · sage silk lining • BAKED.material",
+      "id": "12c5d",
+      "name": "Game soft studio 2.material",
       "userData": {
         "gltfIndex": 4
       },
@@ -636,110 +574,14 @@
       ],
       "subMetas": {}
     },
-    "aba0c": {
+    "597af": {
       "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@aba0c",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@597af",
       "displayName": "",
-      "id": "aba0c",
-      "name": "05 · dark eye socket.material",
+      "id": "597af",
+      "name": "Game gold clean.001.material",
       "userData": {
         "gltfIndex": 5
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "3523b": {
-      "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3523b",
-      "displayName": "",
-      "id": "3523b",
-      "name": "07 · soft coral tongue.material",
-      "userData": {
-        "gltfIndex": 7
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "f45d2": {
-      "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f45d2",
-      "displayName": "",
-      "id": "f45d2",
-      "name": "09 · lantern star emission.material",
-      "userData": {
-        "gltfIndex": 8
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "e6582": {
-      "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@e6582",
-      "displayName": "",
-      "id": "e6582",
-      "name": "10 · eye catchlight.material",
-      "userData": {
-        "gltfIndex": 9
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "8eeee": {
-      "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@8eeee",
-      "displayName": "",
-      "id": "8eeee",
-      "name": "11 · tiny blue starlight.material",
-      "userData": {
-        "gltfIndex": 10
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "115bc": {
-      "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@115bc",
-      "displayName": "",
-      "id": "115bc",
-      "name": "12 · sapphire galaxy iris • BAKED.material",
-      "userData": {
-        "gltfIndex": 11
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "5f12f": {
-      "importer": "gltf-material",
-      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@5f12f",
-      "displayName": "",
-      "id": "5f12f",
-      "name": "13 · clear amber glass.material",
-      "userData": {
-        "gltfIndex": 12
       },
       "ver": "1.0.14",
       "imported": true,
@@ -768,32 +610,16 @@
   "userData": {
     "imageMetas": [
       {
-        "name": "9-normal",
-        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1e22d"
+        "name": "game-shaded-1-srgb",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@39772"
       },
       {
-        "name": "0-normal",
-        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@52844"
+        "name": "xingbao_game_0-srgb",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@6a817"
       },
       {
-        "name": "0-color",
-        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@127d6"
-      },
-      {
-        "name": "11-normal",
-        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@58625"
-      },
-      {
-        "name": "11-color",
-        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1b2ab"
-      },
-      {
-        "name": "10-normal",
-        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37b2c"
-      },
-      {
-        "name": "2-color",
-        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@48440"
+        "name": "game-shaded-2-srgb",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@c462b"
       }
     ],
     "lods": {
@@ -816,48 +642,199 @@
     },
     "assetFinder": {
       "meshes": [
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37d37",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@b1f37",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a7fba",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@55666",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@d5a7a",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@718b4",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@75005",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@cf049",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a1e56",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a5956",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@825ed",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@b55e6",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f4bdf"
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@502d8",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@2c584",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@bfeec"
       ],
-      "skeletons": [],
+      "skeletons": [
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@0d08d"
+      ],
       "textures": [
         "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3effa",
         "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@221a5",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@0089c",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@9b633",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@9b782",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@50743",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@99ea5"
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@0089c"
       ],
       "materials": [
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@65b79",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@43d23",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1c9ff",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@35e62",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1f384",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@aba0c",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@27064",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3523b",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f45d2",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@e6582",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@8eeee",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@115bc",
-        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@5f12f"
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@05027",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@fdcc2",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f54ac",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@cd0bc",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@12c5d",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@597af"
       ],
       "scenes": [
         "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@21dbc"
       ]
-    }
+    },
+    "animationImportSettings": [
+      {
+        "name": "Celebrate",
+        "duration": 2,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Celebrate",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2,
+            "previousId": "2f246"
+          }
+        ]
+      },
+      {
+        "name": "Idle",
+        "duration": 3,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Idle",
+            "from": 0,
+            "to": 3,
+            "wrapMode": 2,
+            "previousId": "c2696"
+          }
+        ]
+      },
+      {
+        "name": "TalkGesture",
+        "duration": 3.0333333015441895,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "TalkGesture",
+            "from": 0,
+            "to": 3.0333333015441895,
+            "wrapMode": 2,
+            "previousId": "3f839"
+          }
+        ]
+      },
+      {
+        "name": "Wave",
+        "duration": 2,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Wave",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2,
+            "previousId": "667e4"
+          }
+        ]
+      },
+      {
+        "name": "Blink",
+        "duration": 1.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Blink",
+            "from": 0,
+            "to": 1.5,
+            "wrapMode": 2,
+            "previousId": "3b384"
+          }
+        ]
+      },
+      {
+        "name": "Focus",
+        "duration": 2,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Focus",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2,
+            "previousId": "de6d0"
+          }
+        ]
+      },
+      {
+        "name": "Happy",
+        "duration": 2,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Happy",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2,
+            "previousId": "d85fa"
+          }
+        ]
+      },
+      {
+        "name": "Surprise",
+        "duration": 1.8333333730697632,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Surprise",
+            "from": 0,
+            "to": 1.8333333730697632,
+            "wrapMode": 2,
+            "previousId": "33d88"
+          }
+        ]
+      },
+      {
+        "name": "Talk_A",
+        "duration": 0.800000011920929,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Talk_A",
+            "from": 0,
+            "to": 0.800000011920929,
+            "wrapMode": 2,
+            "previousId": "ce342"
+          }
+        ]
+      },
+      {
+        "name": "Talk_O",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Talk_O",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2,
+            "previousId": "59284"
+          }
+        ]
+      },
+      {
+        "name": "Think",
+        "duration": 2,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Think",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2,
+            "previousId": "e8ccc"
+          }
+        ]
+      },
+      {
+        "name": "Happy_cheek",
+        "duration": 2,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Happy_cheek",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2,
+            "previousId": "f800d"
+          }
+        ]
+      }
+    ]
   }
 }

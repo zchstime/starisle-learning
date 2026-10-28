@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const M=require('../web/arcade/vendor/matter.min.js');
+(async()=>{
+ const root=path.resolve(__dirname,'../web/arcade'),source=fs.readFileSync(path.join(root,'rules.js'),'utf8');
+ const {slingLevels,balanceLevels,charge,isBalanced}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+ assert.deepEqual(charge(5,5,8),{total:0,over:true,won:false});assert.equal(charge(3,5,8).won,true);
+ for(const l of slingLevels){const reachable=new Set([0]);for(let n=0;n<=l.target;n++)if(reachable.has(n))for(const a of l.ammo)reachable.add(n+a);assert(reachable.has(l.target));}
+ const e=M.Engine.create(),b=M.Bodies.polygon(205,345,12,22,{density:.004,restitution:.35,frictionAir:.002});M.Body.setStatic(b,true);M.Composite.add(e.world,b);M.Body.setStatic(b,false);M.Body.setVelocity(b,{x:Math.cos(34*Math.PI/180)*86*.17,y:-Math.sin(34*Math.PI/180)*86*.17});
+ const gate=M.Bodies.rectangle(850,335,180,210,{isStatic:true,isSensor:true});M.Composite.add(e.world,gate);let hit=false;M.Events.on(e,'collisionStart',v=>{if(v.pairs.some(p=>[p.bodyA,p.bodyB].includes(gate)))hit=true;});for(let i=0;i<150;i++)M.Engine.update(e,1000/60);assert(hit,'Default controls must actually reach the gate');assert(Number.isFinite(b.position.x));
+ for(const l of balanceLevels){let solutions=0;for(let m=1;m<=4;m++)for(let d=1;d<=4;d++)if(isBalanced(l.leftMass,l.leftArm,m,d)){
+ solutions++;const en=M.Engine.create(),plank=M.Bodies.rectangle(600,330,600,18),left=M.Bodies.rectangle(600-l.leftArm*65,293,42,56),right=M.Bodies.rectangle(600+d*65,293,42,56);M.Body.setMass(plank,1);M.Body.setMass(left,l.leftMass*3);M.Body.setMass(right,m*3);const beam=M.Body.create({parts:[plank,left,right],frictionAir:.10}),joint=M.Constraint.create({pointA:{x:600,y:330},bodyB:beam,pointB:{x:600-beam.position.x,y:330-beam.position.y},length:0,stiffness:1});M.Composite.add(en.world,[beam,joint]);for(let i=0;i<180;i++)M.Engine.update(en,1000/60);assert(Math.abs(beam.angle)<.035,'A correct lever must remain level');}assert(solutions>0);assert(!isBalanced(l.leftMass,l.leftArm,1,1));}
+ const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json')));for(const [name,hash]of Object.entries(manifest.files)){assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,name))).digest('hex'),hash,name);}
+ for(const name of ['character','cloud','grass','platform','coin']){const b=fs.readFileSync(path.join(root,'assets',name+'.glb')),j=JSON.parse(b.subarray(20,20+b.readUInt32LE(12)).toString());for(const image of j.images||[])if(image.uri&&!image.uri.startsWith('data:'))assert(fs.existsSync(path.join(root,'assets',image.uri)),name+' texture must be bundled');}
+ assert(fs.readFileSync(path.join(root,'launcher.js'),'utf8').includes('e.source===frame?.contentWindow'));console.log('Arcade: combinations, overflow, default real trajectory, all lever solutions, asset hashes and model textures passed.');
+})().catch(e=>{console.error(e);process.exitCode=1;});

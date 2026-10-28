@@ -1,4 +1,4 @@
-const KEYS=['starisle.adventure.v3','starisle.grade2.chapter-one.v2','starisle.music','starisle.musicVolume'];
+const KEYS=['starisle.adventure.v3','starisle.grade2.chapter-one.v2','starisle.music','starisle.musicVolume','starisle.profile.v1'];
 function validate(payload){
  if(!payload||typeof payload!=='object'||Array.isArray(payload)||Object.keys(payload).some(k=>!KEYS.includes(k)))throw Error('invalid');
  for(const [key,value] of Object.entries(payload)){
@@ -6,7 +6,9 @@ function validate(payload){
  if(key===KEYS[2]){if(!['on','off'].includes(value))throw Error('invalid');continue;}
  if(key===KEYS[3]){if(!value.trim()||!Number.isFinite(Number(value))||Number(value)<0||Number(value)>1)throw Error('invalid');continue;}
  const p=JSON.parse(value);if(!p||typeof p!=='object'||Array.isArray(p))throw Error('invalid');
+ if(key===KEYS[4]){if(p.version!==1||!['xingbao','rabbit','panda','fox','cat','dragon'].includes(p.avatar)||!Number.isSafeInteger(p.updatedAt)||p.updatedAt<0||Object.keys(p).some(k=>!['version','avatar','updatedAt'].includes(k)))throw Error('invalid');continue;}
  if(key===KEYS[0]&&(p.version!==3||!Array.isArray(p.done)||p.done.length>5000||p.done.some(x=>typeof x!=='string'||x.length>128)||!Array.isArray(p.medals)||p.medals.some(x=>typeof x!=='string'||x.length>128)))throw Error('invalid');
+ if(key===KEYS[0])for(const field of ['labDone','gifts'])if(p[field]!==undefined&&(!Array.isArray(p[field])||p[field].length>100||p[field].some(x=>typeof x!=='string'||x.length>128)))throw Error('invalid');
  }return payload;
 }
 module.exports=function({origin,auth,store}){return async(req,res)=>{

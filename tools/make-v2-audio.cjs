@@ -1,7 +1,7 @@
 const fs=require('fs'),path=require('path'),cp=require('child_process');
 const ts=require('/Applications/CocosCreator-3.8.8.app/Contents/Resources/app.asar.unpacked/node_modules/typescript');
 const dir=path.resolve('qa/audio-catalog');fs.mkdirSync(dir,{recursive:true});
-for(const name of ['Catalog','StarterContent','Subjects','AudioKey'])fs.writeFileSync(path.join(dir,name+'.js'),ts.transpileModule(fs.readFileSync('assets/scripts/adventure/'+name+'.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText);
+for(const name of ['PictureActivities','Catalog','StarterContent','Subjects','AudioKey'])fs.writeFileSync(path.join(dir,name+'.js'),ts.transpileModule(fs.readFileSync('assets/scripts/adventure/'+name+'.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText);
 const {ALL_LEVELS}=require(path.join(dir,'Catalog.js'));const {voiceKey}=require(path.join(dir,'AudioKey.js'));
 fs.mkdirSync('assets/resources/voice',{recursive:true});const voices=Array.from(new Set(ALL_LEVELS.map(l=>l.voice).filter(Boolean)));
 for(const voice of voices){const key=voiceKey(voice),file=path.resolve('assets/resources/voice',key+'.wav');if(/^(tone_|drum_)/.test(voice))continue;if(fs.existsSync(file)&&fs.statSync(file).size>10000)continue;const tmp=path.resolve('qa',key+'.aiff');cp.execFileSync('/usr/bin/say',['-v',/[^\x00-\x7F]/.test(voice)?'Tingting':'Samantha','-r','145','-o',tmp,voice]);cp.execFileSync('/usr/bin/afconvert',['-f','WAVE','-d','LEI16@22050','-c','1',tmp,file]);if(fs.statSync(file).size<10000)throw Error('Empty audio: '+voice);fs.unlinkSync(tmp);}

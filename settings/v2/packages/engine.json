@@ -21,7 +21,7 @@
             "_value": true
           },
           "skeletal-animation": {
-            "_value": false
+            "_value": true
           },
           "3d": {
             "_value": true
@@ -209,6 +209,7 @@
           "primitive",
           "profiler",
           "rich-text",
+          "skeletal-animation",
           "spine-3.8",
           "tiled-map",
           "tween",

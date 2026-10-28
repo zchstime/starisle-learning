@@ -1,9 +1,10 @@
+import {enrichChapters,validPicture} from './PictureActivities';
 import {CATALOG,ALL_LEVELS,Chapter} from './Catalog';
 import {SUBJECTS,SubjectDefinition} from './Subjects';
 export const KNOWN_LEVEL_IDS=new Set(ALL_LEVELS.map(l=>l.id));
 export const KNOWN_CHAPTER_IDS=new Set(CATALOG.map(c=>c.id));
 export const KNOWN_SUBJECT_IDS=new Set(SUBJECTS.map(s=>s.id));
-const MODULES=new Set(['choice','number','sentence','cargo','groups','tiles','listen']);
+const MODULES=new Set(['choice','number','sentence','cargo','groups','tiles','listen','picture']);
 const CACHE='starisle.content.v1';
 const ID=/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,127}$/;
 interface ContentBundle {schemaVersion:number;release:number;subjects:SubjectDefinition[];chapters:Chapter[];requiredModules:{id:string;version:number}[];knownLevelIds:string[];knownChapterIds:string[];knownSubjectIds:string[];}
@@ -15,8 +16,9 @@ export function applyContent(bundle:ContentBundle){
  if(!Array.isArray(bundle.subjects)||!bundle.subjects.length||bundle.subjects.length>200||!Array.isArray(bundle.chapters)||bundle.chapters.length>5000)throw Error('内容目录格式无效');
  const subjects=new Set<string>(),chapters=new Set<string>(),levels=new Set<string>();
  for(const s of bundle.subjects){if(!ID.test(s.id)||subjects.has(s.id)||typeof s.name!=='string'||s.name.length>30)throw Error('学科格式无效');subjects.add(s.id);}
- for(const c of bundle.chapters){if(!ID.test(c.id)||chapters.has(c.id)||!subjects.has(c.subject)||!Number.isInteger(c.grade)||c.grade<1||c.grade>6||!Array.isArray(c.levels)||!c.levels.length)throw Error('章节格式无效');chapters.add(c.id);for(const l of c.levels){if(!ID.test(l.id)||levels.has(l.id)||!MODULES.has(l.kind)||typeof l.goal!=='string'||!Number.isFinite(l.target))throw Error('题目格式无效');levels.add(l.id);}}
+ for(const c of bundle.chapters){if(!ID.test(c.id)||chapters.has(c.id)||!subjects.has(c.subject)||!Number.isInteger(c.grade)||c.grade<1||c.grade>6||!Array.isArray(c.levels)||!c.levels.length)throw Error('章节格式无效');chapters.add(c.id);for(const l of c.levels){if(!ID.test(l.id)||levels.has(l.id)||!MODULES.has(l.kind)||typeof l.goal!=='string'||!Number.isFinite(l.target)||(l.kind==='picture'&&!validPicture(l.activity)))throw Error('题目格式无效');levels.add(l.id);}}
  for(const ids of [bundle.knownLevelIds,bundle.knownChapterIds,bundle.knownSubjectIds])if(!Array.isArray(ids)||ids.length>100000||ids.some(id=>!ID.test(id)))throw Error('内容历史格式无效');
+ enrichChapters(bundle.chapters);
  SUBJECTS.splice(0,SUBJECTS.length,...bundle.subjects);CATALOG.splice(0,CATALOG.length,...bundle.chapters);ALL_LEVELS.splice(0,ALL_LEVELS.length,...bundle.chapters.flatMap(c=>c.levels));
  bundle.knownLevelIds.forEach(id=>KNOWN_LEVEL_IDS.add(id));levels.forEach(id=>KNOWN_LEVEL_IDS.add(id));bundle.knownChapterIds.forEach(id=>KNOWN_CHAPTER_IDS.add(id));chapters.forEach(id=>KNOWN_CHAPTER_IDS.add(id));bundle.knownSubjectIds.forEach(id=>KNOWN_SUBJECT_IDS.add(id));subjects.forEach(id=>KNOWN_SUBJECT_IDS.add(id));release=bundle.release;
 }

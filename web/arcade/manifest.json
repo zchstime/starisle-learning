@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-28",
+  "kenneyTree": "3fa8a04b1c01ab23db43123d4ce814a34c3fc7f0",
+  "matterVersion": "0.20.0",
+  "threeVersion": "0.170.0",
+  "files": {
+    "assets/grass.glb": "acb29df8a75b08e985e27a0ed8170b8f3d135abd24ccf5aa4d631cb2cd15cfda",
+    "assets/character.glb": "7112f6a08400914f9da546f3e6029e947cc9eab2b4a6da5eb99776111289efb1",
+    "assets/cloud.glb": "09c6f071d3a9ab64993248ee5c8d50debcd9c6cc4369236a01155ff7ff87f30a",
+    "assets/KENNEY-LICENSE.md": "f755bf8f21002f8d5baedaf75564141d363971f3f7bc8c4062956b0b15a6f04f",
+    "assets/KENNEY-README.md": "d8f51d172d58e62d289105a5a1561e02e54cccc4c6d1215472169bc50ff2f91f",
+    "assets/coin.glb": "a3fb8f779a6af1cd75e5a02da77a87546ca8a59f6fe52f79f25179c4a68fd0e5",
+    "assets/garden-backdrop-v2.png": "3914ba98bc8f5f0c7fc7e9e24a018010493a77990bc52a867e9dcb44f6bf1a25",
+    "assets/platform.glb": "78c5ed4da30c5a97f0747a54248bc9de05ba1b3fb6b94be527dd48599f5ef44c",
+    "assets/Textures/colormap.png": "106cf02e0d6dccded6d9f90c2ae6a51eb94c6301645fea159e834c44ed4708a3",
+    "assets/audio/fall.ogg": "e5d4c5b36e738eeb55ee9c8deffd526af313623e50580a096302021c4e138268",
+    "assets/audio/land.ogg": "145a1c17125dc4d344ac135bc5073e35ea12e19700ca30ee6e1e477010b4dca0",
+    "assets/audio/jump.ogg": "f090c16689e9ec04c4bef80bfcbf68bc4b63ab4ce29f7fbb5cee05a5641d5694",
+    "assets/audio/coin.ogg": "df55e931e6b78e5aecc015922e873a0e8bfa4e97cfb19abc64149d54afe89216",
+    "assets/audio/break.ogg": "51157b7441fca84fea95d4e93d6a9a3b91efa870b602e5c56a76e3ab639686a7",
+    "assets/audio/walking.ogg": "e4043660b7bc15bd1ec208c4193838da5a2618bde6f35e3d76654557268aa221",
+    "vendor/three.module.js": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+    "vendor/THREE-LICENSE.txt": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+    "vendor/slingshot.original.js": "9aacc541d7f24933269e2a81d5a997a8b166e22a7eb10d2422e99aa1a6af2687",
+    "vendor/RoundedBoxGeometry.js": "d20aeaf7077c459a8d952d215738d7b44fba028440bb862d84b622a34f0c80bb",
+    "vendor/GLTFLoader.js": "8a7db5a19d1018d79fb9a7a8b8372f317682027321a67d86023002e264ea479d",
+    "vendor/matter.min.js": "72d30be0f579eb02ce1e0b6f9d359a4f392e6837e5a26ba8be5dbee7f88e24ae",
+    "vendor/BufferGeometryUtils.js": "c25b7930e570e9ec56173cd3b866ec8d2e10016630db3937efb439daf1cedbf6",
+    "vendor/MATTER-LICENSE.txt": "ed182087be5b26734aa6d4789743de3a97417950e8c1e3ff2e3d19c6462720d3",
+    "vendor/tower-defense/LICENSE": "698eb9cb0775f32c849910faf880f00651d85df45dc75750a570a1335ba46adb",
+    "vendor/tower-defense/Turret.original.js": "94c5a4b565aea84390a4d9e3fc24acdf96ebf6db06f7ea7866ff3cc91a040562",
+    "vendor/tower-defense/targeting.js": "4b92a563b66f84acb9332977a4052d1796235386e7447a43e9097d4895263bbc"
+  },
+  "revision": "garden-audio-defense-v2",
+  "towerSourceTree": "32267a82d2777b566338304ddf6d997c07b0ed31",
+  "generatedAssets": {
+    "assets/garden-backdrop-v2.png": {
+      "method": "built-in imagegen",
+      "promptRecord": "docs/arcade/art-direction-v2.md"
+    }
+  }
+}

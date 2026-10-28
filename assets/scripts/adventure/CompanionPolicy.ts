@@ -7,3 +7,8 @@ export class CompanionPolicy {
  canNudge(now:number,screen:string,blocked:boolean){return !blocked&&['map','play'].includes(screen)&&!this.nudged&&now>=this.quietUntil&&now-this.lastActivity>=60000&&now-this.lastNudge>=180000;}
  didNudge(now:number){this.nudged=true;this.lastNudge=now;}
 }
+
+/** Interaction with the learning surface takes priority over a transient bubble. */
+export function shouldDismissCompanion(type:string,key:string,inside:boolean){
+ return (type==='pointerdown'&&!inside)||(type==='keydown'&&key==='Escape');
+}

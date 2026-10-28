@@ -1,0 +1,107 @@
+{
+  "welcome": {
+    "text": "嗨，我是星宝！点一个玩具，我们一起玩吧！",
+    "hash": "41129619de58c1fc1ad00e1d7c1ea45826b44801efceca6557cb1de0c3a693e5",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 35949
+  },
+  "feed": {
+    "text": "小兔子饿啦。上面有几个苹果，就给小兔子送几个。看我做一次。",
+    "hash": "c0f25eeb849543b8d213fd0a549a31d449e8b18847ae162729fb6f9f5503d272",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 47469
+  },
+  "sort": {
+    "text": "帮水果找家吧。把水果送到画着一样水果的篮子里。看我做一次。",
+    "hash": "cf2d1df78ef110da53eb9e7ea5da19785a900fd9ff995e2dd472513c3adcd0c5",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 49389
+  },
+  "build": {
+    "text": "我们来搭积木。看看小房子的样子，把一样的积木放到影子里。看我做一次。",
+    "hash": "793edde5e2dd18dd699fbb5ff7107ea424f05e7a1a3a2cc638a77622e16c9b2c",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 56109
+  },
+  "try": {
+    "text": "换个位置试试。我陪着你。",
+    "hash": "71c731a8063bc1fb2aee0b9eb9e637846e49d8ba1c12bcf20707f9e5ae97f1c7",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 23853
+  },
+  "more": {
+    "text": "真棒，再送一个吧！",
+    "hash": "1681aeee4537c1646e43c16e3373cbc3f9737a024f4c0f19ce39b3c60b4413d7",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 19053
+  },
+  "done": {
+    "text": "太棒啦！你做到了！点小箭头，接着玩吧！",
+    "hash": "ebef377b125dcf6d1ff26841fb5c6eb17befd8425c288b53b08bbc8e723633ee",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 35757
+  },
+  "all": {
+    "text": "三颗星星都亮啦！回到小岛，选个新玩具吧！",
+    "hash": "7f70929a48efb9a8ba526e54241a7da3ae4f8527e1358ff84eda5c15672b7bd9",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 35949
+  },
+  "replay": {
+    "text": "看看我的小手，再试一次吧。",
+    "hash": "dbc96c9df8d74b149520addeace8ebfbe76794116f220569e8f6f7179eba9066",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 22509
+  },
+  "pause": {
+    "text": "休息一下。点小三角，我们就继续玩。",
+    "hash": "95f1265c664e84ade24398de8b4725e38a94c9495b28d27f386dd958a1b9e988",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 32685
+  },
+  "one": {
+    "text": "一个。",
+    "hash": "6f012835ab6dfaa370d6e46470697dd9a10434a0a03e8d9b3a1a1936dc19ad0c",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 8877
+  },
+  "two": {
+    "text": "两个。",
+    "hash": "674bdfb6d638aedc67c3b6f909ec6c8ec72bc976294f0d4d194250d00efc8a3f",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 8877
+  },
+  "three": {
+    "text": "三个。",
+    "hash": "aa2a17c2cea2944404b7d14dd7b193351fae755d989fa90e65eb767a74abefdf",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 8877
+  },
+  "four": {
+    "text": "四个。",
+    "hash": "68a4e5a7559f3a86b6a786714a50ca19cbdbfacb290a874b1b4b646c2f317b0c",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 8877
+  },
+  "five": {
+    "text": "五个。",
+    "hash": "3cc91a52b8bb8e2fca1b8a79a7e9d3fad12b95aa9a19116100610b00e890af6a",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 9069
+  }
+}

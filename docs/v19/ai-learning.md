@@ -57,3 +57,6 @@
 4. 拆分持久任务worker，添加任务租约、重试审计和删除补偿队列，再考虑多实例部署。
 
 官方接口参考：https://docs.volcengine.com/docs/ark/api-key?lang=zh 、 https://docs.volcengine.com/docs/ark/chat-api?lang=zh 。
+
+## 2026-10-28 增补
+已新增移动拍照/相册预览压缩与真实火山变式出题，服务端先限定需巩固的运算，AI候选题通过独立验算才进入训练。旧版“练习仅由规则生成”的描述仅适用于之前版本；现规则生成作为显式降级路径保留。详情及验收见 photo-ai-training.md，范围仍为二年级基础整数运算。

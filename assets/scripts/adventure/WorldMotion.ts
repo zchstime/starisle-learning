@@ -3,9 +3,16 @@ import {Node,Graphics,SpriteFrame,tween,Vec3,UIOpacity} from 'cc';
 import {node,color,sprite} from '../ui/Kit';
 /** Shared UI placement for the live 3D character and lightweight world effects. */
 export function guardian(parent:Node,frame:SpriteFrame,x:number,y:number,size:number,onTap:()=>void){
- const actor=node(parent,'Guardian',x,y,size,size*1.12);
- if(Guardian3D.ready)actor.addComponent(Guardian3D).setup(size,onTap);
- else{sprite(actor,frame,0,0,size,size);actor.on(Node.EventType.TOUCH_END,onTap);}
+ let actor=node(parent,'Guardian',x,y,size,size*1.12);
+ if(Guardian3D.ready){
+  try{actor.addComponent(Guardian3D).setup(size,onTap);return actor;}
+  catch(error){
+   console.warn('星宝3D初始化失败，使用原画继续探索。',error);
+   actor.active=false;actor.destroy();
+   actor=node(parent,'GuardianFallback',x,y,size,size*1.12);
+  }
+ }
+ sprite(actor,frame,0,0,size,size);actor.on(Node.EventType.TOUCH_END,onTap);
  return actor;
 }
 

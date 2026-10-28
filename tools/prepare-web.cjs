@@ -8,12 +8,10 @@ console.log('Prepared responsive game shell');
 fs.cpSync(path.resolve(__dirname,'../web/auth'),path.join(out,'auth'),{recursive:true});
 fs.copyFileSync(path.resolve(__dirname,'../assets/resources/art/island.png'),path.join(out,'auth/island.png'));
 fs.copyFileSync(path.resolve(__dirname,'../assets/resources/art/guide.png'),path.join(out,'auth/guide.png'));
-html=html.replace('</head>','<link rel="stylesheet" href="/auth/loading.css"><link rel="stylesheet" href="/auth/auth.css"></head>').replace('<body>','<body><script src="/auth/loading.js"></script><script src="/auth/cloud.js"></script><script src="/auth/auth.js"></script>');
+html=html.replace('</head>','<link rel="stylesheet" href="/auth/loading.css"><link rel="stylesheet" href="/auth/auth.css"></head>').replace('<body>','<body><script src="/auth/loading.js"></script><script src="/auth/cloud.js"></script><script src="/auth/profile.js"></script><script src="/auth/auth.js"></script>');
 fs.writeFileSync(p,html);
 
-// Optional personal AI learning island opens separately; the current game remains in place.
-html=html.replace('</body>','<a href="/learn" target="_blank" rel="noopener" style="position:fixed;right:16px;bottom:8px;z-index:10;padding:8px 16px;border-radius:20px;background:#fff8df;color:#27616b;font:600 13px system-ui;text-decoration:none">✦ 星宝研习岛</a></body>');
-fs.writeFileSync(p,html);
+// Photo learning is a scene-owned home action in JourneyMap, not a global floating link.
 
 // Disable the engine splash in each generated Web settings file. Keep this in
 // the build hook so rebuilding in Creator cannot restore the official logo.
@@ -26,3 +24,9 @@ for(const name of fs.readdirSync(path.join(out,'src'))){
 }
 if(!splashCount)throw new Error('No Cocos Web settings found: splash removal was not applied');
 console.log('Disabled Cocos launch splash in '+splashCount+' Web settings file(s)');
+
+require('./prepare-picture.cjs');
+// Physics playground: local open-source engine and CC0 models, no runtime CDN.
+fs.cpSync(path.resolve(__dirname,'../web/arcade'),path.join(out,'arcade'),{recursive:true});
+if(!html.includes('/arcade/launcher.js'))html=html.replace('</body>','<script src="/arcade/launcher.js"></script></body>');
+fs.writeFileSync(p,html);

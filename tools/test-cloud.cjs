@@ -5,7 +5,7 @@ async function req(method,data,headers={}){let code,body;const r={url:'/api/save
 (async()=>{
  assert.equal((await req('GET',null,{cookie:''})).code,401);assert.equal((await req('PUT',{}, {origin:'https://evil.test'})).code,403);
  assert.equal((await req('PUT',{revision:0,payload:{bad:'x'}})).code,400);
- const p={'starisle.adventure.v3':JSON.stringify({version:3,done:['math-1'],medals:[]})};
+ const p={'starisle.adventure.v3':JSON.stringify({version:3,done:['math-1'],medals:[]}),'starisle.profile.v1':JSON.stringify({version:1,avatar:'fox',updatedAt:100})};
  assert.equal((await req('PUT',{revision:0,payload:p})).revision,1);assert.equal((await req('PUT',{revision:0,payload:p})).code,409);assert.deepEqual((await req('GET')).payload,p);
  assert.equal((await req('PUT',{revision:1,payload:{x:'a'.repeat(950000)}})).code,413);
  const win={addEventListener(){},dispatchEvent(){}};vm.runInNewContext(fs.readFileSync('web/auth/cloud.js','utf8'),{window:win,setInterval(){},setTimeout(){},clearTimeout(){}});

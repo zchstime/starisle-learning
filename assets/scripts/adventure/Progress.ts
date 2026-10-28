@@ -1,3 +1,4 @@
+import {LAB_IDS,GIFTS} from './PlayLab';
 import {ExamSave,cleanExamSave,rewardTier} from '../exam/Exam';
 import {KNOWN_LEVEL_IDS,KNOWN_CHAPTER_IDS,KNOWN_SUBJECT_IDS} from './ContentRuntime';
 import {learningRoute,hasLearningRoute} from './LearningRoute';
@@ -6,10 +7,11 @@ import {SUBJECTS} from './Subjects';
 export const SAVE_KEY='starisle.adventure.v3';
 export interface SavePort {getItem(key:string):string|null;setItem(key:string,value:string):void;}
 export class Progress {
+ labDone:string[]=[];gifts:string[]=[];equippedGift='';
  exams:ExamSave={records:{}};
  subject:Subject=SUBJECTS[0].id;grade=2;chapter=0;sound=true;done:string[]=[];earnedMedals:string[]=[]; failed=false;
- constructor(private store:SavePort){try{const s=JSON.parse(store.getItem(SAVE_KEY)||'null');if(s?.version===3){this.exams=cleanExamSave(s.exams);this.subject=SUBJECTS.some(x=>x.id===s.subject)?s.subject:SUBJECTS[0].id;this.grade=Number.isInteger(s.grade)&&s.grade>=1&&s.grade<=6?s.grade:2;this.chapter=Number.isInteger(s.chapter)&&s.chapter>=0&&s.chapter<chapters(this.subject,this.grade).length?s.chapter:0;if(typeof s.chapterId==='string'){const at=chapters(this.subject,this.grade).findIndex(c=>c.id===s.chapterId);if(at>=0)this.chapter=at;}this.sound=s.sound!==false;const valid=new Set([...KNOWN_LEVEL_IDS,...ALL_LEVELS.map(l=>l.id)]);this.earnedMedals=Array.isArray(s.medals)?Array.from(new Set<string>(s.medals.filter((id:any)=>typeof id==='string'&&this.validMedals().has(id)))):[];this.done=Array.isArray(s.done)?s.done.filter((id:any,index:number,all:any[])=>typeof id==='string'&&valid.has(id)&&all.indexOf(id)===index):[];}}catch{this.failed=true;}this.refreshMedals();}
- save(){this.refreshMedals();try{this.store.setItem(SAVE_KEY,JSON.stringify({version:3,subject:this.subject,grade:this.grade,chapter:this.chapter,chapterId:chapters(this.subject,this.grade)[this.chapter]?.id,sound:this.sound,done:this.done,medals:this.earnedMedals,exams:this.exams}));this.failed=false;}catch{this.failed=true;}}
+ constructor(private store:SavePort){try{const s=JSON.parse(store.getItem(SAVE_KEY)||'null');if(s?.version===3){this.labDone=Array.isArray(s.labDone)?Array.from(new Set<string>(s.labDone.filter((id:any)=>LAB_IDS.has(id)))):[];this.gifts=Array.isArray(s.gifts)?GIFTS.filter(g=>s.gifts.includes(g.id)).map(g=>g.id):[];this.equippedGift=typeof s.equippedGift==='string'?s.equippedGift:'';this.exams=cleanExamSave(s.exams);this.subject=SUBJECTS.some(x=>x.id===s.subject)?s.subject:SUBJECTS[0].id;this.grade=Number.isInteger(s.grade)&&s.grade>=1&&s.grade<=6?s.grade:2;this.chapter=Number.isInteger(s.chapter)&&s.chapter>=0&&s.chapter<chapters(this.subject,this.grade).length?s.chapter:0;if(typeof s.chapterId==='string'){const at=chapters(this.subject,this.grade).findIndex(c=>c.id===s.chapterId);if(at>=0)this.chapter=at;}this.sound=s.sound!==false;const valid=new Set([...KNOWN_LEVEL_IDS,...ALL_LEVELS.map(l=>l.id)]);this.earnedMedals=Array.isArray(s.medals)?Array.from(new Set<string>(s.medals.filter((id:any)=>typeof id==='string'&&this.validMedals().has(id)))):[];this.done=Array.isArray(s.done)?s.done.filter((id:any,index:number,all:any[])=>typeof id==='string'&&valid.has(id)&&all.indexOf(id)===index):[];}}catch{this.failed=true;}this.refreshMedals();this.cleanGifts();}
+ save(){this.refreshMedals();this.cleanGifts();try{this.store.setItem(SAVE_KEY,JSON.stringify({version:3,labDone:this.labDone,gifts:this.gifts,equippedGift:this.equippedGift,subject:this.subject,grade:this.grade,chapter:this.chapter,chapterId:chapters(this.subject,this.grade)[this.chapter]?.id,sound:this.sound,done:this.done,medals:this.earnedMedals,exams:this.exams}));this.failed=false;}catch{this.failed=true;}}
  complete(id:string){if(!ALL_LEVELS.some(l=>l.id===id))return false;if(!this.done.includes(id))this.done.push(id);this.save();return true;}
  gradeStatus(subject:Subject=this.subject,grade:number=this.grade){
   const list=chapters(subject,grade),levels=list.flatMap(c=>c.levels),done=levels.filter(l=>this.done.includes(l.id)).length;
@@ -20,8 +22,12 @@ export class Progress {
  private refreshMedals(){const earned=new Set(this.earnedMedals);for(const c of CATALOG)if(this.chapterComplete(c.id))earned.add('chapter:'+c.id);for(const s of SUBJECTS){for(let g=1;g<=6;g++)if(this.gradeStatus(s.id,g).complete)earned.add(`grade:${s.id}:${g}`);if(this.subjectComplete(s.id))earned.add('subject:'+s.id);}this.earnedMedals=Array.from(earned);}
  /** Scores derive from unique completed task IDs: old saves migrate without duplicate rewards. */
  examAccess(subject:Subject=this.subject,grade:number=this.grade){const status=this.gradeStatus(subject,grade);return {...status,remaining:status.total-status.done,unlocked:status.complete};}
- get points(){return this.done.length*100+Object.values(this.exams.records).reduce((n,r)=>n+rewardTier(r.best).points,0);}
- get experience(){return this.done.length*30;}
+ get points(){return (this.done.length+this.labDone.length)*100+Object.values(this.exams.records).reduce((n,r)=>n+rewardTier(r.best).points,0);}
+ private cleanGifts(){let budget=this.points;this.gifts=GIFTS.filter(g=>{if(!this.gifts.includes(g.id)||g.cost>budget)return false;budget-=g.cost;return true;}).map(g=>g.id);if(!this.gifts.includes(this.equippedGift))this.equippedGift='';}
+ get balance(){return Math.max(0,this.points-GIFTS.filter(g=>this.gifts.includes(g.id)).reduce((n,g)=>n+g.cost,0));}
+ completeLab(id:string){if(!LAB_IDS.has(id)||this.labDone.includes(id))return false;this.labDone.push(id);this.save();return true;}
+ redeem(id:string){const gift=GIFTS.find(g=>g.id===id);if(!gift||this.gifts.includes(id)||this.balance<gift.cost)return false;this.gifts.push(id);this.equippedGift=id;this.save();return true;}
+ get experience(){return (this.done.length+this.labDone.length)*30;}
  get heroLevel(){return 1+Math.floor(this.experience/180);}
  get levelExperience(){return this.experience%180;}
  get medalCount(){return this.earnedMedals.length;}

@@ -1,0 +1,6 @@
+// Development-only asset generation. Reuses the project's configured Xingbao voice.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..'),dir=path.join(root,'web/arcade',process.argv[2]==='chapters'?'chapters':'kindergarten'),lines=require(path.join(dir,'voice-lines.json'));
+const config=JSON.parse(fs.readFileSync(path.join(root,'local/cloud/speech.json'),'utf8'));config.speaker='ICL_uranus_zh_female_keainvsheng_tob';
+const synth=require('../server/providers/volc-speech.cjs')(config),manifestFile=path.join(dir,'assets/voice/manifest.json'),manifest=fs.existsSync(manifestFile)?JSON.parse(fs.readFileSync(manifestFile)):{};
+(async()=>{for(const [id,text]of Object.entries(lines)){const hash=crypto.createHash('sha256').update(text+config.speaker).digest('hex'),file=path.join(dir,'assets/voice',id+'.mp3');if(manifest[id]?.hash===hash&&fs.existsSync(file))continue;const bytes=await synth(text);fs.writeFileSync(file,bytes);manifest[id]={text,hash,provider:'Volcengine Doubao TTS 2.0',speaker:config.speaker,bytes:bytes.length};fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');console.log(id+': saved');}})().catch(e=>{console.error(e.message);process.exitCode=1;});

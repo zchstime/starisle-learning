@@ -1,3 +1,4 @@
+import {enrichChapters,PictureActivity} from './PictureActivities';
 import {otherCurriculum} from './OtherCurriculum';
 import {chineseCurriculum} from './ChineseCurriculum';
 import {englishCurriculum} from './EnglishCurriculum';
@@ -8,9 +9,9 @@ import {starterChapters} from './StarterContent';
 import {challengeChapters} from './ChallengeContent';
 import {expansionChapters} from './ExpansionContent';
 export type {Subject} from './Subjects';
-export type Mechanic='cargo'|'groups'|'tiles'|'sentence'|'listen'|'choice'|'number';
+export type Mechanic='cargo'|'groups'|'tiles'|'sentence'|'listen'|'choice'|'number'|'picture';
 export interface MathVisual {kind:'clock'|'ruler'|'bars'|'shape'|'grid'|'numberline'; values:number[]; labels?:string[];}
-export interface Level {id:string; kind:Mechanic; title:string; goal:string; hint:string; explanation:string; target:number; passage?:string; visual?:MathVisual; answerUnit?:string; stage?:'warmup'|'practice'|'challenge'; coachHints?:string[]; maxBlocks?:number; units?:number[]; scale?:number; groups?:number; cells?:number; cols?:number; words?:string[]; answer?:string[]; voice?:string; options?:string[]; colors?:string[];}
+export interface Level {activity?:PictureActivity;id:string; kind:Mechanic; title:string; goal:string; hint:string; explanation:string; target:number; passage?:string; visual?:MathVisual; answerUnit?:string; stage?:'warmup'|'practice'|'challenge'; coachHints?:string[]; maxBlocks?:number; units?:number[]; scale?:number; groups?:number; cells?:number; cols?:number; words?:string[]; answer?:string[]; voice?:string; options?:string[]; colors?:string[];}
 export interface Chapter {id:string; subject:Subject; grade:number; title:string; topic:string; art:string; levels:Level[]; curriculum?:{semester:'上册'|'下册';theme:string;order:number;source:string;verified:boolean}; alignment:'theme'|'verified-theme'|'enrichment';}
 export const CATALOG:Chapter[]=[];
 function chapter(subject:Subject,grade:number,title:string,topic:string,levels:Omit<Level,'id'>[],alignment:Chapter['alignment']='theme'){
@@ -102,5 +103,6 @@ chapter('english',6,'明日计划','计划表达',[
 chapter('english',6,'时光信箱','过去的经历',[
  sentence('告诉朋友你昨天踢足球了','I played football yesterday','我昨天踢足球了。'),sentence('告诉朋友你昨晚看电视了','I watched TV last night','我昨晚看电视了。'),sentence('告诉朋友你上周末去游泳了','I went swimming last weekend','我上周末去游泳了。')]);
 CATALOG.push(...starterChapters(),...expansionChapters(),...challengeChapters(),...curriculumChapters(),...englishCurriculum(),...chineseCurriculum(),...otherCurriculum());
+enrichChapters(CATALOG);
 export const ALL_LEVELS=CATALOG.flatMap(c=>c.levels);
 export function chapters(subject:Subject,grade:number){return CATALOG.filter(c=>c.subject===subject&&c.grade===grade);}

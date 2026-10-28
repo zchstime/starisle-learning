@@ -1,0 +1,254 @@
+{
+  "match": {
+    "text": "每张线索都有自己的伙伴。把线索送到对应的答案旁，全部配好后点星星检查。",
+    "hash": "da2a77147c8a95fd2d644d75697344d6a86b0360055d7b8cc3a77a54f072aa4f",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 59565
+  },
+  "sort": {
+    "text": "看看每个物品的特点，把它送到合适的位置。",
+    "hash": "e40ca7214e038f500a914c94eb385928fb9121f4e1254db930010a05078a66dc",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 30573
+  },
+  "sequence": {
+    "text": "看图，把过程按先后顺序放好。",
+    "hash": "7af92dea6ea271e9ad34cc3fbe23b413a73eaadc29d8f9931d06a9d67e67b229",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 27309
+  },
+  "share": {
+    "text": "把果子平均分给伙伴，让大家分到的一样多。全部分完后点星星检查。",
+    "hash": "750ee23daa60c7416bd425573a8b72d2f99131def609668efcf750f5fa7861b7",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 59373
+  },
+  "mosaic": {
+    "text": "把方块送到花田或材料箱里，拼出任务要求的金色部分。每一块都一样大。",
+    "hash": "0f25dac08a86d35a1b888cfee0d6eded44d5d18cca77577d1047a929e390db31",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 56109
+  },
+  "wrong": {
+    "text": "还差一点点。看看图形和位置，可以点回来，再试一次。",
+    "hash": "ba8bed987c3e64d46c40c8f07056f0cef9babc97f69c4267aa154bbec17fc3eb",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 46125
+  },
+  "math.g1.hands.share": {
+    "text": "把图中的苹果分给两位伙伴，一样多。把果子平均分给每一位伙伴，让大家分到的一样多。全部分完后点星星检查。",
+    "hash": "b5efdcc2f23009749648fa6e663b71b0b2fe15d3cff73396181bcecc37d71bdd",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 91245
+  },
+  "math.g1.hands.mosaic": {
+    "text": "把 3 块方砖放进花田，其余放回材料箱。把方块送到花田或材料箱里，拼出任务要求的金色部分。每一块都一样大。",
+    "hash": "ad4c818a89f61ad909a606a4179094e89184dad618b520849ee95a0a4f7882f9",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 87981
+  },
+  "math.g1.hands.order": {
+    "text": "按边数从少到多排列图形。观察图形的边，把图形按边数从少到多排列。",
+    "hash": "a841ec22cf21c7f5c3d2a616b2d026aa2687400304a89370a4de98a739215ec3",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 67821
+  },
+  "science.g1.hands.sort": {
+    "text": "观察物品的来源，把来自植物的物品送到叶子篮子。",
+    "hash": "1fc3d383ee38913d19bb9aaa5385856f819c27561b9009c2b4217a6c9319bfa7",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 39213
+  },
+  "science.g1.hands.sequence": {
+    "text": "把植物从种子到开花的过程排出来。看图，把过程按先后顺序放好。可以点小手看一次操作示范。",
+    "hash": "40a2c98440cacb93f7d45bb7eea0ff7ae636dc7900736ac73ba19d5f21cd5310",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 76269
+  },
+  "math.g2.hands.share": {
+    "text": "6 个果子平均分成 2 份。动手分一分。把果子平均分给每一位伙伴，让大家分到的一样多。全部分完后点星星检查。",
+    "hash": "baabc798d7686bce48a6278be43059adf59063fcfb05815c4d28a7a44dc43182",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 87789
+  },
+  "math.g2.hands.mosaic": {
+    "text": "把 2 块方砖放进花田，其余放回材料箱。把方块送到花田或材料箱里，拼出任务要求的金色部分。每一块都一样大。",
+    "hash": "d920e8ce9edc4f0c5e0916cc7c7b531c76778f1d0c0f95e5d504946b4fa15bb3",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 89901
+  },
+  "math.g2.hands.order": {
+    "text": "按边数从少到多排列图形。观察图形的边，把图形按边数从少到多排列。",
+    "hash": "a841ec22cf21c7f5c3d2a616b2d026aa2687400304a89370a4de98a739215ec3",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 61101
+  },
+  "science.g2.hands.sort": {
+    "text": "把能被磁铁吸引的铁制物品送到磁铁旁边。",
+    "hash": "42bf6f74a65977c65ab5614a371a79a0bbccb5af1e5eba216fda9a5330afa8c4",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 34029
+  },
+  "science.g2.hands.sequence": {
+    "text": "先观察并预测，再动手实验并记录。看图，把过程按先后顺序放好。可以点小手看一次操作示范。",
+    "hash": "4189261156f8ea569d0baa4de9f07a78157f8aa2f1b17fba29dc9e29734b542e",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 79533
+  },
+  "math.g3.hands.share": {
+    "text": "9 个果子平均分成 3 份。动手分一分。把果子平均分给每一位伙伴，让大家分到的一样多。全部分完后点星星检查。",
+    "hash": "a18824d214eccbaddbba332a5916a5b9583357638d7f9b83ecfad245d45a9b3a",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 98157
+  },
+  "math.g3.hands.mosaic": {
+    "text": "让花田里的金色方砖占全部的三分之一。把方块送到花田或材料箱里，拼出任务要求的金色部分。每一块都一样大。",
+    "hash": "8e22008374b40a03f89d466855f1e04beb575090d1be263d0f2e663b44f64fb7",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 90093
+  },
+  "math.g3.hands.order": {
+    "text": "按涂色部分从小到大排列。比较每张卡片涂色部分的大小，从小到大排一排。",
+    "hash": "de1167882ba2d5d299184c4f87a39bb7f04d4502bae1f9a782e561b4928b1efd",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 59565
+  },
+  "science.g3.hands.sort": {
+    "text": "给水的三种状态找家。水蒸气看不见，图中虚线只表示气体。",
+    "hash": "e5993c7efd531832607ddb4bb7b838225d71d206a67a27305f5e0c91b8824fa6",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 49389
+  },
+  "science.g3.hands.sequence": {
+    "text": "加热水形成水蒸气，再遇冷凝结成小水滴。看图，把过程按先后顺序放好。可以点小手看一次操作示范。",
+    "hash": "88842083dd2f1f1bddf40c85a344a90f870827d03bc87fe0eb37af37598033aa",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 86445
+  },
+  "math.g4.hands.share": {
+    "text": "12 个果子平均分成 3 份。动手分一分。把果子平均分给每一位伙伴，让大家分到的一样多。全部分完后点星星检查。",
+    "hash": "92e3875aed5b89183074a062acbd4b8fc6209af9e87c2137074ec14bb50cb869",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 91437
+  },
+  "math.g4.hands.mosaic": {
+    "text": "让花田里的金色方砖占全部的二分之一。把方块送到花田或材料箱里，拼出任务要求的金色部分。每一块都一样大。",
+    "hash": "4048bd422b7bfd8c3954b461112d2054678f835ee84953baf3fa53691bdd7eca",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 91245
+  },
+  "math.g4.hands.order": {
+    "text": "按涂色部分从小到大排列。比较每张卡片涂色部分的大小，从小到大排一排。",
+    "hash": "de1167882ba2d5d299184c4f87a39bb7f04d4502bae1f9a782e561b4928b1efd",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 59757
+  },
+  "science.g4.hands.sort": {
+    "text": "把自己能发光的物体放到灯泡旁，把反射光的放到镜子旁。",
+    "hash": "14c712f6465a02bd1d6553715174eecdc6e8946b09166296a7857a4c04f8b123",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 45933
+  },
+  "science.g4.hands.sequence": {
+    "text": "从电池出发，沿导线经过灯泡，再接回电池另一端。看图，把过程按先后顺序放好。可以点小手看一次操作示范。",
+    "hash": "eed18fcc36cabd6d56b440bc6b63dd2757eac53e4632d76e68d1a7ce47299e66",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 96429
+  },
+  "math.g5.hands.share": {
+    "text": "3.6 千克果子平均分给 4 位伙伴；每张卡表示 0.3 千克。每张果子卡表示零点三千克，平均分完，看看每位伙伴分到多少千克。",
+    "hash": "064801b927e239066f253d26f1dfe2b8ede1690b2859bca1476f0027356f1837",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 103149
+  },
+  "math.g5.hands.mosaic": {
+    "text": "让花田里的金色方砖占全部的三分之二。把方块送到花田或材料箱里，拼出任务要求的金色部分。每一块都一样大。",
+    "hash": "d67fcf87d271a5168d9e3e60a9dc30067bf728898a74cc92b5231a0a1164db0b",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 89901
+  },
+  "math.g5.hands.order": {
+    "text": "按涂色部分从小到大排列。比较每张卡片涂色部分的大小，从小到大排一排。",
+    "hash": "de1167882ba2d5d299184c4f87a39bb7f04d4502bae1f9a782e561b4928b1efd",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 59373
+  },
+  "science.g5.hands.sort": {
+    "text": "按照被吃到吃的顺序，搭一条食物链。",
+    "hash": "f2bb52ac8023b9267c23980a9f7a9929e7b2594c6c77e07feb1cd8b1c7b70209",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 30573
+  },
+  "science.g5.hands.sequence": {
+    "text": "研究光照的作用：只改变光照，其他条件尽量相同，最后比较生长。看图，把过程按先后顺序放好。可以点小手看一次操作示范。",
+    "hash": "6f8634b62087b3040d17c62652881248ccf06b4d47673b37104f34ea83c746ea",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 97965
+  },
+  "math.g6.hands.share": {
+    "text": "把 12 个果子按 1∶2 分给两位伙伴。两位伙伴的份数是一比二。动手分一分，让第二位得到第一位的两倍。",
+    "hash": "d6d22d49231002adffebabcebc677d8b294c7cfdf6c96a1ce2a66e49905d816f",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 82989
+  },
+  "math.g6.hands.mosaic": {
+    "text": "让花田里的金色方砖占全部的百分之七十五。把方块送到花田或材料箱里，拼出任务要求的金色部分。每一块都一样大。",
+    "hash": "96873e0bb24d8b687e5fb14369539795387a943dc48282a2ace8cbf046965d10",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 89901
+  },
+  "math.g6.hands.order": {
+    "text": "按涂色部分从小到大排列。比较每张卡片涂色部分的大小，从小到大排一排。",
+    "hash": "de1167882ba2d5d299184c4f87a39bb7f04d4502bae1f9a782e561b4928b1efd",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 64173
+  },
+  "science.g6.hands.sort": {
+    "text": "观察变化后的物质，把产生新物质的变化放到星光一边。",
+    "hash": "b01b87345d6bd52002e3c0d80554a625a61899ffe8066079a9bbc7da8762897c",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 44013
+  },
+  "science.g6.hands.sequence": {
+    "text": "把探究步骤排好，实验结果要用证据说明。看图，把过程按先后顺序放好。可以点小手看一次操作示范。",
+    "hash": "d7f42dca881ff10ae2fa58428e3ce5acb66f8e73c32d977df3a1af495e2fee33",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 81261
+  }
+}

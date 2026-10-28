@@ -2,6 +2,12 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const ts=require('/Applications/CocosCreator-3.8.8.app/Contents/Resources/app.asar.unpacked/node_modules/typescript');
 function load(name){const out={};new Function('exports',ts.transpile(fs.readFileSync(path.join(__dirname,'../assets/scripts/adventure/'+name+'.ts'),'utf8'),{module:ts.ModuleKind.CommonJS}))(out);return out;}
 const {CompanionPolicy}=load('CompanionPolicy'),{COMPANION_LINES}=load('CompanionLines');
+const {shouldDismissCompanion}=load('CompanionPolicy');
+assert(shouldDismissCompanion('pointerdown','',false));
+assert(!shouldDismissCompanion('pointerdown','',true),'bubble buttons and volume slider stay operable');
+assert(shouldDismissCompanion('keydown','Escape',true));
+assert(!shouldDismissCompanion('keydown','ArrowRight',true),'keyboard volume adjustment stays open');
+assert(!shouldDismissCompanion('keydown','Enter',true),'keyboard button activation stays open');
 const p=new CompanionPolicy();p.enter('map:1',0);assert(!p.canNudge(59999,'map',false));assert(p.canNudge(60000,'map',false));assert(!p.canNudge(60000,'exam',false));assert(!p.canNudge(60000,'play',true));p.didNudge(60000);assert(!p.canNudge(250000,'map',false));p.enter('play:2',250000);p.activity(300000);assert(!p.canNudge(350000,'play',false));assert(p.canNudge(360000,'play',false));p.rest(360000);assert(!p.canNudge(959999,'play',false));assert(p.canNudge(960000,'play',false));p.enter('play:2',970000);assert.equal(p.lastActivity,360000,'rerenders must not reset idle pacing');
 const manifest=require('../assets/resources/voice/companion/manifest.json');for(const [key,text] of Object.entries(COMPANION_LINES)){assert.equal(manifest[key].text,text);assert(fs.statSync(path.join(__dirname,'../assets/resources/voice/companion',key+'.mp3')).size>1000);}
 const provider=require('../server/providers/volc-speech.cjs');

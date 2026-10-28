@@ -1,10 +1,24 @@
 import {accountStorage} from '../platform/AccountStorage';
 import {AudioClip,AudioSource,resources,sys} from 'cc';
+import {analyseSpeech,sampleSpeech,SpeechTrack,SPEECH_FRAME_EVENT} from './SpeechMotion';
 /** Browser playback has an explicit trusted-gesture unlock; native targets retain Cocos playback. */
 export class SoundBank {
  private context:AudioContext|null=null;private master:GainNode|null=null;private analyser:AnalyserNode|null=null;
  private clips:Record<string,Promise<AudioClip>>={};private buffers:Record<string,Promise<AudioBuffer>>={};
  private sources=new Set<AudioBufferSourceNode>();private voice:AudioBufferSourceNode|null=null;private voiceVersion=0;private voiceLoading=false;
+ private lipTracks=new WeakMap<AudioBuffer,SpeechTrack>();private lipRAF=0;
+ private stopLip(){if(this.lipRAF)cancelAnimationFrame(this.lipRAF);this.lipRAF=0;if(typeof window!=='undefined')window.dispatchEvent(new CustomEvent(SPEECH_FRAME_EVENT,{detail:{playing:false,open:0,round:0,time:0}}));}
+ private startLip(source:AudioBufferSourceNode,buffer:AudioBuffer,started:number){
+  let track=this.lipTracks.get(buffer);if(!track){track=analyseSpeech(buffer.getChannelData(0),buffer.sampleRate);this.lipTracks.set(buffer,track);}
+  const tick=()=>{
+   if(this.disposed||this.voice!==source||!this.enabled||this.context?.state!=='running'){this.stopLip();return;}
+   const stamp=this.context.getOutputTimestamp?.();
+   // Use the audible device clock, including output latency, rather than a timer.
+   const audible=stamp&&stamp.contextTime>0?stamp.contextTime:this.context.currentTime-(this.context.baseLatency||0);
+   window.dispatchEvent(new CustomEvent(SPEECH_FRAME_EVENT,{detail:sampleSpeech(track!,audible-started)}));
+   this.lipRAF=requestAnimationFrame(tick);
+  };tick();
+ }
  enabled=true;lastError='';lastPlayed='';lastPeak=0;private disposed=false;
  private music:AudioBufferSourceNode|null=null;private musicGain:GainNode|null=null;private nativeMusic:AudioSource;private musicLoading=false;private musicVersion=0;
  private settings=accountStorage();
@@ -31,19 +45,22 @@ export class SoundBank {
  private clip(path:string){if(!this.clips[path])this.clips[path]=new Promise<AudioClip>((resolve,reject)=>resources.load(path,AudioClip,(err,clip)=>err?reject(err):resolve(clip))).catch(e=>{delete this.clips[path];throw e;});return this.clips[path];}
  private buffer(path:string){if(!this.buffers[path])this.buffers[path]=this.clip(path).then(async clip=>{const response=await fetch(clip.nativeUrl);if(!response.ok)throw new Error('Audio HTTP '+response.status);const data=await response.arrayBuffer();return await this.context!.decodeAudioData(data);}).then(buffer=>{if(!buffer.length||buffer.duration<.02)throw new Error('Empty audio: '+path);return buffer;}).catch(e=>{delete this.buffers[path];throw e;});return this.buffers[path];}
  async preload(paths:string[]){await Promise.all(paths.map(path=>(this.context?this.buffer(path):this.clip(path)).catch(e=>{this.lastError=String(e);})));}
- async play(path:string,voice=false,volume=1):Promise<boolean>{if(!this.enabled||this.disposed)return false;this.unlock();const token=voice?++this.voiceVersion:0;if(voice){this.voiceLoading=true;this.voice?.stop();this.voice=null;this.speech.stop();}
+ async play(path:string,voice=false,volume=1):Promise<boolean>{if(!this.enabled||this.disposed)return false;this.unlock();const token=voice?++this.voiceVersion:0;if(voice){this.stopLip();this.voiceLoading=true;this.voice?.stop();this.voice=null;this.speech.stop();}
   try{if(this.context){const buffer=await this.buffer(path);if(this.disposed||!this.enabled||(voice&&token!==this.voiceVersion))return false;
    if(this.context.state!=='running')await this.context.resume();
    if(this.disposed||!this.enabled||(voice&&token!==this.voiceVersion))return false;
    if(this.context.state!=='running'){this.lastError='请再点一次试听以开启声音';return false;}
    const source=this.context.createBufferSource(),gain=this.context.createGain();source.buffer=buffer;gain.gain.value=volume;source.connect(gain);gain.connect(this.master!);this.sources.add(source);if(voice){this.voice=source;this.duck();}
-   source.onended=()=>{source.disconnect();gain.disconnect();this.sources.delete(source);if(this.voice===source){this.voice=null;this.duck();}};source.start();this.lastPeak=0;
+   source.onended=()=>{source.disconnect();gain.disconnect();this.sources.delete(source);if(this.voice===source){this.voice=null;this.stopLip();this.duck();}};
+   const started=this.context.currentTime+.035;source.start(started);
+   if(voice&&volume>0&&path.startsWith('voice/companion/'))this.startLip(source,buffer,started);
+   this.lastPeak=0;
    const values=new Float32Array(this.analyser!.fftSize);let count=0;const sample=()=>{if(this.disposed||!this.analyser)return;this.analyser.getFloatTimeDomainData(values);let peak=0;for(let i=0;i<values.length;i++)peak=Math.max(peak,Math.abs(values[i]));this.lastPeak=Math.max(this.lastPeak,peak);if(++count<24&&this.sources.has(source))setTimeout(sample,25);};sample();
   }else{const clip=await this.clip(path);if(!this.enabled||this.disposed||(voice&&token!==this.voiceVersion))return false;if(voice){this.speech.clip=clip;this.speech.volume=volume;this.speech.play();this.duck();this.speech.node.once(AudioSource.EventType.ENDED,()=>this.duck());}else this.fx.playOneShot(clip,volume);}
   this.lastPlayed=path;this.lastError='';return true;
   }catch(e){this.lastError=String(e);console.warn('SoundBank:',path,e);return false;}
   finally{if(voice&&token===this.voiceVersion)this.voiceLoading=false;}
  }
- stopVoice(){this.voiceVersion++;this.voiceLoading=false;if(this.voice){try{this.voice.stop();}catch{}this.voice=null;}this.speech.stop();this.duck();}
+ stopVoice(){this.voiceVersion++;this.voiceLoading=false;this.stopLip();if(this.voice){try{this.voice.stop();}catch{}this.voice=null;}this.speech.stop();this.duck();}
  dispose(){this.disposed=true;this.stopMusic();this.nativeMusic.destroy();this.stopVoice();this.sources.forEach(s=>{try{s.stop();}catch{}});if(sys.isBrowser){document.removeEventListener('visibilitychange',this.visibility);for(const type of ['pointerdown','touchend','keydown'])window.removeEventListener(type,this.gesture,true);}void this.context?.close();}
 }

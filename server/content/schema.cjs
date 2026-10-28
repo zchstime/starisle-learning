@@ -1,6 +1,8 @@
 'use strict';
 // Add a mechanic here only after its Cocos renderer and evaluator are implemented.
+const {validPicture}=require('./picture.cjs');
 const MODULES=[
+ {id:'picture',name:'图形操作 / 配对 / 分类 / 顺序 / 分物 / 拼图',fields:['activity']},
  {id:'choice',name:'选择 / 符石投送',fields:['options','target','passage']},
  {id:'number',name:'数字作答',fields:['target','scale','answerUnit','visual']},
  {id:'sentence',name:'词卡排序',fields:['words','answer']},
@@ -35,6 +37,7 @@ function validateQuestion(q){
   else if(!int(d.target,0,d.options.length-1))add('正确答案超出选项范围');
   if(d.kind==='listen'&&!d.voice)add('听音题必须有语音标识');
  }
+ if(d.kind==='picture'&&!validPicture(d.activity))add('图形任务的卡片、位置或答案配置无效');
  if(d.kind==='sentence'){
   if(!Array.isArray(d.words)||d.words.length<2||d.words.length>16||d.words.some(s=>!str(s,100)||!s.trim())||!Array.isArray(d.answer)||d.answer.some(s=>!str(s,100)))add('词卡需为 2～16 个非空文本');
   else {const available=[...d.words];for(const word of d.answer){const at=available.indexOf(word);if(at<0){add('正确顺序含有不存在或重复使用的词卡');break;}available.splice(at,1);}if(!d.answer.length)add('正确顺序不能为空');}
