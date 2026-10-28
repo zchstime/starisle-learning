@@ -1,0 +1,18 @@
+{
+  "source": "Blender geometry; approved image used only as visual construction reference",
+  "version": 3,
+  "objects": 115,
+  "mesh_objects": 88,
+  "rigged": false,
+  "changes": [
+    "Rounded Poisson head volume and thin curled tip",
+    "Flush single-piece galaxy eye lenses",
+    "Feathered blush and microfleece",
+    "Wind-swept cape and dimensional scarf",
+    "Raised arm, curled mitten and lifted foot",
+    "Detailed dome lantern and warm studio"
+  ],
+  "material_note": "Editable procedural source and packed original brocade texture. A separately baked static GLB review export is provided.",
+  "validation": "validation.json",
+  "roundtrip": "roundtrip-check.json"
+}

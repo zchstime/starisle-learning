@@ -1,0 +1,1658 @@
+[
+  {
+    "id": "chinese.g1.story1",
+    "grade": 1,
+    "title": "晨光识字屋",
+    "theme": "识字与拼音",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g1.story1.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "给太阳挂字牌，选出读音是 rì 的字。"
+      },
+      {
+        "id": "chinese.g1.story1.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "给月亮挂字牌，选出“月”的读音。"
+      },
+      {
+        "id": "chinese.g1.story1.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g1.story1.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g1.story1.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "找到同行的伙伴：我和谁上学？"
+      },
+      {
+        "id": "chinese.g1.story1.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "找出带走的东西。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g1.story2",
+    "grade": 1,
+    "title": "小树字牌林",
+    "theme": "形近字与量词",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g1.story2.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "小树需要“木”字牌，选哪张？"
+      },
+      {
+        "id": "chinese.g1.story2.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "给树挂上量词：一（ ）树。"
+      },
+      {
+        "id": "chinese.g1.story2.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g1.story2.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g1.story2.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "谁停在树上？"
+      },
+      {
+        "id": "chinese.g1.story2.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "为这张照片选一个名字。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g1.story3",
+    "grade": 1,
+    "title": "礼貌口信站",
+    "theme": "词语与完整句",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g1.story3.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "想借铅笔，开头说哪个词更有礼貌？"
+      },
+      {
+        "id": "chinese.g1.story3.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "别人帮了你，应送哪张词卡？"
+      },
+      {
+        "id": "chinese.g1.story3.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g1.story3.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g1.story3.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "谁把笔借给了小雨？"
+      },
+      {
+        "id": "chinese.g1.story3.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "小雨为什么说谢谢？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g1.story4",
+    "grade": 1,
+    "title": "春风找词岛",
+    "theme": "反义词与描述",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g1.story4.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "小路标需要“大”的反义词。"
+      },
+      {
+        "id": "chinese.g1.story4.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "给草地挑颜色词：绿绿的（ ）。"
+      },
+      {
+        "id": "chinese.g1.story4.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g1.story4.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g1.story4.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "故事发生在哪个季节？"
+      },
+      {
+        "id": "chinese.g1.story4.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "我在哪里看花？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g1.story5",
+    "grade": 1,
+    "title": "雨滴故事桥",
+    "theme": "读句与时间顺序",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g1.story5.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "雨点落下来，选对动作词：雨（ ）了。"
+      },
+      {
+        "id": "chinese.g1.story5.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "要问“你带伞了吗”，结尾用什么？"
+      },
+      {
+        "id": "chinese.g1.story5.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g1.story5.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g1.story5.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "谁没带伞？"
+      },
+      {
+        "id": "chinese.g1.story5.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "把事情接下去：借到伞后，小红——"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g1.story6",
+    "grade": 1,
+    "title": "星光阅读园",
+    "theme": "读懂短文与表达",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g1.story6.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "给星空找量词：一（ ）星星。"
+      },
+      {
+        "id": "chinese.g1.story6.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“晚上”的反义词卡选哪张？"
+      },
+      {
+        "id": "chinese.g1.story6.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g1.story6.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g1.story6.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "谁又指了一颗星给我看？"
+      },
+      {
+        "id": "chinese.g1.story6.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "给日记挑一句合适的话。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g2.story1",
+    "grade": 2,
+    "title": "字词快递岛",
+    "theme": "形近字与词语搭配",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g2.story1.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "把信送到正确词语里：一（ ）清水。"
+      },
+      {
+        "id": "chinese.g2.story1.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "给动作选伙伴：（ ）眼睛。"
+      },
+      {
+        "id": "chinese.g2.story1.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g2.story1.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g2.story1.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "小鹿为什么拿布？"
+      },
+      {
+        "id": "chinese.g2.story1.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "“它”指的是谁？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g2.story2",
+    "grade": 2,
+    "title": "声音森林",
+    "theme": "拟声词与生动表达",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g2.story2.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "风吹树叶，哪张声音卡合适？"
+      },
+      {
+        "id": "chinese.g2.story2.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "给溪水选动作：溪水（ ）向前。"
+      },
+      {
+        "id": "chinese.g2.story2.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g2.story2.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g2.story2.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "树叶发出什么声音？"
+      },
+      {
+        "id": "chinese.g2.story2.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "小鸟重新唱歌在什么时候？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g2.story3",
+    "grade": 2,
+    "title": "留言小灯塔",
+    "theme": "留言与信息提取",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g2.story3.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "给同学留言，先写什么能表明收信人？"
+      },
+      {
+        "id": "chinese.g2.story3.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“明天下午三点”告诉对方什么？"
+      },
+      {
+        "id": "chinese.g2.story3.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g2.story3.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g2.story3.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "做书签在哪里集合？"
+      },
+      {
+        "id": "chinese.g2.story3.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "收信人需要带什么？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g2.story4",
+    "grade": 2,
+    "title": "小伞故事屋",
+    "theme": "因果与人物行为",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g2.story4.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "下雨不能出门，选合适的连接词：（ ）下雨，所以改在屋里读书。"
+      },
+      {
+        "id": "chinese.g2.story4.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“连忙”最接近哪个词？"
+      },
+      {
+        "id": "chinese.g2.story4.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g2.story4.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g2.story4.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "小禾走过去的原因是什么？"
+      },
+      {
+        "id": "chinese.g2.story4.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪件事能看出小禾关心同伴？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g2.story5",
+    "grade": 2,
+    "title": "观察小花园",
+    "theme": "顺序与观察记录",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g2.story5.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "种子冒出小芽，“冒”可换成哪个词？"
+      },
+      {
+        "id": "chinese.g2.story5.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "观察日记中的哪句话更具体？"
+      },
+      {
+        "id": "chinese.g2.story5.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g2.story5.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g2.story5.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪天看见小芽钻出泥土？"
+      },
+      {
+        "id": "chinese.g2.story5.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "我怎样记录豆子的变化？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g2.story6",
+    "grade": 2,
+    "title": "故事接力港",
+    "theme": "事件经过与概括",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g2.story6.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "想说“不知道怎么办”，哪个词合适？"
+      },
+      {
+        "id": "chinese.g2.story6.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“终于把书送到了”中，“终于”表示什么？"
+      },
+      {
+        "id": "chinese.g2.story6.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g2.story6.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g2.story6.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "是谁提供了新路线？"
+      },
+      {
+        "id": "chinese.g2.story6.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪张卡能说清主要事情？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g3.story1",
+    "grade": 3,
+    "title": "词语修补铺",
+    "theme": "联系语境理解词语",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g3.story1.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“薄雾慢慢散开”，这里“散开”是什么意思？"
+      },
+      {
+        "id": "chinese.g3.story1.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“清晨的空气很（ ）”，选合适词语。"
+      },
+      {
+        "id": "chinese.g3.story1.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g3.story1.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g3.story1.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "联系上下文，小桥为什么后来清晰了？"
+      },
+      {
+        "id": "chinese.g3.story1.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "“灯笼露出了笑脸”有什么表达效果？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g3.story2",
+    "grade": 3,
+    "title": "句子搭桥队",
+    "theme": "句意与语序",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g3.story2.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“小船慢慢靠岸”，“慢慢”说明什么？"
+      },
+      {
+        "id": "chinese.g3.story2.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“绿叶在风中跳舞”把什么写得像人？"
+      },
+      {
+        "id": "chinese.g3.story2.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g3.story2.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g3.story2.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "白鹭伸长脖子之前在做什么？"
+      },
+      {
+        "id": "chinese.g3.story2.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪组词最能串起捕食过程？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g3.story3",
+    "grade": 3,
+    "title": "通知信使站",
+    "theme": "实用阅读与清楚表达",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g3.story3.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "通知“周五举行活动”还缺哪类重要信息？"
+      },
+      {
+        "id": "chinese.g3.story3.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "通知里的语言怎样更方便执行？"
+      },
+      {
+        "id": "chinese.g3.story3.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g3.story3.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g3.story3.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "应该带什么参加活动？"
+      },
+      {
+        "id": "chinese.g3.story3.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "活动结束后应该怎样做？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g3.story4",
+    "grade": 3,
+    "title": "故事线索林",
+    "theme": "预测与依据",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g3.story4.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "预测故事后续时，应该主要依据什么？"
+      },
+      {
+        "id": "chinese.g3.story4.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“门缝里透出灯光”，“透出”说明灯光怎样？"
+      },
+      {
+        "id": "chinese.g3.story4.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g3.story4.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g3.story4.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "预测小鹿可能怎样做最有依据？"
+      },
+      {
+        "id": "chinese.g3.story4.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪条线索让小鹿可能感到安心？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g3.story5",
+    "grade": 3,
+    "title": "段落花园",
+    "theme": "关键句与段意",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g3.story5.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "一段话后面都在介绍花的颜色，开头选哪句？"
+      },
+      {
+        "id": "chinese.g3.story5.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "概括一段话时，怎样处理次要细节？"
+      },
+      {
+        "id": "chinese.g3.story5.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g3.story5.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g3.story5.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪句最能概括花的特点？"
+      },
+      {
+        "id": "chinese.g3.story5.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "作者主要从哪方面写花？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g3.story6",
+    "grade": 3,
+    "title": "观察日记港",
+    "theme": "细节与有序记录",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g3.story6.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "观察植物后，哪条记录有可核对的细节？"
+      },
+      {
+        "id": "chinese.g3.story6.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "日记中的“第二天”有什么作用？"
+      },
+      {
+        "id": "chinese.g3.story6.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g3.story6.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g3.story6.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "蒜瓣底部先长出了什么？"
+      },
+      {
+        "id": "chinese.g3.story6.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "每天同一时间记录有什么好处？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g4.story1",
+    "grade": 4,
+    "title": "问题侦探屋",
+    "theme": "提问与阅读策略",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g4.story1.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "阅读“飞船为何绕行”时，哪个问题更有助于理解？"
+      },
+      {
+        "id": "chinese.g4.story1.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“谨慎地前进”中的“谨慎”接近什么？"
+      },
+      {
+        "id": "chinese.g4.story1.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g4.story1.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g4.story1.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "队长为什么改变路线？"
+      },
+      {
+        "id": "chinese.g4.story1.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪句话概括了结果？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g4.story2",
+    "grade": 4,
+    "title": "人物行动桥",
+    "theme": "动作与人物特点",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g4.story2.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "表现人物紧张，哪个动作细节更贴切？"
+      },
+      {
+        "id": "chinese.g4.story2.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“一言不发”是什么意思？"
+      },
+      {
+        "id": "chinese.g4.story2.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g4.story2.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g4.story2.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪个动作最能表现小川关心同伴？"
+      },
+      {
+        "id": "chinese.g4.story2.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "“自己缩了缩脖子”补充说明什么？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g4.story3",
+    "grade": 4,
+    "title": "游记路线岛",
+    "theme": "游览顺序与过渡",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g4.story3.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "按游览顺序介绍公园，哪个词能提示换地点？"
+      },
+      {
+        "id": "chinese.g4.story3.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "两段分别写山脚和山顶，哪个过渡更顺畅？"
+      },
+      {
+        "id": "chinese.g4.story3.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g4.story3.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g4.story3.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪张路线卡与游记一致？"
+      },
+      {
+        "id": "chinese.g4.story3.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "“尽收眼底”在这里是什么意思？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g4.story4",
+    "grade": 4,
+    "title": "动物说明馆",
+    "theme": "抓特点与准确表达",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g4.story4.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "介绍动物特点，哪句话更准确？"
+      },
+      {
+        "id": "chinese.g4.story4.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“有时会躲进箱子”中的“有时”能去掉吗？"
+      },
+      {
+        "id": "chinese.g4.story4.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g4.story4.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g4.story4.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "短文没有提供哪种信息？"
+      },
+      {
+        "id": "chinese.g4.story4.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪句介绍保留了原文的准确性？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g4.story5",
+    "grade": 4,
+    "title": "故事摘要站",
+    "theme": "起因经过结果",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g4.story5.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "摘要应该优先保留什么？"
+      },
+      {
+        "id": "chinese.g4.story5.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“虽然遇雨，但是按时到达”表达什么关系？"
+      },
+      {
+        "id": "chinese.g4.story5.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g4.story5.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g4.story5.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "选出更完整的摘要。"
+      },
+      {
+        "id": "chinese.g4.story5.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪件事直接帮助种子免于淋湿？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g4.story6",
+    "grade": 4,
+    "title": "诗意表达园",
+    "theme": "想象与修辞",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g4.story6.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“月亮像小船”把月亮比作什么？"
+      },
+      {
+        "id": "chinese.g4.story6.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "描写安静的夜，哪句最贴合？"
+      },
+      {
+        "id": "chinese.g4.story6.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g4.story6.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g4.story6.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "树叶被风翻动让作者联想到什么？"
+      },
+      {
+        "id": "chinese.g4.story6.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "“久久望着归家的小路”可能传达什么？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g5.story1",
+    "grade": 5,
+    "title": "人物细节馆",
+    "theme": "动作描写与内心",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g5.story1.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "写人物犹豫，哪句通过动作表现？"
+      },
+      {
+        "id": "chinese.g5.story1.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“沉默片刻”中“片刻”是什么意思？"
+      },
+      {
+        "id": "chinese.g5.story1.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g5.story1.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g5.story1.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪项推断有动作依据？"
+      },
+      {
+        "id": "chinese.g5.story1.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪个细节最能证明信封未被拆开？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g5.story2",
+    "grade": 5,
+    "title": "说明工坊",
+    "theme": "说明方法与信息准确",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g5.story2.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“水箱能装20升水”主要用了什么方法？"
+      },
+      {
+        "id": "chinese.g5.story2.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“大约需要十分钟”保留“大约”的作用是？"
+      },
+      {
+        "id": "chinese.g5.story2.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g5.story2.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g5.story2.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪项说法超出了材料？"
+      },
+      {
+        "id": "chinese.g5.story2.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "与露天花架比较是为了说明什么？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g5.story3",
+    "grade": 5,
+    "title": "民间故事船",
+    "theme": "复述与情节因果",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g5.story3.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "复述故事时，改变哪项最不影响主要情节？"
+      },
+      {
+        "id": "chinese.g5.story3.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“信守约定”接近哪个意思？"
+      },
+      {
+        "id": "chinese.g5.story3.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g5.story3.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g5.story3.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪条因果链符合故事？"
+      },
+      {
+        "id": "chinese.g5.story3.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "复述时不可省去哪个关键情节？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g5.story4",
+    "grade": 5,
+    "title": "阅读提速站",
+    "theme": "带着问题寻找信息",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g5.story4.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "要查开放时间，先找哪类词更有效？"
+      },
+      {
+        "id": "chinese.g5.story4.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“除周一外每日开放”说明什么？"
+      },
+      {
+        "id": "chinese.g5.story4.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g5.story4.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g5.story4.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "周六16时30分到达，按说明还能入馆吗？"
+      },
+      {
+        "id": "chinese.g5.story4.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "雨天哪些活动仍可参加？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g5.story5",
+    "grade": 5,
+    "title": "景物时光园",
+    "theme": "动态静态与表达顺序",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g5.story5.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "哪个句子写出了动态变化？"
+      },
+      {
+        "id": "chinese.g5.story5.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "描写日落过程，哪组词最能体现顺序？"
+      },
+      {
+        "id": "chinese.g5.story5.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g5.story5.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g5.story5.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "作者主要按照什么顺序写？"
+      },
+      {
+        "id": "chinese.g5.story5.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪处同时表现了灯光和水的动态？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g5.story6",
+    "grade": 5,
+    "title": "建议书邮局",
+    "theme": "观点理由与可行建议",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g5.story6.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "建议增设书架，哪条理由最相关？"
+      },
+      {
+        "id": "chinese.g5.story6.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "哪条建议更便于执行？"
+      },
+      {
+        "id": "chinese.g5.story6.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g5.story6.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g5.story6.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "增加书架主要解决什么问题？"
+      },
+      {
+        "id": "chinese.g5.story6.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪项是执行与维护的办法？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g6.story1",
+    "grade": 6,
+    "title": "主题探寻岛",
+    "theme": "中心意思与材料选择",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g6.story1.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "围绕“合作让任务更顺利”，应选哪个材料？"
+      },
+      {
+        "id": "chinese.g6.story1.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "选材料时，“详略得当”指什么？"
+      },
+      {
+        "id": "chinese.g6.story1.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g6.story1.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g6.story1.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪项中心意思最有依据？"
+      },
+      {
+        "id": "chinese.g6.story1.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "若续写一个细节，哪项最贴合中心？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g6.story2",
+    "grade": 6,
+    "title": "小说线索城",
+    "theme": "环境人物与情节",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g6.story2.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“风拍打窗户，他握紧了信”中，环境描写可能有什么作用？"
+      },
+      {
+        "id": "chinese.g6.story2.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "判断人物特点更可靠的依据是什么？"
+      },
+      {
+        "id": "chinese.g6.story2.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g6.story2.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g6.story2.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "“热汤温了又温”最能支持哪种理解？"
+      },
+      {
+        "id": "chinese.g6.story2.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪项是合理推断，而非原文明说？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g6.story3",
+    "grade": 6,
+    "title": "阅读目的站",
+    "theme": "非连续文本与选择信息",
+    "group": "上册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g6.story3.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "要规划乘车路线，最需要哪类信息？"
+      },
+      {
+        "id": "chinese.g6.story3.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "遇到两个时刻表，应该先核对什么？"
+      },
+      {
+        "id": "chinese.g6.story3.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g6.story3.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g6.story3.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "按公告，哪班车能让你及时入场？"
+      },
+      {
+        "id": "chinese.g6.story3.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "只看到馆时间而忽略什么，容易误判？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g6.story4",
+    "grade": 6,
+    "title": "论证修桥队",
+    "theme": "观点证据与表达边界",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g6.story4.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“三次测试都成功，所以永远不会失败”有什么问题？"
+      },
+      {
+        "id": "chinese.g6.story4.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "讨论时哪句话兼顾观点与依据？"
+      },
+      {
+        "id": "chinese.g6.story4.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g6.story4.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g6.story4.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "哪种结论最符合证据？"
+      },
+      {
+        "id": "chinese.g6.story4.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "再记录使用人数能补充什么？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g6.story5",
+    "grade": 6,
+    "title": "古今词语阁",
+    "theme": "文言启蒙与语境",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g6.story5.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“吾欲观书”中，“吾”可理解为？"
+      },
+      {
+        "id": "chinese.g6.story5.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“童子问其故”中，“故”结合语境应理解为？"
+      },
+      {
+        "id": "chinese.g6.story5.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g6.story5.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g6.story5.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "老人解释叶子移动的原因是什么？"
+      },
+      {
+        "id": "chinese.g6.story5.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "“复观”最贴合哪种意思？"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g6.story6",
+    "grade": 6,
+    "title": "毕业编辑室",
+    "theme": "综合阅读与修改表达",
+    "group": "下册",
+    "alignment": "theme",
+    "tasks": [
+      {
+        "id": "chinese.g6.story6.l1",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "“全班同学都到了，只有小禾没来”怎样修改更准确？"
+      },
+      {
+        "id": "chinese.g6.story6.l2",
+        "kind": "choice",
+        "stage": "warmup",
+        "goal": "编辑活动报道，最应先核对什么？"
+      },
+      {
+        "id": "chinese.g6.story6.l3",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "把词卡连成一句通顺的口信。"
+      },
+      {
+        "id": "chinese.g6.story6.l4",
+        "kind": "sentence",
+        "stage": "practice",
+        "goal": "按事情先后或办事步骤，修好这段小路。"
+      },
+      {
+        "id": "chinese.g6.story6.l5",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "编辑核对日期采用了什么办法？"
+      },
+      {
+        "id": "chinese.g6.story6.l6",
+        "kind": "choice",
+        "stage": "challenge",
+        "goal": "这件事对制作纪念册有什么启发？"
+      }
+    ]
+  }
+]

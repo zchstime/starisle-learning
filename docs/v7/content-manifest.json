@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "math.g1.c5",
+    "subject": "math",
+    "grade": 1,
+    "title": "春游补给船",
+    "topic": "数量比较与生活运算",
+    "alignment": "theme",
+    "missions": [
+      {
+        "id": "math.g1.c5.l1",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "春游有 9 人，已经上船 4 人。还要接几人？",
+        "explanation": "9 − 4 = 5，还要接 5 人。"
+      },
+      {
+        "id": "math.g1.c5.l2",
+        "kind": "choice",
+        "title": "长短桥梁",
+        "goal": "要跨过更宽的河面，选哪块桥板？",
+        "explanation": "桥板需要足够长，才能跨过河面。"
+      },
+      {
+        "id": "math.g1.c5.l3",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "给 12 只小鸟准备食物，已有 10 份，还缺几份？",
+        "explanation": "12 − 10 = 2。"
+      }
+    ]
+  },
+  {
+    "id": "math.g2.c5",
+    "subject": "math",
+    "grade": 2,
+    "title": "时钟与购物岛",
+    "topic": "时间与人民币",
+    "alignment": "theme",
+    "missions": [
+      {
+        "id": "math.g2.c5.l1",
+        "kind": "choice",
+        "title": "准时出航",
+        "goal": "小船 8:00 出发，航行 30 分钟，几点到？",
+        "explanation": "整时过 30 分钟是半时：8:30。"
+      },
+      {
+        "id": "math.g2.c5.l2",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "一本笔记本 6 元，付了 10 元，应找回几元？",
+        "explanation": "10 − 6 = 4 元。"
+      },
+      {
+        "id": "math.g2.c5.l3",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "3 袋种子，每袋 5 颗，一共装多少颗？",
+        "explanation": "3 × 5 = 15 颗。"
+      }
+    ]
+  },
+  {
+    "id": "math.g3.c5",
+    "subject": "math",
+    "grade": 3,
+    "title": "测量工程队",
+    "topic": "周长与单位换算",
+    "alignment": "theme",
+    "missions": [
+      {
+        "id": "math.g3.c5.l1",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "长方形围栏长 6 米、宽 4 米，要准备多少米绳子？",
+        "explanation": "周长是 (6 + 4) × 2 = 20 米。"
+      },
+      {
+        "id": "math.g3.c5.l2",
+        "kind": "choice",
+        "title": "道路标牌",
+        "goal": "小岛之间相距 3 千米，等于多少米？",
+        "explanation": "1 千米 = 1000 米，所以 3 千米 = 3000 米。"
+      },
+      {
+        "id": "math.g3.c5.l3",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "正方形花坛边长 5 米，四周围栏共几米？",
+        "explanation": "正方形周长：5 × 4 = 20 米。"
+      }
+    ]
+  },
+  {
+    "id": "math.g4.c5",
+    "subject": "math",
+    "grade": 4,
+    "title": "图形修复站",
+    "topic": "角与图形",
+    "alignment": "theme",
+    "missions": [
+      {
+        "id": "math.g4.c5.l1",
+        "kind": "choice",
+        "title": "转弯信号",
+        "goal": "机器人从朝东转到朝北，转过的较小角是？",
+        "explanation": "东与北两个方向之间的较小角是 90°，是直角。"
+      },
+      {
+        "id": "math.g4.c5.l2",
+        "kind": "choice",
+        "title": "三角支架",
+        "goal": "三角形支架两个角是 50°、60°，第三个角呢？",
+        "explanation": "三角形内角和 180°，180 − 50 − 60 = 70°。"
+      },
+      {
+        "id": "math.g4.c5.l3",
+        "kind": "choice",
+        "title": "桥梁分类",
+        "goal": "哪种四边形的两组对边分别平行？",
+        "explanation": "平行四边形的两组对边分别平行。"
+      }
+    ]
+  },
+  {
+    "id": "math.g5.c5",
+    "subject": "math",
+    "grade": 5,
+    "title": "分数兑换屋",
+    "topic": "因数倍数与分数",
+    "alignment": "theme",
+    "missions": [
+      {
+        "id": "math.g5.c5.l1",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "灯塔每 4 秒和每 6 秒闪一次，刚同时闪过，几秒后再同时闪？",
+        "explanation": "4 和 6 的最小公倍数是 12。"
+      },
+      {
+        "id": "math.g5.c5.l2",
+        "kind": "tiles",
+        "title": "花田设计师",
+        "goal": "两块同样大的花田，比较 1/2 与 2/4；铺出 2/4",
+        "explanation": "1/2 = 2/4。12 格的 2/4 是 6 格。"
+      },
+      {
+        "id": "math.g5.c5.l3",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "把 18 颗星星和 24 朵花分成相同礼包，都恰好分完，最多几包？",
+        "explanation": "18 和 24 的最大公因数是 6，可分 6 包。"
+      }
+    ]
+  },
+  {
+    "id": "math.g6.c5",
+    "subject": "math",
+    "grade": 6,
+    "title": "毕业设计港",
+    "topic": "百分数与综合应用",
+    "alignment": "theme",
+    "missions": [
+      {
+        "id": "math.g6.c5.l1",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "修复站有 40 盏灯，已经修好 75%，修好了几盏？",
+        "explanation": "40 × 75% = 30 盏。"
+      },
+      {
+        "id": "math.g6.c5.l2",
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "每艘船装 6 箱，运走 42 箱要几艘船？",
+        "explanation": "42 ÷ 6 = 7 艘。"
+      },
+      {
+        "id": "math.g6.c5.l3",
+        "kind": "choice",
+        "title": "节水报告",
+        "goal": "原来每天用水 50 升，现在 40 升，减少了百分之几？",
+        "explanation": "减少 10 升，10 ÷ 50 = 20%。"
+      }
+    ]
+  },
+  {
+    "id": "english.g1.c4",
+    "subject": "english",
+    "grade": 1,
+    "title": "礼貌小客人",
+    "topic": "启蒙 · 礼貌表达",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "english.g1.c4.l1",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "递给朋友礼物，说“给你”",
+        "explanation": "Here you are. 给你。"
+      },
+      {
+        "id": "english.g1.c4.l2",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "收到礼物，说“谢谢你”",
+        "explanation": "Thank you. 谢谢你。"
+      },
+      {
+        "id": "english.g1.c4.l3",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "和朋友告别，说“再见”",
+        "explanation": "Goodbye / Good bye 表示再见。"
+      }
+    ]
+  },
+  {
+    "id": "english.g2.c4",
+    "subject": "english",
+    "grade": 2,
+    "title": "动物探访队",
+    "topic": "启蒙 · 动物与喜好",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "english.g2.c4.l1",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "看见小猫，告诉伙伴“它是一只猫”",
+        "explanation": "It is a cat. 它是一只猫。"
+      },
+      {
+        "id": "english.g2.c4.l2",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "告诉朋友“我喜欢狗”",
+        "explanation": "I like dogs. 我喜欢狗。"
+      },
+      {
+        "id": "english.g2.c4.l3",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "描述小鸟“它很小”",
+        "explanation": "It is small. 它很小。"
+      }
+    ]
+  },
+  {
+    "id": "english.g3.c4",
+    "subject": "english",
+    "grade": 3,
+    "title": "书包寻物记",
+    "topic": "物品与颜色表达",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "english.g3.c4.l1",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "找到铅笔，告诉朋友“这是一支铅笔”",
+        "explanation": "This is a pencil. 这是一支铅笔。"
+      },
+      {
+        "id": "english.g3.c4.l2",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "介绍自己的书包“我的书包是蓝色的”",
+        "explanation": "My bag is blue. 我的书包是蓝色的。"
+      },
+      {
+        "id": "english.g3.c4.l3",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "请朋友打开书",
+        "explanation": "Open your book. 打开你的书。"
+      }
+    ]
+  },
+  {
+    "id": "english.g4.c4",
+    "subject": "english",
+    "grade": 4,
+    "title": "家中寻宝",
+    "topic": "位置与家庭生活",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "english.g4.c4.l1",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "告诉伙伴钥匙在桌上",
+        "explanation": "The keys are on the table. 钥匙在桌上。"
+      },
+      {
+        "id": "english.g4.c4.l2",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "问伙伴猫在哪里",
+        "explanation": "Where is the cat? 猫在哪里？"
+      },
+      {
+        "id": "english.g4.c4.l3",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "介绍妈妈是一名教师",
+        "explanation": "My mother is a teacher. 我的妈妈是一名教师。"
+      }
+    ]
+  },
+  {
+    "id": "english.g5.c4",
+    "subject": "english",
+    "grade": 5,
+    "title": "周末俱乐部",
+    "topic": "日常活动与能力",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "english.g5.c4.l1",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "告诉朋友周日你踢足球",
+        "explanation": "I play football on Sundays. 我周日踢足球。"
+      },
+      {
+        "id": "english.g5.c4.l2",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "告诉队友你会跳舞",
+        "explanation": "I can dance. 我会跳舞。"
+      },
+      {
+        "id": "english.g5.c4.l3",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "描述花园里有一些花",
+        "explanation": "There are some flowers. 有一些花。"
+      }
+    ]
+  },
+  {
+    "id": "english.g6.c4",
+    "subject": "english",
+    "grade": 6,
+    "title": "成长旅行册",
+    "topic": "过去经历与计划",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "english.g6.c4.l1",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "告诉朋友你昨天打扫了房间",
+        "explanation": "I cleaned my room yesterday. 我昨天打扫了房间。"
+      },
+      {
+        "id": "english.g6.c4.l2",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "告诉朋友你准备去公园",
+        "explanation": "I am going to the park. 我准备去公园。"
+      },
+      {
+        "id": "english.g6.c4.l3",
+        "kind": "sentence",
+        "title": "星际英语信使",
+        "goal": "告诉朋友你比以前更高了",
+        "explanation": "I am taller than before. 我比以前更高了。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g1.c2",
+    "subject": "chinese",
+    "grade": 1,
+    "title": "字词小邮差",
+    "topic": "词语与句意",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "chinese.g1.c2.l1",
+        "kind": "sentence",
+        "title": "送达口信",
+        "goal": "告诉朋友谁在做什么",
+        "explanation": "谁：小鸟；在哪里：树上；做什么：唱歌。"
+      },
+      {
+        "id": "chinese.g1.c2.l2",
+        "kind": "choice",
+        "title": "词语搭桥",
+        "goal": "“一朵”后面放什么最合适？",
+        "explanation": "一朵鲜花，量词与事物要搭配。"
+      },
+      {
+        "id": "chinese.g1.c2.l3",
+        "kind": "sentence",
+        "title": "晨光留言",
+        "goal": "把清楚的话送给伙伴",
+        "explanation": "按事物、方向、动作组织句子。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g2.c2",
+    "subject": "chinese",
+    "grade": 2,
+    "title": "句子修补屋",
+    "topic": "连贯表达",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "chinese.g2.c2.l1",
+        "kind": "sentence",
+        "title": "雨后发现",
+        "goal": "把一句话排通顺",
+        "explanation": "先说明雨停了，再说明谁走出教室。"
+      },
+      {
+        "id": "chinese.g2.c2.l2",
+        "kind": "choice",
+        "title": "问号邮票",
+        "goal": "哪句话是在提问？",
+        "explanation": "“你去哪里？”是在询问，应使用问号。"
+      },
+      {
+        "id": "chinese.g2.c2.l3",
+        "kind": "choice",
+        "title": "词语修补",
+        "goal": "“小河慢慢地流着”，哪一个词描述流动的样子？",
+        "explanation": "“慢慢地”说明流得缓慢。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g3.c2",
+    "subject": "chinese",
+    "grade": 3,
+    "title": "观察小作家",
+    "topic": "细节观察",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "chinese.g3.c2.l1",
+        "kind": "choice",
+        "title": "观察记录",
+        "goal": "想写清小蜗牛的样子，哪句更具体？",
+        "explanation": "具体外形比笼统评价更便于读者想象。"
+      },
+      {
+        "id": "chinese.g3.c2.l2",
+        "kind": "sentence",
+        "title": "一天的小苗",
+        "goal": "按观察顺序排好记录",
+        "explanation": "按时间顺序记录，变化更清楚。"
+      },
+      {
+        "id": "chinese.g3.c2.l3",
+        "kind": "choice",
+        "title": "动作词库",
+        "goal": "小猫轻轻地走近蝴蝶，哪个词更贴近这个动作？",
+        "explanation": "“靠近”表示走到附近。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g4.c2",
+    "subject": "chinese",
+    "grade": 4,
+    "title": "故事线索岛",
+    "topic": "叙事顺序",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "chinese.g4.c2.l1",
+        "kind": "sentence",
+        "title": "失物故事",
+        "goal": "把故事的经过排清楚",
+        "explanation": "事情按发生、寻找、解决的顺序发展。"
+      },
+      {
+        "id": "chinese.g4.c2.l2",
+        "kind": "choice",
+        "title": "人物线索",
+        "goal": "“他把最后一块饼干分给伙伴”，更能看出什么？",
+        "explanation": "行为体现人物特点，但不能凭一句话推断所有性格。"
+      },
+      {
+        "id": "chinese.g4.c2.l3",
+        "kind": "choice",
+        "title": "缩写路牌",
+        "goal": "“活泼的小松鼠在树枝间跳来跳去”，主要说谁做什么？",
+        "explanation": "保留主要人物与动作，能抓住句子主干。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g5.c2",
+    "subject": "chinese",
+    "grade": 5,
+    "title": "表达编辑部",
+    "topic": "概括与修改",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "chinese.g5.c2.l1",
+        "kind": "choice",
+        "title": "段落中心",
+        "goal": "一段写种子发芽、长叶、开花，主要内容是？",
+        "explanation": "几个变化共同指向植物的生长过程。"
+      },
+      {
+        "id": "chinese.g5.c2.l2",
+        "kind": "choice",
+        "title": "修改病句",
+        "goal": "“我们讨论并听取了建议”，怎样改得顺序更合理？",
+        "explanation": "先听取建议，再进行讨论。"
+      },
+      {
+        "id": "chinese.g5.c2.l3",
+        "kind": "sentence",
+        "title": "发言准备",
+        "goal": "准备一次小岛介绍",
+        "explanation": "围绕主题组织材料，再练习表达。"
+      }
+    ]
+  },
+  {
+    "id": "chinese.g6.c2",
+    "subject": "chinese",
+    "grade": 6,
+    "title": "毕业纪念信",
+    "topic": "观点与表达",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "chinese.g6.c2.l1",
+        "kind": "choice",
+        "title": "有据表达",
+        "goal": "建议增加图书角开放时间，哪条理由更有力？",
+        "explanation": "具体观察可以支持建议，避免无依据地概括所有人。"
+      },
+      {
+        "id": "chinese.g6.c2.l2",
+        "kind": "sentence",
+        "title": "毕业留言",
+        "goal": "把感谢信的内容顺序排好",
+        "explanation": "先称呼，再写具体回忆与感谢，最后署名。"
+      },
+      {
+        "id": "chinese.g6.c2.l3",
+        "kind": "choice",
+        "title": "细节取舍",
+        "goal": "写一次难忘的合作，最值得展开哪部分？",
+        "explanation": "与主题相关的关键经过值得展开。"
+      }
+    ]
+  },
+  {
+    "id": "science.g1.c2",
+    "subject": "science",
+    "grade": 1,
+    "title": "感官观察站",
+    "topic": "观察与描述",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "science.g1.c2.l1",
+        "kind": "choice",
+        "title": "观察叶子",
+        "goal": "想知道叶片边缘是什么形状，先怎样做？",
+        "explanation": "视觉能帮助观察形状和边缘。"
+      },
+      {
+        "id": "science.g1.c2.l2",
+        "kind": "choice",
+        "title": "记录天气",
+        "goal": "今天看见地面湿了，哪项是直接观察？",
+        "explanation": "地面湿是观察；原因还需要更多证据。"
+      },
+      {
+        "id": "science.g1.c2.l3",
+        "kind": "sentence",
+        "title": "观察小石头",
+        "goal": "给小石头建观察卡",
+        "explanation": "先观察再描述与记录，不必知道所有名称。"
+      }
+    ]
+  },
+  {
+    "id": "science.g2.c2",
+    "subject": "science",
+    "grade": 2,
+    "title": "材料探险箱",
+    "topic": "材料性质",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "science.g2.c2.l1",
+        "kind": "choice",
+        "title": "雨衣材料",
+        "goal": "想选不易透水的材料做雨披，先比较什么？",
+        "explanation": "比较透水性，才能判断是否适合作雨披。"
+      },
+      {
+        "id": "science.g2.c2.l2",
+        "kind": "choice",
+        "title": "磁铁发现",
+        "goal": "磁铁更容易吸引哪件物品？",
+        "explanation": "常见铁回形针能被磁铁吸引，木块和塑料尺不能。"
+      },
+      {
+        "id": "science.g2.c2.l3",
+        "kind": "sentence",
+        "title": "材料分类",
+        "goal": "把收集到的物品整理好",
+        "explanation": "先确定按什么特征分类，再把同类放一起。"
+      }
+    ]
+  },
+  {
+    "id": "science.g3.c2",
+    "subject": "science",
+    "grade": 3,
+    "title": "水与空气岛",
+    "topic": "状态与占据空间",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "science.g3.c2.l1",
+        "kind": "choice",
+        "title": "冰水变化",
+        "goal": "冰放在温暖房间里逐渐变成水，叫做什么？",
+        "explanation": "冰受热由固态变成液态水，叫融化。"
+      },
+      {
+        "id": "science.g3.c2.l2",
+        "kind": "choice",
+        "title": "空气占位",
+        "goal": "倒扣的杯子缓慢压入水中，杯里仍有空气，说明？",
+        "explanation": "杯中的空气占据空间，影响水进入。"
+      },
+      {
+        "id": "science.g3.c2.l3",
+        "kind": "sentence",
+        "title": "蒸发观察",
+        "goal": "观察两天水位的变化",
+        "explanation": "用水位记录帮助比较变化，不只凭记忆。"
+      }
+    ]
+  },
+  {
+    "id": "science.g4.c2",
+    "subject": "science",
+    "grade": 4,
+    "title": "电路研究所",
+    "topic": "简单电路现象",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "science.g4.c2.l1",
+        "kind": "choice",
+        "title": "点亮灯泡",
+        "goal": "电池、导线、灯泡需要怎样连接，才可能点亮？",
+        "explanation": "简单电路形成完整回路，电流才能通过灯泡。"
+      },
+      {
+        "id": "science.g4.c2.l2",
+        "kind": "choice",
+        "title": "开关作用",
+        "goal": "断开开关后灯灭了，说明开关能够？",
+        "explanation": "开关通过接通或断开电路控制灯泡。"
+      },
+      {
+        "id": "science.g4.c2.l3",
+        "kind": "sentence",
+        "title": "故障排查",
+        "goal": "低压电池小灯不亮，安排检查",
+        "explanation": "实验只使用适合课堂的低压电池，先断开再检查。"
+      }
+    ]
+  },
+  {
+    "id": "science.g5.c2",
+    "subject": "science",
+    "grade": 5,
+    "title": "实验对照屋",
+    "topic": "控制变量",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "science.g5.c2.l1",
+        "kind": "choice",
+        "title": "公平比较",
+        "goal": "比较种子有水与无水时的变化，哪项应保持相同？",
+        "explanation": "研究水的作用时，其他条件尽量相同。"
+      },
+      {
+        "id": "science.g5.c2.l2",
+        "kind": "choice",
+        "title": "记录变化",
+        "goal": "小苗昨天 4 厘米，今天 5 厘米，长高多少？",
+        "explanation": "5 − 4 = 1 厘米，用同一测量方式比较。"
+      },
+      {
+        "id": "science.g5.c2.l3",
+        "kind": "sentence",
+        "title": "实验计划",
+        "goal": "比较不同表面上玩具车滑行的距离",
+        "explanation": "一次主要改变一个条件，才便于比较。"
+      }
+    ]
+  },
+  {
+    "id": "science.g6.c2",
+    "subject": "science",
+    "grade": 6,
+    "title": "证据研究船",
+    "topic": "数据与证据",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "science.g6.c2.l1",
+        "kind": "choice",
+        "title": "重复测量",
+        "goal": "同一物体测得 10、11、10 厘米，下一步更合理的是？",
+        "explanation": "重复测量并检查方法，有助于判断测量差异。"
+      },
+      {
+        "id": "science.g6.c2.l2",
+        "kind": "choice",
+        "title": "证据边界",
+        "goal": "只试过一种纸飞机，能直接断定所有纸飞机都一样远吗？",
+        "explanation": "一个样本不足以代表所有设计。"
+      },
+      {
+        "id": "science.g6.c2.l3",
+        "kind": "sentence",
+        "title": "研究分享",
+        "goal": "把一次探究整理给伙伴看",
+        "explanation": "让别人看见过程与证据，也说明研究的局限。"
+      }
+    ]
+  },
+  {
+    "id": "ethics.g1.c2",
+    "subject": "ethics",
+    "grade": 1,
+    "title": "友善伙伴岛",
+    "topic": "友善交往",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "ethics.g1.c2.l1",
+        "kind": "choice",
+        "title": "借用彩笔",
+        "goal": "想用伙伴的彩笔，先怎么做？",
+        "explanation": "先征得同意，使用后按约归还。"
+      },
+      {
+        "id": "ethics.g1.c2.l2",
+        "kind": "choice",
+        "title": "欢迎新伙伴",
+        "goal": "新同学独自站着，可以怎么做？",
+        "explanation": "友善邀请，尊重对方是否愿意参加。"
+      },
+      {
+        "id": "ethics.g1.c2.l3",
+        "kind": "sentence",
+        "title": "归还玩具",
+        "goal": "借来的玩具玩完了",
+        "explanation": "爱惜借用物品并及时归还。"
+      }
+    ]
+  },
+  {
+    "id": "ethics.g2.c2",
+    "subject": "ethics",
+    "grade": 2,
+    "title": "公共生活桥",
+    "topic": "公共规则",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "ethics.g2.c2.l1",
+        "kind": "choice",
+        "title": "图书角",
+        "goal": "有人正在安静阅读，你要交谈，可以？",
+        "explanation": "轻声交流，照顾别人的阅读需要。"
+      },
+      {
+        "id": "ethics.g2.c2.l2",
+        "kind": "choice",
+        "title": "排队上船",
+        "goal": "大家按顺序等候，你应该？",
+        "explanation": "遵守顺序，平等对待每个等候的人。"
+      },
+      {
+        "id": "ethics.g2.c2.l3",
+        "kind": "sentence",
+        "title": "公共玩具",
+        "goal": "轮到自己玩共享玩具",
+        "explanation": "共享物品需要共同爱护。"
+      }
+    ]
+  },
+  {
+    "id": "ethics.g3.c2",
+    "subject": "ethics",
+    "grade": 3,
+    "title": "共同约定屋",
+    "topic": "集体约定",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "ethics.g3.c2.l1",
+        "kind": "choice",
+        "title": "制定约定",
+        "goal": "班级想制定图书角规则，先怎样做？",
+        "explanation": "共同讨论规则的目的与内容。"
+      },
+      {
+        "id": "ethics.g3.c2.l2",
+        "kind": "choice",
+        "title": "意见不同",
+        "goal": "伙伴建议与自己不同，先做什么？",
+        "explanation": "听取理由后再表达看法。"
+      },
+      {
+        "id": "ethics.g3.c2.l3",
+        "kind": "sentence",
+        "title": "小组约定",
+        "goal": "为值日小队制定安排",
+        "explanation": "清楚的约定便于大家合作。"
+      }
+    ]
+  },
+  {
+    "id": "ethics.g4.c2",
+    "subject": "ethics",
+    "grade": 4,
+    "title": "诚信合作港",
+    "topic": "诚信与尊重",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "ethics.g4.c2.l1",
+        "kind": "choice",
+        "title": "如实说明",
+        "goal": "不小心弄坏了公共物品，怎样处理？",
+        "explanation": "诚实面对问题，承担适当责任。"
+      },
+      {
+        "id": "ethics.g4.c2.l2",
+        "kind": "choice",
+        "title": "尊重差异",
+        "goal": "伙伴的兴趣和自己不同，应该？",
+        "explanation": "兴趣可以不同，彼此都应被尊重。"
+      },
+      {
+        "id": "ethics.g4.c2.l3",
+        "kind": "sentence",
+        "title": "兑现承诺",
+        "goal": "答应带小组材料后发现忘带了",
+        "explanation": "遇到困难及时沟通，不掩盖问题。"
+      }
+    ]
+  },
+  {
+    "id": "ethics.g5.c2",
+    "subject": "ethics",
+    "grade": 5,
+    "title": "责任行动队",
+    "topic": "责任与协商",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "ethics.g5.c2.l1",
+        "kind": "choice",
+        "title": "承担分工",
+        "goal": "负责记录的小队员遇到困难，应该？",
+        "explanation": "承担责任也包括及时沟通与求助。"
+      },
+      {
+        "id": "ethics.g5.c2.l2",
+        "kind": "choice",
+        "title": "公共建议",
+        "goal": "建议修改活动安排，怎样表达更合适？",
+        "explanation": "理由与倾听有助于共同协商。"
+      },
+      {
+        "id": "ethics.g5.c2.l3",
+        "kind": "sentence",
+        "title": "共同解决",
+        "goal": "小组出现分工争议",
+        "explanation": "围绕问题协商，避免互相指责。"
+      }
+    ]
+  },
+  {
+    "id": "ethics.g6.c2",
+    "subject": "ethics",
+    "grade": 6,
+    "title": "毕业议事厅",
+    "topic": "参与与证据",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "ethics.g6.c2.l1",
+        "kind": "choice",
+        "title": "班级议事",
+        "goal": "讨论是否增设安静阅读区，最先明确什么？",
+        "explanation": "明确共同问题，再比较不同方案。"
+      },
+      {
+        "id": "ethics.g6.c2.l2",
+        "kind": "choice",
+        "title": "核实消息",
+        "goal": "听说活动取消，但没有正式通知，先？",
+        "explanation": "未核实的信息不宜当作确定事实传播。"
+      },
+      {
+        "id": "ethics.g6.c2.l3",
+        "kind": "sentence",
+        "title": "提出建议",
+        "goal": "给校园改进提出建议",
+        "explanation": "关心公共生活，也认真了解不同需要。"
+      }
+    ]
+  },
+  {
+    "id": "music.g1.c2",
+    "subject": "music",
+    "grade": 1,
+    "title": "节拍小火车",
+    "topic": "均匀节拍",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "music.g1.c2.l1",
+        "kind": "choice",
+        "title": "车轮节拍",
+        "goal": "小火车匀速前进，怎样拍手更像它？",
+        "explanation": "均匀节拍的间隔相近。"
+      },
+      {
+        "id": "music.g1.c2.l2",
+        "kind": "sentence",
+        "title": "节拍接龙",
+        "goal": "把拍手动作按提示“拍、拍、停”排好",
+        "explanation": "休止时保持节拍，动作暂时停止。"
+      },
+      {
+        "id": "music.g1.c2.l3",
+        "kind": "choice",
+        "title": "安静听歌",
+        "goal": "伙伴演唱时，怎样帮助听清旋律？",
+        "explanation": "倾听是音乐合作的一部分。"
+      }
+    ]
+  },
+  {
+    "id": "music.g2.c2",
+    "subject": "music",
+    "grade": 2,
+    "title": "声音表情屋",
+    "topic": "强弱与速度",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "music.g2.c2.l1",
+        "kind": "choice",
+        "title": "摇篮小曲",
+        "goal": "想表现轻柔入睡，更适合什么声音？",
+        "explanation": "轻柔平稳常适合摇篮曲情境。"
+      },
+      {
+        "id": "music.g2.c2.l2",
+        "kind": "choice",
+        "title": "追逐音乐",
+        "goal": "想让同一段音乐显得更急切，可以先尝试？",
+        "explanation": "速度变化会影响音乐的情绪感受。"
+      },
+      {
+        "id": "music.g2.c2.l3",
+        "kind": "sentence",
+        "title": "声音表情",
+        "goal": "按“轻、稍强、轻”的顺序安排演奏",
+        "explanation": "强弱变化可以形成音乐的表情。"
+      }
+    ]
+  },
+  {
+    "id": "music.g3.c2",
+    "subject": "music",
+    "grade": 3,
+    "title": "旋律方向岛",
+    "topic": "旋律变化",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "music.g3.c2.l1",
+        "kind": "choice",
+        "title": "旋律上山",
+        "goal": "音高由低逐步变高，旋律方向是？",
+        "explanation": "这里描述的是音高上行，不是音量变大。"
+      },
+      {
+        "id": "music.g3.c2.l2",
+        "kind": "choice",
+        "title": "高低辨义",
+        "goal": "“唱高一点”主要是改变什么？",
+        "explanation": "音高与音量是不同的声音特征。"
+      },
+      {
+        "id": "music.g3.c2.l3",
+        "kind": "sentence",
+        "title": "旋律回家",
+        "goal": "按“低、中、高”组织三步旋律",
+        "explanation": "音高逐级上行，形成上升的走向。"
+      }
+    ]
+  },
+  {
+    "id": "music.g4.c2",
+    "subject": "music",
+    "grade": 4,
+    "title": "节奏编排室",
+    "topic": "节奏组织",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "music.g4.c2.l1",
+        "kind": "choice",
+        "title": "节奏空位",
+        "goal": "四拍乐句最后一拍休止，最后一拍应该？",
+        "explanation": "休止有时值，也占据节拍中的位置。"
+      },
+      {
+        "id": "music.g4.c2.l2",
+        "kind": "choice",
+        "title": "重复乐句",
+        "goal": "A、B、A 的安排中，哪段再次出现？",
+        "explanation": "首尾都出现 A，可以形成呼应。"
+      },
+      {
+        "id": "music.g4.c2.l3",
+        "kind": "sentence",
+        "title": "节奏设计",
+        "goal": "为小队设计四拍节奏",
+        "explanation": "总长度要符合设计的拍数。"
+      }
+    ]
+  },
+  {
+    "id": "music.g5.c2",
+    "subject": "music",
+    "grade": 5,
+    "title": "合奏排练厅",
+    "topic": "合作演奏",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "music.g5.c2.l1",
+        "kind": "choice",
+        "title": "合奏开始",
+        "goal": "大家想一起开始演奏，最需要？",
+        "explanation": "共同信号帮助演奏同步开始。"
+      },
+      {
+        "id": "music.g5.c2.l2",
+        "kind": "choice",
+        "title": "伴奏平衡",
+        "goal": "伴奏盖过主旋律，可以先？",
+        "explanation": "调整音量平衡，让主旋律能够被听见。"
+      },
+      {
+        "id": "music.g5.c2.l3",
+        "kind": "sentence",
+        "title": "合奏排练",
+        "goal": "安排小队合奏的练习",
+        "explanation": "从分声部到合作，再根据听到的效果调整。"
+      }
+    ]
+  },
+  {
+    "id": "music.g6.c2",
+    "subject": "music",
+    "grade": 6,
+    "title": "音乐创作港",
+    "topic": "创作与反思",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "music.g6.c2.l1",
+        "kind": "choice",
+        "title": "主题再现",
+        "goal": "乐曲结尾再次出现开头主题，常能带来？",
+        "explanation": "主题再现可以形成结构上的呼应。"
+      },
+      {
+        "id": "music.g6.c2.l2",
+        "kind": "choice",
+        "title": "改编记录",
+        "goal": "比较两次演奏效果，最有用的做法？",
+        "explanation": "对照记录有助于发现速度、强弱等变化。"
+      },
+      {
+        "id": "music.g6.c2.l3",
+        "kind": "sentence",
+        "title": "创作分享",
+        "goal": "完成一段短节奏作品",
+        "explanation": "通过试演检验想法，再向伙伴分享。"
+      }
+    ]
+  },
+  {
+    "id": "art.g1.c2",
+    "subject": "art",
+    "grade": 1,
+    "title": "线条旅行记",
+    "topic": "线条与形状",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "art.g1.c2.l1",
+        "kind": "choice",
+        "title": "海浪线条",
+        "goal": "想画波浪起伏，哪种线更贴近？",
+        "explanation": "波浪线能表现起伏的感觉。"
+      },
+      {
+        "id": "art.g1.c2.l2",
+        "kind": "choice",
+        "title": "小屋窗户",
+        "goal": "画一扇圆窗，主要用什么形状？",
+        "explanation": "圆形适合表现圆窗的外轮廓。"
+      },
+      {
+        "id": "art.g1.c2.l3",
+        "kind": "sentence",
+        "title": "我的小花",
+        "goal": "按步骤画一朵简单的花",
+        "explanation": "从主要形状逐步添加细节。"
+      }
+    ]
+  },
+  {
+    "id": "art.g2.c2",
+    "subject": "art",
+    "grade": 2,
+    "title": "形色装饰铺",
+    "topic": "规律与组合",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "art.g2.c2.l1",
+        "kind": "choice",
+        "title": "旗子接龙",
+        "goal": "黄、绿、黄、绿，下一面旗子是什么颜色？",
+        "explanation": "重复单元是黄、绿。"
+      },
+      {
+        "id": "art.g2.c2.l2",
+        "kind": "choice",
+        "title": "形状拼屋",
+        "goal": "用一个三角形和一个正方形，更容易拼成？",
+        "explanation": "三角形可作屋顶，正方形可作房身。"
+      },
+      {
+        "id": "art.g2.c2.l3",
+        "kind": "sentence",
+        "title": "装饰边框",
+        "goal": "设计一个重复的图案边框",
+        "explanation": "有规律地重复，形成装饰节奏。"
+      }
+    ]
+  },
+  {
+    "id": "art.g3.c2",
+    "subject": "art",
+    "grade": 3,
+    "title": "色彩混合岛",
+    "topic": "色彩探索",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "art.g3.c2.l1",
+        "kind": "choice",
+        "title": "橙色工坊",
+        "goal": "常见颜料中，红色加黄色通常接近什么颜色？",
+        "explanation": "红与黄混合通常得到橙色，可少量尝试比例。"
+      },
+      {
+        "id": "art.g3.c2.l2",
+        "kind": "choice",
+        "title": "画出远近",
+        "goal": "同样大的小树，近处一般画得？",
+        "explanation": "近大远小是一种常用的空间表现方法。"
+      },
+      {
+        "id": "art.g3.c2.l3",
+        "kind": "sentence",
+        "title": "调色实验",
+        "goal": "试着调出自己喜欢的绿色",
+        "explanation": "少量试调，再观察变化。"
+      }
+    ]
+  },
+  {
+    "id": "art.g4.c2",
+    "subject": "art",
+    "grade": 4,
+    "title": "画面故事屋",
+    "topic": "构图与表达",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "art.g4.c2.l1",
+        "kind": "choice",
+        "title": "画面重点",
+        "goal": "想突出一只小船，哪种处理更直接？",
+        "explanation": "大小、色彩等对比可以突出重点。"
+      },
+      {
+        "id": "art.g4.c2.l2",
+        "kind": "choice",
+        "title": "前后遮挡",
+        "goal": "一棵树挡住另一棵树一部分，通常谁在前？",
+        "explanation": "遮挡关系可以表现物体的前后。"
+      },
+      {
+        "id": "art.g4.c2.l3",
+        "kind": "sentence",
+        "title": "故事插画",
+        "goal": "为一个故事画插图",
+        "explanation": "画面内容围绕关键情节组织。"
+      }
+    ]
+  },
+  {
+    "id": "art.g5.c2",
+    "subject": "art",
+    "grade": 5,
+    "title": "海报设计室",
+    "topic": "视觉信息设计",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "art.g5.c2.l1",
+        "kind": "choice",
+        "title": "海报标题",
+        "goal": "远处也要看清活动名，标题应该？",
+        "explanation": "字号与对比能帮助识别标题。"
+      },
+      {
+        "id": "art.g5.c2.l2",
+        "kind": "choice",
+        "title": "信息取舍",
+        "goal": "阅读节海报最需要清楚展示什么？",
+        "explanation": "海报应传达与活动有关的关键信息。"
+      },
+      {
+        "id": "art.g5.c2.l3",
+        "kind": "sentence",
+        "title": "设计评估",
+        "goal": "检查自己设计的海报",
+        "explanation": "既要表达主题，也要让信息容易读懂。"
+      }
+    ]
+  },
+  {
+    "id": "art.g6.c2",
+    "subject": "art",
+    "grade": 6,
+    "title": "毕业作品展",
+    "topic": "展示与评价",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "art.g6.c2.l1",
+        "kind": "choice",
+        "title": "作品标签",
+        "goal": "给作品写说明，哪项最有帮助？",
+        "explanation": "作品说明帮助观众理解创作意图。"
+      },
+      {
+        "id": "art.g6.c2.l2",
+        "kind": "choice",
+        "title": "友善评价",
+        "goal": "评价伙伴作品，更有帮助的是？",
+        "explanation": "具体且尊重的反馈能帮助创作交流。"
+      },
+      {
+        "id": "art.g6.c2.l3",
+        "kind": "sentence",
+        "title": "策划小展览",
+        "goal": "把毕业作品展示给大家",
+        "explanation": "选择、布置和说明共同构成展示。"
+      }
+    ]
+  },
+  {
+    "id": "pe.g1.c2",
+    "subject": "pe",
+    "grade": 1,
+    "title": "游戏规则岛",
+    "topic": "规则与空间",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "pe.g1.c2.l1",
+        "kind": "choice",
+        "title": "听到暂停",
+        "goal": "游戏中听到统一的暂停信号，应该？",
+        "explanation": "理解和遵守信号，让共同活动有序进行。"
+      },
+      {
+        "id": "pe.g1.c2.l2",
+        "kind": "choice",
+        "title": "活动空间",
+        "goal": "两个人距离太近，做伸展前应该？",
+        "explanation": "留出合适空间再活动。"
+      },
+      {
+        "id": "pe.g1.c2.l3",
+        "kind": "sentence",
+        "title": "器材小队",
+        "goal": "准备玩软球游戏",
+        "explanation": "了解规则后再领取器材参加活动。"
+      }
+    ]
+  },
+  {
+    "id": "pe.g2.c2",
+    "subject": "pe",
+    "grade": 2,
+    "title": "合作接力站",
+    "topic": "合作与顺序",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "pe.g2.c2.l1",
+        "kind": "choice",
+        "title": "接力顺序",
+        "goal": "已经约定甲、乙、丙依次接力，甲后面是谁？",
+        "explanation": "按事先约定的顺序合作。"
+      },
+      {
+        "id": "pe.g2.c2.l2",
+        "kind": "choice",
+        "title": "轮流练习",
+        "goal": "伙伴还在练习区，下一位应该？",
+        "explanation": "按顺序使用活动区域。"
+      },
+      {
+        "id": "pe.g2.c2.l3",
+        "kind": "sentence",
+        "title": "合作挑战",
+        "goal": "两人合作运球，先后怎样做？",
+        "explanation": "先沟通再尝试，并根据结果改进。"
+      }
+    ]
+  },
+  {
+    "id": "pe.g3.c2",
+    "subject": "pe",
+    "grade": 3,
+    "title": "动作练习场",
+    "topic": "练习方法",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "pe.g3.c2.l1",
+        "kind": "choice",
+        "title": "分步练习",
+        "goal": "一个新动作还不熟，哪种方法更合理？",
+        "explanation": "分步练习有助于了解动作要点。"
+      },
+      {
+        "id": "pe.g3.c2.l2",
+        "kind": "choice",
+        "title": "观察反馈",
+        "goal": "想知道投掷动作哪里可改，应该？",
+        "explanation": "具体观察动作，再听取指导。"
+      },
+      {
+        "id": "pe.g3.c2.l3",
+        "kind": "sentence",
+        "title": "练习记录",
+        "goal": "记录一次练习的变化",
+        "explanation": "用真实记录帮助了解进步。"
+      }
+    ]
+  },
+  {
+    "id": "pe.g4.c2",
+    "subject": "pe",
+    "grade": 4,
+    "title": "团队策略屋",
+    "topic": "团队协作",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "pe.g4.c2.l1",
+        "kind": "choice",
+        "title": "团队目标",
+        "goal": "合作游戏里想让全队完成任务，优先？",
+        "explanation": "共同目标需要配合与沟通。"
+      },
+      {
+        "id": "pe.g4.c2.l2",
+        "kind": "choice",
+        "title": "策略调整",
+        "goal": "原来的分工一直卡住，应该？",
+        "explanation": "根据实际情况调整合作方法。"
+      },
+      {
+        "id": "pe.g4.c2.l3",
+        "kind": "sentence",
+        "title": "比赛回顾",
+        "goal": "一场合作游戏结束后",
+        "explanation": "回顾过程比只看输赢更能帮助进步。"
+      }
+    ]
+  },
+  {
+    "id": "pe.g5.c2",
+    "subject": "pe",
+    "grade": 5,
+    "title": "运动观察册",
+    "topic": "自我比较",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "pe.g5.c2.l1",
+        "kind": "choice",
+        "title": "看见进步",
+        "goal": "比较自己的两次练习，哪项更有用？",
+        "explanation": "可比较的真实记录更能反映自己的变化。"
+      },
+      {
+        "id": "pe.g5.c2.l2",
+        "kind": "choice",
+        "title": "尊重节奏",
+        "goal": "伙伴需要更多时间掌握动作，应该？",
+        "explanation": "不同人的练习节奏可以不同。"
+      },
+      {
+        "id": "pe.g5.c2.l3",
+        "kind": "sentence",
+        "title": "调整目标",
+        "goal": "发现当前练习目标过难",
+        "explanation": "目标应结合实际情况逐步调整。"
+      }
+    ]
+  },
+  {
+    "id": "pe.g6.c2",
+    "subject": "pe",
+    "grade": 6,
+    "title": "班级运动会",
+    "topic": "组织与公平",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "pe.g6.c2.l1",
+        "kind": "choice",
+        "title": "公平记录",
+        "goal": "统计比赛结果时发现漏记一次，应该？",
+        "explanation": "按共同规则核对记录，保持公平。"
+      },
+      {
+        "id": "pe.g6.c2.l2",
+        "kind": "choice",
+        "title": "组织分工",
+        "goal": "组织班级游戏，记录员主要负责？",
+        "explanation": "记录员依据约定如实记录。"
+      },
+      {
+        "id": "pe.g6.c2.l3",
+        "kind": "sentence",
+        "title": "运动会小组",
+        "goal": "组织一场班级合作活动",
+        "explanation": "活动组织包括准备、执行与回顾。"
+      }
+    ]
+  },
+  {
+    "id": "labor.g1.c2",
+    "subject": "labor",
+    "grade": 1,
+    "title": "物品回家路",
+    "topic": "物品归位",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "labor.g1.c2.l1",
+        "kind": "choice",
+        "title": "鞋子归位",
+        "goal": "进门换下的鞋放哪里更合适？",
+        "explanation": "物品放在规定位置，便于寻找且不占通道。"
+      },
+      {
+        "id": "labor.g1.c2.l2",
+        "kind": "sentence",
+        "title": "书桌归整",
+        "goal": "读完书后整理桌面",
+        "explanation": "用完后按习惯归位。"
+      },
+      {
+        "id": "labor.g1.c2.l3",
+        "kind": "choice",
+        "title": "发现垃圾",
+        "goal": "纸屑掉在自己桌边，可以？",
+        "explanation": "做力所能及的整理，保持环境整洁。"
+      }
+    ]
+  },
+  {
+    "id": "labor.g2.c2",
+    "subject": "labor",
+    "grade": 2,
+    "title": "桌面小管家",
+    "topic": "整理习惯",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "labor.g2.c2.l1",
+        "kind": "sentence",
+        "title": "课前准备",
+        "goal": "准备下一节课用品",
+        "explanation": "根据需要准备，不把所有物品堆满桌面。"
+      },
+      {
+        "id": "labor.g2.c2.l2",
+        "kind": "choice",
+        "title": "整理依据",
+        "goal": "铅笔、橡皮、尺子放在一起，主要依据？",
+        "explanation": "可以按用途分类整理。"
+      },
+      {
+        "id": "labor.g2.c2.l3",
+        "kind": "choice",
+        "title": "及时收拾",
+        "goal": "手工结束有边角纸，应该？",
+        "explanation": "区分可继续使用的材料与废弃物。"
+      }
+    ]
+  },
+  {
+    "id": "labor.g3.c2",
+    "subject": "labor",
+    "grade": 3,
+    "title": "工具整理站",
+    "topic": "工具管理",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "labor.g3.c2.l1",
+        "kind": "choice",
+        "title": "工具归还",
+        "goal": "小组公用工具用完，应该？",
+        "explanation": "清点与归位方便下一位使用。"
+      },
+      {
+        "id": "labor.g3.c2.l2",
+        "kind": "sentence",
+        "title": "工具清单",
+        "goal": "为小组准备手工工具",
+        "explanation": "按任务准备工具，避免遗漏和浪费。"
+      },
+      {
+        "id": "labor.g3.c2.l3",
+        "kind": "choice",
+        "title": "收纳标签",
+        "goal": "给材料盒贴标签，哪种最便于找？",
+        "explanation": "明确标签帮助快速找到物品。"
+      }
+    ]
+  },
+  {
+    "id": "labor.g4.c2",
+    "subject": "labor",
+    "grade": 4,
+    "title": "种植值日队",
+    "topic": "劳动记录",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "labor.g4.c2.l1",
+        "kind": "choice",
+        "title": "照料交接",
+        "goal": "轮到另一组照料小苗时，应交接什么？",
+        "explanation": "交接实际记录，避免重复或遗漏照料。"
+      },
+      {
+        "id": "labor.g4.c2.l2",
+        "kind": "sentence",
+        "title": "种植日记",
+        "goal": "记录小苗今天的情况",
+        "explanation": "在相近条件下观察，记录更便于比较。"
+      },
+      {
+        "id": "labor.g4.c2.l3",
+        "kind": "choice",
+        "title": "分配值日",
+        "goal": "安排一周照料任务，怎样更清楚？",
+        "explanation": "清楚的责任安排便于落实任务。"
+      }
+    ]
+  },
+  {
+    "id": "labor.g5.c2",
+    "subject": "labor",
+    "grade": 5,
+    "title": "材料规划室",
+    "topic": "材料计划",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "labor.g5.c2.l1",
+        "kind": "choice",
+        "title": "节约裁纸",
+        "goal": "两件小作品都能放进一张纸，优先？",
+        "explanation": "提前规划排版可以减少浪费。"
+      },
+      {
+        "id": "labor.g5.c2.l2",
+        "kind": "sentence",
+        "title": "收纳设计",
+        "goal": "制作适合物品的纸盒",
+        "explanation": "用实际物品检验尺寸是否合适。"
+      },
+      {
+        "id": "labor.g5.c2.l3",
+        "kind": "choice",
+        "title": "材料不足",
+        "goal": "发现材料不够，先怎样做？",
+        "explanation": "核对用量，再讨论合适的替代材料。"
+      }
+    ]
+  },
+  {
+    "id": "labor.g6.c2",
+    "subject": "labor",
+    "grade": 6,
+    "title": "成果改进坊",
+    "topic": "评价与改进",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "labor.g6.c2.l1",
+        "kind": "choice",
+        "title": "质量检查",
+        "goal": "纸盒装物后底部松开，应重点改进？",
+        "explanation": "针对实际问题改进连接与承重。"
+      },
+      {
+        "id": "labor.g6.c2.l2",
+        "kind": "sentence",
+        "title": "劳动回顾",
+        "goal": "完成一次小组制作后",
+        "explanation": "同时关注成果、过程与后续改进。"
+      },
+      {
+        "id": "labor.g6.c2.l3",
+        "kind": "choice",
+        "title": "经验分享",
+        "goal": "向下一组分享制作经验，哪项更有用？",
+        "explanation": "真实过程与方法能帮助别人少走弯路。"
+      }
+    ]
+  },
+  {
+    "id": "it.g1.c2",
+    "subject": "it",
+    "grade": 1,
+    "title": "指令小信使",
+    "topic": "顺序与指令",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "it.g1.c2.l1",
+        "kind": "sentence",
+        "title": "送信路线",
+        "goal": "机器人要先出门，再到邮筒，最后投信",
+        "explanation": "清楚的顺序帮助完成任务。"
+      },
+      {
+        "id": "it.g1.c2.l2",
+        "kind": "choice",
+        "title": "清楚指令",
+        "goal": "想让机器人前进一格，哪句最清楚？",
+        "explanation": "指令要表达明确的动作与数量。"
+      },
+      {
+        "id": "it.g1.c2.l3",
+        "kind": "choice",
+        "title": "寻找图标",
+        "goal": "要打开画画工具，选哪类图标？",
+        "explanation": "图标常用图形表示工具的用途。"
+      }
+    ]
+  },
+  {
+    "id": "it.g2.c2",
+    "subject": "it",
+    "grade": 2,
+    "title": "分类机器人",
+    "topic": "分类与规则",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "it.g2.c2.l1",
+        "kind": "choice",
+        "title": "分类规则",
+        "goal": "把猫、狗、兔放同一组，依据是什么？",
+        "explanation": "按共同特征分类。"
+      },
+      {
+        "id": "it.g2.c2.l2",
+        "kind": "sentence",
+        "title": "机器人洗牌",
+        "goal": "按先颜色后大小整理卡片",
+        "explanation": "多步分类要遵循约定顺序。"
+      },
+      {
+        "id": "it.g2.c2.l3",
+        "kind": "choice",
+        "title": "重复指令",
+        "goal": "前进、前进、前进，机器人共前进几次？",
+        "explanation": "相同动作按顺序执行三次。"
+      }
+    ]
+  },
+  {
+    "id": "it.g3.c2",
+    "subject": "it",
+    "grade": 3,
+    "title": "路线调试岛",
+    "topic": "调试与分步",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "it.g3.c2.l1",
+        "kind": "choice",
+        "title": "找错步骤",
+        "goal": "目标走 3 格，程序写前进 4 次，应怎样改？",
+        "explanation": "比较目标与执行步骤，找出多余动作。"
+      },
+      {
+        "id": "it.g3.c2.l2",
+        "kind": "sentence",
+        "title": "调试小队",
+        "goal": "机器人没到终点",
+        "explanation": "逐步检查有助于定位问题。"
+      },
+      {
+        "id": "it.g3.c2.l3",
+        "kind": "choice",
+        "title": "路径比较",
+        "goal": "路线 A 走 5 格，B 走 3 格，都能到达，哪条步数少？",
+        "explanation": "目标相同时，可以比较所需步数。"
+      }
+    ]
+  },
+  {
+    "id": "it.g4.c2",
+    "subject": "it",
+    "grade": 4,
+    "title": "数据整理屋",
+    "topic": "信息整理",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "it.g4.c2.l1",
+        "kind": "choice",
+        "title": "文件命名",
+        "goal": "想快速找到春游照片，哪种名字更清楚？",
+        "explanation": "有意义的名称与日期便于查找。"
+      },
+      {
+        "id": "it.g4.c2.l2",
+        "kind": "sentence",
+        "title": "表格整理",
+        "goal": "整理班级借书记录",
+        "explanation": "先明确字段，再录入检查。"
+      },
+      {
+        "id": "it.g4.c2.l3",
+        "kind": "choice",
+        "title": "数据检查",
+        "goal": "同一条记录重复录入两次，统计前应？",
+        "explanation": "先核实是否重复，避免统计失真。"
+      }
+    ]
+  },
+  {
+    "id": "it.g5.c2",
+    "subject": "it",
+    "grade": 5,
+    "title": "循环工厂",
+    "topic": "重复与条件",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "it.g5.c2.l1",
+        "kind": "choice",
+        "title": "循环次数",
+        "goal": "重复 4 次“前进 2 格”，共前进几格？",
+        "explanation": "每次 2 格，重复 4 次，共 8 格。"
+      },
+      {
+        "id": "it.g5.c2.l2",
+        "kind": "choice",
+        "title": "条件判断",
+        "goal": "规则“如果前方有障碍，就右转”，现在有障碍，应？",
+        "explanation": "条件成立时执行对应动作。"
+      },
+      {
+        "id": "it.g5.c2.l3",
+        "kind": "sentence",
+        "title": "循环设计",
+        "goal": "把重复动作简化为循环",
+        "explanation": "既要确定循环内容，也要确定次数。"
+      }
+    ]
+  },
+  {
+    "id": "it.g6.c2",
+    "subject": "it",
+    "grade": 6,
+    "title": "算法设计站",
+    "topic": "算法与验证",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "it.g6.c2.l1",
+        "kind": "choice",
+        "title": "算法比较",
+        "goal": "两个方案都能完成任务，怎样公平比较效率？",
+        "explanation": "比较条件一致，结论才有意义。"
+      },
+      {
+        "id": "it.g6.c2.l2",
+        "kind": "sentence",
+        "title": "测试用例",
+        "goal": "设计程序后安排测试",
+        "explanation": "不只测试一种情况，也检查边界。"
+      },
+      {
+        "id": "it.g6.c2.l3",
+        "kind": "choice",
+        "title": "边界测试",
+        "goal": "设计分组程序，哪种情况也值得检查？",
+        "explanation": "空输入等边界情况可能揭示程序问题。"
+      }
+    ]
+  },
+  {
+    "id": "practice.g1.c2",
+    "subject": "practice",
+    "grade": 1,
+    "title": "校园发现册",
+    "topic": "观察记录",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "practice.g1.c2.l1",
+        "kind": "choice",
+        "title": "观察地点",
+        "goal": "想知道图书角有哪些书，去哪里观察？",
+        "explanation": "观察地点要与问题有关。"
+      },
+      {
+        "id": "practice.g1.c2.l2",
+        "kind": "sentence",
+        "title": "发现记录",
+        "goal": "记录校园的一处发现",
+        "explanation": "从亲自观察出发记录事实。"
+      },
+      {
+        "id": "practice.g1.c2.l3",
+        "kind": "choice",
+        "title": "具体记录",
+        "goal": "看见花坛有 4 朵黄花，怎样记更清楚？",
+        "explanation": "具体数量与特征便于交流。"
+      }
+    ]
+  },
+  {
+    "id": "practice.g2.c2",
+    "subject": "practice",
+    "grade": 2,
+    "title": "小小访问员",
+    "topic": "提问与交流",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "practice.g2.c2.l1",
+        "kind": "choice",
+        "title": "访问开场",
+        "goal": "想问同学喜欢什么游戏，先怎样做？",
+        "explanation": "尊重对方是否愿意参与。"
+      },
+      {
+        "id": "practice.g2.c2.l2",
+        "kind": "sentence",
+        "title": "小访问",
+        "goal": "安排一次简单访问",
+        "explanation": "认真倾听并如实记录。"
+      },
+      {
+        "id": "practice.g2.c2.l3",
+        "kind": "choice",
+        "title": "不愿回答",
+        "goal": "同学不想回答你的问题，可以？",
+        "explanation": "自愿参与，不能编造回答。"
+      }
+    ]
+  },
+  {
+    "id": "practice.g3.c2",
+    "subject": "practice",
+    "grade": 3,
+    "title": "数据采集队",
+    "topic": "数据采集",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "practice.g3.c2.l1",
+        "kind": "choice",
+        "title": "计数方法",
+        "goal": "统计经过的小车数量，哪种方法较可靠？",
+        "explanation": "清楚的计数规则帮助减少遗漏。"
+      },
+      {
+        "id": "practice.g3.c2.l2",
+        "kind": "sentence",
+        "title": "采集计划",
+        "goal": "调查图书角一周借阅情况",
+        "explanation": "相同规则便于比较每天的数据。"
+      },
+      {
+        "id": "practice.g3.c2.l3",
+        "kind": "choice",
+        "title": "遗漏记录",
+        "goal": "发现昨天记录漏了一段，应该？",
+        "explanation": "如实说明缺失，不编造数据。"
+      }
+    ]
+  },
+  {
+    "id": "practice.g4.c2",
+    "subject": "practice",
+    "grade": 4,
+    "title": "图表讲解岛",
+    "topic": "整理表达",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "practice.g4.c2.l1",
+        "kind": "choice",
+        "title": "图表选择",
+        "goal": "比较三个小组收集数量，哪种表达更直观？",
+        "explanation": "条形图适合比较不同类别的数量。"
+      },
+      {
+        "id": "practice.g4.c2.l2",
+        "kind": "choice",
+        "title": "说明图表",
+        "goal": "介绍图表时，先说明什么？",
+        "explanation": "先说明数据是什么、来自哪里。"
+      },
+      {
+        "id": "practice.g4.c2.l3",
+        "kind": "sentence",
+        "title": "结果汇报",
+        "goal": "整理一次调查的汇报",
+        "explanation": "让听众了解结果的来由。"
+      }
+    ]
+  },
+  {
+    "id": "practice.g5.c2",
+    "subject": "practice",
+    "grade": 5,
+    "title": "方案试行屋",
+    "topic": "方案评估",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "practice.g5.c2.l1",
+        "kind": "choice",
+        "title": "试行方案",
+        "goal": "想改善图书角摆放，先怎样做更便于改进？",
+        "explanation": "试行反馈帮助发现需要调整的地方。"
+      },
+      {
+        "id": "practice.g5.c2.l2",
+        "kind": "sentence",
+        "title": "方案评估",
+        "goal": "试行新借书流程后",
+        "explanation": "根据实际证据评估改进。"
+      },
+      {
+        "id": "practice.g5.c2.l3",
+        "kind": "choice",
+        "title": "比较条件",
+        "goal": "比较两种排队方案，需要尽量保持？",
+        "explanation": "条件相近，比较更有参考价值。"
+      }
+    ]
+  },
+  {
+    "id": "practice.g6.c2",
+    "subject": "practice",
+    "grade": 6,
+    "title": "毕业研究展",
+    "topic": "研究与展示",
+    "alignment": "enrichment",
+    "missions": [
+      {
+        "id": "practice.g6.c2.l1",
+        "kind": "choice",
+        "title": "结论表达",
+        "goal": "只观察了本校一周，合适的表述是？",
+        "explanation": "结论要与观察范围相匹配。"
+      },
+      {
+        "id": "practice.g6.c2.l2",
+        "kind": "sentence",
+        "title": "毕业研究展",
+        "goal": "展示一项小研究",
+        "explanation": "用证据支持结论，并说明限制。"
+      },
+      {
+        "id": "practice.g6.c2.l3",
+        "kind": "choice",
+        "title": "引用资料",
+        "goal": "展示中使用了别人提供的数据，应当？",
+        "explanation": "清楚标明来源，尊重他人劳动。"
+      }
+    ]
+  }
+]

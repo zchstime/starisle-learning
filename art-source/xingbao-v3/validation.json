@@ -1,0 +1,15 @@
+{
+  "header_and_chunks": "pass",
+  "finite_positions": "pass",
+  "triangle_indices": "pass",
+  "embedded_images": "pass",
+  "external_dependencies": 0,
+  "bytes": 23163756,
+  "meshes": 13,
+  "materials": 13,
+  "images": 7,
+  "triangles": 307930,
+  "vertices": 166385,
+  "animations": 0,
+  "sha256": "71cbbd4ae5d10f675cd814b10018ae2671833e00db718b6d9da883eb58887d32"
+}

@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "source": "actual Blender sculpt, continuous uniform and facial morph targets",
+  "reference": "approved-concept.png",
+  "expressions": [
+    "Blink_L",
+    "Blink_R",
+    "Happy",
+    "Think",
+    "Focus",
+    "Surprise",
+    "Talk_A",
+    "Talk_O"
+  ],
+  "face_uv": "UVMap explicitly bound and active",
+  "outfit_texture": "uniform-color.png (2048 px baked base color)",
+  "meshes": {
+    "Head | reference-traced rounded star": {
+      "vertices": 80998,
+      "triangles": 161992
+    },
+    "Face | eight expression controls": {
+      "vertices": 6024,
+      "triangles": 11268
+    },
+    "Outfit | continuous suit and equipment": {
+      "vertices": 213603,
+      "triangles": 426186
+    }
+  },
+  "bones": 7
+}

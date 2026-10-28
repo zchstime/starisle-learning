@@ -1,0 +1,8088 @@
+[
+  {
+    "id": "science.g1.mission1",
+    "subject": "science",
+    "grade": 1,
+    "title": "落叶侦察队",
+    "topic": "科学 · 1年级基础探索",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "落叶侦察队",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g1.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "比较两片叶子的形状，用什么办法？",
+        "options": [
+          "并排观察轮廓",
+          "只看叶子名字",
+          "闭眼猜大小"
+        ],
+        "target": 0,
+        "voice": "比较两片叶子的形状，用什么办法？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "并排观察轮廓。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“并排观察轮廓”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g1.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "哪条是眼睛直接观察到的？",
+        "options": [
+          "叶边有小齿",
+          "它昨天很开心",
+          "它一定最香"
+        ],
+        "target": 0,
+        "voice": "哪条是眼睛直接观察到的？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "叶边有小齿。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“叶边有小齿”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g1.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「落叶侦察队」的行动计划",
+        "words": [
+          "拿起落叶",
+          "观察轮廓",
+          "画下叶形"
+        ],
+        "answer": [
+          "拿起落叶",
+          "观察轮廓",
+          "画下叶形"
+        ],
+        "target": 0,
+        "voice": "完成落叶侦察队的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "拿起落叶，然后观察轮廓，然后画下叶形。",
+        "coachHints": [
+          "先从“拿起落叶”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g2.mission1",
+    "subject": "science",
+    "grade": 2,
+    "title": "材料造船厂",
+    "topic": "科学 · 2年级基础探索",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "材料造船厂",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g2.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "纸巾遇水变软，船底选什么更耐水？",
+        "options": [
+          "塑料片",
+          "薄纸巾",
+          "卫生纸"
+        ],
+        "target": 0,
+        "voice": "纸巾遇水变软，船底选什么更耐水？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "塑料片。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“塑料片”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g2.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "两块同样大小材料比较吸水，要保持什么相同？",
+        "options": [
+          "滴水量",
+          "吸水结果",
+          "材料种类"
+        ],
+        "target": 0,
+        "voice": "两块同样大小材料比较吸水，要保持什么相同？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "滴水量。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“滴水量”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g2.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「材料造船厂」的行动计划",
+        "words": [
+          "准备材料",
+          "滴相同水量",
+          "观察吸水",
+          "记录结果"
+        ],
+        "answer": [
+          "准备材料",
+          "滴相同水量",
+          "观察吸水",
+          "记录结果"
+        ],
+        "target": 0,
+        "voice": "完成材料造船厂的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "准备材料，然后滴相同水量，然后观察吸水，然后记录结果。",
+        "coachHints": [
+          "先从“准备材料”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g3.mission1",
+    "subject": "science",
+    "grade": 3,
+    "title": "影子追踪岛",
+    "topic": "科学 · 3年级基础探索",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "影子追踪岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g3.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "同一物体换了光照方向，影子可能怎样？",
+        "options": [
+          "位置改变",
+          "永远不变",
+          "变成光源"
+        ],
+        "target": 0,
+        "voice": "同一物体换了光照方向，影子可能怎样？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "位置改变。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“位置改变”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g3.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "观察影子需要哪组条件？",
+        "options": [
+          "光源和遮光物",
+          "只有黑色纸",
+          "只有声音"
+        ],
+        "target": 0,
+        "voice": "观察影子需要哪组条件？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "光源和遮光物。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“光源和遮光物”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g3.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「影子追踪岛」的行动计划",
+        "words": [
+          "固定物体",
+          "改变光照方向",
+          "记录影子位置"
+        ],
+        "answer": [
+          "固定物体",
+          "改变光照方向",
+          "记录影子位置"
+        ],
+        "target": 0,
+        "voice": "完成影子追踪岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "固定物体，然后改变光照方向，然后记录影子位置。",
+        "coachHints": [
+          "先从“固定物体”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g4.mission1",
+    "subject": "science",
+    "grade": 4,
+    "title": "冰水观察站",
+    "topic": "科学 · 4年级基础探索",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "冰水观察站",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g4.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "冰放在温暖处变成水，这叫？",
+        "options": [
+          "融化",
+          "冻结",
+          "生锈"
+        ],
+        "target": 0,
+        "voice": "冰放在温暖处变成水，这叫？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "融化。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“融化”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g4.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "比较冰在两处的变化，哪项要相同？",
+        "options": [
+          "冰块初始大小",
+          "环境温度",
+          "融化时间"
+        ],
+        "target": 0,
+        "voice": "比较冰在两处的变化，哪项要相同？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "冰块初始大小。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“冰块初始大小”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g4.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「冰水观察站」的行动计划",
+        "words": [
+          "取相同冰块",
+          "分别放置",
+          "定时观察",
+          "比较记录"
+        ],
+        "answer": [
+          "取相同冰块",
+          "分别放置",
+          "定时观察",
+          "比较记录"
+        ],
+        "target": 0,
+        "voice": "完成冰水观察站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "取相同冰块，然后分别放置，然后定时观察，然后比较记录。",
+        "coachHints": [
+          "先从“取相同冰块”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g5.mission1",
+    "subject": "science",
+    "grade": 5,
+    "title": "摆动实验室",
+    "topic": "科学 · 5年级基础探索",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "摆动实验室",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g5.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "研究摆线长短，只主动改变什么？",
+        "options": [
+          "摆线长度",
+          "摆锤和起摆角",
+          "所有条件"
+        ],
+        "target": 0,
+        "voice": "研究摆线长短，只主动改变什么？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "摆线长度。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“摆线长度”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g5.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "一次结果不同于预测，应该？",
+        "options": [
+          "复查并重复实验",
+          "删掉结果",
+          "改成预测值"
+        ],
+        "target": 0,
+        "voice": "一次结果不同于预测，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "复查并重复实验。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“复查并重复实验”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g5.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「摆动实验室」的行动计划",
+        "words": [
+          "明确问题",
+          "控制其他条件",
+          "重复测量",
+          "比较数据"
+        ],
+        "answer": [
+          "明确问题",
+          "控制其他条件",
+          "重复测量",
+          "比较数据"
+        ],
+        "target": 0,
+        "voice": "完成摆动实验室的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确问题，然后控制其他条件，然后重复测量，然后比较数据。",
+        "coachHints": [
+          "先从“明确问题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g6.mission1",
+    "subject": "science",
+    "grade": 6,
+    "title": "生态修复港",
+    "topic": "科学 · 6年级基础探索",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "生态修复港",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g6.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "草地昆虫减少，食虫鸟可能怎样？",
+        "options": [
+          "食物来源减少",
+          "一定立刻灭绝",
+          "食物必定增多"
+        ],
+        "target": 0,
+        "voice": "草地昆虫减少，食虫鸟可能怎样？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "食物来源减少。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“食物来源减少”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g6.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "恢复栖息地前，最需要什么？",
+        "options": [
+          "调查生物和环境",
+          "只画漂亮招牌",
+          "随意放入外来动物"
+        ],
+        "target": 0,
+        "voice": "恢复栖息地前，最需要什么？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "调查生物和环境。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“调查生物和环境”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g6.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「生态修复港」的行动计划",
+        "words": [
+          "调查现状",
+          "提出方案",
+          "实施小范围观察",
+          "根据记录调整"
+        ],
+        "answer": [
+          "调查现状",
+          "提出方案",
+          "实施小范围观察",
+          "根据记录调整"
+        ],
+        "target": 0,
+        "voice": "完成生态修复港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "调查现状，然后提出方案，然后实施小范围观察，然后根据记录调整。",
+        "coachHints": [
+          "先从“调查现状”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g1.mission2",
+    "subject": "science",
+    "grade": 1,
+    "title": "风雨记录屋",
+    "topic": "科学 · 1年级应用实践",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "风雨记录屋",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g1.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "记录今天的天气，应写什么？",
+        "options": [
+          "今天看到的云和雨",
+          "明年的猜想",
+          "别人的愿望"
+        ],
+        "target": 0,
+        "voice": "记录今天的天气，应写什么？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "今天看到的云和雨。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“今天看到的云和雨”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g1.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "观察结束怎样留下证据？",
+        "options": [
+          "画出云的样子",
+          "只记在心里",
+          "随意画太阳"
+        ],
+        "target": 0,
+        "voice": "观察结束怎样留下证据？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "画出云的样子。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“画出云的样子”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g1.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「风雨记录屋」的行动计划",
+        "words": [
+          "观察天空",
+          "选择天气符号",
+          "标记日期"
+        ],
+        "answer": [
+          "观察天空",
+          "选择天气符号",
+          "标记日期"
+        ],
+        "target": 0,
+        "voice": "完成风雨记录屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "观察天空，然后选择天气符号，然后标记日期。",
+        "coachHints": [
+          "先从“观察天空”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g2.mission2",
+    "subject": "science",
+    "grade": 2,
+    "title": "种子小花园",
+    "topic": "科学 · 2年级应用实践",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "种子小花园",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g2.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "两盆同种小苗，一盆缺水，比较时要注意？",
+        "options": [
+          "其他主要条件相近",
+          "同时换土和换光",
+          "不用记录"
+        ],
+        "target": 0,
+        "voice": "两盆同种小苗，一盆缺水，比较时要注意？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "其他主要条件相近。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“其他主要条件相近”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g2.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "发现叶子变黄，先怎么做？",
+        "options": [
+          "观察并记录条件",
+          "立刻说一定缺水",
+          "把记录扔掉"
+        ],
+        "target": 0,
+        "voice": "发现叶子变黄，先怎么做？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "观察并记录条件。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“观察并记录条件”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g2.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「种子小花园」的行动计划",
+        "words": [
+          "查看土壤",
+          "观察叶子",
+          "记录变化",
+          "请老师一起分析"
+        ],
+        "answer": [
+          "查看土壤",
+          "观察叶子",
+          "记录变化",
+          "请老师一起分析"
+        ],
+        "target": 0,
+        "voice": "完成种子小花园的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "查看土壤，然后观察叶子，然后记录变化，然后请老师一起分析。",
+        "coachHints": [
+          "先从“查看土壤”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g3.mission2",
+    "subject": "science",
+    "grade": 3,
+    "title": "声音传信桥",
+    "topic": "科学 · 3年级应用实践",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "声音传信桥",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g3.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "拨动橡皮筋发声时，橡皮筋在？",
+        "options": [
+          "振动",
+          "发光",
+          "溶解"
+        ],
+        "target": 0,
+        "voice": "拨动橡皮筋发声时，橡皮筋在？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "振动。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“振动”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g3.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "让声音实验更有依据，应当？",
+        "options": [
+          "多次拨动并观察",
+          "只凭想象",
+          "只看颜色"
+        ],
+        "target": 0,
+        "voice": "让声音实验更有依据，应当？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "多次拨动并观察。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“多次拨动并观察”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g3.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「声音传信桥」的行动计划",
+        "words": [
+          "绷好橡皮筋",
+          "轻轻拨动",
+          "观察振动",
+          "记录发现"
+        ],
+        "answer": [
+          "绷好橡皮筋",
+          "轻轻拨动",
+          "观察振动",
+          "记录发现"
+        ],
+        "target": 0,
+        "voice": "完成声音传信桥的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "绷好橡皮筋，然后轻轻拨动，然后观察振动，然后记录发现。",
+        "coachHints": [
+          "先从“绷好橡皮筋”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g4.mission2",
+    "subject": "science",
+    "grade": 4,
+    "title": "电路点灯台",
+    "topic": "科学 · 4年级应用实践",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "电路点灯台",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g4.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "模拟电路中灯不亮，先检查什么？",
+        "options": [
+          "连接是否完整",
+          "灯的名字",
+          "桌布颜色"
+        ],
+        "target": 0,
+        "voice": "模拟电路中灯不亮，先检查什么？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "连接是否完整。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“连接是否完整”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g4.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "学校低压电池实验该怎样做？",
+        "options": [
+          "按老师指导操作",
+          "连接家用插座",
+          "用金属直接短接电池"
+        ],
+        "target": 0,
+        "voice": "学校低压电池实验该怎样做？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按老师指导操作。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按老师指导操作”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g4.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「电路点灯台」的行动计划",
+        "words": [
+          "查看示意图",
+          "连接低压电池与灯",
+          "检查连接",
+          "记录亮灭"
+        ],
+        "answer": [
+          "查看示意图",
+          "连接低压电池与灯",
+          "检查连接",
+          "记录亮灭"
+        ],
+        "target": 0,
+        "voice": "完成电路点灯台的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "查看示意图，然后连接低压电池与灯，然后检查连接，然后记录亮灭。",
+        "coachHints": [
+          "先从“查看示意图”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g5.mission2",
+    "subject": "science",
+    "grade": 5,
+    "title": "溶解探索船",
+    "topic": "科学 · 5年级应用实践",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "溶解探索船",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g5.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "盐溶于水后看不见，说明什么？",
+        "options": [
+          "分散在水中",
+          "不再存在",
+          "变成了玻璃"
+        ],
+        "target": 0,
+        "voice": "盐溶于水后看不见，说明什么？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "分散在水中。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“分散在水中”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g5.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "比较搅拌对溶解的影响，应保持？",
+        "options": [
+          "盐和水的用量相同",
+          "搅拌方式都不同",
+          "水温也随意变化"
+        ],
+        "target": 0,
+        "voice": "比较搅拌对溶解的影响，应保持？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "盐和水的用量相同。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“盐和水的用量相同”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g5.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「溶解探索船」的行动计划",
+        "words": [
+          "准备等量材料",
+          "一杯搅拌一杯静置",
+          "观察记录",
+          "对比结果"
+        ],
+        "answer": [
+          "准备等量材料",
+          "一杯搅拌一杯静置",
+          "观察记录",
+          "对比结果"
+        ],
+        "target": 0,
+        "voice": "完成溶解探索船的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "准备等量材料，然后一杯搅拌一杯静置，然后观察记录，然后对比结果。",
+        "coachHints": [
+          "先从“准备等量材料”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science.g6.mission2",
+    "subject": "science",
+    "grade": 6,
+    "title": "月相观察台",
+    "topic": "科学 · 6年级应用实践",
+    "art": "island",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "月相观察台",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "science.g6.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "一天看到半个月亮，能断言月球只剩一半吗？",
+        "options": [
+          "不能",
+          "能",
+          "一定碎裂了"
+        ],
+        "target": 0,
+        "voice": "一天看到半个月亮，能断言月球只剩一半吗？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "不能。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“不能”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g6.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "长期观察月相，记录应包括？",
+        "options": [
+          "日期与月面形状",
+          "只写心情",
+          "只画最圆的一次"
+        ],
+        "target": 0,
+        "voice": "长期观察月相，记录应包括？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "日期与月面形状。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“日期与月面形状”这个方向思考。"
+        ]
+      },
+      {
+        "id": "science.g6.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「月相观察台」的行动计划",
+        "words": [
+          "选择观察时间",
+          "记录日期方向",
+          "描画月相",
+          "比较多日记录"
+        ],
+        "answer": [
+          "选择观察时间",
+          "记录日期方向",
+          "描画月相",
+          "比较多日记录"
+        ],
+        "target": 0,
+        "voice": "完成月相观察台的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "选择观察时间，然后记录日期方向，然后描画月相，然后比较多日记录。",
+        "coachHints": [
+          "先从“选择观察时间”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g1.mission1",
+    "subject": "ethics",
+    "grade": 1,
+    "title": "友善入学岛",
+    "topic": "道德与法治 · 1年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "友善入学岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g1.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "新伙伴找不到教室，怎样回应？",
+        "options": [
+          "带他找老师问路",
+          "嘲笑他",
+          "故意指错"
+        ],
+        "target": 0,
+        "voice": "新伙伴找不到教室，怎样回应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "带他找老师问路。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“带他找老师问路”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g1.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "借用同学橡皮前，先做什么？",
+        "options": [
+          "征得同意",
+          "直接拿走",
+          "藏进书包"
+        ],
+        "target": 0,
+        "voice": "借用同学橡皮前，先做什么？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "征得同意。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“征得同意”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g1.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「友善入学岛」的行动计划",
+        "words": [
+          "礼貌询问",
+          "得到同意",
+          "小心使用",
+          "及时归还"
+        ],
+        "answer": [
+          "礼貌询问",
+          "得到同意",
+          "小心使用",
+          "及时归还"
+        ],
+        "target": 0,
+        "voice": "完成友善入学岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "礼貌询问，然后得到同意，然后小心使用，然后及时归还。",
+        "coachHints": [
+          "先从“礼貌询问”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g2.mission1",
+    "subject": "ethics",
+    "grade": 2,
+    "title": "约定小邮局",
+    "topic": "道德与法治 · 2年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "约定小邮局",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g2.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "值日轮到你，发现时间冲突，应当？",
+        "options": [
+          "提前商量调整",
+          "不来且不说明",
+          "让别人猜"
+        ],
+        "target": 0,
+        "voice": "值日轮到你，发现时间冲突，应当？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "提前商量调整。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“提前商量调整”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g2.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "答应归还的书弄脏了，怎么办？",
+        "options": [
+          "如实说明并补救",
+          "说本来就脏",
+          "扔掉书"
+        ],
+        "target": 0,
+        "voice": "答应归还的书弄脏了，怎么办？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "如实说明并补救。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“如实说明并补救”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g2.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「约定小邮局」的行动计划",
+        "words": [
+          "说明情况",
+          "听取对方意见",
+          "商量补救",
+          "履行约定"
+        ],
+        "answer": [
+          "说明情况",
+          "听取对方意见",
+          "商量补救",
+          "履行约定"
+        ],
+        "target": 0,
+        "voice": "完成约定小邮局的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "说明情况，然后听取对方意见，然后商量补救，然后履行约定。",
+        "coachHints": [
+          "先从“说明情况”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g3.mission1",
+    "subject": "ethics",
+    "grade": 3,
+    "title": "公共生活站",
+    "topic": "道德与法治 · 3年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "公共生活站",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g3.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "图书馆有人阅读，讨论应该？",
+        "options": [
+          "放低声音",
+          "大声喊叫",
+          "敲桌比赛"
+        ],
+        "target": 0,
+        "voice": "图书馆有人阅读，讨论应该？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "放低声音。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“放低声音”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g3.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "公共座椅坏了，应当？",
+        "options": [
+          "告诉管理人员",
+          "继续破坏",
+          "假装修好"
+        ],
+        "target": 0,
+        "voice": "公共座椅坏了，应当？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "告诉管理人员。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“告诉管理人员”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g3.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「公共生活站」的行动计划",
+        "words": [
+          "发现问题",
+          "说明地点情况",
+          "告知工作人员"
+        ],
+        "answer": [
+          "发现问题",
+          "说明地点情况",
+          "告知工作人员"
+        ],
+        "target": 0,
+        "voice": "完成公共生活站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "发现问题，然后说明地点情况，然后告知工作人员。",
+        "coachHints": [
+          "先从“发现问题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g4.mission1",
+    "subject": "ethics",
+    "grade": 4,
+    "title": "家乡交流馆",
+    "topic": "道德与法治 · 4年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "家乡交流馆",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g4.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "同学介绍不同习俗，怎样交流？",
+        "options": [
+          "先听再礼貌提问",
+          "立即取笑",
+          "只许说自己的"
+        ],
+        "target": 0,
+        "voice": "同学介绍不同习俗，怎样交流？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "先听再礼貌提问。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“先听再礼貌提问”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g4.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "看见家乡介绍有错误，应该？",
+        "options": [
+          "查证后提出修改",
+          "不查就争吵",
+          "照错转发"
+        ],
+        "target": 0,
+        "voice": "看见家乡介绍有错误，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "查证后提出修改。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“查证后提出修改”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g4.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「家乡交流馆」的行动计划",
+        "words": [
+          "寻找资料",
+          "核对信息",
+          "注明来源",
+          "分享介绍"
+        ],
+        "answer": [
+          "寻找资料",
+          "核对信息",
+          "注明来源",
+          "分享介绍"
+        ],
+        "target": 0,
+        "voice": "完成家乡交流馆的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "寻找资料，然后核对信息，然后注明来源，然后分享介绍。",
+        "coachHints": [
+          "先从“寻找资料”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g5.mission1",
+    "subject": "ethics",
+    "grade": 5,
+    "title": "协商议事厅",
+    "topic": "道德与法治 · 5年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "协商议事厅",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g5.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "选班级活动方案，第一步应？",
+        "options": [
+          "收集大家意见",
+          "让声音最大者决定",
+          "先宣布唯一答案"
+        ],
+        "target": 0,
+        "voice": "选班级活动方案，第一步应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "收集大家意见。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“收集大家意见”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g5.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "投票后有人不同意，怎样做？",
+        "options": [
+          "尊重结果并听取建议",
+          "禁止他发言",
+          "嘲笑少数意见"
+        ],
+        "target": 0,
+        "voice": "投票后有人不同意，怎样做？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "尊重结果并听取建议。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“尊重结果并听取建议”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g5.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「协商议事厅」的行动计划",
+        "words": [
+          "收集方案",
+          "讨论理由",
+          "按约定作决定",
+          "共同执行"
+        ],
+        "answer": [
+          "收集方案",
+          "讨论理由",
+          "按约定作决定",
+          "共同执行"
+        ],
+        "target": 0,
+        "voice": "完成协商议事厅的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "收集方案，然后讨论理由，然后按约定作决定，然后共同执行。",
+        "coachHints": [
+          "先从“收集方案”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g6.mission1",
+    "subject": "ethics",
+    "grade": 6,
+    "title": "责任行动港",
+    "topic": "道德与法治 · 6年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "责任行动港",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g6.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "小组没按时完成，作为成员应？",
+        "options": [
+          "说明自己的情况并改进",
+          "只指责别人",
+          "隐藏记录"
+        ],
+        "target": 0,
+        "voice": "小组没按时完成，作为成员应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "说明自己的情况并改进。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“说明自己的情况并改进”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g6.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "面对未经核实的消息，首先？",
+        "options": [
+          "核实来源和证据",
+          "转给全班",
+          "换标题再发"
+        ],
+        "target": 0,
+        "voice": "面对未经核实的消息，首先？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "核实来源和证据。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“核实来源和证据”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g6.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「责任行动港」的行动计划",
+        "words": [
+          "核实信息",
+          "辨别事实与观点",
+          "说明依据",
+          "谨慎分享"
+        ],
+        "answer": [
+          "核实信息",
+          "辨别事实与观点",
+          "说明依据",
+          "谨慎分享"
+        ],
+        "target": 0,
+        "voice": "完成责任行动港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "核实信息，然后辨别事实与观点，然后说明依据，然后谨慎分享。",
+        "coachHints": [
+          "先从“核实信息”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g1.mission2",
+    "subject": "ethics",
+    "grade": 1,
+    "title": "爱护校园树",
+    "topic": "道德与法治 · 1年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "爱护校园树",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g1.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "想摘校园花送朋友，怎样更好？",
+        "options": [
+          "画朵花送他",
+          "折下最美的一朵",
+          "让别人替你摘"
+        ],
+        "target": 0,
+        "voice": "想摘校园花送朋友，怎样更好？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "画朵花送他。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“画朵花送他”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g1.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "发现走廊有纸屑，怎样做？",
+        "options": [
+          "放进合适垃圾桶",
+          "踢给别人",
+          "踩着玩"
+        ],
+        "target": 0,
+        "voice": "发现走廊有纸屑，怎样做？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "放进合适垃圾桶。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“放进合适垃圾桶”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g1.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「爱护校园树」的行动计划",
+        "words": [
+          "看清垃圾",
+          "拾起普通纸屑",
+          "放入垃圾桶",
+          "洗手"
+        ],
+        "answer": [
+          "看清垃圾",
+          "拾起普通纸屑",
+          "放入垃圾桶",
+          "洗手"
+        ],
+        "target": 0,
+        "voice": "完成爱护校园树的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "看清垃圾，然后拾起普通纸屑，然后放入垃圾桶，然后洗手。",
+        "coachHints": [
+          "先从“看清垃圾”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g2.mission2",
+    "subject": "ethics",
+    "grade": 2,
+    "title": "合作搭桥村",
+    "topic": "道德与法治 · 2年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "合作搭桥村",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g2.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "一起搭积木，有人没轮到，怎么办？",
+        "options": [
+          "商量轮流操作",
+          "不让他参加",
+          "抢走材料"
+        ],
+        "target": 0,
+        "voice": "一起搭积木，有人没轮到，怎么办？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "商量轮流操作。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“商量轮流操作”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g2.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "伙伴提出不同搭法，应？",
+        "options": [
+          "听他说理由",
+          "立刻打断",
+          "把作品推倒"
+        ],
+        "target": 0,
+        "voice": "伙伴提出不同搭法，应？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "听他说理由。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“听他说理由”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g2.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「合作搭桥村」的行动计划",
+        "words": [
+          "说出想法",
+          "轮流尝试",
+          "一起选择",
+          "合作完成"
+        ],
+        "answer": [
+          "说出想法",
+          "轮流尝试",
+          "一起选择",
+          "合作完成"
+        ],
+        "target": 0,
+        "voice": "完成合作搭桥村的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "说出想法，然后轮流尝试，然后一起选择，然后合作完成。",
+        "coachHints": [
+          "先从“说出想法”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g3.mission2",
+    "subject": "ethics",
+    "grade": 3,
+    "title": "诚信商店街",
+    "topic": "道德与法治 · 3年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "诚信商店街",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g3.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "多找了零钱，该怎么做？",
+        "options": [
+          "提醒并退回多余部分",
+          "赶紧离开",
+          "说是奖励"
+        ],
+        "target": 0,
+        "voice": "多找了零钱，该怎么做？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "提醒并退回多余部分。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“提醒并退回多余部分”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g3.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "不小心损坏借来的物品，应该？",
+        "options": [
+          "告知主人商量处理",
+          "悄悄放回",
+          "推给没参与的人"
+        ],
+        "target": 0,
+        "voice": "不小心损坏借来的物品，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "告知主人商量处理。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“告知主人商量处理”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g3.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「诚信商店街」的行动计划",
+        "words": [
+          "说明经过",
+          "表达歉意",
+          "商量处理",
+          "认真补救"
+        ],
+        "answer": [
+          "说明经过",
+          "表达歉意",
+          "商量处理",
+          "认真补救"
+        ],
+        "target": 0,
+        "voice": "完成诚信商店街的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "说明经过，然后表达歉意，然后商量处理，然后认真补救。",
+        "coachHints": [
+          "先从“说明经过”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g4.mission2",
+    "subject": "ethics",
+    "grade": 4,
+    "title": "差异友好园",
+    "topic": "道德与法治 · 4年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "差异友好园",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g4.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "新同学口音不同，可以？",
+        "options": [
+          "耐心倾听",
+          "模仿取笑",
+          "不准他说话"
+        ],
+        "target": 0,
+        "voice": "新同学口音不同，可以？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "耐心倾听。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“耐心倾听”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g4.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "小组成员做事速度不同，应该？",
+        "options": [
+          "合理分工相互支持",
+          "只让最快的人做",
+          "排除较慢的人"
+        ],
+        "target": 0,
+        "voice": "小组成员做事速度不同，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "合理分工相互支持。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“合理分工相互支持”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g4.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「差异友好园」的行动计划",
+        "words": [
+          "了解特长",
+          "共同分工",
+          "互相配合",
+          "回顾合作"
+        ],
+        "answer": [
+          "了解特长",
+          "共同分工",
+          "互相配合",
+          "回顾合作"
+        ],
+        "target": 0,
+        "voice": "完成差异友好园的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "了解特长，然后共同分工，然后互相配合，然后回顾合作。",
+        "coachHints": [
+          "先从“了解特长”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g5.mission2",
+    "subject": "ethics",
+    "grade": 5,
+    "title": "文明出行岛",
+    "topic": "道德与法治 · 5年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "文明出行岛",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g5.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "排队上车时，怎样照顾大家？",
+        "options": [
+          "按顺序留出通道",
+          "堵住车门",
+          "追逐打闹"
+        ],
+        "target": 0,
+        "voice": "排队上车时，怎样照顾大家？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按顺序留出通道。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按顺序留出通道”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g5.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "遇到别人需要帮助，应先？",
+        "options": [
+          "询问对方需要",
+          "强行拉走",
+          "拍照起哄"
+        ],
+        "target": 0,
+        "voice": "遇到别人需要帮助，应先？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "询问对方需要。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“询问对方需要”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g5.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「文明出行岛」的行动计划",
+        "words": [
+          "观察情况",
+          "礼貌询问",
+          "提供适当帮助",
+          "尊重对方选择"
+        ],
+        "answer": [
+          "观察情况",
+          "礼貌询问",
+          "提供适当帮助",
+          "尊重对方选择"
+        ],
+        "target": 0,
+        "voice": "完成文明出行岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "观察情况，然后礼貌询问，然后提供适当帮助，然后尊重对方选择。",
+        "coachHints": [
+          "先从“观察情况”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethics.g6.mission2",
+    "subject": "ethics",
+    "grade": 6,
+    "title": "社区提案馆",
+    "topic": "道德与法治 · 6年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "社区提案馆",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "ethics.g6.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "改善公共阅读角，哪种建议更具体？",
+        "options": [
+          "增设清晰的分类标签",
+          "让一切变好",
+          "什么都不要改"
+        ],
+        "target": 0,
+        "voice": "改善公共阅读角，哪种建议更具体？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "增设清晰的分类标签。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“增设清晰的分类标签”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g6.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "提出建议时，怎样更有说服力？",
+        "options": [
+          "说明观察到的问题",
+          "只说别人不好",
+          "编造调查人数"
+        ],
+        "target": 0,
+        "voice": "提出建议时，怎样更有说服力？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "说明观察到的问题。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“说明观察到的问题”这个方向思考。"
+        ]
+      },
+      {
+        "id": "ethics.g6.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「社区提案馆」的行动计划",
+        "words": [
+          "调查问题",
+          "整理证据",
+          "提出可行建议",
+          "收集反馈"
+        ],
+        "answer": [
+          "调查问题",
+          "整理证据",
+          "提出可行建议",
+          "收集反馈"
+        ],
+        "target": 0,
+        "voice": "完成社区提案馆的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "调查问题，然后整理证据，然后提出可行建议，然后收集反馈。",
+        "coachHints": [
+          "先从“调查问题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g1.mission1",
+    "subject": "music",
+    "grade": 1,
+    "title": "节奏起航台",
+    "topic": "音乐 · 1年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "节奏起航台",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g1.mission1.l1",
+        "kind": "choice",
+        "title": "听音点亮舞台",
+        "goal": "听两声琴音，哪一声更高？",
+        "options": [
+          "第一声",
+          "第二声",
+          "一样高"
+        ],
+        "target": 1,
+        "voice": "tone_mission_g1",
+        "stage": "warmup",
+        "hint": "先听声音，可以点「再听一次」。",
+        "explanation": "第二声更高。"
+      },
+      {
+        "id": "music.g1.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "乐曲结束后，应该？",
+        "options": [
+          "按结束信号停下",
+          "一直敲响",
+          "大声盖过音乐"
+        ],
+        "target": 0,
+        "voice": "乐曲结束后，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按结束信号停下。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按结束信号停下”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g1.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「节奏起航台」的行动计划",
+        "words": [
+          "看开始信号",
+          "跟着拍手",
+          "看结束信号",
+          "安静停下"
+        ],
+        "answer": [
+          "看开始信号",
+          "跟着拍手",
+          "看结束信号",
+          "安静停下"
+        ],
+        "target": 0,
+        "voice": "完成节奏起航台的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "看开始信号，然后跟着拍手，然后看结束信号，然后安静停下。",
+        "coachHints": [
+          "先从“看开始信号”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g2.mission1",
+    "subject": "music",
+    "grade": 2,
+    "title": "旋律小台阶",
+    "topic": "音乐 · 2年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "旋律小台阶",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g2.mission1.l1",
+        "kind": "choice",
+        "title": "听音点亮舞台",
+        "goal": "听这组鼓点，一共几下？",
+        "options": [
+          "两下",
+          "四下",
+          "六下"
+        ],
+        "target": 1,
+        "voice": "tone_mission_g2",
+        "stage": "warmup",
+        "hint": "先听声音，可以点「再听一次」。",
+        "explanation": "这一组共有四下鼓点。"
+      },
+      {
+        "id": "music.g2.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "想让伙伴听清主旋律，伴奏应？",
+        "options": [
+          "控制音量",
+          "越响越好",
+          "完全不听"
+        ],
+        "target": 0,
+        "voice": "想让伙伴听清主旋律，伴奏应？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "控制音量。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“控制音量”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g2.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「旋律小台阶」的行动计划",
+        "words": [
+          "听一遍旋律",
+          "轻声跟唱",
+          "加入伴奏",
+          "一起调整"
+        ],
+        "answer": [
+          "听一遍旋律",
+          "轻声跟唱",
+          "加入伴奏",
+          "一起调整"
+        ],
+        "target": 0,
+        "voice": "完成旋律小台阶的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "听一遍旋律，然后轻声跟唱，然后加入伴奏，然后一起调整。",
+        "coachHints": [
+          "先从“听一遍旋律”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g3.mission1",
+    "subject": "music",
+    "grade": 3,
+    "title": "节拍合作桥",
+    "topic": "音乐 · 3年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "节拍合作桥",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g3.mission1.l1",
+        "kind": "choice",
+        "title": "听音点亮舞台",
+        "goal": "听这段旋律，总体怎样变化？",
+        "options": [
+          "上行",
+          "下行",
+          "保持相同"
+        ],
+        "target": 0,
+        "voice": "tone_mission_g3",
+        "stage": "warmup",
+        "hint": "先听声音，可以点「再听一次」。",
+        "explanation": "三个音由低到高，形成上行。"
+      },
+      {
+        "id": "music.g3.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "反复出现的短节奏，可以作为？",
+        "options": [
+          "伴奏型",
+          "画面边框",
+          "天气记录"
+        ],
+        "target": 0,
+        "voice": "反复出现的短节奏，可以作为？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "伴奏型。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“伴奏型”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g3.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「节拍合作桥」的行动计划",
+        "words": [
+          "听共同拍点",
+          "分组练习",
+          "一起合奏",
+          "对照调整"
+        ],
+        "answer": [
+          "听共同拍点",
+          "分组练习",
+          "一起合奏",
+          "对照调整"
+        ],
+        "target": 0,
+        "voice": "完成节拍合作桥的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "听共同拍点，然后分组练习，然后一起合奏，然后对照调整。",
+        "coachHints": [
+          "先从“听共同拍点”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g4.mission1",
+    "subject": "music",
+    "grade": 4,
+    "title": "音色探索馆",
+    "topic": "音乐 · 4年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "音色探索馆",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g4.mission1.l1",
+        "kind": "choice",
+        "title": "听音点亮舞台",
+        "goal": "听两声琴音，哪一声更弱？",
+        "options": [
+          "第一声",
+          "第二声",
+          "一样强"
+        ],
+        "target": 1,
+        "voice": "tone_mission_g4",
+        "stage": "warmup",
+        "hint": "先听声音，可以点「再听一次」。",
+        "explanation": "第二声更轻，力度更弱。"
+      },
+      {
+        "id": "music.g4.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "比较两件乐器音色，怎样更公平？",
+        "options": [
+          "演奏相同片段",
+          "每次换不同乐曲",
+          "只看外观"
+        ],
+        "target": 0,
+        "voice": "比较两件乐器音色，怎样更公平？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "演奏相同片段。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“演奏相同片段”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g4.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「音色探索馆」的行动计划",
+        "words": [
+          "选同一片段",
+          "分别演奏",
+          "仔细倾听",
+          "描述差异"
+        ],
+        "answer": [
+          "选同一片段",
+          "分别演奏",
+          "仔细倾听",
+          "描述差异"
+        ],
+        "target": 0,
+        "voice": "完成音色探索馆的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "选同一片段，然后分别演奏，然后仔细倾听，然后描述差异。",
+        "coachHints": [
+          "先从“选同一片段”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g5.mission1",
+    "subject": "music",
+    "grade": 5,
+    "title": "乐句呼应岛",
+    "topic": "音乐 · 5年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "乐句呼应岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g5.mission1.l1",
+        "kind": "choice",
+        "title": "听音点亮舞台",
+        "goal": "听两组相同数量的鼓点，哪组更快？",
+        "options": [
+          "第一组",
+          "第二组",
+          "一样快"
+        ],
+        "target": 1,
+        "voice": "tone_mission_g5",
+        "stage": "warmup",
+        "hint": "先听声音，可以点「再听一次」。",
+        "explanation": "两组都有四下，第二组间隔短、速度快。"
+      },
+      {
+        "id": "music.g5.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "设计对比乐段，可以尝试？",
+        "options": [
+          "改变速度或力度",
+          "只改纸张颜色",
+          "不听原段"
+        ],
+        "target": 0,
+        "voice": "设计对比乐段，可以尝试？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "改变速度或力度。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“改变速度或力度”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g5.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「乐句呼应岛」的行动计划",
+        "words": [
+          "听原主题",
+          "设计对比段",
+          "再现主题",
+          "试奏修改"
+        ],
+        "answer": [
+          "听原主题",
+          "设计对比段",
+          "再现主题",
+          "试奏修改"
+        ],
+        "target": 0,
+        "voice": "完成乐句呼应岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "听原主题，然后设计对比段，然后再现主题，然后试奏修改。",
+        "coachHints": [
+          "先从“听原主题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g6.mission1",
+    "subject": "music",
+    "grade": 6,
+    "title": "毕业音乐会",
+    "topic": "音乐 · 6年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "毕业音乐会",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g6.mission1.l1",
+        "kind": "choice",
+        "title": "听音点亮舞台",
+        "goal": "听三段旋律，哪两段相同？",
+        "options": [
+          "第一与第三段",
+          "第一与第二段",
+          "第二与第三段"
+        ],
+        "target": 0,
+        "voice": "tone_mission_g6",
+        "stage": "warmup",
+        "hint": "先听声音，可以点「再听一次」。",
+        "explanation": "第一与第三段的音高和顺序相同，形成呼应。"
+      },
+      {
+        "id": "music.g6.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "评价合奏时，哪条更具体？",
+        "options": [
+          "第二段伴奏盖住旋律",
+          "就是不好听",
+          "大家都不行"
+        ],
+        "target": 0,
+        "voice": "评价合奏时，哪条更具体？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "第二段伴奏盖住旋律。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“第二段伴奏盖住旋律”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g6.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「毕业音乐会」的行动计划",
+        "words": [
+          "确定节目",
+          "分工排练",
+          "录音回听",
+          "调整展示"
+        ],
+        "answer": [
+          "确定节目",
+          "分工排练",
+          "录音回听",
+          "调整展示"
+        ],
+        "target": 0,
+        "voice": "完成毕业音乐会的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定节目，然后分工排练，然后录音回听，然后调整展示。",
+        "coachHints": [
+          "先从“确定节目”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g1.mission2",
+    "subject": "music",
+    "grade": 1,
+    "title": "声音礼物屋",
+    "topic": "音乐 · 1年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "声音礼物屋",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g1.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "想表现小雨，伴奏可以怎样？",
+        "options": [
+          "轻轻敲击",
+          "一直最大音量",
+          "故意盖住歌声"
+        ],
+        "target": 0,
+        "voice": "想表现小雨，伴奏可以怎样？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "轻轻敲击。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“轻轻敲击”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g1.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "听到停顿时，应该？",
+        "options": [
+          "按安排保持安静",
+          "随意加快",
+          "必须一直唱"
+        ],
+        "target": 0,
+        "voice": "听到停顿时，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按安排保持安静。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按安排保持安静”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g1.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「声音礼物屋」的行动计划",
+        "words": [
+          "听示范",
+          "模仿轻声",
+          "留出停顿",
+          "一起结束"
+        ],
+        "answer": [
+          "听示范",
+          "模仿轻声",
+          "留出停顿",
+          "一起结束"
+        ],
+        "target": 0,
+        "voice": "完成声音礼物屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "听示范，然后模仿轻声，然后留出停顿，然后一起结束。",
+        "coachHints": [
+          "先从“听示范”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g2.mission2",
+    "subject": "music",
+    "grade": 2,
+    "title": "动物音乐林",
+    "topic": "音乐 · 2年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "动物音乐林",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g2.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "表现慢慢走的大象，可以选？",
+        "options": [
+          "较慢稳定的节奏",
+          "随意抢拍",
+          "完全没有开始信号"
+        ],
+        "target": 0,
+        "voice": "表现慢慢走的大象，可以选？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "较慢稳定的节奏。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“较慢稳定的节奏”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g2.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "演唱前听前奏，可以帮助？",
+        "options": [
+          "找到开始位置",
+          "改变歌词数量",
+          "不用听伙伴"
+        ],
+        "target": 0,
+        "voice": "演唱前听前奏，可以帮助？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "找到开始位置。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“找到开始位置”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g2.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「动物音乐林」的行动计划",
+        "words": [
+          "听前奏",
+          "看指挥",
+          "开始演唱",
+          "按信号结束"
+        ],
+        "answer": [
+          "听前奏",
+          "看指挥",
+          "开始演唱",
+          "按信号结束"
+        ],
+        "target": 0,
+        "voice": "完成动物音乐林的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "听前奏，然后看指挥，然后开始演唱，然后按信号结束。",
+        "coachHints": [
+          "先从“听前奏”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g3.mission2",
+    "subject": "music",
+    "grade": 3,
+    "title": "问答节奏船",
+    "topic": "音乐 · 3年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "问答节奏船",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g3.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "前一组拍出节奏，后一组模仿属于？",
+        "options": [
+          "节奏回应",
+          "改变乐器颜色",
+          "美术涂色"
+        ],
+        "target": 0,
+        "voice": "前一组拍出节奏，后一组模仿属于？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "节奏回应。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“节奏回应”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g3.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "如果漏拍，下一次先？",
+        "options": [
+          "放慢练习难点",
+          "责怪伙伴",
+          "立即加速"
+        ],
+        "target": 0,
+        "voice": "如果漏拍，下一次先？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "放慢练习难点。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“放慢练习难点”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g3.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「问答节奏船」的行动计划",
+        "words": [
+          "听清节奏",
+          "分段模仿",
+          "连起来练习",
+          "交换角色"
+        ],
+        "answer": [
+          "听清节奏",
+          "分段模仿",
+          "连起来练习",
+          "交换角色"
+        ],
+        "target": 0,
+        "voice": "完成问答节奏船的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "听清节奏，然后分段模仿，然后连起来练习，然后交换角色。",
+        "coachHints": [
+          "先从“听清节奏”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g4.mission2",
+    "subject": "music",
+    "grade": 4,
+    "title": "强弱故事屋",
+    "topic": "音乐 · 4年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "强弱故事屋",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g4.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "表现脚步渐渐走远，声音可以？",
+        "options": [
+          "逐渐变弱",
+          "一直变强",
+          "完全不变才行"
+        ],
+        "target": 0,
+        "voice": "表现脚步渐渐走远，声音可以？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "逐渐变弱。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“逐渐变弱”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g4.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "渐强与突然强一样吗？",
+        "options": [
+          "不同，渐强有过程",
+          "完全一样",
+          "都指速度变快"
+        ],
+        "target": 0,
+        "voice": "渐强与突然强一样吗？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "不同，渐强有过程。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“不同，渐强有过程”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g4.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「强弱故事屋」的行动计划",
+        "words": [
+          "确定情境",
+          "安排强弱变化",
+          "试奏倾听",
+          "修改表现"
+        ],
+        "answer": [
+          "确定情境",
+          "安排强弱变化",
+          "试奏倾听",
+          "修改表现"
+        ],
+        "target": 0,
+        "voice": "完成强弱故事屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定情境，然后安排强弱变化，然后试奏倾听，然后修改表现。",
+        "coachHints": [
+          "先从“确定情境”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g5.mission2",
+    "subject": "music",
+    "grade": 5,
+    "title": "配乐创作室",
+    "topic": "音乐 · 5年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "配乐创作室",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g5.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "为平静夜晚配乐，先考虑？",
+        "options": [
+          "情境与表达意图",
+          "文件大小",
+          "海报价格"
+        ],
+        "target": 0,
+        "voice": "为平静夜晚配乐，先考虑？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "情境与表达意图。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“情境与表达意图”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g5.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "修改配乐后，怎样判断效果？",
+        "options": [
+          "配合画面重新听",
+          "只看文件名",
+          "只看音量按钮"
+        ],
+        "target": 0,
+        "voice": "修改配乐后，怎样判断效果？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "配合画面重新听。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“配合画面重新听”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g5.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「配乐创作室」的行动计划",
+        "words": [
+          "观察画面",
+          "选择音乐材料",
+          "配合试放",
+          "调整分享"
+        ],
+        "answer": [
+          "观察画面",
+          "选择音乐材料",
+          "配合试放",
+          "调整分享"
+        ],
+        "target": 0,
+        "voice": "完成配乐创作室的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "观察画面，然后选择音乐材料，然后配合试放，然后调整分享。",
+        "coachHints": [
+          "先从“观察画面”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music.g6.mission2",
+    "subject": "music",
+    "grade": 6,
+    "title": "音乐展评港",
+    "topic": "音乐 · 6年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "音乐展评港",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "music.g6.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "介绍原创片段时，应该说明？",
+        "options": [
+          "表达想法和使用材料",
+          "同学家庭住址",
+          "虚构获奖经历"
+        ],
+        "target": 0,
+        "voice": "介绍原创片段时，应该说明？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "表达想法和使用材料。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“表达想法和使用材料”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g6.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "同伴建议主旋律不清楚，可以？",
+        "options": [
+          "减弱伴奏再比较",
+          "立刻删除作品",
+          "拒绝所有建议"
+        ],
+        "target": 0,
+        "voice": "同伴建议主旋律不清楚，可以？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "减弱伴奏再比较。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“减弱伴奏再比较”这个方向思考。"
+        ]
+      },
+      {
+        "id": "music.g6.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「音乐展评港」的行动计划",
+        "words": [
+          "展示作品",
+          "听取具体反馈",
+          "尝试修改",
+          "比较两版"
+        ],
+        "answer": [
+          "展示作品",
+          "听取具体反馈",
+          "尝试修改",
+          "比较两版"
+        ],
+        "target": 0,
+        "voice": "完成音乐展评港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "展示作品，然后听取具体反馈，然后尝试修改，然后比较两版。",
+        "coachHints": [
+          "先从“展示作品”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g1.mission1",
+    "subject": "art",
+    "grade": 1,
+    "title": "线条造景岛",
+    "topic": "美术 · 1年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "线条造景岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g1.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "画弯弯的小路，选哪种线？",
+        "options": [
+          "曲线",
+          "只有一个点",
+          "必须竖直线"
+        ],
+        "target": 0,
+        "voice": "画弯弯的小路，选哪种线？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "曲线。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“曲线”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g1.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "让太阳成为画面主角，可以？",
+        "options": [
+          "画大些并突出颜色",
+          "全部遮住",
+          "画到纸外看不见"
+        ],
+        "target": 0,
+        "voice": "让太阳成为画面主角，可以？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "画大些并突出颜色。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“画大些并突出颜色”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g1.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「线条造景岛」的行动计划",
+        "words": [
+          "想好主题",
+          "画主要形状",
+          "添加细节",
+          "欣赏作品"
+        ],
+        "answer": [
+          "想好主题",
+          "画主要形状",
+          "添加细节",
+          "欣赏作品"
+        ],
+        "target": 0,
+        "voice": "完成线条造景岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "想好主题，然后画主要形状，然后添加细节，然后欣赏作品。",
+        "coachHints": [
+          "先从“想好主题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g2.mission1",
+    "subject": "art",
+    "grade": 2,
+    "title": "图形拼搭屋",
+    "topic": "美术 · 2年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "图形拼搭屋",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g2.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "三角形加长方形可以拼成？",
+        "options": [
+          "屋顶和房身",
+          "只能是圆球",
+          "没有任何形象"
+        ],
+        "target": 0,
+        "voice": "三角形加长方形可以拼成？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "屋顶和房身。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“屋顶和房身”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g2.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "重复的圆方圆方，下一组是？",
+        "options": [
+          "圆方",
+          "三角圆",
+          "方方"
+        ],
+        "target": 0,
+        "voice": "重复的圆方圆方，下一组是？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "圆方。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“圆方”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g2.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「图形拼搭屋」的行动计划",
+        "words": [
+          "选择图形",
+          "试着组合",
+          "固定排列",
+          "添加装饰"
+        ],
+        "answer": [
+          "选择图形",
+          "试着组合",
+          "固定排列",
+          "添加装饰"
+        ],
+        "target": 0,
+        "voice": "完成图形拼搭屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "选择图形，然后试着组合，然后固定排列，然后添加装饰。",
+        "coachHints": [
+          "先从“选择图形”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g3.mission1",
+    "subject": "art",
+    "grade": 3,
+    "title": "色彩探索桥",
+    "topic": "美术 · 3年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "色彩探索桥",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g3.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "常见颜料黄加蓝，通常接近？",
+        "options": [
+          "绿色",
+          "紫色",
+          "橙色"
+        ],
+        "target": 0,
+        "voice": "常见颜料黄加蓝，通常接近？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "绿色。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“绿色”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g3.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "想把一种颜色调浅，可少量加入？",
+        "options": [
+          "白色",
+          "黑色",
+          "泥沙"
+        ],
+        "target": 0,
+        "voice": "想把一种颜色调浅，可少量加入？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "白色。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“白色”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g3.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「色彩探索桥」的行动计划",
+        "words": [
+          "取少量颜料",
+          "逐步混合",
+          "观察颜色",
+          "记录配比"
+        ],
+        "answer": [
+          "取少量颜料",
+          "逐步混合",
+          "观察颜色",
+          "记录配比"
+        ],
+        "target": 0,
+        "voice": "完成色彩探索桥的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "取少量颜料，然后逐步混合，然后观察颜色，然后记录配比。",
+        "coachHints": [
+          "先从“取少量颜料”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g4.mission1",
+    "subject": "art",
+    "grade": 4,
+    "title": "空间故事岛",
+    "topic": "美术 · 4年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "空间故事岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g4.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "同样大的物体画出远近，通常？",
+        "options": [
+          "近大远小",
+          "近小远大",
+          "必须完全一样大"
+        ],
+        "target": 0,
+        "voice": "同样大的物体画出远近，通常？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "近大远小。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“近大远小”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g4.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "前面物体遮住后面一部分，表示？",
+        "options": [
+          "前后关系",
+          "气味差别",
+          "声音大小"
+        ],
+        "target": 0,
+        "voice": "前面物体遮住后面一部分，表示？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "前后关系。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“前后关系”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g4.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「空间故事岛」的行动计划",
+        "words": [
+          "安排近景",
+          "安排远景",
+          "处理遮挡",
+          "检查空间"
+        ],
+        "answer": [
+          "安排近景",
+          "安排远景",
+          "处理遮挡",
+          "检查空间"
+        ],
+        "target": 0,
+        "voice": "完成空间故事岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "安排近景，然后安排远景，然后处理遮挡，然后检查空间。",
+        "coachHints": [
+          "先从“安排近景”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g5.mission1",
+    "subject": "art",
+    "grade": 5,
+    "title": "视觉传信站",
+    "topic": "美术 · 5年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "视觉传信站",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g5.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "海报让远处看清标题，应？",
+        "options": [
+          "字号大且对比清楚",
+          "字越小越好",
+          "与背景完全同色"
+        ],
+        "target": 0,
+        "voice": "海报让远处看清标题，应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "字号大且对比清楚。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“字号大且对比清楚”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g5.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "阅读节海报必需的内容是？",
+        "options": [
+          "活动名称时间地点",
+          "所有人的私人电话",
+          "无关物品清单"
+        ],
+        "target": 0,
+        "voice": "阅读节海报必需的内容是？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "活动名称时间地点。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“活动名称时间地点”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g5.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「视觉传信站」的行动计划",
+        "words": [
+          "确定主题",
+          "安排标题信息",
+          "加入图像",
+          "检查可读性"
+        ],
+        "answer": [
+          "确定主题",
+          "安排标题信息",
+          "加入图像",
+          "检查可读性"
+        ],
+        "target": 0,
+        "voice": "完成视觉传信站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定主题，然后安排标题信息，然后加入图像，然后检查可读性。",
+        "coachHints": [
+          "先从“确定主题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g6.mission1",
+    "subject": "art",
+    "grade": 6,
+    "title": "作品策展馆",
+    "topic": "美术 · 6年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "作品策展馆",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g6.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "展览说明牌应该帮助观众？",
+        "options": [
+          "理解作品主题与材料",
+          "只看价格",
+          "猜作者姓名"
+        ],
+        "target": 0,
+        "voice": "展览说明牌应该帮助观众？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "理解作品主题与材料。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“理解作品主题与材料”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g6.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "评价作品，哪条更具体？",
+        "options": [
+          "蓝橙对比突出主体",
+          "完全不好看",
+          "只能照我画"
+        ],
+        "target": 0,
+        "voice": "评价作品，哪条更具体？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "蓝橙对比突出主体。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“蓝橙对比突出主体”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g6.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「作品策展馆」的行动计划",
+        "words": [
+          "选择作品",
+          "写简短说明",
+          "安排展示",
+          "听取反馈"
+        ],
+        "answer": [
+          "选择作品",
+          "写简短说明",
+          "安排展示",
+          "听取反馈"
+        ],
+        "target": 0,
+        "voice": "完成作品策展馆的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "选择作品，然后写简短说明，然后安排展示，然后听取反馈。",
+        "coachHints": [
+          "先从“选择作品”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g1.mission2",
+    "subject": "art",
+    "grade": 1,
+    "title": "纹样花园",
+    "topic": "美术 · 1年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "纹样花园",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g1.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "一片叶子画好后反复排列，可以形成？",
+        "options": [
+          "重复纹样",
+          "声音",
+          "温度"
+        ],
+        "target": 0,
+        "voice": "一片叶子画好后反复排列，可以形成？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "重复纹样。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“重复纹样”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g1.mission2.l2",
+        "kind": "tiles",
+        "title": "星光拼贴台",
+        "goal": "给展板铺 3 块金色花砖，位置由你设计",
+        "cells": 6,
+        "cols": 4,
+        "target": 3,
+        "stage": "practice",
+        "hint": "点格子铺花砖；铺够 3 块后完成。",
+        "voice": "给展板铺3块金色花砖，位置由你设计。",
+        "explanation": "你完成了材料数量任务！图案可以有多种设计，这里不评价作品美丑。"
+      },
+      {
+        "id": "art.g1.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「纹样花园」的行动计划",
+        "words": [
+          "设计单元",
+          "沿边排列",
+          "检查重复",
+          "补充颜色"
+        ],
+        "answer": [
+          "设计单元",
+          "沿边排列",
+          "检查重复",
+          "补充颜色"
+        ],
+        "target": 0,
+        "voice": "完成纹样花园的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "设计单元，然后沿边排列，然后检查重复，然后补充颜色。",
+        "coachHints": [
+          "先从“设计单元”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g2.mission2",
+    "subject": "art",
+    "grade": 2,
+    "title": "手工纸城",
+    "topic": "美术 · 2年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "手工纸城",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g2.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "折纸前先看示意图，可以帮助？",
+        "options": [
+          "了解步骤",
+          "直接完成作品",
+          "改变纸的重量"
+        ],
+        "target": 0,
+        "voice": "折纸前先看示意图，可以帮助？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "了解步骤。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“了解步骤”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g2.mission2.l2",
+        "kind": "tiles",
+        "title": "星光拼贴台",
+        "goal": "给展板铺 4 块金色花砖，位置由你设计",
+        "cells": 8,
+        "cols": 4,
+        "target": 4,
+        "stage": "practice",
+        "hint": "点格子铺花砖；铺够 4 块后完成。",
+        "voice": "给展板铺4块金色花砖，位置由你设计。",
+        "explanation": "你完成了材料数量任务！图案可以有多种设计，这里不评价作品美丑。"
+      },
+      {
+        "id": "art.g2.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「手工纸城」的行动计划",
+        "words": [
+          "看示意图",
+          "对齐折叠",
+          "压平折痕",
+          "整理作品"
+        ],
+        "answer": [
+          "看示意图",
+          "对齐折叠",
+          "压平折痕",
+          "整理作品"
+        ],
+        "target": 0,
+        "voice": "完成手工纸城的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "看示意图，然后对齐折叠，然后压平折痕，然后整理作品。",
+        "coachHints": [
+          "先从“看示意图”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g3.mission2",
+    "subject": "art",
+    "grade": 3,
+    "title": "冷暖风景林",
+    "topic": "美术 · 3年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "冷暖风景林",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g3.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "表现篝火温暖感，常选？",
+        "options": [
+          "红橙色",
+          "蓝青色",
+          "只有透明"
+        ],
+        "target": 0,
+        "voice": "表现篝火温暖感，常选？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "红橙色。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“红橙色”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g3.mission2.l2",
+        "kind": "tiles",
+        "title": "星光拼贴台",
+        "goal": "给展板铺 6 块金色花砖，位置由你设计",
+        "cells": 12,
+        "cols": 4,
+        "target": 6,
+        "stage": "practice",
+        "hint": "点格子铺花砖；铺够 6 块后完成。",
+        "voice": "给展板铺6块金色花砖，位置由你设计。",
+        "explanation": "你完成了材料数量任务！图案可以有多种设计，这里不评价作品美丑。"
+      },
+      {
+        "id": "art.g3.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「冷暖风景林」的行动计划",
+        "words": [
+          "确定场景",
+          "选择主色",
+          "少量试色",
+          "完成画面"
+        ],
+        "answer": [
+          "确定场景",
+          "选择主色",
+          "少量试色",
+          "完成画面"
+        ],
+        "target": 0,
+        "voice": "完成冷暖风景林的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定场景，然后选择主色，然后少量试色，然后完成画面。",
+        "coachHints": [
+          "先从“确定场景”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g4.mission2",
+    "subject": "art",
+    "grade": 4,
+    "title": "版面设计船",
+    "topic": "美术 · 4年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "版面设计船",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g4.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "画面太挤，想突出主题，可以？",
+        "options": [
+          "减少无关元素并留白",
+          "继续塞满",
+          "遮住标题"
+        ],
+        "target": 0,
+        "voice": "画面太挤，想突出主题，可以？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "减少无关元素并留白。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“减少无关元素并留白”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g4.mission2.l2",
+        "kind": "tiles",
+        "title": "星光拼贴台",
+        "goal": "给展板铺 4 块金色花砖，位置由你设计",
+        "cells": 12,
+        "cols": 4,
+        "target": 4,
+        "stage": "practice",
+        "hint": "点格子铺花砖；铺够 4 块后完成。",
+        "voice": "给展板铺4块金色花砖，位置由你设计。",
+        "explanation": "你完成了材料数量任务！图案可以有多种设计，这里不评价作品美丑。"
+      },
+      {
+        "id": "art.g4.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「版面设计船」的行动计划",
+        "words": [
+          "找出主题",
+          "挑选重要内容",
+          "安排层次",
+          "检查效果"
+        ],
+        "answer": [
+          "找出主题",
+          "挑选重要内容",
+          "安排层次",
+          "检查效果"
+        ],
+        "target": 0,
+        "voice": "完成版面设计船的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "找出主题，然后挑选重要内容，然后安排层次，然后检查效果。",
+        "coachHints": [
+          "先从“找出主题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g5.mission2",
+    "subject": "art",
+    "grade": 5,
+    "title": "观察写生台",
+    "topic": "美术 · 5年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "观察写生台",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g5.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "写生前最该先观察？",
+        "options": [
+          "整体形状和比例",
+          "作品售价",
+          "别人分数"
+        ],
+        "target": 0,
+        "voice": "写生前最该先观察？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "整体形状和比例。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“整体形状和比例”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g5.mission2.l2",
+        "kind": "tiles",
+        "title": "星光拼贴台",
+        "goal": "给展板铺 8 块金色花砖，位置由你设计",
+        "cells": 16,
+        "cols": 4,
+        "target": 8,
+        "stage": "practice",
+        "hint": "点格子铺花砖；铺够 8 块后完成。",
+        "voice": "给展板铺8块金色花砖，位置由你设计。",
+        "explanation": "你完成了材料数量任务！图案可以有多种设计，这里不评价作品美丑。"
+      },
+      {
+        "id": "art.g5.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「观察写生台」的行动计划",
+        "words": [
+          "观察整体",
+          "标出比例",
+          "表现明暗",
+          "对照调整"
+        ],
+        "answer": [
+          "观察整体",
+          "标出比例",
+          "表现明暗",
+          "对照调整"
+        ],
+        "target": 0,
+        "voice": "完成观察写生台的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "观察整体，然后标出比例，然后表现明暗，然后对照调整。",
+        "coachHints": [
+          "先从“观察整体”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "art.g6.mission2",
+    "subject": "art",
+    "grade": 6,
+    "title": "公共艺术坊",
+    "topic": "美术 · 6年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "公共艺术坊",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "art.g6.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "设计校园指示牌，优先考虑？",
+        "options": [
+          "清楚易懂",
+          "越复杂越好",
+          "只有装饰没有文字"
+        ],
+        "target": 0,
+        "voice": "设计校园指示牌，优先考虑？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "清楚易懂。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“清楚易懂”这个方向思考。"
+        ]
+      },
+      {
+        "id": "art.g6.mission2.l2",
+        "kind": "tiles",
+        "title": "星光拼贴台",
+        "goal": "给展板铺 10 块金色花砖，位置由你设计",
+        "cells": 16,
+        "cols": 4,
+        "target": 10,
+        "stage": "practice",
+        "hint": "点格子铺花砖；铺够 10 块后完成。",
+        "voice": "给展板铺10块金色花砖，位置由你设计。",
+        "explanation": "你完成了材料数量任务！图案可以有多种设计，这里不评价作品美丑。"
+      },
+      {
+        "id": "art.g6.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「公共艺术坊」的行动计划",
+        "words": [
+          "了解需求",
+          "画出草图",
+          "邀请试用",
+          "修改定稿"
+        ],
+        "answer": [
+          "了解需求",
+          "画出草图",
+          "邀请试用",
+          "修改定稿"
+        ],
+        "target": 0,
+        "voice": "完成公共艺术坊的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "了解需求，然后画出草图，然后邀请试用，然后修改定稿。",
+        "coachHints": [
+          "先从“了解需求”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g1.mission1",
+    "subject": "pe",
+    "grade": 1,
+    "title": "活力准备岛",
+    "topic": "体育与健康 · 1年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "活力准备岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g1.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "游戏开始前先观察？",
+        "options": [
+          "场地是否有障碍",
+          "谁衣服最漂亮",
+          "谁声音最大"
+        ],
+        "target": 0,
+        "voice": "游戏开始前先观察？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "场地是否有障碍。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“场地是否有障碍”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g1.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "身体感觉不舒服，应该？",
+        "options": [
+          "停止活动告诉老师",
+          "硬撑比赛",
+          "偷偷离开不说"
+        ],
+        "target": 0,
+        "voice": "身体感觉不舒服，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "停止活动告诉老师。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“停止活动告诉老师”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g1.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「活力准备岛」的行动计划",
+        "words": [
+          "检查场地",
+          "听清规则",
+          "做好热身",
+          "开始活动"
+        ],
+        "answer": [
+          "检查场地",
+          "听清规则",
+          "做好热身",
+          "开始活动"
+        ],
+        "target": 0,
+        "voice": "完成活力准备岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "检查场地，然后听清规则，然后做好热身，然后开始活动。",
+        "coachHints": [
+          "先从“检查场地”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g2.mission1",
+    "subject": "pe",
+    "grade": 2,
+    "title": "投接合作屋",
+    "topic": "体育与健康 · 2年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "投接合作屋",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g2.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "传球前先确认？",
+        "options": [
+          "队友已经准备好",
+          "队友正在转身",
+          "越突然越好"
+        ],
+        "target": 0,
+        "voice": "传球前先确认？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "队友已经准备好。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“队友已经准备好”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g2.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "器材用完该放哪里？",
+        "options": [
+          "指定存放处",
+          "通道中央",
+          "随手抛出"
+        ],
+        "target": 0,
+        "voice": "器材用完该放哪里？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "指定存放处。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“指定存放处”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g2.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「投接合作屋」的行动计划",
+        "words": [
+          "发出传球信号",
+          "确认队友",
+          "轻稳传球",
+          "等待回传"
+        ],
+        "answer": [
+          "发出传球信号",
+          "确认队友",
+          "轻稳传球",
+          "等待回传"
+        ],
+        "target": 0,
+        "voice": "完成投接合作屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "发出传球信号，然后确认队友，然后轻稳传球，然后等待回传。",
+        "coachHints": [
+          "先从“发出传球信号”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g3.mission1",
+    "subject": "pe",
+    "grade": 3,
+    "title": "接力协作桥",
+    "topic": "体育与健康 · 3年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "接力协作桥",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g3.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "接力时最重要的合作是？",
+        "options": [
+          "按规则完成交接",
+          "推开其他队员",
+          "随意穿过跑道"
+        ],
+        "target": 0,
+        "voice": "接力时最重要的合作是？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按规则完成交接。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按规则完成交接”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g3.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "队友失误时怎样帮助？",
+        "options": [
+          "鼓励并练习交接",
+          "不停责怪",
+          "取消他的参与"
+        ],
+        "target": 0,
+        "voice": "队友失误时怎样帮助？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "鼓励并练习交接。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“鼓励并练习交接”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g3.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「接力协作桥」的行动计划",
+        "words": [
+          "明确交接区",
+          "分步练习",
+          "合作尝试",
+          "交流改进"
+        ],
+        "answer": [
+          "明确交接区",
+          "分步练习",
+          "合作尝试",
+          "交流改进"
+        ],
+        "target": 0,
+        "voice": "完成接力协作桥的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确交接区，然后分步练习，然后合作尝试，然后交流改进。",
+        "coachHints": [
+          "先从“明确交接区”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g4.mission1",
+    "subject": "pe",
+    "grade": 4,
+    "title": "练习记录台",
+    "topic": "体育与健康 · 4年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "练习记录台",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g4.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "记录进步应比较？",
+        "options": [
+          "自己前后真实表现",
+          "虚构最好成绩",
+          "只比别人身高"
+        ],
+        "target": 0,
+        "voice": "记录进步应比较？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "自己前后真实表现。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“自己前后真实表现”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g4.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "动作还不熟练时，应该？",
+        "options": [
+          "按老师指导分步练",
+          "盲目增加难度",
+          "只追求速度"
+        ],
+        "target": 0,
+        "voice": "动作还不熟练时，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按老师指导分步练。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按老师指导分步练”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g4.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「练习记录台」的行动计划",
+        "words": [
+          "了解动作",
+          "分步练习",
+          "记录表现",
+          "调整练习"
+        ],
+        "answer": [
+          "了解动作",
+          "分步练习",
+          "记录表现",
+          "调整练习"
+        ],
+        "target": 0,
+        "voice": "完成练习记录台的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "了解动作，然后分步练习，然后记录表现，然后调整练习。",
+        "coachHints": [
+          "先从“了解动作”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g5.mission1",
+    "subject": "pe",
+    "grade": 5,
+    "title": "战术讨论岛",
+    "topic": "体育与健康 · 5年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "战术讨论岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g5.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "小组比赛前分工可以帮助？",
+        "options": [
+          "明确各自职责",
+          "保证一定获胜",
+          "不再需要合作"
+        ],
+        "target": 0,
+        "voice": "小组比赛前分工可以帮助？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "明确各自职责。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“明确各自职责”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g5.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "同伴提出改进意见，先？",
+        "options": [
+          "听具体原因",
+          "马上争吵",
+          "拒绝再练"
+        ],
+        "target": 0,
+        "voice": "同伴提出改进意见，先？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "听具体原因。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“听具体原因”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g5.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「战术讨论岛」的行动计划",
+        "words": [
+          "观察比赛",
+          "讨论问题",
+          "调整分工",
+          "再次尝试"
+        ],
+        "answer": [
+          "观察比赛",
+          "讨论问题",
+          "调整分工",
+          "再次尝试"
+        ],
+        "target": 0,
+        "voice": "完成战术讨论岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "观察比赛，然后讨论问题，然后调整分工，然后再次尝试。",
+        "coachHints": [
+          "先从“观察比赛”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g6.mission1",
+    "subject": "pe",
+    "grade": 6,
+    "title": "自主运动港",
+    "topic": "体育与健康 · 6年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "自主运动港",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g6.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "制定练习计划，首先考虑？",
+        "options": [
+          "自己的情况与目标",
+          "照抄最高强度",
+          "只看排名"
+        ],
+        "target": 0,
+        "voice": "制定练习计划，首先考虑？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "自己的情况与目标。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“自己的情况与目标”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g6.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "计划执行后最需要？",
+        "options": [
+          "根据真实记录调整",
+          "从不改变",
+          "隐藏困难"
+        ],
+        "target": 0,
+        "voice": "计划执行后最需要？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "根据真实记录调整。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“根据真实记录调整”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g6.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「自主运动港」的行动计划",
+        "words": [
+          "确定目标",
+          "安排适宜练习",
+          "记录感受",
+          "回顾调整"
+        ],
+        "answer": [
+          "确定目标",
+          "安排适宜练习",
+          "记录感受",
+          "回顾调整"
+        ],
+        "target": 0,
+        "voice": "完成自主运动港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定目标，然后安排适宜练习，然后记录感受，然后回顾调整。",
+        "coachHints": [
+          "先从“确定目标”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g1.mission2",
+    "subject": "pe",
+    "grade": 1,
+    "title": "整理放松站",
+    "topic": "体育与健康 · 1年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "整理放松站",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g1.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "活动结束后应该？",
+        "options": [
+          "按老师指导整理放松",
+          "突然推搡同伴",
+          "把器材乱扔"
+        ],
+        "target": 0,
+        "voice": "活动结束后应该？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按老师指导整理放松。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按老师指导整理放松”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g1.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "运动中发现鞋带松了，应？",
+        "options": [
+          "到安全位置停下整理",
+          "边跑边系",
+          "不管继续追逐"
+        ],
+        "target": 0,
+        "voice": "运动中发现鞋带松了，应？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "到安全位置停下整理。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“到安全位置停下整理”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g1.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「整理放松站」的行动计划",
+        "words": [
+          "停止游戏",
+          "整理器材",
+          "跟随放松",
+          "交流感受"
+        ],
+        "answer": [
+          "停止游戏",
+          "整理器材",
+          "跟随放松",
+          "交流感受"
+        ],
+        "target": 0,
+        "voice": "完成整理放松站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "停止游戏，然后整理器材，然后跟随放松，然后交流感受。",
+        "coachHints": [
+          "先从“停止游戏”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g2.mission2",
+    "subject": "pe",
+    "grade": 2,
+    "title": "规则伙伴园",
+    "topic": "体育与健康 · 2年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "规则伙伴园",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g2.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "排队轮流跳圈，应当？",
+        "options": [
+          "等前一人离开再开始",
+          "挤在同一圈",
+          "从后面推人"
+        ],
+        "target": 0,
+        "voice": "排队轮流跳圈，应当？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "等前一人离开再开始。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“等前一人离开再开始”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g2.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "别人还没完成时，应该？",
+        "options": [
+          "留出活动空间",
+          "抢占他的落点",
+          "催促并拉扯"
+        ],
+        "target": 0,
+        "voice": "别人还没完成时，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "留出活动空间。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“留出活动空间”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g2.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「规则伙伴园」的行动计划",
+        "words": [
+          "听清顺序",
+          "等待轮到自己",
+          "完成动作",
+          "离开落点"
+        ],
+        "answer": [
+          "听清顺序",
+          "等待轮到自己",
+          "完成动作",
+          "离开落点"
+        ],
+        "target": 0,
+        "voice": "完成规则伙伴园的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "听清顺序，然后等待轮到自己，然后完成动作，然后离开落点。",
+        "coachHints": [
+          "先从“听清顺序”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g3.mission2",
+    "subject": "pe",
+    "grade": 3,
+    "title": "公平赛场岛",
+    "topic": "体育与健康 · 3年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "公平赛场岛",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g3.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "你碰球出界但别人没看见，应该？",
+        "options": [
+          "如实说明",
+          "假装没发生",
+          "让同伴背锅"
+        ],
+        "target": 0,
+        "voice": "你碰球出界但别人没看见，应该？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "如实说明。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“如实说明”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g3.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "比赛结果不满意，可以？",
+        "options": [
+          "按规则沟通",
+          "推翻器材",
+          "辱骂对手"
+        ],
+        "target": 0,
+        "voice": "比赛结果不满意，可以？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按规则沟通。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按规则沟通”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g3.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「公平赛场岛」的行动计划",
+        "words": [
+          "听清判定",
+          "礼貌询问",
+          "接受解释",
+          "继续参与"
+        ],
+        "answer": [
+          "听清判定",
+          "礼貌询问",
+          "接受解释",
+          "继续参与"
+        ],
+        "target": 0,
+        "voice": "完成公平赛场岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "听清判定，然后礼貌询问，然后接受解释，然后继续参与。",
+        "coachHints": [
+          "先从“听清判定”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g4.mission2",
+    "subject": "pe",
+    "grade": 4,
+    "title": "合作闯关屋",
+    "topic": "体育与健康 · 4年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "合作闯关屋",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g4.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "多人运球任务失败，先回顾？",
+        "options": [
+          "配合在哪一步出问题",
+          "谁最应该被嘲笑",
+          "谁鞋子最好看"
+        ],
+        "target": 0,
+        "voice": "多人运球任务失败，先回顾？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "配合在哪一步出问题。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“配合在哪一步出问题”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g4.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "小组有人能力较弱，应该？",
+        "options": [
+          "合理调整任务并支持",
+          "不让他参加",
+          "要求立刻加倍难度"
+        ],
+        "target": 0,
+        "voice": "小组有人能力较弱，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "合理调整任务并支持。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“合理调整任务并支持”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g4.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「合作闯关屋」的行动计划",
+        "words": [
+          "明确任务",
+          "商量分工",
+          "合作试做",
+          "回顾调整"
+        ],
+        "answer": [
+          "明确任务",
+          "商量分工",
+          "合作试做",
+          "回顾调整"
+        ],
+        "target": 0,
+        "voice": "完成合作闯关屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确任务，然后商量分工，然后合作试做，然后回顾调整。",
+        "coachHints": [
+          "先从“明确任务”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g5.mission2",
+    "subject": "pe",
+    "grade": 5,
+    "title": "运动观察馆",
+    "topic": "体育与健康 · 5年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "运动观察馆",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g5.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "评价动作进步应看？",
+        "options": [
+          "动作质量与个人变化",
+          "只看名次",
+          "只看衣服"
+        ],
+        "target": 0,
+        "voice": "评价动作进步应看？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "动作质量与个人变化。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“动作质量与个人变化”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g5.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "同伴需要帮助练习，先？",
+        "options": [
+          "询问并按老师指导配合",
+          "突然拉扯肢体",
+          "让他模仿危险动作"
+        ],
+        "target": 0,
+        "voice": "同伴需要帮助练习，先？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "询问并按老师指导配合。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“询问并按老师指导配合”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g5.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「运动观察馆」的行动计划",
+        "words": [
+          "观察动作",
+          "描述具体问题",
+          "按指导改进",
+          "再次观察"
+        ],
+        "answer": [
+          "观察动作",
+          "描述具体问题",
+          "按指导改进",
+          "再次观察"
+        ],
+        "target": 0,
+        "voice": "完成运动观察馆的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "观察动作，然后描述具体问题，然后按指导改进，然后再次观察。",
+        "coachHints": [
+          "先从“观察动作”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pe.g6.mission2",
+    "subject": "pe",
+    "grade": 6,
+    "title": "班级运动会",
+    "topic": "体育与健康 · 6年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "班级运动会",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "pe.g6.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "组织活动应先检查？",
+        "options": [
+          "规则场地与器材",
+          "谁获奖最多",
+          "奖状颜色"
+        ],
+        "target": 0,
+        "voice": "组织活动应先检查？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "规则场地与器材。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“规则场地与器材”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g6.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "评价活动成功，还应看？",
+        "options": [
+          "参与合作与秩序",
+          "只有第一名",
+          "只看观众数量"
+        ],
+        "target": 0,
+        "voice": "评价活动成功，还应看？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "参与合作与秩序。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“参与合作与秩序”这个方向思考。"
+        ]
+      },
+      {
+        "id": "pe.g6.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「班级运动会」的行动计划",
+        "words": [
+          "明确活动目标",
+          "检查分工场地",
+          "开展活动",
+          "共同回顾"
+        ],
+        "answer": [
+          "明确活动目标",
+          "检查分工场地",
+          "开展活动",
+          "共同回顾"
+        ],
+        "target": 0,
+        "voice": "完成班级运动会的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确活动目标，然后检查分工场地，然后开展活动，然后共同回顾。",
+        "coachHints": [
+          "先从“明确活动目标”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g1.mission1",
+    "subject": "labor",
+    "grade": 1,
+    "title": "书桌整理屋",
+    "topic": "劳动 · 1年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "书桌整理屋",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g1.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "每天要用的文具适合放？",
+        "options": [
+          "容易取放的位置",
+          "水池旁边",
+          "通道地面"
+        ],
+        "target": 0,
+        "voice": "每天要用的文具适合放？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "容易取放的位置。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“容易取放的位置”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g1.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "整理前先做什么？",
+        "options": [
+          "区分物品类别",
+          "全部塞进抽屉",
+          "全部丢掉"
+        ],
+        "target": 0,
+        "voice": "整理前先做什么？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "区分物品类别。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“区分物品类别”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g1.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「书桌整理屋」的行动计划",
+        "words": [
+          "分类物品",
+          "清理桌面",
+          "整齐摆放",
+          "检查遗漏"
+        ],
+        "answer": [
+          "分类物品",
+          "清理桌面",
+          "整齐摆放",
+          "检查遗漏"
+        ],
+        "target": 0,
+        "voice": "完成书桌整理屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "分类物品，然后清理桌面，然后整齐摆放，然后检查遗漏。",
+        "coachHints": [
+          "先从“分类物品”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g2.mission1",
+    "subject": "labor",
+    "grade": 2,
+    "title": "衣物收纳岛",
+    "topic": "劳动 · 2年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "衣物收纳岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g2.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "干净与待洗衣物，应当？",
+        "options": [
+          "分开放置",
+          "全部混在一起",
+          "都放餐桌上"
+        ],
+        "target": 0,
+        "voice": "干净与待洗衣物，应当？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "分开放置。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“分开放置”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g2.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "叠衣服前先检查？",
+        "options": [
+          "口袋有无物品",
+          "衣服售价",
+          "别人穿什么"
+        ],
+        "target": 0,
+        "voice": "叠衣服前先检查？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "口袋有无物品。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“口袋有无物品”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g2.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「衣物收纳岛」的行动计划",
+        "words": [
+          "检查口袋",
+          "摊平衣物",
+          "整齐折叠",
+          "分类收好"
+        ],
+        "answer": [
+          "检查口袋",
+          "摊平衣物",
+          "整齐折叠",
+          "分类收好"
+        ],
+        "target": 0,
+        "voice": "完成衣物收纳岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "检查口袋，然后摊平衣物，然后整齐折叠，然后分类收好。",
+        "coachHints": [
+          "先从“检查口袋”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g3.mission1",
+    "subject": "labor",
+    "grade": 3,
+    "title": "植物照护站",
+    "topic": "劳动 · 3年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "植物照护站",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g3.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "给盆栽浇水前先？",
+        "options": [
+          "观察土壤和植物",
+          "每天灌满水",
+          "只看花盆颜色"
+        ],
+        "target": 0,
+        "voice": "给盆栽浇水前先？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "观察土壤和植物。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“观察土壤和植物”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g3.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "养护记录最有用的是？",
+        "options": [
+          "日期与实际变化",
+          "猜测未来高度",
+          "别人的名字"
+        ],
+        "target": 0,
+        "voice": "养护记录最有用的是？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "日期与实际变化。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“日期与实际变化”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g3.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「植物照护站」的行动计划",
+        "words": [
+          "观察土壤",
+          "判断是否需要水",
+          "按需浇水",
+          "记录变化"
+        ],
+        "answer": [
+          "观察土壤",
+          "判断是否需要水",
+          "按需浇水",
+          "记录变化"
+        ],
+        "target": 0,
+        "voice": "完成植物照护站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "观察土壤，然后判断是否需要水，然后按需浇水，然后记录变化。",
+        "coachHints": [
+          "先从“观察土壤”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g4.mission1",
+    "subject": "labor",
+    "grade": 4,
+    "title": "餐桌服务台",
+    "topic": "劳动 · 4年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "餐桌服务台",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g4.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "布置餐桌前应先？",
+        "options": [
+          "清洁双手与桌面",
+          "直接摆脏餐具",
+          "把食物放地上"
+        ],
+        "target": 0,
+        "voice": "布置餐桌前应先？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "清洁双手与桌面。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“清洁双手与桌面”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g4.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "发现餐具有裂口，应该？",
+        "options": [
+          "告诉成人并换完好餐具",
+          "继续使用",
+          "用手摸裂口边缘"
+        ],
+        "target": 0,
+        "voice": "发现餐具有裂口，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "告诉成人并换完好餐具。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“告诉成人并换完好餐具”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g4.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「餐桌服务台」的行动计划",
+        "words": [
+          "清洁准备",
+          "检查餐具",
+          "整齐摆放",
+          "餐后收整"
+        ],
+        "answer": [
+          "清洁准备",
+          "检查餐具",
+          "整齐摆放",
+          "餐后收整"
+        ],
+        "target": 0,
+        "voice": "完成餐桌服务台的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "清洁准备，然后检查餐具，然后整齐摆放，然后餐后收整。",
+        "coachHints": [
+          "先从“清洁准备”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g5.mission1",
+    "subject": "labor",
+    "grade": 5,
+    "title": "劳动计划港",
+    "topic": "劳动 · 5年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "劳动计划港",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g5.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "多人整理图书，先分工可以？",
+        "options": [
+          "减少重复遗漏",
+          "不用检查成果",
+          "保证不费时间"
+        ],
+        "target": 0,
+        "voice": "多人整理图书，先分工可以？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "减少重复遗漏。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“减少重复遗漏”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g5.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "整理结束怎样验收？",
+        "options": [
+          "按分类和数量核对",
+          "只看谁动作快",
+          "完全不看结果"
+        ],
+        "target": 0,
+        "voice": "整理结束怎样验收？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按分类和数量核对。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按分类和数量核对”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g5.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「劳动计划港」的行动计划",
+        "words": [
+          "明确任务",
+          "准备分工",
+          "分类整理",
+          "核对归位"
+        ],
+        "answer": [
+          "明确任务",
+          "准备分工",
+          "分类整理",
+          "核对归位"
+        ],
+        "target": 0,
+        "voice": "完成劳动计划港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确任务，然后准备分工，然后分类整理，然后核对归位。",
+        "coachHints": [
+          "先从“明确任务”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g6.mission1",
+    "subject": "labor",
+    "grade": 6,
+    "title": "校园服务坊",
+    "topic": "劳动 · 6年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "校园服务坊",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g6.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "改进劳动流程，依据应是？",
+        "options": [
+          "实际记录的问题",
+          "个人随便猜测",
+          "只看表扬多少"
+        ],
+        "target": 0,
+        "voice": "改进劳动流程，依据应是？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "实际记录的问题。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“实际记录的问题”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g6.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "同伴方法不同，怎样比较？",
+        "options": [
+          "在相同要求下试做",
+          "只比谁声音大",
+          "不看效果"
+        ],
+        "target": 0,
+        "voice": "同伴方法不同，怎样比较？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "在相同要求下试做。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“在相同要求下试做”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g6.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「校园服务坊」的行动计划",
+        "words": [
+          "记录过程",
+          "发现问题",
+          "尝试改进",
+          "比较效果"
+        ],
+        "answer": [
+          "记录过程",
+          "发现问题",
+          "尝试改进",
+          "比较效果"
+        ],
+        "target": 0,
+        "voice": "完成校园服务坊的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "记录过程，然后发现问题，然后尝试改进，然后比较效果。",
+        "coachHints": [
+          "先从“记录过程”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g1.mission2",
+    "subject": "labor",
+    "grade": 1,
+    "title": "书包补给站",
+    "topic": "劳动 · 1年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "书包补给站",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g1.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "明天书包带什么，依据是？",
+        "options": [
+          "课表与实际需要",
+          "把所有书都装上",
+          "只看书皮颜色"
+        ],
+        "target": 0,
+        "voice": "明天书包带什么，依据是？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "课表与实际需要。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“课表与实际需要”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g1.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "水杯和书本应怎样放？",
+        "options": [
+          "盖紧水杯分开放",
+          "敞口放一起",
+          "把水倒在书上"
+        ],
+        "target": 0,
+        "voice": "水杯和书本应怎样放？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "盖紧水杯分开放。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“盖紧水杯分开放”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g1.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「书包补给站」的行动计划",
+        "words": [
+          "查看课表",
+          "挑选物品",
+          "分类装入",
+          "检查水杯"
+        ],
+        "answer": [
+          "查看课表",
+          "挑选物品",
+          "分类装入",
+          "检查水杯"
+        ],
+        "target": 0,
+        "voice": "完成书包补给站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "查看课表，然后挑选物品，然后分类装入，然后检查水杯。",
+        "coachHints": [
+          "先从“查看课表”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g2.mission2",
+    "subject": "labor",
+    "grade": 2,
+    "title": "清洁小队屋",
+    "topic": "劳动 · 2年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "清洁小队屋",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g2.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "擦桌前先移开什么？",
+        "options": [
+          "书本和电器等物品",
+          "桌子的名字",
+          "墙上图画"
+        ],
+        "target": 0,
+        "voice": "擦桌前先移开什么？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "书本和电器等物品。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“书本和电器等物品”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g2.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "用完清洁工具，应该？",
+        "options": [
+          "按要求清理归位",
+          "留在路中间",
+          "随便丢进书包"
+        ],
+        "target": 0,
+        "voice": "用完清洁工具，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按要求清理归位。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按要求清理归位”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g2.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「清洁小队屋」的行动计划",
+        "words": [
+          "移开物品",
+          "按指导清洁",
+          "擦干桌面",
+          "工具归位"
+        ],
+        "answer": [
+          "移开物品",
+          "按指导清洁",
+          "擦干桌面",
+          "工具归位"
+        ],
+        "target": 0,
+        "voice": "完成清洁小队屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "移开物品，然后按指导清洁，然后擦干桌面，然后工具归位。",
+        "coachHints": [
+          "先从“移开物品”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g3.mission2",
+    "subject": "labor",
+    "grade": 3,
+    "title": "纸盒再利用",
+    "topic": "劳动 · 3年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "纸盒再利用",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g3.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "做收纳盒前，先量什么？",
+        "options": [
+          "要收纳物品的大小",
+          "别人身高",
+          "墙的颜色"
+        ],
+        "target": 0,
+        "voice": "做收纳盒前，先量什么？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "要收纳物品的大小。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“要收纳物品的大小”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g3.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "剪裁纸盒需要工具时，应？",
+        "options": [
+          "在成人指导下用合适工具",
+          "随意玩剪刀",
+          "用破损刀片"
+        ],
+        "target": 0,
+        "voice": "剪裁纸盒需要工具时，应？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "在成人指导下用合适工具。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“在成人指导下用合适工具”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g3.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「纸盒再利用」的行动计划",
+        "words": [
+          "确定用途",
+          "测量画线",
+          "按指导制作",
+          "试放调整"
+        ],
+        "answer": [
+          "确定用途",
+          "测量画线",
+          "按指导制作",
+          "试放调整"
+        ],
+        "target": 0,
+        "voice": "完成纸盒再利用的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定用途，然后测量画线，然后按指导制作，然后试放调整。",
+        "coachHints": [
+          "先从“确定用途”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g4.mission2",
+    "subject": "labor",
+    "grade": 4,
+    "title": "种植记录园",
+    "topic": "劳动 · 4年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "种植记录园",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g4.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "观察两周植物变化，怎样记录？",
+        "options": [
+          "固定时间记录高度叶片",
+          "只写最后一天",
+          "凭印象编数字"
+        ],
+        "target": 0,
+        "voice": "观察两周植物变化，怎样记录？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "固定时间记录高度叶片。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“固定时间记录高度叶片”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g4.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "看到异常变化，先？",
+        "options": [
+          "记录情况请教老师",
+          "随意混用药剂",
+          "拔掉所有植物"
+        ],
+        "target": 0,
+        "voice": "看到异常变化，先？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "记录情况请教老师。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“记录情况请教老师”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g4.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「种植记录园」的行动计划",
+        "words": [
+          "定时观察",
+          "测量记录",
+          "比较变化",
+          "调整养护"
+        ],
+        "answer": [
+          "定时观察",
+          "测量记录",
+          "比较变化",
+          "调整养护"
+        ],
+        "target": 0,
+        "voice": "完成种植记录园的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "定时观察，然后测量记录，然后比较变化，然后调整养护。",
+        "coachHints": [
+          "先从“定时观察”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g5.mission2",
+    "subject": "labor",
+    "grade": 5,
+    "title": "节约用材岛",
+    "topic": "劳动 · 5年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "节约用材岛",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g5.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "制作前画排料图，有助于？",
+        "options": [
+          "减少材料浪费",
+          "不用测量",
+          "忽略尺寸"
+        ],
+        "target": 0,
+        "voice": "制作前画排料图，有助于？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "减少材料浪费。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“减少材料浪费”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g5.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "剩余可用材料应该？",
+        "options": [
+          "分类保存再利用",
+          "全部丢弃",
+          "散落地面"
+        ],
+        "target": 0,
+        "voice": "剩余可用材料应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "分类保存再利用。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“分类保存再利用”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g5.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「节约用材岛」的行动计划",
+        "words": [
+          "确定尺寸",
+          "规划排料",
+          "按图制作",
+          "收好余料"
+        ],
+        "answer": [
+          "确定尺寸",
+          "规划排料",
+          "按图制作",
+          "收好余料"
+        ],
+        "target": 0,
+        "voice": "完成节约用材岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定尺寸，然后规划排料，然后按图制作，然后收好余料。",
+        "coachHints": [
+          "先从“确定尺寸”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labor.g6.mission2",
+    "subject": "labor",
+    "grade": 6,
+    "title": "服务项目港",
+    "topic": "劳动 · 6年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "服务项目港",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "labor.g6.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "组织图书修补，先判断？",
+        "options": [
+          "哪些适合自己处理",
+          "全部直接粘住",
+          "只选最好看的"
+        ],
+        "target": 0,
+        "voice": "组织图书修补，先判断？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "哪些适合自己处理。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“哪些适合自己处理”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g6.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "修补完成应检查？",
+        "options": [
+          "能否正常翻阅",
+          "封面是否更贵",
+          "是否贴满胶带"
+        ],
+        "target": 0,
+        "voice": "修补完成应检查？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "能否正常翻阅。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“能否正常翻阅”这个方向思考。"
+        ]
+      },
+      {
+        "id": "labor.g6.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「服务项目港」的行动计划",
+        "words": [
+          "分类检查",
+          "按指导修补",
+          "检查翻阅",
+          "记录归还"
+        ],
+        "answer": [
+          "分类检查",
+          "按指导修补",
+          "检查翻阅",
+          "记录归还"
+        ],
+        "target": 0,
+        "voice": "完成服务项目港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "分类检查，然后按指导修补，然后检查翻阅，然后记录归还。",
+        "coachHints": [
+          "先从“分类检查”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g1.mission1",
+    "subject": "it",
+    "grade": 1,
+    "title": "数字小书屋",
+    "topic": "信息科技 · 1年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "数字小书屋",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g1.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "在学校设备上打开作品，应先？",
+        "options": [
+          "听老师说明操作",
+          "随意删除图标",
+          "乱按所有按钮"
+        ],
+        "target": 0,
+        "voice": "在学校设备上打开作品，应先？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "听老师说明操作。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“听老师说明操作”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g1.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "看到不认识的弹窗，先？",
+        "options": [
+          "请老师帮助判断",
+          "随便点同意",
+          "输入家庭地址"
+        ],
+        "target": 0,
+        "voice": "看到不认识的弹窗，先？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "请老师帮助判断。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“请老师帮助判断”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g1.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「数字小书屋」的行动计划",
+        "words": [
+          "确认任务",
+          "找到指定图标",
+          "打开作品",
+          "按要求退出"
+        ],
+        "answer": [
+          "确认任务",
+          "找到指定图标",
+          "打开作品",
+          "按要求退出"
+        ],
+        "target": 0,
+        "voice": "完成数字小书屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确认任务，然后找到指定图标，然后打开作品，然后按要求退出。",
+        "coachHints": [
+          "先从“确认任务”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g2.mission1",
+    "subject": "it",
+    "grade": 2,
+    "title": "图标找朋友",
+    "topic": "信息科技 · 2年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "图标找朋友",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g2.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "文件名写清主题，有助于？",
+        "options": [
+          "以后查找",
+          "让图片自动变大",
+          "让电脑不用电"
+        ],
+        "target": 0,
+        "voice": "文件名写清主题，有助于？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "以后查找。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“以后查找”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g2.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "保存自己的画，应该？",
+        "options": [
+          "放在指定文件夹",
+          "覆盖别人作品",
+          "随意关闭不保存"
+        ],
+        "target": 0,
+        "voice": "保存自己的画，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "放在指定文件夹。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“放在指定文件夹”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g2.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「图标找朋友」的行动计划",
+        "words": [
+          "完成作品",
+          "选择保存位置",
+          "写清文件名",
+          "确认保存"
+        ],
+        "answer": [
+          "完成作品",
+          "选择保存位置",
+          "写清文件名",
+          "确认保存"
+        ],
+        "target": 0,
+        "voice": "完成图标找朋友的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "完成作品，然后选择保存位置，然后写清文件名，然后确认保存。",
+        "coachHints": [
+          "先从“完成作品”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g3.mission1",
+    "subject": "it",
+    "grade": 3,
+    "title": "步骤机器人",
+    "topic": "信息科技 · 3年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "步骤机器人",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g3.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "机器人要先前进再右转，程序应？",
+        "options": [
+          "按这个先后排列",
+          "随意交换顺序",
+          "只写名字"
+        ],
+        "target": 0,
+        "voice": "机器人要先前进再右转，程序应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按这个先后排列。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按这个先后排列”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g3.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "执行结果不对，应该？",
+        "options": [
+          "逐步检查指令",
+          "一直重复错误",
+          "删除所有文件"
+        ],
+        "target": 0,
+        "voice": "执行结果不对，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "逐步检查指令。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“逐步检查指令”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g3.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「步骤机器人」的行动计划",
+        "words": [
+          "明确目标",
+          "排列指令",
+          "运行观察",
+          "修改错误"
+        ],
+        "answer": [
+          "明确目标",
+          "排列指令",
+          "运行观察",
+          "修改错误"
+        ],
+        "target": 0,
+        "voice": "完成步骤机器人的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确目标，然后排列指令，然后运行观察，然后修改错误。",
+        "coachHints": [
+          "先从“明确目标”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g4.mission1",
+    "subject": "it",
+    "grade": 4,
+    "title": "数据整理站",
+    "topic": "信息科技 · 4年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "数据整理站",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g4.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "调查喜欢的水果，表格每行应？",
+        "options": [
+          "对应一条记录",
+          "随意填几个答案",
+          "重复同一人多次"
+        ],
+        "target": 0,
+        "voice": "调查喜欢的水果，表格每行应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "对应一条记录。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“对应一条记录”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g4.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "发现重复记录，应该？",
+        "options": [
+          "核对后处理",
+          "当作更多人",
+          "修改成喜欢的答案"
+        ],
+        "target": 0,
+        "voice": "发现重复记录，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "核对后处理。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“核对后处理”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g4.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「数据整理站」的行动计划",
+        "words": [
+          "确定字段",
+          "收集记录",
+          "检查数据",
+          "整理展示"
+        ],
+        "answer": [
+          "确定字段",
+          "收集记录",
+          "检查数据",
+          "整理展示"
+        ],
+        "target": 0,
+        "voice": "完成数据整理站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定字段，然后收集记录，然后检查数据，然后整理展示。",
+        "coachHints": [
+          "先从“确定字段”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g5.mission1",
+    "subject": "it",
+    "grade": 5,
+    "title": "算法探险屋",
+    "topic": "信息科技 · 5年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "算法探险屋",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g5.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "重复前进三次，可以用？",
+        "options": [
+          "重复指令",
+          "更换背景",
+          "删除目标"
+        ],
+        "target": 0,
+        "voice": "重复前进三次，可以用？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "重复指令。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“重复指令”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g5.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "程序中的判断语句用于？",
+        "options": [
+          "按条件选择操作",
+          "随意加快声音",
+          "隐藏错误"
+        ],
+        "target": 0,
+        "voice": "程序中的判断语句用于？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按条件选择操作。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按条件选择操作”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g5.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「算法探险屋」的行动计划",
+        "words": [
+          "确定条件",
+          "写出分支",
+          "测试不同情况",
+          "修改程序"
+        ],
+        "answer": [
+          "确定条件",
+          "写出分支",
+          "测试不同情况",
+          "修改程序"
+        ],
+        "target": 0,
+        "voice": "完成算法探险屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定条件，然后写出分支，然后测试不同情况，然后修改程序。",
+        "coachHints": [
+          "先从“确定条件”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g6.mission1",
+    "subject": "it",
+    "grade": 6,
+    "title": "数字作品港",
+    "topic": "信息科技 · 6年级基础探索",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "数字作品港",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g6.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "制作报告引用图片，应当？",
+        "options": [
+          "确认授权并注明来源",
+          "删除作者署名",
+          "认为网上都能随便用"
+        ],
+        "target": 0,
+        "voice": "制作报告引用图片，应当？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "确认授权并注明来源。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“确认授权并注明来源”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g6.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "分享作品前，应检查？",
+        "options": [
+          "是否含个人敏感信息",
+          "是否字越多越好",
+          "有没有所有人电话"
+        ],
+        "target": 0,
+        "voice": "分享作品前，应检查？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "是否含个人敏感信息。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“是否含个人敏感信息”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g6.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「数字作品港」的行动计划",
+        "words": [
+          "整理资料",
+          "确认使用许可",
+          "检查隐私",
+          "发布允许分享的内容"
+        ],
+        "answer": [
+          "整理资料",
+          "确认使用许可",
+          "检查隐私",
+          "发布允许分享的内容"
+        ],
+        "target": 0,
+        "voice": "完成数字作品港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "整理资料，然后确认使用许可，然后检查隐私，然后发布允许分享的内容。",
+        "coachHints": [
+          "先从“整理资料”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g1.mission2",
+    "subject": "it",
+    "grade": 1,
+    "title": "设备爱护岛",
+    "topic": "信息科技 · 1年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "设备爱护岛",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g1.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "使用完学校设备，应当？",
+        "options": [
+          "按老师要求退出整理",
+          "拔扯电线",
+          "把水放在键盘上"
+        ],
+        "target": 0,
+        "voice": "使用完学校设备，应当？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按老师要求退出整理。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按老师要求退出整理”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g1.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "操作遇到困难，可以？",
+        "options": [
+          "举手求助",
+          "敲打屏幕",
+          "随便拆机器"
+        ],
+        "target": 0,
+        "voice": "操作遇到困难，可以？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "举手求助。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“举手求助”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g1.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「设备爱护岛」的行动计划",
+        "words": [
+          "保存作品",
+          "关闭指定页面",
+          "整理桌面",
+          "告知完成"
+        ],
+        "answer": [
+          "保存作品",
+          "关闭指定页面",
+          "整理桌面",
+          "告知完成"
+        ],
+        "target": 0,
+        "voice": "完成设备爱护岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "保存作品，然后关闭指定页面，然后整理桌面，然后告知完成。",
+        "coachHints": [
+          "先从“保存作品”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g2.mission2",
+    "subject": "it",
+    "grade": 2,
+    "title": "数字画板屋",
+    "topic": "信息科技 · 2年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "数字画板屋",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g2.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "画错一笔，想回到上一步，选择？",
+        "options": [
+          "撤销",
+          "删除全部文件",
+          "关闭电源"
+        ],
+        "target": 0,
+        "voice": "画错一笔，想回到上一步，选择？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "撤销。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“撤销”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g2.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "修改前保留原画，可以？",
+        "options": [
+          "另存一个副本",
+          "直接覆盖别人文件",
+          "随机改文件名"
+        ],
+        "target": 0,
+        "voice": "修改前保留原画，可以？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "另存一个副本。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“另存一个副本”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g2.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「数字画板屋」的行动计划",
+        "words": [
+          "打开自己的画",
+          "另存副本",
+          "修改细节",
+          "保存新版"
+        ],
+        "answer": [
+          "打开自己的画",
+          "另存副本",
+          "修改细节",
+          "保存新版"
+        ],
+        "target": 0,
+        "voice": "完成数字画板屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "打开自己的画，然后另存副本，然后修改细节，然后保存新版。",
+        "coachHints": [
+          "先从“打开自己的画”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g3.mission2",
+    "subject": "it",
+    "grade": 3,
+    "title": "搜索线索岛",
+    "topic": "信息科技 · 3年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "搜索线索岛",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g3.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "想找月球资料，关键词选？",
+        "options": [
+          "月球表面特点",
+          "你好呀",
+          "所有东西"
+        ],
+        "target": 0,
+        "voice": "想找月球资料，关键词选？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "月球表面特点。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“月球表面特点”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g3.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "搜索到信息后，应该？",
+        "options": [
+          "查看来源并核对",
+          "只看标题就相信",
+          "全部复制不看"
+        ],
+        "target": 0,
+        "voice": "搜索到信息后，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "查看来源并核对。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“查看来源并核对”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g3.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「搜索线索岛」的行动计划",
+        "words": [
+          "明确问题",
+          "选择关键词",
+          "比较来源",
+          "记录出处"
+        ],
+        "answer": [
+          "明确问题",
+          "选择关键词",
+          "比较来源",
+          "记录出处"
+        ],
+        "target": 0,
+        "voice": "完成搜索线索岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确问题，然后选择关键词，然后比较来源，然后记录出处。",
+        "coachHints": [
+          "先从“明确问题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g4.mission2",
+    "subject": "it",
+    "grade": 4,
+    "title": "信息图工坊",
+    "topic": "信息科技 · 4年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "信息图工坊",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g4.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "用条形图展示人数，应先？",
+        "options": [
+          "核对数据",
+          "随意画高低",
+          "只选漂亮颜色"
+        ],
+        "target": 0,
+        "voice": "用条形图展示人数，应先？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "核对数据。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“核对数据”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g4.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "图表没有项目名称，会？",
+        "options": [
+          "难以知道比较什么",
+          "一定更准确",
+          "人数自动增加"
+        ],
+        "target": 0,
+        "voice": "图表没有项目名称，会？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "难以知道比较什么。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“难以知道比较什么”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g4.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「信息图工坊」的行动计划",
+        "words": [
+          "整理数据",
+          "选择图表",
+          "添加标签",
+          "检查含义"
+        ],
+        "answer": [
+          "整理数据",
+          "选择图表",
+          "添加标签",
+          "检查含义"
+        ],
+        "target": 0,
+        "voice": "完成信息图工坊的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "整理数据，然后选择图表，然后添加标签，然后检查含义。",
+        "coachHints": [
+          "先从“整理数据”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g5.mission2",
+    "subject": "it",
+    "grade": 5,
+    "title": "调试机器人",
+    "topic": "信息科技 · 5年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "调试机器人",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g5.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "程序每次都多走一步，应该？",
+        "options": [
+          "检查循环次数",
+          "换屏幕颜色",
+          "删掉所有记录"
+        ],
+        "target": 0,
+        "voice": "程序每次都多走一步，应该？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "检查循环次数。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“检查循环次数”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g5.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "测试程序边界，可以选择？",
+        "options": [
+          "最少与最多的输入",
+          "永远同一个普通值",
+          "不用任何输入"
+        ],
+        "target": 0,
+        "voice": "测试程序边界，可以选择？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "最少与最多的输入。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“最少与最多的输入”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g5.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「调试机器人」的行动计划",
+        "words": [
+          "复现问题",
+          "定位指令",
+          "修改一处",
+          "重新测试"
+        ],
+        "answer": [
+          "复现问题",
+          "定位指令",
+          "修改一处",
+          "重新测试"
+        ],
+        "target": 0,
+        "voice": "完成调试机器人的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "复现问题，然后定位指令，然后修改一处，然后重新测试。",
+        "coachHints": [
+          "先从“复现问题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "it.g6.mission2",
+    "subject": "it",
+    "grade": 6,
+    "title": "可信信息港",
+    "topic": "信息科技 · 6年级应用实践",
+    "art": "planet",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "可信信息港",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "it.g6.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "AI给出一个结论，应该？",
+        "options": [
+          "核对证据与来源",
+          "一定完全相信",
+          "一定全错"
+        ],
+        "target": 0,
+        "voice": "AI给出一个结论，应该？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "核对证据与来源。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“核对证据与来源”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g6.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "网上请求发验证码，应该？",
+        "options": [
+          "不提供并求助可信成人",
+          "立即转发",
+          "发给所有陌生人"
+        ],
+        "target": 0,
+        "voice": "网上请求发验证码，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "不提供并求助可信成人。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“不提供并求助可信成人”这个方向思考。"
+        ]
+      },
+      {
+        "id": "it.g6.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「可信信息港」的行动计划",
+        "words": [
+          "识别请求",
+          "暂停提供信息",
+          "向可信成人核实",
+          "按核实结果处理"
+        ],
+        "answer": [
+          "识别请求",
+          "暂停提供信息",
+          "向可信成人核实",
+          "按核实结果处理"
+        ],
+        "target": 0,
+        "voice": "完成可信信息港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "识别请求，然后暂停提供信息，然后向可信成人核实，然后按核实结果处理。",
+        "coachHints": [
+          "先从“识别请求”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g1.mission1",
+    "subject": "practice",
+    "grade": 1,
+    "title": "校园发现队",
+    "topic": "综合实践 · 1年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "校园发现队",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g1.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "调查校园植物，先做什么？",
+        "options": [
+          "明确想了解的问题",
+          "随意填结果",
+          "只买礼物"
+        ],
+        "target": 0,
+        "voice": "调查校园植物，先做什么？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "明确想了解的问题。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“明确想了解的问题”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g1.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "观察记录最好包括？",
+        "options": [
+          "地点与看到的特征",
+          "同学秘密",
+          "猜测答案"
+        ],
+        "target": 0,
+        "voice": "观察记录最好包括？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "地点与看到的特征。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“地点与看到的特征”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g1.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「校园发现队」的行动计划",
+        "words": [
+          "提出问题",
+          "到现场观察",
+          "画下发现",
+          "向伙伴介绍"
+        ],
+        "answer": [
+          "提出问题",
+          "到现场观察",
+          "画下发现",
+          "向伙伴介绍"
+        ],
+        "target": 0,
+        "voice": "完成校园发现队的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "提出问题，然后到现场观察，然后画下发现，然后向伙伴介绍。",
+        "coachHints": [
+          "先从“提出问题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g2.mission1",
+    "subject": "practice",
+    "grade": 2,
+    "title": "采访小记者",
+    "topic": "综合实践 · 2年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "采访小记者",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g2.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "采访同学前应先？",
+        "options": [
+          "说明目的征得同意",
+          "直接追问隐私",
+          "替对方回答"
+        ],
+        "target": 0,
+        "voice": "采访同学前应先？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "说明目的征得同意。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“说明目的征得同意”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g2.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "没有听清回答，应该？",
+        "options": [
+          "礼貌请他再说一次",
+          "随意编造",
+          "马上争论"
+        ],
+        "target": 0,
+        "voice": "没有听清回答，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "礼貌请他再说一次。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“礼貌请他再说一次”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g2.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「采访小记者」的行动计划",
+        "words": [
+          "准备问题",
+          "征得同意",
+          "倾听记录",
+          "表达感谢"
+        ],
+        "answer": [
+          "准备问题",
+          "征得同意",
+          "倾听记录",
+          "表达感谢"
+        ],
+        "target": 0,
+        "voice": "完成采访小记者的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "准备问题，然后征得同意，然后倾听记录，然后表达感谢。",
+        "coachHints": [
+          "先从“准备问题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g3.mission1",
+    "subject": "practice",
+    "grade": 3,
+    "title": "问卷设计岛",
+    "topic": "综合实践 · 3年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "问卷设计岛",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g3.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "调查喜欢的课间活动，问题应？",
+        "options": [
+          "清楚且与主题有关",
+          "同时问很多无关事",
+          "暗示唯一答案"
+        ],
+        "target": 0,
+        "voice": "调查喜欢的课间活动，问题应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "清楚且与主题有关。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“清楚且与主题有关”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g3.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "调查结果只来自本班，应说？",
+        "options": [
+          "本班受访同学的结果",
+          "全校一定如此",
+          "全国都是如此"
+        ],
+        "target": 0,
+        "voice": "调查结果只来自本班，应说？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "本班受访同学的结果。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“本班受访同学的结果”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g3.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「问卷设计岛」的行动计划",
+        "words": [
+          "确定问题",
+          "设计选项",
+          "收集回答",
+          "汇总说明范围"
+        ],
+        "answer": [
+          "确定问题",
+          "设计选项",
+          "收集回答",
+          "汇总说明范围"
+        ],
+        "target": 0,
+        "voice": "完成问卷设计岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定问题，然后设计选项，然后收集回答，然后汇总说明范围。",
+        "coachHints": [
+          "先从“确定问题”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g4.mission1",
+    "subject": "practice",
+    "grade": 4,
+    "title": "方案比较站",
+    "topic": "综合实践 · 4年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "方案比较站",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g4.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "给阅读角选位置，应比较？",
+        "options": [
+          "光线空间与使用方便",
+          "谁先喊出来",
+          "墙上颜色最多"
+        ],
+        "target": 0,
+        "voice": "给阅读角选位置，应比较？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "光线空间与使用方便。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“光线空间与使用方便”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g4.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "两个方案都有优点，应该？",
+        "options": [
+          "根据目标比较取舍",
+          "只凭声音大小",
+          "不看条件"
+        ],
+        "target": 0,
+        "voice": "两个方案都有优点，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "根据目标比较取舍。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“根据目标比较取舍”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g4.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「方案比较站」的行动计划",
+        "words": [
+          "明确需求",
+          "提出方案",
+          "比较条件",
+          "选择试行"
+        ],
+        "answer": [
+          "明确需求",
+          "提出方案",
+          "比较条件",
+          "选择试行"
+        ],
+        "target": 0,
+        "voice": "完成方案比较站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确需求，然后提出方案，然后比较条件，然后选择试行。",
+        "coachHints": [
+          "先从“明确需求”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g5.mission1",
+    "subject": "practice",
+    "grade": 5,
+    "title": "项目协作港",
+    "topic": "综合实践 · 5年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "项目协作港",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g5.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "小组项目进度慢，先？",
+        "options": [
+          "检查任务与分工",
+          "隐藏困难",
+          "只换海报颜色"
+        ],
+        "target": 0,
+        "voice": "小组项目进度慢，先？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "检查任务与分工。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“检查任务与分工”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g5.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "汇报项目时，应展示？",
+        "options": [
+          "过程证据与结果",
+          "虚构成功次数",
+          "只有口号"
+        ],
+        "target": 0,
+        "voice": "汇报项目时，应展示？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "过程证据与结果。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“过程证据与结果”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g5.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「项目协作港」的行动计划",
+        "words": [
+          "明确目标",
+          "安排分工",
+          "检查进度",
+          "调整协作"
+        ],
+        "answer": [
+          "明确目标",
+          "安排分工",
+          "检查进度",
+          "调整协作"
+        ],
+        "target": 0,
+        "voice": "完成项目协作港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确目标，然后安排分工，然后检查进度，然后调整协作。",
+        "coachHints": [
+          "先从“明确目标”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g6.mission1",
+    "subject": "practice",
+    "grade": 6,
+    "title": "成果发布馆",
+    "topic": "综合实践 · 6年级基础探索",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "上册",
+      "theme": "成果发布馆",
+      "order": 0,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g6.mission1.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "展示调查结果，应说明？",
+        "options": [
+          "方法范围与局限",
+          "所有人的私人信息",
+          "没有证据的结论"
+        ],
+        "target": 0,
+        "voice": "展示调查结果，应说明？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "方法范围与局限。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“方法范围与局限”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g6.mission1.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "别人提出疑问，怎样回应？",
+        "options": [
+          "根据记录说明",
+          "立即争吵",
+          "编一个数字"
+        ],
+        "target": 0,
+        "voice": "别人提出疑问，怎样回应？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "根据记录说明。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“根据记录说明”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g6.mission1.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「成果发布馆」的行动计划",
+        "words": [
+          "整理证据",
+          "形成结论",
+          "说明局限",
+          "交流反馈"
+        ],
+        "answer": [
+          "整理证据",
+          "形成结论",
+          "说明局限",
+          "交流反馈"
+        ],
+        "target": 0,
+        "voice": "完成成果发布馆的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "整理证据，然后形成结论，然后说明局限，然后交流反馈。",
+        "coachHints": [
+          "先从“整理证据”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g1.mission2",
+    "subject": "practice",
+    "grade": 1,
+    "title": "社区观察屋",
+    "topic": "综合实践 · 1年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "社区观察屋",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g1.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "观察社区设施时应？",
+        "options": [
+          "在成人陪同下按计划观察",
+          "独自进入陌生施工地",
+          "翻越围栏"
+        ],
+        "target": 0,
+        "voice": "观察社区设施时应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "在成人陪同下按计划观察。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“在成人陪同下按计划观察”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g1.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "看到有趣现象，可以？",
+        "options": [
+          "画下来并记地点",
+          "随意破坏",
+          "替所有人下结论"
+        ],
+        "target": 0,
+        "voice": "看到有趣现象，可以？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "画下来并记地点。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“画下来并记地点”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g1.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「社区观察屋」的行动计划",
+        "words": [
+          "商量路线",
+          "陪同观察",
+          "记录发现",
+          "回家交流"
+        ],
+        "answer": [
+          "商量路线",
+          "陪同观察",
+          "记录发现",
+          "回家交流"
+        ],
+        "target": 0,
+        "voice": "完成社区观察屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "商量路线，然后陪同观察，然后记录发现，然后回家交流。",
+        "coachHints": [
+          "先从“商量路线”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g2.mission2",
+    "subject": "practice",
+    "grade": 2,
+    "title": "物品调查站",
+    "topic": "综合实践 · 2年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "物品调查站",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g2.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "想知道大家带什么水杯，记录应？",
+        "options": [
+          "按统一项目记录",
+          "只记最喜欢的人",
+          "重复算同一个人"
+        ],
+        "target": 0,
+        "voice": "想知道大家带什么水杯，记录应？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "按统一项目记录。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“按统一项目记录”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g2.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "汇总时发现漏记，应该？",
+        "options": [
+          "核实补记",
+          "自己猜一个",
+          "忽略并说完整"
+        ],
+        "target": 0,
+        "voice": "汇总时发现漏记，应该？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "核实补记。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“核实补记”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g2.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「物品调查站」的行动计划",
+        "words": [
+          "明确项目",
+          "逐人记录",
+          "检查遗漏",
+          "统计分享"
+        ],
+        "answer": [
+          "明确项目",
+          "逐人记录",
+          "检查遗漏",
+          "统计分享"
+        ],
+        "target": 0,
+        "voice": "完成物品调查站的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确项目，然后逐人记录，然后检查遗漏，然后统计分享。",
+        "coachHints": [
+          "先从“明确项目”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g3.mission2",
+    "subject": "practice",
+    "grade": 3,
+    "title": "活动策划屋",
+    "topic": "综合实践 · 3年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "活动策划屋",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g3.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "组织班级读书分享，先明确？",
+        "options": [
+          "目的时间和参与方式",
+          "奖品价格越高越好",
+          "只定海报颜色"
+        ],
+        "target": 0,
+        "voice": "组织班级读书分享，先明确？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "目的时间和参与方式。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“目的时间和参与方式”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g3.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "计划中的材料不够，应？",
+        "options": [
+          "调整方案并说明",
+          "假装准备好了",
+          "让别人猜"
+        ],
+        "target": 0,
+        "voice": "计划中的材料不够，应？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "调整方案并说明。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“调整方案并说明”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g3.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「活动策划屋」的行动计划",
+        "words": [
+          "确定目标",
+          "列准备清单",
+          "核对条件",
+          "开展分享"
+        ],
+        "answer": [
+          "确定目标",
+          "列准备清单",
+          "核对条件",
+          "开展分享"
+        ],
+        "target": 0,
+        "voice": "完成活动策划屋的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "确定目标，然后列准备清单，然后核对条件，然后开展分享。",
+        "coachHints": [
+          "先从“确定目标”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g4.mission2",
+    "subject": "practice",
+    "grade": 4,
+    "title": "节水调查桥",
+    "topic": "综合实践 · 4年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "节水调查桥",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g4.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "观察到一次水龙头滴水，可以说明？",
+        "options": [
+          "这次观察发现滴水",
+          "所有龙头都漏水",
+          "全年浪费量已确定"
+        ],
+        "target": 0,
+        "voice": "观察到一次水龙头滴水，可以说明？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "这次观察发现滴水。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“这次观察发现滴水”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g4.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "想估计长期情况，还应？",
+        "options": [
+          "多时段观察记录",
+          "只把数字放大",
+          "不再调查"
+        ],
+        "target": 0,
+        "voice": "想估计长期情况，还应？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "多时段观察记录。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“多时段观察记录”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g4.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「节水调查桥」的行动计划",
+        "words": [
+          "明确观察点",
+          "多次记录",
+          "整理证据",
+          "提出建议"
+        ],
+        "answer": [
+          "明确观察点",
+          "多次记录",
+          "整理证据",
+          "提出建议"
+        ],
+        "target": 0,
+        "voice": "完成节水调查桥的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确观察点，然后多次记录，然后整理证据，然后提出建议。",
+        "coachHints": [
+          "先从“明确观察点”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g5.mission2",
+    "subject": "practice",
+    "grade": 5,
+    "title": "原型试用岛",
+    "topic": "综合实践 · 5年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "原型试用岛",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g5.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "做了收纳盒样品，下一步？",
+        "options": [
+          "请同伴试用并记录",
+          "直接说人人满意",
+          "只改名字"
+        ],
+        "target": 0,
+        "voice": "做了收纳盒样品，下一步？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "请同伴试用并记录。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“请同伴试用并记录”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g5.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "使用者说太小，应？",
+        "options": [
+          "核对需求调整尺寸",
+          "批评他不会用",
+          "隐藏反馈"
+        ],
+        "target": 0,
+        "voice": "使用者说太小，应？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "核对需求调整尺寸。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“核对需求调整尺寸”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g5.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「原型试用岛」的行动计划",
+        "words": [
+          "明确需求",
+          "制作样品",
+          "邀请试用",
+          "改进设计"
+        ],
+        "answer": [
+          "明确需求",
+          "制作样品",
+          "邀请试用",
+          "改进设计"
+        ],
+        "target": 0,
+        "voice": "完成原型试用岛的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "明确需求，然后制作样品，然后邀请试用，然后改进设计。",
+        "coachHints": [
+          "先从“明确需求”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "practice.g6.mission2",
+    "subject": "practice",
+    "grade": 6,
+    "title": "毕业研究港",
+    "topic": "综合实践 · 6年级应用实践",
+    "art": "garden",
+    "alignment": "enrichment",
+    "curriculum": {
+      "semester": "下册",
+      "theme": "毕业研究港",
+      "order": 1,
+      "source": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+      "verified": false
+    },
+    "levels": [
+      {
+        "id": "practice.g6.mission2.l1",
+        "kind": "choice",
+        "title": "发现线索",
+        "goal": "两次调查结果不同，应该？",
+        "options": [
+          "比较时间样本与方法",
+          "删除不喜欢的一次",
+          "随意取最大数"
+        ],
+        "target": 0,
+        "voice": "两次调查结果不同，应该？",
+        "stage": "warmup",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "比较时间样本与方法。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“比较时间样本与方法”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g6.mission2.l2",
+        "kind": "choice",
+        "title": "应用补给站",
+        "goal": "结论证据不足，应怎样写？",
+        "options": [
+          "说明尚需进一步调查",
+          "写成已经证明",
+          "编造新记录"
+        ],
+        "target": 0,
+        "voice": "结论证据不足，应怎样写？",
+        "stage": "practice",
+        "hint": "选一张卡，帮星宝继续行动。",
+        "explanation": "说明尚需进一步调查。把这个办法用在刚才的情境中。",
+        "coachHints": [
+          "先想清任务需要解决什么问题。",
+          "可以从“说明尚需进一步调查”这个方向思考。"
+        ]
+      },
+      {
+        "id": "practice.g6.mission2.l3",
+        "kind": "sentence",
+        "title": "行动计划桥",
+        "goal": "完成「毕业研究港」的行动计划",
+        "words": [
+          "整理多次记录",
+          "比较差异",
+          "提出有依据的解释",
+          "说明待研究问题"
+        ],
+        "answer": [
+          "整理多次记录",
+          "比较差异",
+          "提出有依据的解释",
+          "说明待研究问题"
+        ],
+        "target": 0,
+        "voice": "完成毕业研究港的行动计划。按先后顺序放好卡片。",
+        "stage": "challenge",
+        "hint": "按先后点卡片，点已选卡片可以取回。",
+        "explanation": "整理多次记录，然后比较差异，然后提出有依据的解释，然后说明待研究问题。",
+        "coachHints": [
+          "先从“整理多次记录”开始。",
+          "想一想，哪些准备要在行动之前完成。"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "static_review_asset": true,
+  "rigged": false,
+  "animations": 0,
+  "parts": [
+    {
+      "part": "Xingbao • 01b · ivory fleece with integrated cheek blush",
+      "triangles": 110000,
+      "maps": [
+        "color",
+        "normal"
+      ]
+    },
+    {
+      "part": "Xingbao • 02 · polished warm gold",
+      "triangles": 35000,
+      "maps": []
+    },
+    {
+      "part": "Xingbao • 12 · sapphire galaxy iris",
+      "triangles": 7488,
+      "maps": [
+        "color"
+      ]
+    },
+    {
+      "part": "Xingbao • 05 · dark eye socket",
+      "triangles": 4608,
+      "maps": []
+    },
+    {
+      "part": "Xingbao • 11 · tiny blue starlight",
+      "triangles": 6720,
+      "maps": []
+    },
+    {
+      "part": "Xingbao • 09 · lantern star emission",
+      "triangles": 12320,
+      "maps": []
+    },
+    {
+      "part": "Xingbao • 10 · eye catchlight",
+      "triangles": 12992,
+      "maps": []
+    },
+    {
+      "part": "Xingbao • 06 · warm mouth cavity",
+      "triangles": 66,
+      "maps": []
+    },
+    {
+      "part": "Xingbao • 07 · soft coral tongue",
+      "triangles": 2976,
+      "maps": []
+    },
+    {
+      "part": "Xingbao • 01 · warm ivory microfleece",
+      "triangles": 55000,
+      "maps": [
+        "normal"
+      ]
+    },
+    {
+      "part": "Xingbao • 04 · sage silk lining",
+      "triangles": 25600,
+      "maps": [
+        "normal"
+      ]
+    },
+    {
+      "part": "Xingbao • 03 · deep peacock woven cloth",
+      "triangles": 35000,
+      "maps": [
+        "color",
+        "normal"
+      ]
+    },
+    {
+      "part": "Xingbao • 13 · clear amber glass",
+      "triangles": 160,
+      "maps": []
+    }
+  ],
+  "triangles": 307930,
+  "note": "Baked albedo and normal maps. Fine strand fur, Blender subsurface scattering and studio lighting are not represented by the GLB."
+}

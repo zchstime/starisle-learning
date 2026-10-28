@@ -1,0 +1,29 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "path": "assets/resources/art/world-grade-1.png",
+      "prompt": "Use case: stylized-concept. Create a production game background, landscape 16:9. Spring meadow floating islands, little cream cottages, emerald grass and stepping stone sky bridges, flowing rising diagonal composition. Premium soft rounded 3D toy diorama, pastel colors, luminous clouds, warm gentle ambient occlusion, exquisitely polished children's educational adventure world. Four main explorable landmarks across the middle width, wide camera. Upper 15% open sky and bottom 15% soft clouds reserved for interface. Rich imaginative scenery but calm readable composition. NO text, NO UI, NO labels, NO numbers, NO mascot, NO characters. A distinct grade 1 world in a consistent floating-island game art family."
+    },
+    {
+      "path": "assets/resources/art/world-grade-2.png",
+      "prompt": "Use case: stylized-concept. Create a production game background, landscape 16:9. Sakura garden on a ring shaped floating planet, pink blossom trees and curved orbital cream walkway. Premium soft rounded 3D toy diorama, pastel colors, luminous clouds, warm gentle ambient occlusion, exquisitely polished children's educational adventure world. Four main explorable landmarks across the middle width, wide camera. Upper 15% open sky and bottom 15% soft clouds reserved for interface. Rich imaginative scenery but calm readable composition. NO text, NO UI, NO labels, NO numbers, NO mascot, NO characters. A distinct grade 2 world in a consistent floating-island game art family."
+    },
+    {
+      "path": "assets/resources/art/world-grade-3.png",
+      "prompt": "Use case: stylized-concept. Create a production game background, landscape 16:9. Turquoise lagoon islands linked by winding zigzag white bridges, waterfalls and shell roof cottages. Premium soft rounded 3D toy diorama, pastel colors, luminous clouds, warm gentle ambient occlusion, exquisitely polished children's educational adventure world. Four main explorable landmarks across the middle width, wide camera. Upper 15% open sky and bottom 15% soft clouds reserved for interface. Rich imaginative scenery but calm readable composition. NO text, NO UI, NO labels, NO numbers, NO mascot, NO characters. A distinct grade 3 world in a consistent floating-island game art family."
+    },
+    {
+      "path": "assets/resources/art/world-grade-4.png",
+      "prompt": "Use case: stylized-concept. Create a production game background, landscape 16:9. Enchanted canopy treehouse terraces, enormous soft green trees and elevated wooden bridges at different heights. Premium soft rounded 3D toy diorama, pastel colors, luminous clouds, warm gentle ambient occlusion, exquisitely polished children's educational adventure world. Four main explorable landmarks across the middle width, wide camera. Upper 15% open sky and bottom 15% soft clouds reserved for interface. Rich imaginative scenery but calm readable composition. NO text, NO UI, NO labels, NO numbers, NO mascot, NO characters. A distinct grade 4 world in a consistent floating-island game art family."
+    },
+    {
+      "path": "assets/resources/art/world-grade-5.png",
+      "prompt": "Use case: stylized-concept. Create a production game background, landscape 16:9. Golden sunset crystal canyon floating islands, peach sandstone arches, lilac crystals and spiral terraces. Premium soft rounded 3D toy diorama, pastel colors, luminous clouds, warm gentle ambient occlusion, exquisitely polished children's educational adventure world. Four main explorable landmarks across the middle width, wide camera. Upper 15% open sky and bottom 15% soft clouds reserved for interface. Rich imaginative scenery but calm readable composition. NO text, NO UI, NO labels, NO numbers, NO mascot, NO characters. A distinct grade 5 world in a consistent floating-island game art family."
+    },
+    {
+      "path": "assets/resources/art/world-grade-6.png",
+      "prompt": "Use case: stylized-concept. Create a production game background, landscape 16:9. Lavender blue celestial academy islands, cream observatory castles, glowing star constellation bridges and gentle aurora. Premium soft rounded 3D toy diorama, pastel colors, luminous clouds, warm gentle ambient occlusion, exquisitely polished children's educational adventure world. Four main explorable landmarks across the middle width, wide camera. Upper 15% open sky and bottom 15% soft clouds reserved for interface. Rich imaginative scenery but calm readable composition. NO text, NO UI, NO labels, NO numbers, NO mascot, NO characters. A distinct grade 6 world in a consistent floating-island game art family."
+    }
+  ]
+}

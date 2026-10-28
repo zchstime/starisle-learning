@@ -1,0 +1,24 @@
+{
+  "name": "starisle",
+  "platform": "web-desktop",
+  "buildPath": "project://build",
+  "outputName": "web-desktop",
+  "startScene": "064c7255-2cc4-4976-8ece-90cf3256386b",
+  "scenes": [
+    {
+      "url": "db://assets/scenes/StarIsle.scene",
+      "uuid": "064c7255-2cc4-4976-8ece-90cf3256386b"
+    }
+  ],
+  "debug": false,
+  "sourceMaps": false,
+  "md5Cache": true,
+  "packages": {
+    "web-desktop": {
+      "resolution": {
+        "designWidth": 1440,
+        "designHeight": 810
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export function voiceKey(s:string){if(/[^\x00-\x7F]/.test(s)){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return 'zh_'+(h>>>0).toString(16);}return s.toLowerCase().replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');}

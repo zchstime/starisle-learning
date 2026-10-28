@@ -1,0 +1,48 @@
+{
+  "sha256": "7c054e994c1410770baca9cb0a9bf02408fac0f28815dd37baca44f9d85ca0b3",
+  "imported_meshes": 4,
+  "armatures": 1,
+  "imported_actions": [
+    "Talk_A.001",
+    "Blink.001",
+    "Focus.001",
+    "Wave.001",
+    "Think.001",
+    "Surprise.001",
+    "Celebrate.001",
+    "Idle.001",
+    "Happy.001",
+    "Happy_cheek.001",
+    "Talk_O.001"
+  ],
+  "morphs": {
+    "Head | reference-traced rounded star.002": [
+      "Basis",
+      "Happy"
+    ],
+    "Face | eight expression controls.002": [
+      "Basis",
+      "Blink_L",
+      "Blink_R",
+      "Happy",
+      "Think",
+      "Focus",
+      "Surprise",
+      "Talk_A",
+      "Talk_O"
+    ]
+  },
+  "actual_glb_renders": [
+    "glb-front.png",
+    "glb-hero.png",
+    "glb-side.png",
+    "glb-back.png",
+    "glb-happy.png",
+    "glb-think.png",
+    "glb-focus.png",
+    "glb-blink.png",
+    "glb-surprise.png",
+    "glb-talk-a.png",
+    "glb-talk-o.png"
+  ]
+}

@@ -1,0 +1,863 @@
+{
+  "ver": "2.3.14",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7",
+  "files": [],
+  "subMetas": {
+    "27064": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@27064",
+      "displayName": "",
+      "id": "27064",
+      "name": "06 · warm mouth cavity.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "48440": {
+      "importer": "gltf-embeded-image",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@48440",
+      "displayName": "",
+      "id": "48440",
+      "name": "2-color.image",
+      "userData": {
+        "gltfIndex": 6,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "50743": {
+      "importer": "texture",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@50743",
+      "displayName": "",
+      "id": "50743",
+      "name": "UnnamedTexture-5.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37b2c"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "52844": {
+      "importer": "gltf-embeded-image",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@52844",
+      "displayName": "",
+      "id": "52844",
+      "name": "0-normal.image",
+      "userData": {
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "55666": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@55666",
+      "displayName": "",
+      "id": "55666",
+      "name": "Scarf • plush folded neck wrap.mesh",
+      "userData": {
+        "gltfIndex": 3,
+        "triangleCount": 35000
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "58625": {
+      "importer": "gltf-embeded-image",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@58625",
+      "displayName": "",
+      "id": "58625",
+      "name": "11-normal.image",
+      "userData": {
+        "gltfIndex": 3,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "75005": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@75005",
+      "displayName": "",
+      "id": "75005",
+      "name": "Smile • small joyful open mouth.mesh",
+      "userData": {
+        "gltfIndex": 6,
+        "triangleCount": 66
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "37d37": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37d37",
+      "displayName": "",
+      "id": "37d37",
+      "name": "Sphere.043.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 55000
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b1f37": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@b1f37",
+      "displayName": "",
+      "id": "b1f37",
+      "name": "Head • sculpted tapered hook and slender cheeks.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 110000
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a7fba": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a7fba",
+      "displayName": "",
+      "id": "a7fba",
+      "name": "Forehead • gold inlaid sparkle.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "triangleCount": 35000
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d5a7a": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@d5a7a",
+      "displayName": "",
+      "id": "d5a7a",
+      "name": "Cape • wind-swept tailored outer cloth.mesh",
+      "userData": {
+        "gltfIndex": 4,
+        "triangleCount": 25600
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "718b4": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@718b4",
+      "displayName": "",
+      "id": "718b4",
+      "name": "Eye 0 • fine dark lash rim.mesh",
+      "userData": {
+        "gltfIndex": 5,
+        "triangleCount": 4608
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cf049": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@cf049",
+      "displayName": "",
+      "id": "cf049",
+      "name": "Sphere.042.mesh",
+      "userData": {
+        "gltfIndex": 7,
+        "triangleCount": 2976
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a1e56": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a1e56",
+      "displayName": "",
+      "id": "a1e56",
+      "name": "Eye 0 • floating star highlight.mesh",
+      "userData": {
+        "gltfIndex": 8,
+        "triangleCount": 12320
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a5956": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a5956",
+      "displayName": "",
+      "id": "a5956",
+      "name": "Eye 0 • floating star highlight.001.mesh",
+      "userData": {
+        "gltfIndex": 9,
+        "triangleCount": 12992
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "825ed": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@825ed",
+      "displayName": "",
+      "id": "825ed",
+      "name": "Sphere.mesh",
+      "userData": {
+        "gltfIndex": 10,
+        "triangleCount": 6720
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b55e6": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@b55e6",
+      "displayName": "",
+      "id": "b55e6",
+      "name": "Eye 0 • flush sapphire lens.mesh",
+      "userData": {
+        "gltfIndex": 11,
+        "triangleCount": 7488
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f4bdf": {
+      "importer": "gltf-mesh",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f4bdf",
+      "displayName": "",
+      "id": "f4bdf",
+      "name": "Lantern • delicate glass chamber.mesh",
+      "userData": {
+        "gltfIndex": 12,
+        "triangleCount": 160
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1e22d": {
+      "importer": "gltf-embeded-image",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1e22d",
+      "displayName": "",
+      "id": "1e22d",
+      "name": "9-normal.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "127d6": {
+      "importer": "gltf-embeded-image",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@127d6",
+      "displayName": "",
+      "id": "127d6",
+      "name": "0-color.image",
+      "userData": {
+        "gltfIndex": 2,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "1b2ab": {
+      "importer": "gltf-embeded-image",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1b2ab",
+      "displayName": "",
+      "id": "1b2ab",
+      "name": "11-color.image",
+      "userData": {
+        "gltfIndex": 4,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "37b2c": {
+      "importer": "gltf-embeded-image",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37b2c",
+      "displayName": "",
+      "id": "37b2c",
+      "name": "10-normal.image",
+      "userData": {
+        "gltfIndex": 5,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "3effa": {
+      "importer": "texture",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3effa",
+      "displayName": "",
+      "id": "3effa",
+      "name": "UnnamedTexture-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1e22d"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "221a5": {
+      "importer": "texture",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@221a5",
+      "displayName": "",
+      "id": "221a5",
+      "name": "UnnamedTexture-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@52844"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0089c": {
+      "importer": "texture",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@0089c",
+      "displayName": "",
+      "id": "0089c",
+      "name": "UnnamedTexture-2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@127d6"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b633": {
+      "importer": "texture",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@9b633",
+      "displayName": "",
+      "id": "9b633",
+      "name": "UnnamedTexture-3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@58625"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b782": {
+      "importer": "texture",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@9b782",
+      "displayName": "",
+      "id": "9b782",
+      "name": "UnnamedTexture-4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1b2ab"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "99ea5": {
+      "importer": "texture",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@99ea5",
+      "displayName": "",
+      "id": "99ea5",
+      "name": "UnnamedTexture-6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@48440"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "65b79": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@65b79",
+      "displayName": "",
+      "id": "65b79",
+      "name": "01 · warm ivory microfleece • BAKED.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43d23": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@43d23",
+      "displayName": "",
+      "id": "43d23",
+      "name": "01b · ivory fleece with integrated cheek blush • BAKED.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1c9ff": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1c9ff",
+      "displayName": "",
+      "id": "1c9ff",
+      "name": "02 · polished warm gold.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "35e62": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@35e62",
+      "displayName": "",
+      "id": "35e62",
+      "name": "03 · deep peacock woven cloth • BAKED.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1f384": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1f384",
+      "displayName": "",
+      "id": "1f384",
+      "name": "04 · sage silk lining • BAKED.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aba0c": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@aba0c",
+      "displayName": "",
+      "id": "aba0c",
+      "name": "05 · dark eye socket.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3523b": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3523b",
+      "displayName": "",
+      "id": "3523b",
+      "name": "07 · soft coral tongue.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f45d2": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f45d2",
+      "displayName": "",
+      "id": "f45d2",
+      "name": "09 · lantern star emission.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e6582": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@e6582",
+      "displayName": "",
+      "id": "e6582",
+      "name": "10 · eye catchlight.material",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8eeee": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@8eeee",
+      "displayName": "",
+      "id": "8eeee",
+      "name": "11 · tiny blue starlight.material",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "115bc": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@115bc",
+      "displayName": "",
+      "id": "115bc",
+      "name": "12 · sapphire galaxy iris • BAKED.material",
+      "userData": {
+        "gltfIndex": 11
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5f12f": {
+      "importer": "gltf-material",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@5f12f",
+      "displayName": "",
+      "id": "5f12f",
+      "name": "13 · clear amber glass.material",
+      "userData": {
+        "gltfIndex": 12
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "21dbc": {
+      "importer": "gltf-scene",
+      "uuid": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@21dbc",
+      "displayName": "",
+      "id": "21dbc",
+      "name": "xingbao.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "9-normal",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1e22d"
+      },
+      {
+        "name": "0-normal",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@52844"
+      },
+      {
+        "name": "0-color",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@127d6"
+      },
+      {
+        "name": "11-normal",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@58625"
+      },
+      {
+        "name": "11-color",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1b2ab"
+      },
+      {
+        "name": "10-normal",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37b2c"
+      },
+      {
+        "name": "2-color",
+        "uri": "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@48440"
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@37d37",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@b1f37",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a7fba",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@55666",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@d5a7a",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@718b4",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@75005",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@cf049",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a1e56",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@a5956",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@825ed",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@b55e6",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f4bdf"
+      ],
+      "skeletons": [],
+      "textures": [
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3effa",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@221a5",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@0089c",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@9b633",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@9b782",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@50743",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@99ea5"
+      ],
+      "materials": [
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@65b79",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@43d23",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1c9ff",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@35e62",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@1f384",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@aba0c",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@27064",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@3523b",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@f45d2",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@e6582",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@8eeee",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@115bc",
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@5f12f"
+      ],
+      "scenes": [
+        "8a1dd3f8-7b99-41e0-a19a-bc3f6fe04fc7@21dbc"
+      ]
+    }
+  }
+}

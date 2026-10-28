@@ -1,0 +1,10 @@
+(()=>{
+ const el=document.createElement('section');el.id='island-loading';el.setAttribute('aria-label','正在准备星屿冒险');
+ el.innerHTML=`<div class="loading-sky"></div><div class="loading-orbit"></div><div class="loading-brand">✦ 星屿学园 <small>STAR ISLE</small></div><div class="loading-star s1">✦</div><div class="loading-star s2">✧</div><div class="loading-star s3">✦</div><div class="loading-hero"><img src="/auth/guide.png" alt="星宝带你出发"><span class="hero-shadow"></span></div><div class="loading-card"><span class="loading-kicker">下一站 · 奇妙的小岛冒险</span><h1>星宝正在为你点亮小岛</h1><div class="loading-track" role="progressbar" aria-label="资源准备进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="loading-fill"></div><i>✦</i></div><div class="loading-info"><span class="loading-phase">正在连接你的冒险旅程…</span><strong>0%</strong></div><p>每一次尝试，都会让你离下一颗星更近。</p><button hidden>重新连接</button></div>`;
+ document.body.append(el);let value=0,done=false,timeout;const retry=el.querySelector('button');const bar=el.querySelector('[role=progressbar]'),fill=el.querySelector('.loading-fill'),star=el.querySelector('.loading-track i'),phase=el.querySelector('.loading-phase');
+ const watchProgress=()=>{clearTimeout(timeout);retry.hidden=true;timeout=setTimeout(()=>{if(!done){phase.textContent='连接有些慢，已完成的进度会保留';retry.hidden=false;}},45000);};
+ window.starisleLoading=(percent,label)=>{if(done||!Number.isFinite(percent))return;const next=Math.max(value,Math.min(100,percent));if(next>value)watchProgress();value=next;fill.style.width=value+'%';star.style.left=value+'%';bar.setAttribute('aria-valuenow',String(Math.round(value)));el.querySelector('strong').textContent=Math.round(value)+'%';if(retry.hidden)phase.textContent=label;if(value===100){done=true;clearTimeout(timeout);el.classList.add('loading-done');setTimeout(()=>el.remove(),350);}};
+ watchProgress();
+ el.querySelector('button').onclick=()=>location.reload();
+ window.addEventListener('starisle:world-ready',()=>{clearTimeout(timeout);window.starisleLoading(100,'小岛已点亮，出发！');},{once:true});
+})();

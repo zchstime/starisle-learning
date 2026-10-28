@@ -1,0 +1,27 @@
+{
+  "imported_meshes": 2,
+  "armatures": 1,
+  "imported_actions": [
+    "Idle.001",
+    "Wave.001",
+    "Celebrate.001"
+  ],
+  "views": [
+    "glb-front",
+    "glb-hero",
+    "glb-side",
+    "glb-back"
+  ],
+  "animation_samples": [
+    {
+      "action": "Wave.001",
+      "frame": 16,
+      "image": "wave.png"
+    },
+    {
+      "action": "Celebrate.001",
+      "frame": 16,
+      "image": "celebrate.png"
+    }
+  ]
+}

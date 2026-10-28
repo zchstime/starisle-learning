@@ -1,0 +1,18 @@
+{
+  "skin_weights": "pass",
+  "animation_channels": "pass",
+  "bones": 7,
+  "header_and_chunks": "pass",
+  "finite_positions": "pass",
+  "triangle_indices": "pass",
+  "embedded_images": "pass",
+  "external_dependencies": 0,
+  "bytes": 2505292,
+  "meshes": 1,
+  "materials": 12,
+  "images": 1,
+  "triangles": 61589,
+  "vertices": 32345,
+  "animations": 3,
+  "sha256": "f0082f8a33f545a02a529573dc9bca2b48d0fcfa8860cbbcf17a9bb8a0fa814f"
+}

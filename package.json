@@ -1,0 +1,23 @@
+{
+  "name": "starisle-exam-adventure",
+  "version": "0.3.0",
+  "creator": {
+    "version": "3.8.8"
+  },
+  "uuid": "65142c4b-92bc-4bfb-b87a-86f84ce52b1b",
+  "scripts": {
+    "test": "node tools/test.cjs && node tools/test-v2.cjs && node tools/test-auth.cjs && node tools/test-smsbao.cjs && node tools/test-cloud.cjs && node tools/test-exam.cjs",
+    "serve": "node tools/serve.cjs",
+    "build:web": "bash tools/build-web.sh",
+    "test:admin": "node tools/test-admin.cjs"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "mysql2": "^3.24.6"
+  },
+  "overrides": {
+    "exceljs": {
+      "uuid": "^11.1.1"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+import {_decorator,Component,Node,Camera,RenderTexture,SpriteFrame,Sprite,MeshRenderer,Material,Mesh,utils,primitives,Color,Vec3,Vec4,DirectionalLight,Graphics,UIOpacity} from 'cc';
+import {node,color} from '../ui/Kit';
+const {ccclass}=_decorator;
+const MODEL_LAYER=1<<19;
+/** Actual mesh character rendered to transparent texture for existing UI composition. */
+@ccclass('Guardian3D')
+export class Guardian3D extends Component {
+ static baseMaterial:Material;
+ private studio:Node;private rig:Node;private head:Node;private left:Node;private right:Node;private texture:RenderTexture;private frame:SpriteFrame;
+ private meshes:Mesh[]=[];private materials:Material[]=[];private time=0;private action=0;private yaw=0;private dragX=0;private dragged=false;private shadow:UIOpacity;
+ setup(size:number,onTap:()=>void){
+  const scene=this.node.scene;scene.globals.ambient.skyColor=new Vec4(.65,.75,.9,1);scene.globals.ambient.groundAlbedo=new Vec4(.35,.3,.25,1);scene.globals.ambient.skyIllum=32000;
+  this.studio=new Node('StarBao3DStudio');scene.addChild(this.studio);this.studio.setPosition(0,-10000,0);
+  this.rig=new Node('StarBaoModel');this.rig.parent=this.studio;
+  const cream=this.material('#FFF1BA'),gold=this.material('#EAB75A',.3),teal=this.material('#328F8A'),dark=this.material('#182A45',.17),blue=this.material('#3E8BBF',.22),white=this.material('#FFFFFF',.16),pink=this.material('#EFA39C'),mouth=this.material('#873E46');
+  const sphere=utils.createMesh(primitives.sphere(.5,{segments:24}));this.meshes.push(sphere);
+  const part=(name:string,parent:Node,mat:Material,pos:number[],scale:number[])=>{const n=new Node(name);n.parent=parent;n.layer=MODEL_LAYER;n.setPosition(pos[0],pos[1],pos[2]);n.setScale(scale[0],scale[1],scale[2]);const r=n.addComponent(MeshRenderer);r.mesh=sphere;r.setMaterial(mat,0);return n;};
+  part('Body',this.rig,cream,[0,-.55,0],[.82,.98,.63]);
+  part('Cape',this.rig,teal,[0,-.52,-.28],[1.1,1.05,.3]);
+  part('Collar',this.rig,teal,[0,-.18,.02],[.91,.22,.72]);
+  part('Clasp',this.rig,gold,[0,-.25,.38],[.19,.19,.1]);
+  this.head=new Node('RoundedStarHead');this.head.parent=this.rig;this.head.layer=MODEL_LAYER;this.head.setPosition(0,.52,0);
+  const star=this.starMesh();this.meshes.push(star);const renderer=this.head.addComponent(MeshRenderer);renderer.mesh=star;renderer.setMaterial(cream,0);
+  for(const sign of [-1,1]){part('EyeBlue',this.head,blue,[sign*.29,.02,.383],[.32,.4,.14]);part('EyePupil',this.head,dark,[sign*.29,.025,.443],[.24,.32,.1]);part('EyeShine',this.head,white,[sign*.29-.045,.10,.49],[.09,.11,.045]);part('EyeShineSmall',this.head,white,[sign*.29+.047,-.05,.492],[.035,.04,.025]);part('Blush',this.head,pink,[sign*.51,-.2,.32],[.23,.13,.055]);part('Boot',this.rig,gold,[sign*.26,-1.04,.07],[.36,.3,.51]);}
+  part('Smile',this.head,mouth,[0,-.245,.405],[.21,.17,.07]);part('Tongue',this.head,pink,[0,-.28,.44],[.12,.065,.025]);
+  this.left=new Node('LeftArmPivot');this.left.parent=this.rig;this.left.setPosition(-.44,-.32,0);
+  this.right=new Node('RightArmPivot');this.right.parent=this.rig;this.right.setPosition(.44,-.32,0);
+  part('LeftArm',this.left,cream,[-.17,-.18,0],[.32,.58,.32]);part('RightArm',this.right,cream,[.17,-.18,0],[.32,.58,.32]);
+  part('LanternHandle',this.right,gold,[.29,-.4,.06],[.08,.35,.08]);part('Lantern',this.right,gold,[.29,-.62,.06],[.27,.32,.24]);part('LanternGlow',this.right,this.material('#FFF0B0',.25),[.29,-.61,.19],[.16,.21,.04]);
+  const light=new Node('KeyLight');light.parent=this.studio;light.setRotationFromEuler(-32,-38,0);const sun=light.addComponent(DirectionalLight);sun.color=new Color(255,240,215);sun.illuminance=80000;
+  const cameraNode=new Node('PortraitCamera');cameraNode.parent=this.studio;cameraNode.setPosition(0,.13,6);cameraNode.lookAt(new Vec3(0,-9999.87,0));
+  const camera=cameraNode.addComponent(Camera);camera.projection=Camera.ProjectionType.ORTHO;camera.orthoHeight=1.65;camera.near=.1;camera.far=20;camera.priority=-10;camera.visibility=MODEL_LAYER;camera.clearFlags=Camera.ClearFlag.SOLID_COLOR;camera.clearColor=new Color(0,0,0,0);
+  this.texture=new RenderTexture();this.texture.reset({width:512,height:512});camera.targetTexture=this.texture;
+  this.frame=new SpriteFrame();this.frame.texture=this.texture;this.frame.flipUVY=false;
+  const shadow=node(this.node,'GroundShadow',0,size*1.01,size,18),g=shadow.addComponent(Graphics);g.fillColor=color('#173E47',45);g.ellipse(size*.5,-5,size*.29,7);g.fill();this.shadow=shadow.addComponent(UIOpacity);
+  const picture=node(this.node,'Realtime3DPortrait',-size*.12,-size*.12,size*1.24,size*1.24);const sprite=picture.addComponent(Sprite);sprite.sizeMode=Sprite.SizeMode.CUSTOM;sprite.spriteFrame=this.frame;
+  this.node.on(Node.EventType.TOUCH_START,(e:any)=>{this.dragX=e.getUILocation().x;this.dragged=false;});
+  this.node.on(Node.EventType.TOUCH_MOVE,(e:any)=>{const dx=e.getUILocation().x-this.dragX;if(Math.abs(dx)>3)this.dragged=true;this.yaw+=dx*.65;this.dragX=e.getUILocation().x;e.propagationStopped=true;});
+  this.node.on(Node.EventType.TOUCH_END,(e:any)=>{e.propagationStopped=true;if(!this.dragged){this.action=1;onTap();}});
+ }
+ private material(hex:string,roughness=.55){const m=new Material();m.copy(Guardian3D.baseMaterial);m.setProperty('mainColor',color(hex));m.setProperty('roughness',roughness);m.setProperty('metallic',0);this.materials.push(m);return m;}
+ private starMesh(){const positions:number[]=[],normals:number[]=[],indices:number[]=[],uvs:number[]=[];const rings=24,segs=80;
+  for(let j=0;j<=rings;j++){const phi=Math.PI*j/rings;for(let i=0;i<=segs;i++){const a=2*Math.PI*i/segs;const r=(.83+.19*Math.cos(5*(a-Math.PI/2)))*Math.sin(phi);positions.push(r*Math.cos(a),r*Math.sin(a),.41*Math.cos(phi));normals.push(0,0,0);uvs.push(i/segs,j/rings);}}
+  for(let j=0;j<rings;j++)for(let i=0;i<segs;i++){const a=j*(segs+1)+i,b=a+segs+1;indices.push(a,b,a+1,a+1,b,b+1);}
+  for(let k=0;k<indices.length;k+=3){const a=indices[k]*3,b=indices[k+1]*3,c=indices[k+2]*3;const ux=positions[b]-positions[a],uy=positions[b+1]-positions[a+1],uz=positions[b+2]-positions[a+2],vx=positions[c]-positions[a],vy=positions[c+1]-positions[a+1],vz=positions[c+2]-positions[a+2];const nx=uy*vz-uz*vy,ny=uz*vx-ux*vz,nz=ux*vy-uy*vx;for(const id of [a,b,c]){normals[id]+=nx;normals[id+1]+=ny;normals[id+2]+=nz;}}
+  for(let i=0;i<normals.length;i+=3){const l=Math.hypot(normals[i],normals[i+1],normals[i+2])||1;normals[i]/=l;normals[i+1]/=l;normals[i+2]/=l;}
+  return utils.createMesh({positions,normals,indices,uvs});
+ }
+ update(dt:number){if(!this.rig)return;this.time+=Math.min(dt,.05);this.action=Math.max(0,this.action-dt);const hop=this.action>0?Math.sin((1-this.action)*Math.PI):0;this.rig.setPosition(0,Math.sin(this.time*2)*.025+hop*.3,0);this.rig.setRotationFromEuler(0,this.yaw+Math.sin(this.time*.7)*12,Math.sin(this.time*1.5)*2);this.head.setRotationFromEuler(0,0,Math.sin(this.time)*2);this.left.setRotationFromEuler(0,0,-8+Math.sin(this.time*2)*8);this.right.setRotationFromEuler(0,0,8+Math.sin(this.time*2)*8+hop*70);this.shadow.opacity=255-hop*115;}
+ onDestroy(){this.studio?.destroy();this.frame?.destroy();this.texture?.destroy();this.meshes.forEach(m=>m.destroy());this.materials.forEach(m=>m.destroy());}
+}

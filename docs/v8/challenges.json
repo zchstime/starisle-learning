@@ -1,0 +1,425 @@
+[
+  {
+    "id": "math.g1.c6",
+    "subject": "math",
+    "grade": 1,
+    "title": "春游补给船 · 进阶",
+    "topic": "从一步计算到两步计算",
+    "art": "garden",
+    "alignment": "theme",
+    "levels": [
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "给 5 位小伙伴各准备 1 份点心，一共装几份？",
+        "target": 5,
+        "units": [
+          1
+        ],
+        "explanation": "5 位伙伴每人 1 份，一共 5 份。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g1.c6.l1",
+        "stage": "warmup",
+        "coachHints": [
+          "一个伙伴配一份点心，试着一份一份装。",
+          "可以按 1、2、3… 数，人数与份数要一样。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "有 9 份点心，送出 4 份。装上剩下的点心。",
+        "target": 5,
+        "units": [
+          1,
+          5
+        ],
+        "explanation": "9 − 4 = 5 份。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g1.c6.l2",
+        "stage": "practice",
+        "coachHints": [
+          "送出了点心，数量会变少。",
+          "先想 9 减去 4，再选择合适的能量块。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "原有 12 份点心，送出 5 份，又收到 2 份。现在装几份？",
+        "target": 9,
+        "units": [
+          1,
+          5
+        ],
+        "explanation": "先算 12 − 5 = 7，再算 7 + 2 = 9 份。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g1.c6.l3",
+        "stage": "challenge",
+        "coachHints": [
+          "先处理“送出”，再处理“收到”。",
+          "先算 12 减去 5，再把收到的 2 份加上。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math.g2.c6",
+    "subject": "math",
+    "grade": 2,
+    "title": "乘法补给队 · 进阶",
+    "topic": "乘除法与数量组合",
+    "art": "garden",
+    "alignment": "theme",
+    "levels": [
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "3 队伙伴，每队 4 人，每人要 1 份点心。装几份？",
+        "target": 12,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "3 × 4 = 12 份。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g2.c6.l1",
+        "stage": "warmup",
+        "coachHints": [
+          "有 3 组，每组都是 4，可以用乘法。",
+          "先求 3 乘 4，再用 10 和 1 组合。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "18 份点心平均装进 3 艘船，每艘装几份？",
+        "target": 6,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "18 ÷ 3 = 6 份。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g2.c6.l2",
+        "stage": "practice",
+        "coachHints": [
+          "平均分成 3 份，求每份的数量。",
+          "想一想几乘 3 等于 18。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "4 队伙伴，每队 6 人。装齐点心，最多用 6 块能量。",
+        "target": 24,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "4 × 6 = 24；2 块 10 和 4 块 1，共 6 块。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "maxBlocks": 6,
+        "id": "math.g2.c6.l3",
+        "stage": "challenge",
+        "coachHints": [
+          "先算总人数，再考虑怎么少用几块。",
+          "把多个小块换成大块，数量不变；先试两块 10。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math.g3.c6",
+    "subject": "math",
+    "grade": 3,
+    "title": "两步运输队 · 进阶",
+    "topic": "两步运算与数量组合",
+    "art": "garden",
+    "alignment": "theme",
+    "levels": [
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "每箱有 12 颗种子，运来 3 箱，一共多少颗？",
+        "target": 36,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "12 × 3 = 36 颗。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g3.c6.l1",
+        "stage": "warmup",
+        "coachHints": [
+          "每箱一样多，3 箱用乘法计算。",
+          "先求 12 乘 3，再装船。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "48 颗种子平均装进 3 艘船，每艘装几颗？",
+        "target": 16,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "48 ÷ 3 = 16 颗。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g3.c6.l2",
+        "stage": "practice",
+        "coachHints": [
+          "平均分给 3 艘船，用除法。",
+          "可以把 48 分成 30 和 18，分别除以 3。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "3 箱各 12 颗种子，先送出 8 颗。装上剩下的，最多 6 块。",
+        "target": 28,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "12 × 3 − 8 = 28；10 + 10 + 5 + 1 + 1 + 1，共 6 块。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "maxBlocks": 6,
+        "id": "math.g3.c6.l3",
+        "stage": "challenge",
+        "coachHints": [
+          "先求 3 箱总数，再减去送出的 8 颗。",
+          "算好数量后，先用 10，再用 5 和 1 补齐。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math.g4.c6",
+    "subject": "math",
+    "grade": 4,
+    "title": "远航调度站 · 进阶",
+    "topic": "多步运算与补给规划",
+    "art": "garden",
+    "alignment": "theme",
+    "levels": [
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "每箱有 120 颗星光，运来 3 箱，一共装多少？",
+        "target": 360,
+        "units": [
+          10,
+          100
+        ],
+        "explanation": "120 × 3 = 360。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g4.c6.l1",
+        "stage": "warmup",
+        "coachHints": [
+          "先算 12 乘 3，再考虑末尾的 0。",
+          "每块 100 表示一个百，每块 10 表示一个十。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "480 颗星光平均分给 12 艘船，每艘装多少？",
+        "target": 40,
+        "units": [
+          10,
+          50,
+          100
+        ],
+        "explanation": "480 ÷ 12 = 40。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g4.c6.l2",
+        "stage": "practice",
+        "coachHints": [
+          "平均分成 12 份，想除法或乘法。",
+          "想一想 12 乘几等于 480。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "12 箱各 25 颗星光，先送出 120 颗。装上剩下的，最多 5 块。",
+        "target": 180,
+        "units": [
+          10,
+          50,
+          100
+        ],
+        "explanation": "12 × 25 − 120 = 180；100 + 50 + 10 + 10 + 10，共 5 块。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "maxBlocks": 5,
+        "id": "math.g4.c6.l3",
+        "stage": "challenge",
+        "coachHints": [
+          "先算 12 乘 25，再减去 120。",
+          "大块先装：用 100、50，再用 10 补齐。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math.g5.c6",
+    "subject": "math",
+    "grade": 5,
+    "title": "小数采购队 · 进阶",
+    "topic": "小数购物与优惠",
+    "art": "garden",
+    "alignment": "theme",
+    "levels": [
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "2 袋种子，每袋 1.2 元，一共付多少元？",
+        "target": 24,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "1.2 × 2 = 2.4 元。",
+        "scale": 10,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g5.c6.l1",
+        "stage": "warmup",
+        "coachHints": [
+          "总价等于单价乘数量。",
+          "先算 1.2 乘 2；这里显示的块值以元为单位。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "4 袋种子一共 4.8 元，一袋多少元？",
+        "target": 12,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "4.8 ÷ 4 = 1.2 元。",
+        "scale": 10,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g5.c6.l2",
+        "stage": "practice",
+        "coachHints": [
+          "总价平均分成 4 份，就是一袋的钱。",
+          "可以先把 4.8 元看成 48 角，再平均分。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "3 袋各 1.5 元，优惠 0.5 元。付出实付款，最多 4 块。",
+        "target": 40,
+        "units": [
+          1,
+          5,
+          10
+        ],
+        "explanation": "1.5 × 3 − 0.5 = 4 元，用 4 块 1 元。",
+        "scale": 10,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "maxBlocks": 4,
+        "id": "math.g5.c6.l3",
+        "stage": "challenge",
+        "coachHints": [
+          "先求 3 袋总价，再减去优惠。",
+          "数量对了但块多时，用 1 元替换较小的金额。"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math.g6.c6",
+    "subject": "math",
+    "grade": 6,
+    "title": "百分数救援船 · 进阶",
+    "topic": "百分数应用与补给规划",
+    "art": "garden",
+    "alignment": "theme",
+    "levels": [
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "40 盏灯需要修好 75%，准备多少份修灯材料？",
+        "target": 30,
+        "units": [
+          1,
+          10
+        ],
+        "explanation": "40 × 75% = 30 份。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g6.c6.l1",
+        "stage": "warmup",
+        "coachHints": [
+          "75% 就是四分之三。",
+          "先求 40 的四分之一，再取三份。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "已经修好的 24 盏占总数的 2/3，一共有多少盏？",
+        "target": 36,
+        "units": [
+          1,
+          10
+        ],
+        "explanation": "24 ÷ 2/3 = 36 盏。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "id": "math.g6.c6.l2",
+        "stage": "practice",
+        "coachHints": [
+          "24 盏对应 2 份，先求 1 份。",
+          "总数对应 3 份，用一份的数量乘 3。"
+        ]
+      },
+      {
+        "kind": "cargo",
+        "title": "补给小队",
+        "goal": "80 盏灯先修好 25%，为剩下的灯装材料，最多用 6 块。",
+        "target": 60,
+        "units": [
+          1,
+          10
+        ],
+        "explanation": "先修好 80 × 25% = 20 盏，剩下 60 盏；用 6 块 10。",
+        "scale": 1,
+        "hint": "把需要的数量装船；点船上的块可取回。",
+        "maxBlocks": 6,
+        "id": "math.g6.c6.l3",
+        "stage": "challenge",
+        "coachHints": [
+          "要准备的是“剩下”的材料，不是已经修好的。",
+          "先求 80 的 25%，再从 80 中减去；用大块减少块数。"
+        ]
+      }
+    ]
+  }
+]
