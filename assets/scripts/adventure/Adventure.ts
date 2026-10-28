@@ -14,10 +14,12 @@ import {Puzzle} from './Puzzle';
 import {SUBJECTS,subjectInfo,bandLabel} from './Subjects';
 import {voiceKey} from './AudioKey';
 import {SoundBank} from './SoundBank';
+import {Companion} from './Companion';
 import {Guardian3D} from './Guardian3D';
 import {guardian,fireflies,burst} from './WorldMotion';
 export class Adventure {
  private examView:ExamView;
+ private companion:Companion;
  root:Node; frames:Record<string,SpriteFrame>={}; clips:Record<string,AudioClip>={}; audio:AudioSource;voiceAudio:AudioSource;sounds:SoundBank;
  private battleTimer:ReturnType<typeof setTimeout>|null=null;
  private battleResume:(()=>void)|null=null;
@@ -39,13 +41,13 @@ export class Adventure {
   loading(78,'星宝正在整理探险装备…');
   await Guardian3D.preload().catch(error=>console.error('星宝模型加载失败，暂用角色原画。',error));
   loading(90,'正在唤醒小岛的声音…');
-  await this.sounds.preload(['tap','success','plant','oops','travel','jump','arrival','sparkle','reward'].map(k=>'audio/'+k));this.map();
+  await this.sounds.preload(['tap','success','plant','oops','travel','jump','arrival','sparkle','reward'].map(k=>'audio/'+k));this.companion=new Companion(this.sounds,()=>({screen:this.screen,key:this.screen==='play'?this.puzzle?.level.id:String(this.progress.grade)+this.progress.subject,valid:this.root?.isValid,done:this.progress.done.length,levelUp:this.lastBattleLevelUp,listening:this.puzzle?.level.kind==='listen'&&this.screen==='play'}),()=>{if(this.screen==='play'){this.hint=true;this.hintStep=0;this.play();}});this.map();
   if(isContentPreview()){const id=new URLSearchParams(window.location.search).get('level');const c=CATALOG.find(c=>c.levels.some(l=>l.id===id));if(c){this.progress.subject=c.subject;this.progress.grade=c.grade;this.progress.chapter=chapters(c.subject,c.grade).indexOf(c);this.startLevel(c.levels.findIndex(l=>l.id===id),false);}}
   if(typeof window!=='undefined'){window.dispatchEvent(new Event('starisle:world-ready'));setInterval(()=>{if(this.root?.isValid&&this.screen==='map')void this.checkContent();},30000);}
  }
  sound(k='tap'){if(this.progress.sound)void this.sounds.play('audio/'+k,false,k==='tap'?.72:.9);}
- speak(value:string){if(!this.progress.sound){this.message='声音已关闭，点右上角「声音」开启。';if(this.screen==='play')this.play();return;}void this.sounds.play('voice/'+voiceKey(value),true,.95);}
- clear(){this.examView?.stop();if(this.battleTimer!==null){clearTimeout(this.battleTimer);this.battleTimer=null;}if(this.battleResume&&typeof document!=='undefined'){document.removeEventListener('visibilitychange',this.battleResume);this.battleResume=null;}this.playFeedback=null;this.voiceToken++;this.sounds?.stopVoice();const stop=(n:Node)=>{Tween.stopAllByTarget(n);const o=n.getComponent(UIOpacity);if(o)Tween.stopAllByTarget(o);n.children.forEach(stop);};for(const child of [...this.root.children]){stop(child);child.removeFromParent();child.destroy();}}
+ speak(value:string){this.companion?.dismiss();if(!this.progress.sound){this.message='声音已关闭，点右上角「声音」开启。';if(this.screen==='play')this.play();return;}void this.sounds.play('voice/'+voiceKey(value),true,.95);}
+ clear(){this.examView?.stop();if(this.battleTimer!==null){clearTimeout(this.battleTimer);this.battleTimer=null;}if(this.battleResume&&typeof document!=='undefined'){document.removeEventListener('visibilitychange',this.battleResume);this.battleResume=null;}this.playFeedback=null;this.voiceToken++;if(!this.companion?.speaking)this.sounds?.stopVoice();const stop=(n:Node)=>{Tween.stopAllByTarget(n);const o=n.getComponent(UIOpacity);if(o)Tween.stopAllByTarget(o);n.children.forEach(stop);};for(const child of [...this.root.children]){stop(child);child.removeFromParent();child.destroy();}}
  art(){const world=gradeWorld(this.progress.grade),f=this.frames[world.key]||this.frames['journey-planets']||this.frames.island;if(f){const bg=sprite(this.root,f,0,0,1440,810);bg.name='World:'+world.key;}else panel(this.root,0,0,1440,810,'#BDE5E1',0);if(this.screen==='map'||this.screen==='reward')fireflies(this.root);}
  subjectPage=0;
  subjectDrawer(){
@@ -78,7 +80,7 @@ export class Adventure {
   [[.2,'轻柔'],[.4,'适中'],[.65,'明亮']].forEach(([value,label],i)=>this.btn(b,(Math.abs(this.sounds.musicVolume-Number(value))<.001?'✓ ':'')+label,280+i*225,414,205,34,()=>{this.sounds.setMusicVolume(Number(value));this.audioSettings();},Math.abs(this.sounds.musicVolume-Number(value))<.001?C.gold:C.blue,C.ink,19));
   this.btn(b,'返回游戏 →',295,456,420,70,()=>{if(this.audioReturn==='play')this.play();else if(this.audioReturn==='library')this.library();else this.map();},C.gold,'#754A17',26);
  }
- mascot(x:number,y:number,size=150){if(this.frames.guide)guardian(this.root,this.frames.guide,x,y,size,()=>this.sound('jump'));}
+ mascot(x:number,y:number,size=150){if(this.frames.guide)guardian(this.root,this.frames.guide,x,y,size,()=>{this.sound('jump');this.companion?.say('hello',true);});}
  map(){if(hasLearningRoute(this.progress.subject)){this.mathMap();return;}this.clear();this.screen='map';this.locked=false;this.art();this.title();this.soundButton();const c=this.chapter,p=this.progress,done=p.count(c.id),list=chapters(p.subject,p.grade);
   this.btn(this.root,'⌂  换学科 / 年级',340,29,240,54,()=>this.library(),C.cream,C.teal,20);
   panel(this.root,600,29,356,54,C.cream,25,'',245);text(this.root,`${subjectInfo(p.subject).name} · ${p.grade}年级${p.subject==='english'&&p.grade<3?'启蒙':''} · 第 ${p.chapter+1} 章`,612,31,332,50,20,C.ink,true,'center');
@@ -207,7 +209,7 @@ export class Adventure {
    p.optionOrder.forEach((idx,i)=>{const v=l.options[idx];const x=100+i*300,on=p.choice===idx;const b=node(w,'Balloon:'+v,x,113,220,185);const g=b.addComponent(Graphics);g.fillColor=color(l.colors?.[idx]||'#D9E9F6');g.ellipse(110,-86,93,86);g.fill();g.strokeColor=color(on?'#DAA33F':'#FFFFFF');g.lineWidth=on?6:3;g.ellipse(110,-86,93,86);g.stroke();g.moveTo(110,-170);g.lineTo(102,-184);g.lineTo(118,-184);g.close();g.fill();g.fillColor=color('#FFFFFF',120);g.ellipse(72,-48,13,21);g.fill();if(!l.colors)text(b,v,24,48,172,55,32,C.ink,true,'center');b.on(Node.EventType.TOUCH_END,(e:any)=>{e.propagationStopped=true;p.choice=idx;this.message='';this.sound();this.play();});if(['one','two','three'].includes(v)){const n=['one','two','three'].indexOf(v)+1;text(b,'',0,0,1,1);for(let k=0;k<n;k++)this.star(b,55+k*45,130,13,'#E7B14B');}panel(w,x+107,298,4,40,'#A8B9AD',2);text(w,on?'✓ 选好了':'点我送出',x,348,220,36,23,on?C.teal:C.muted,on,'center');});
   }
  }
- submit(){if(this.locked)return;const pending=usesRunes(this.puzzle.level)&&this.puzzle.pendingRune>=0?'新符石还没放入，点星光阵确认后再发射。':usesRunes(this.puzzle.level)&&this.puzzle.choice<0?'先把答案符石放进星光阵，再点发射。':this.puzzle.pendingGuide();if(pending){this.message=pending;if(this.playFeedback?.isValid){this.playFeedback.string=pending;this.playFeedback.color=color(C.teal);}return;}this.puzzle.attempts++;if(!this.puzzle.correct()){this.sound('oops');this.message=this.puzzle.feedback();if(this.puzzle.level.coachHints?.length&&this.puzzle.attempts>=2){this.hint=true;this.hintStep=Math.max(this.hintStep,Math.min(this.puzzle.attempts-2,this.puzzle.level.coachHints.length-1));}this.play();return;}this.locked=true;const fresh=!this.progress.done.includes(this.puzzle.level.id),oldLevel=this.progress.heroLevel;this.progress.complete(this.puzzle.level.id);this.lastBattlePoints=fresh?100:0;this.lastBattleLevelUp=this.progress.heroLevel>oldLevel;
+ submit(){if(this.locked)return;const pending=usesRunes(this.puzzle.level)&&this.puzzle.pendingRune>=0?'新符石还没放入，点星光阵确认后再发射。':usesRunes(this.puzzle.level)&&this.puzzle.choice<0?'先把答案符石放进星光阵，再点发射。':this.puzzle.pendingGuide();if(pending){this.message=pending;if(this.playFeedback?.isValid){this.playFeedback.string=pending;this.playFeedback.color=color(C.teal);}return;}this.puzzle.attempts++;if(!this.puzzle.correct()){this.sound('oops');this.message=this.puzzle.feedback();if(this.puzzle.level.coachHints?.length&&this.puzzle.attempts>=2){this.hint=true;this.hintStep=Math.max(this.hintStep,Math.min(this.puzzle.attempts-2,this.puzzle.level.coachHints.length-1));}this.play();this.companion?.say('wrong');return;}this.locked=true;this.companion?.dismiss();const fresh=!this.progress.done.includes(this.puzzle.level.id),oldLevel=this.progress.heroLevel;this.progress.complete(this.puzzle.level.id);this.lastBattlePoints=fresh?100:0;this.lastBattleLevelUp=this.progress.heroLevel>oldLevel;
   // Animation frames can pause in background tabs. Completion is idempotent and also uses wall time.
   const deadline=Date.now()+1500;let settled=false;
   const finishBattle=()=>{if(settled)return;settled=true;if(typeof document==='undefined'||!document.hidden)this.sound('reward');this.reward(fresh&&this.progress.gradeStatus().complete&&this.progress.grade<6);};
@@ -236,6 +238,6 @@ export class Adventure {
   for(let g=1;g<=6;g++){const status=this.progress.gradeStatus(this.progress.subject,g),earned=this.progress.hasGradeMedal(this.progress.subject,g),x=40+(g-1)%3*392,y=164+Math.floor((g-1)/3)*137;panel(b,x,y,370,113,C.blue,20);this.medal(b,x+48,y+43,26,earned);text(b,g+' 年级 · '+(earned?'已获远航勋章':'探索中'),x+90,y+7,263,35,21,C.ink,true);text(b,`${status.done}/${status.total} 任务 · ${status.chapters} 枚章节勋章`,x+90,y+42,263,31,18,C.teal);text(b,earned?'勋章永久保留 · 可回岛复习':'完成本年级全部任务获得勋章',x+90,y+77,263,25,15,C.muted);} 
 
   text(b,this.progress.subject==='math'?'数学每年级90站：12个教材主题阶段、72个新任务，加18个旧章巩固任务。\n人教社当前电子版主题选编；原创任务，不是教材原题或真实考试题。\n完成6站主题阶段获得勋章，完成本年级全部站点进入下一年级。': this.progress.subject==='english'?'英语每年级84站：12个主题阶段、72个新任务，加12个旧章巩固任务。\n一、二年级为启蒙；三至六年级按 PEP 电子版目录主题选编。\n原创听音、拼句和阅读练习；不代表完整教材、口语或考试覆盖。': this.progress.subject==='chinese'?'语文每年级42站：6个主题阶段、36个新任务，加6个旧任务巩固。\n依据统编语文能力方向创作；上、下册为游戏进阶分组，未逐课核对。\n识字、拼句、排序与阅读，暂不包含完整写字、作文或朗读评分。': '本科目每年级12站：6个新任务与6个旧任务，完成阶段获得勋章。\n按学段能力设计，上下册为游戏分组；部分旧任务共享样例。\n非逐课教材覆盖；体育、劳动等游戏任务不能替代线下实践。',42,457,1130,113,20,C.muted);
-  this.btn(b,'回小岛',40,595,330,57,()=>this.map(),C.gold,'#754A17',23);this.btn(b,'选学科 / 年级',395,595,330,57,()=>this.library(),C.mint,C.teal,23);this.btn(b,'二年级 · 进位操作试炼',750,595,420,57,()=>{this.clear();this.root.destroy();this.sounds.dispose();this.audio.destroy();this.voiceAudio.destroy();this.legacy();},C.blue,C.ink,21);
+  this.btn(b,'回小岛',40,595,330,57,()=>this.map(),C.gold,'#754A17',23);this.btn(b,'选学科 / 年级',395,595,330,57,()=>this.library(),C.mint,C.teal,23);this.btn(b,'二年级 · 进位操作试炼',750,595,420,57,()=>{this.clear();this.root.destroy();this.companion?.dispose();this.sounds.dispose();this.audio.destroy();this.voiceAudio.destroy();this.legacy();},C.blue,C.ink,21);
  }
 }

@@ -12,7 +12,7 @@ export class SoundBank {
  musicVolume=this.readMusicVolume();
  private readMusicVolume(){try{const raw=this.settings.getItem('starisle.musicVolume');if(raw===null)return .65;const value=Number(raw);return Number.isFinite(value)&&value>=0&&value<=1?value:.65;}catch{return .65;}}
  setMusicVolume(value:number){if(!Number.isFinite(value))return;this.musicVolume=Math.max(0,Math.min(1,value));try{this.settings.setItem('starisle.musicVolume',String(this.musicVolume));}catch{}this.duck();}
- private visibility=()=>{if(document.hidden)this.stopMusic();else if(this.enabled)this.unlock();};
+ private visibility=()=>{if(document.hidden){this.stopMusic();this.stopVoice();}else if(this.enabled)this.unlock();};
  private gesture=()=>{if(this.enabled)this.unlock();};
  private musicLevel(){return this.musicVolume*((this.voice||this.speech.playing) ? .08/.65 : 1);}
  private duck(){if(this.musicGain&&this.context)this.musicGain.gain.setTargetAtTime(this.musicLevel(),this.context.currentTime,.15);if(this.nativeMusic)this.nativeMusic.volume=this.musicLevel();}
@@ -25,7 +25,7 @@ export class SoundBank {
  constructor(private fx:AudioSource,private speech:AudioSource,enabled:boolean){this.enabled=enabled;this.nativeMusic=fx.node.addComponent(AudioSource);
   if(sys.isBrowser&&typeof window!=='undefined'){try{const AC=window.AudioContext||(window as any).webkitAudioContext;if(AC){this.context=new AC();this.master=this.context.createGain();this.master.gain.value=enabled?1:0;this.analyser=this.context.createAnalyser();this.analyser.fftSize=1024;this.master.connect(this.analyser);this.analyser.connect(this.context.destination);for(const type of ['pointerdown','touchend','keydown'])window.addEventListener(type,this.gesture,{capture:true,passive:true});document.addEventListener('visibilitychange',this.visibility);}}catch(e){this.lastError=String(e);}}
  }
- get status(){return {state:this.context?.state||'native',enabled:this.enabled,lastPlayed:this.lastPlayed,lastError:this.lastError,peak:this.lastPeak,active:this.sources.size,musicPlaying:!!this.music||this.nativeMusic.playing,musicEnabled:this.musicEnabled,musicVolume:this.musicVolume,musicGain:this.musicGain?.gain.value};}
+ get status(){return {voicePlaying:!!this.voice||this.speech.playing,state:this.context?.state||'native',enabled:this.enabled,lastPlayed:this.lastPlayed,lastError:this.lastError,peak:this.lastPeak,active:this.sources.size,musicPlaying:!!this.music||this.nativeMusic.playing,musicEnabled:this.musicEnabled,musicVolume:this.musicVolume,musicGain:this.musicGain?.gain.value};}
  unlock(){if(this.disposed)return;if(!this.context){void this.ensureMusic();return;}try{if(this.context.state!=='running')void this.context.resume().then(()=>this.ensureMusic()).catch(e=>{this.lastError=String(e);});else void this.ensureMusic();const source=this.context.createBufferSource();source.buffer=this.context.createBuffer(1,1,this.context.sampleRate);source.connect(this.master!);source.onended=()=>source.disconnect();source.start();}catch(e){this.lastError=String(e);}}
  setEnabled(enabled:boolean){this.enabled=enabled;if(this.master)this.master.gain.value=enabled?1:0;if(!enabled){this.stopMusic();this.stopVoice();this.sources.forEach(s=>{try{s.stop();}catch{}});this.fx.stop();}else this.unlock();}
  private clip(path:string){if(!this.clips[path])this.clips[path]=new Promise<AudioClip>((resolve,reject)=>resources.load(path,AudioClip,(err,clip)=>err?reject(err):resolve(clip))).catch(e=>{delete this.clips[path];throw e;});return this.clips[path];}

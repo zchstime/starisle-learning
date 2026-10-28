@@ -21,8 +21,11 @@ export class Guardian3D extends Component {
  private studio:Node;private pose:Node;private camera:Camera;
  private texture:RenderTexture;private frame:SpriteFrame;private shadow:UIOpacity;
  private time=0;private action=0;private yaw=0;private dragX=0;private dragged=false;private dragging=false;
+ private speaking=false;
+ private onSpeech=(e:Event)=>{this.speaking=!!(e as CustomEvent).detail;};
  setup(size:number,onTap:()=>void){
   if(!Guardian3D.prefab)throw new Error('Load Xingbao before creating its portrait.');
+  if(typeof window!=='undefined'){window.addEventListener('starisle:companion-speaking',this.onSpeech);this.speaking=!!document.getElementById('xingbao-companion')?.classList.contains('speaking');}
   const scene=this.node.scene;
   scene.globals.ambient.skyColor=new Vec4(.8,.86,1,1);
   scene.globals.ambient.groundAlbedo=new Vec4(.42,.34,.25,1);
@@ -57,7 +60,8 @@ export class Guardian3D extends Component {
   const step=Math.min(dt,.05);this.time+=step;this.action=Math.max(0,this.action-step);
   const hop=this.action>0?Math.sin((1-this.action)*Math.PI):0;
   this.pose.setPosition(0,Math.sin(this.time*2)*.018+hop*.24,0);
-  this.pose.setRotationFromEuler(0,this.yaw+(this.dragging?0:Math.sin(this.time*.7)*5),Math.sin(this.time*1.5)*1.1);
+  const talking=this.speaking&&!this.dragging;
+  this.pose.setRotationFromEuler(talking?Math.sin(this.time*9)*2:0,this.yaw+(this.dragging?0:Math.sin(this.time*.7)*5),Math.sin(this.time*1.5)*(talking?2.4:1.1));
   this.shadow.opacity=255-hop*110;
  }
  // UI pages are detached before their deferred destruction. Stop off-screen
@@ -65,6 +69,7 @@ export class Guardian3D extends Component {
  onEnable(){if(this.studio)this.studio.active=true;}
  onDisable(){if(this.studio)this.studio.active=false;}
  onDestroy(){
+  if(typeof window!=='undefined')window.removeEventListener('starisle:companion-speaking',this.onSpeech);
   if(this.camera){this.camera.enabled=false;this.camera.targetTexture=null;}
   if(this.studio){this.studio.active=false;this.studio.destroy();}
   this.frame?.destroy();this.texture?.destroy();

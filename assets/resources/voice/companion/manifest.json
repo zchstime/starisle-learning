@@ -1,0 +1,100 @@
+{
+  "welcome": {
+    "hash": "9eba966db6d0da80cf8cc172759bf8aa64c124b669b17475bf315dbe355bd4ab",
+    "text": "嗨，我是星宝！欢迎来到星屿学园。点亮一颗星星，我们一起出发吧！",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 54189
+  },
+  "resume": {
+    "hash": "8e081ff213d9c23c1670b722ad01a6c6d71a17780fd10eac33ee9d19d8c89f4c",
+    "text": "你回来啦！小岛记着你的脚步。我们接着探索吧！",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 39405
+  },
+  "start": {
+    "hash": "82807d28da56f4e81665745d65944d27e78e1802684d8f5ffb2e992faa2c16fb",
+    "text": "新的小挑战来啦！先看清任务，慢慢想，我陪着你。",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 40941
+  },
+  "wrong": {
+    "hash": "e1b812f65a6f1fd193cc6b8021374c3bab667708869922e8eb9ee850af1d3a73",
+    "text": "没关系呀，我们换个办法想一想。需要时，可以点提示哦。",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 39213
+  },
+  "success": {
+    "hash": "59cd69e9ca4bf64bc8c2f9f6321415568b4caf665f76757e8809280bd3085311",
+    "text": "叮！又点亮一颗星星！你刚才的努力，我看见啦！",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 39405
+  },
+  "levelup": {
+    "hash": "fc2cc69247b6070be0611bf80ed470c48892ddd34eab58e5d533ad2d99d5b67b",
+    "text": "哇，升级啦！你和星宝都变得更厉害了！",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 34029
+  },
+  "idleMap": {
+    "hash": "78e0bb38437504c80ca253559023d91e5c919dcd88c2c0ba01b3beeeb2b2c7e4",
+    "text": "想从哪里出发呢？点开始探索，就能接着上次的冒险啦。",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 42669
+  },
+  "idlePlay": {
+    "hash": "32db2ef32854db318f768b4c5d4feaf1f827cc0590932149af67b794685da49d",
+    "text": "还在想呀？不着急。可以看看提示，也可以休息一小会儿。",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 42477
+  },
+  "help": {
+    "hash": "d0e376408571522de813dc348883ee6367c27da14b2cc41a88ecdecd71c00eb6",
+    "text": "先读一遍任务，找找已知的线索。点题目旁的提示，我们一步一步来。",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 54573
+  },
+  "rest": {
+    "hash": "f7b6e84e19d40b62e4961f6d3d17fc1edd5cd31c3990dd62c12d7ef774440c12",
+    "text": "好呀，休息一下，看看远处。准备好了，再回来找我吧！",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 42669
+  },
+  "ready": {
+    "hash": "5353671004254f00b544348fc2cc790ce18868e6d3a4454facd1936dece7f9e6",
+    "text": "好哒！我安静陪着你，按自己的节奏来就好。",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 34029
+  },
+  "hello": {
+    "hash": "a2a33de7b47adb4b6d004b0714e1eb33df2d3519e2d863c0e49520c47e38f6b6",
+    "text": "嘿嘿，星宝在这里！今天也一起发现新知识吧！",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 37485
+  },
+  "break": {
+    "hash": "797fe222b864c52eeac3b32b7d690c89a0203aa54f794cee560e3ac51442e055",
+    "text": "已经探索一会儿啦。要不要伸个懒腰，让眼睛也休息一下？",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 42861
+  },
+  "exam": {
+    "hash": "cfb0ab06da143f75eb4fdba0151f6eb2faef3b8f63da07fdeab91ba6282d4cee",
+    "text": "试炼开始后，我会安静陪着你。认真读题，相信自己的思考！",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "bytes": 44205
+  }
+}
