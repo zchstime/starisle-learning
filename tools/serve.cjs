@@ -12,8 +12,14 @@ if(mysqlConfig&&['127.0.0.1','localhost'].includes(new URL(origin).hostname)&&my
 const saveStore=mysqlConfig?require('../server/storage/mysql.cjs')(mysqlConfig):null;
 const saveHandler=require('../server/saves.cjs')({origin,auth,store:saveStore});
 const admin=require('../server/admin.cjs')({dir:process.env.ADMIN_DATA_DIR||path.resolve(__dirname,'../local/admin'),origin,auth,store:saveStore});
+const cloudDir=process.env.AUTH_DATA_DIR?path.resolve(process.env.AUTH_DATA_DIR,'../cloud'):path.resolve(__dirname,'../local/cloud');
+const readConfig=name=>{const file=path.join(cloudDir,name+'.json');return fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):null;};
+const arkConfig=process.env.ARK_API_KEY?{apiKey:process.env.ARK_API_KEY,model:process.env.ARK_MODEL}:readConfig('ark');
+const ossConfig=readConfig('oss');
+const learning=require('../server/learning/http.cjs')({origin,auth,dir:process.env.LEARNING_DATA_DIR||path.resolve(__dirname,'../local/learning'),mysql:mysqlConfig,ark:arkConfig?require('../server/providers/ark.cjs')(arkConfig):null,oss:ossConfig?require('../server/providers/oss-learning.cjs')(ossConfig):null});
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.css':'text/css','.png':'image/png','.jpg':'image/jpeg','.wav':'audio/wav','.wasm':'application/wasm'};
 const server=http.createServer(async(req,res)=>{
+ if(await learning.handle(req,res))return;
  if(await admin.handle(req,res))return;
  if(await auth.handle(req,res))return;
  if(await saveHandler(req,res))return;

@@ -11,6 +11,10 @@ fs.copyFileSync(path.resolve(__dirname,'../assets/resources/art/guide.png'),path
 html=html.replace('</head>','<link rel="stylesheet" href="/auth/loading.css"><link rel="stylesheet" href="/auth/auth.css"></head>').replace('<body>','<body><script src="/auth/loading.js"></script><script src="/auth/cloud.js"></script><script src="/auth/auth.js"></script>');
 fs.writeFileSync(p,html);
 
+// Optional personal AI learning island opens separately; the current game remains in place.
+html=html.replace('</body>','<a href="/learn" target="_blank" rel="noopener" style="position:fixed;right:16px;bottom:8px;z-index:10;padding:8px 16px;border-radius:20px;background:#fff8df;color:#27616b;font:600 13px system-ui;text-decoration:none">✦ 星宝研习岛</a></body>');
+fs.writeFileSync(p,html);
+
 // Disable the engine splash in each generated Web settings file. Keep this in
 // the build hook so rebuilding in Creator cannot restore the official logo.
 let splashCount=0;

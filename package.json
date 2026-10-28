@@ -9,9 +9,11 @@
     "test": "node tools/test.cjs && node tools/test-v2.cjs && node tools/test-auth.cjs && node tools/test-smsbao.cjs && node tools/test-cloud.cjs && node tools/test-exam.cjs",
     "serve": "node tools/serve.cjs",
     "build:web": "bash tools/build-web.sh",
-    "test:admin": "node tools/test-admin.cjs"
+    "test:admin": "node tools/test-admin.cjs",
+    "test:learning": "node tools/test-learning.cjs"
   },
   "dependencies": {
+    "ali-oss": "^6.23.0",
     "exceljs": "^4.4.0",
     "mysql2": "^3.24.6"
   },
