@@ -44,13 +44,13 @@ export class Companion {
   if(this.ownVoice&&!this.pendingVoice&&!this.bank.status.voicePlaying){this.ownVoice=false;this.animate(false);}
   if(!this.bank.enabled)this.stop();
   if(!this.welcomed&&s.screen==='map'){this.welcomed=true;this.say(s.done?'resume':'welcome',true);}
-  const busy=this.muted||!this.unlocked||!this.bank.enabled||this.bank.status.voicePlaying||s.listening||!!document.activeElement?.matches('input,textarea,[contenteditable="true"]');
+  const busy=this.muted||!this.unlocked||!this.bank.enabled||this.bank.status.voicePlaying||this.bank.status.voiceLoading||s.listening||!!document.activeElement?.matches('input,textarea,[contenteditable="true"]');
   if(this.policy.canNudge(Date.now(),s.screen,busy)){this.policy.didNudge(Date.now());this.say(s.screen==='play'?'idlePlay':'idleMap');}
   if(!this.breakOffered&&Date.now()-this.began>20*60000&&s.screen==='map'&&!busy&&Date.now()-this.lastSaid>180000){this.breakOffered=true;this.say('break');}
  }
  say(id:CompanionLine,manual=false){if(!this.el||this.blocked())return;const now=Date.now();if(!manual&&(now<this.policy.quietUntil||now-this.lastSaid<20000))return;
   // Task listening always has priority; never replace a question's spoken audio.
-  if(this.bank.status.voicePlaying&&!this.ownVoice)return;
+  if((this.bank.status.voicePlaying||this.bank.status.voiceLoading)&&!this.ownVoice)return;
   const s=this.state();this.context=s.screen+':'+s.key;this.policy.enter(this.context,now);
   this.stop();this.line=id;this.lastSaid=now;clearTimeout(this.hideTimer);this.el.querySelector('p')!.textContent=COMPANION_LINES[id];(this.el.querySelector('.xb-bubble') as HTMLElement).hidden=false;
   this.hideTimer=setTimeout(()=>this.dismiss(),12000);
