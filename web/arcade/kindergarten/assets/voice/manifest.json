@@ -1,10 +1,10 @@
 {
   "welcome": {
-    "text": "嗨，我是星宝！今天一起去买东西、收玩具、种小花吧！点一幅图，我们就出发。",
-    "hash": "83e5fbca14df42f86ccf8949ed732a8f0772a1937621e5514be8841c7966a18d",
+    "text": "嗨，我是星宝！今天一起准备早餐、收玩具、种小花吧！点一幅图，我们就出发。",
+    "hash": "9b7cfef8cab028f8ea3554e1780dd65a0df0b27079396e14aa64bdd67692633c",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 62829
+    "bytes": 66285
   },
   "feed": {
     "text": "小兔子饿啦。上面有几个苹果，就给小兔子送几个。看我做一次。",
@@ -14,11 +14,11 @@
     "bytes": 47469
   },
   "sort": {
-    "text": "帮水果找家吧。把水果送到画着一样水果的篮子里。看我做一次。",
-    "hash": "cf2d1df78ef110da53eb9e7ea5da19785a900fd9ff995e2dd472513c3adcd0c5",
+    "text": "来当分类小侦探！仔细看两个篮子上的图，把有相同特点的东西放在一起。看我做一次。",
+    "hash": "d4ce7346ac031ddbc89a9d6f7053839394147bae2b845b94fd897d491d03aa07",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 49389
+    "bytes": 66477
   },
   "build": {
     "text": "我们来搭积木。看看小房子的样子，把一样的积木放到影子里。看我做一次。",
@@ -105,18 +105,18 @@
     "bytes": 9069
   },
   "shop": {
-    "text": "帮忙买东西啦！看一看上面的图画清单。点一样需要的食物，把它装进购物袋。",
-    "hash": "05957cd5d32ccf19ce9b381e898b8851f8690669665157820f6c05b6fa198d56",
+    "text": "我们来给小伙伴准备早餐！看看来了几位朋友，再看图画清单，把需要的食物装进袋子。",
+    "hash": "6f59c4b0543dd72c175e28e979b9386028d525aab07f0bda481c58fc9948517a",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 59565
+    "bytes": 66285
   },
   "shop-hint": {
-    "text": "上面画了什么，我们就拿什么。点需要的食物，也可以把它拖进袋子。",
-    "hash": "c47a1ea8f5cddc8041cb89e944fa5e49b3445a695673e8d2893a3b3289852477",
+    "text": "先看看有几位小伙伴，再照着图画清单准备食物。点一下，也可以拖进袋子。",
+    "hash": "ef5d7c76bd8f5f54b6b7d2037063502ff5390ece350b7469d23031071c9fd7e7",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 49389
+    "bytes": 59373
   },
   "shop-try": {
     "text": "先看看图画清单，这个暂时不需要哦。",
@@ -126,11 +126,11 @@
     "bytes": 30573
   },
   "shop-done": {
-    "text": "都买齐啦！你真是生活小帮手。点小箭头，接着玩吧！",
-    "hash": "8f5c77b738888732544c9e8e7cce5dbdc366a9ec3fa65c6c75d2a6bd1b3cce07",
+    "text": "早餐都准备好啦！每位小伙伴都有食物。点小箭头，接着玩吧！",
+    "hash": "1f2dec371ac4b041fc1a192fbd98d3017eb6fcf34750aabb61bc2716009cbbca",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 42669
+    "bytes": 47469
   },
   "tidy": {
     "text": "玩具玩好了，一起收拾吧。图画书放书架，玩具放玩具箱，衣服放衣柜。看我做一次。",
@@ -154,18 +154,18 @@
     "bytes": 49197
   },
   "garden": {
-    "text": "一起种一盆花吧！先用小铲子装泥土，再放种子，最后浇一点水。先点小铲子试试。",
-    "hash": "915cebe095bfb8c485bce5c3df1d86472a0f511fbb70049fab4464d07799d096",
+    "text": "一起种一盆花吧！先装泥土，再放种子，浇一点水，晒晒太阳，还要耐心等待。先点小铲子试试。",
+    "hash": "19c27f6d4617a13b25b28a27483664da87f2bdeacc8d979a8bf341de81874163",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 69549
+    "bytes": 73197
   },
   "garden-hint": {
-    "text": "先装土，再播种，最后浇水。左边的小图会告诉你下一步。",
-    "hash": "c6adac1684e87952a8f43184c2d5a1450c8db5930fe3eb4b7944a5ca075c4bac",
+    "text": "小花需要泥土、种子、合适的水、阳光和时间。亮着的小图会告诉你下一步。",
+    "hash": "b23056155b8fa71fca5b5ce4bd367919d80585c5473ddee4c4ab3beb404c3c2a",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 50925
+    "bytes": 59373
   },
   "garden-seed": {
     "text": "泥土装好啦。现在，放一颗种子。",
@@ -189,10 +189,24 @@
     "bytes": 40749
   },
   "garden-done": {
-    "text": "小花在动画里长大啦！真正的小花还需要阳光和每天的照顾哦。点小箭头，接着玩吧！",
-    "hash": "56895cd18ab2f0abbc71616e844c6242cc4984dce9b49aa7e9c858cbc945ee22",
+    "text": "经过阳光、水和一段时间，小花在动画里长大啦！真正的小花要每天观察，按需要照顾哦。点小箭头，接着玩吧！",
+    "hash": "082bb8fbf1473a206312b90b037c1421a0085c92a4be162b617255bdd18f1f32",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 69549
+    "bytes": 86445
+  },
+  "garden-sun": {
+    "text": "水浇好啦。把花盆放到温暖的阳光下。",
+    "hash": "ac641cd28962e73cf6a43cb94100c2a90ad281b5d233b0dae23e88c41cbdcb0e",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 33837
+  },
+  "garden-wait": {
+    "text": "阳光照着小花盆。现在让太阳和月亮走一走，耐心等待它长大。",
+    "hash": "b0d529212aaf05908905f4720ea9d19397a9c1f248b3b5a33bb75d3518ea1e48",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 49389
   }
 }

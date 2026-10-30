@@ -27,7 +27,7 @@ function cancelDrag(){if(!drag)return;const current=drag;drag=null;current.ghost
 function cleanup(){cancelDrag();stopVoice();stopDemo();clearTimeout(idleTimer);clearTimeout(successTimer);if(drag?.ghost)drag.ghost.remove();drag=null;selected=null;physics=[];M.Composite.clear(engine.world,false);M.Engine.clear(engine);$('fx').replaceChildren();$('celebrate').hidden=true;}
 function home(){cleanup();screen='hub';paused=false;audio.setPaused(false);document.body.dataset.screen='hub';$('hub').hidden=false;$('play').hidden=true;$('paused').hidden=true;setupButton('pause','pause');renderHub();stars();speak('welcome');}
 function target(id,cls,html,label){const b=document.createElement('button');b.className='target '+cls;b.dataset.target=id;b.innerHTML=html;b.setAttribute('aria-label',label);b.onclick=()=>{if(selected)place(selected,id);else{audio.play('select');b.classList.add('hot');setTimeout(()=>b.classList.remove('hot'),350);}idle();};$('targets').append(b);return b;}
-function piece(type,id){const b=document.createElement('button');b.className='piece';b.dataset.item=id;b.innerHTML=icon(type);b.setAttribute('aria-label',NAMES[type]||type);const item={type,id,el:b,used:false};items.push(item);$('tray').append(b);
+function piece(type,id,options={}){const b=document.createElement('button');b.className='piece'+(options.scale?' size-'+options.scale:'');b.dataset.item=id;b.innerHTML=icon(type);b.setAttribute('aria-label',NAMES[type]||type);const item={type,id,group:options.group||type,scale:options.scale||'',el:b,used:false};items.push(item);$('tray').append(b);
  b.addEventListener('pointerdown',e=>{if(paused||round.done||item.used||drag)return;stopDemo();stopVoice();clearTimeout(idleTimer);const r=b.getBoundingClientRect();drag={item,pointerId:e.pointerId,startX:e.clientX,startY:e.clientY,x:e.clientX,y:e.clientY,moved:false,w:r.width,h:r.height};b.setPointerCapture(e.pointerId);});
  b.addEventListener('pointermove',e=>{if(!drag||drag.item!==item||drag.pointerId!==e.pointerId)return;drag.x=e.clientX;drag.y=e.clientY;if(Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>9&&!drag.moved){drag.moved=true;drag.ghost=b.cloneNode(true);drag.ghost.removeAttribute('data-item');drag.ghost.removeAttribute('aria-label');drag.ghost.setAttribute('aria-hidden','true');drag.ghost.className='piece dragging';drag.ghost.style.width=drag.w+'px';drag.ghost.style.height=drag.h+'px';document.body.append(drag.ghost);b.style.opacity='.2';}if(drag.ghost){drag.ghost.style.left=(e.clientX-drag.w/2)+'px';drag.ghost.style.top=(e.clientY-drag.h/2)+'px';}const hit=hitTarget(e.clientX,e.clientY);document.querySelectorAll('.target').forEach(t=>t.classList.toggle('hot',t===hit));});
  b.addEventListener('pointerup',e=>{if(!drag||drag.item!==item||drag.pointerId!==e.pointerId)return;const wasMoved=drag.moved;drag.ghost?.remove();drag=null;b.style.opacity='';document.querySelectorAll('.target').forEach(t=>t.classList.remove('hot'));if(wasMoved){const hit=hitTarget(e.clientX,e.clientY);if(hit)place(item,hit.dataset.target);else wrong(item,false);}else choose(item);idle();});
@@ -51,22 +51,27 @@ function place(item,id){if(paused||round.done||item.used)return;stopDemo();const
  }else if(kind==='garden'){
   t.innerHTML=potArt(result.count,level);t.dataset.stage=String(result.count);
   [...$('goal').children].forEach((e,i)=>{e.classList.toggle('filled',i<result.count);e.classList.toggle('current-step',i===result.count);});
-  lifeEffect(item.type,t);if(!result.done)speak(result.count===1?'garden-seed':'garden-water');
+  lifeEffect(item.type,t);if(!result.done)speak(['garden-seed','garden-water','garden-sun','garden-wait'][result.count-1]);
  }
  updateGuide();
  status('放好了');if(result.done){clearTimeout(idleTimer);if(!completed[kind].includes(level))completed[kind].push(level);try{localStorage.setItem(saveKey,JSON.stringify(completed));}catch{$('save-note').textContent='当前设备不能保存，本次可以继续玩。';}stars();audio.play('win');successTimer=setTimeout(()=>{if(screen!=='play')return;celebrate();},kind==='feed'?1100:650);}else idle();
 }
-function showDemo(narrate=true){if(paused||screen!=='play'||round.done)return;stopDemo();clearSelection();const item=items.find(i=>!i.used&&(kind==='build'?i.type===BUILD[level][round.placed.length]:LIFE.includes(kind)?needed(round).includes(i.type):true));if(!item)return;const id=kind==='feed'?'bunny':kind==='sort'?item.type:LIFE.includes(kind)?expectedTarget(round,item.type):'slot-'+round.placed.length;const t=document.querySelector('[data-target="'+id+'"]');if(!t)return;
- if(narrate)speak(kind==='garden'?(round.placed.length===1?'garden-seed':round.placed.length===2?'garden-water':'garden'):kind);else if(ACTIVITIES[kind].hint)speak(ACTIVITIES[kind].hint);const board=$('board').getBoundingClientRect(),a=item.el.getBoundingClientRect(),b=t.getBoundingClientRect(),x=a.x-board.x+a.width/2-36,y=a.y-board.y+a.height/2-36,tx=b.x-board.x+b.width/2-36,ty=b.y-board.y+b.height/2-36;
+function showDemo(narrate=true){if(paused||screen!=='play'||round.done)return;stopDemo();clearSelection();const item=items.find(i=>!i.used&&(kind==='build'?i.type===BUILD[level][round.placed.length]:LIFE.includes(kind)?needed(round).includes(i.type):true));if(!item)return;const id=kind==='feed'?'bunny':kind==='sort'?item.group:LIFE.includes(kind)?expectedTarget(round,item.type):'slot-'+round.placed.length;const t=document.querySelector('[data-target="'+id+'"]');if(!t)return;
+ if(narrate)speak(kind==='garden'?['garden','garden-seed','garden-water','garden-sun','garden-wait'][round.placed.length]:kind);else if(ACTIVITIES[kind].hint)speak(ACTIVITIES[kind].hint);const board=$('board').getBoundingClientRect(),a=item.el.getBoundingClientRect(),b=t.getBoundingClientRect(),x=a.x-board.x+a.width/2-36,y=a.y-board.y+a.height/2-36,tx=b.x-board.x+b.width/2-36,ty=b.y-board.y+b.height/2-36;
  $('demo-item').innerHTML=icon(item.type);$('demo-hand').innerHTML=icon('hand');$('demonstration').hidden=false;const duration=2600;
  for(const [el,offset]of [[$('demo-item'),0],[$('demo-hand'),30]]){demoAnimations.push(el.animate([{transform:`translate(${x+offset}px,${y+offset}px)`,opacity:0},{transform:`translate(${x+offset}px,${y+offset}px)`,opacity:1,offset:.17},{transform:`translate(${tx+offset}px,${ty+offset}px)`,opacity:1,offset:.72},{transform:`translate(${tx+offset}px,${ty+offset}px)`,opacity:0}],{duration,easing:'ease-in-out',iterations:2}));}
  demoTimer=setTimeout(()=>{stopDemo();idle();},duration*2);status('小手正在演示：把玩具送到对应位置');
 }
 function start(k=kind,n=level){cleanup();kind=k;level=n;round=createRound(kind,level);screen='play';paused=false;audio.setPaused(false);demoRepeats=0;items=[];document.body.dataset.screen='play';document.body.dataset.kind=kind;$('hub').hidden=true;$('play').hidden=false;$('paused').hidden=true;setupButton('pause','pause');$('board').className=kind;$('scene-decor').innerHTML=scene(kind);$('scene-icon').innerHTML=icon(ACTIVITIES[kind].symbol);$('goal').replaceChildren();$('targets').replaceChildren();$('tray').replaceChildren();stars();
  if(kind==='feed'){for(let i=0;i<FEED[level];i++){const e=document.createElement('span');e.className='goal-fruit';e.innerHTML=icon('apple');$('goal').append(e);}target('bunny','bunny-target',icon('bunny')+'<span class="bowl"></span>','把苹果送给小兔子');for(let i=0;i<5;i++)piece('apple','apple-'+i);}
- if(kind==='sort'){const types=[...new Set(SORT[level])];types.forEach((type,i)=>{const e=document.createElement('span');e.innerHTML=icon(type);$('goal').append(e);const b=target(type,'basket-target',basket(type),'放进'+({apple:'苹果',banana:'香蕉',berry:'蓝莓'})[type]+'篮子');b.style.left=((i+.5)/types.length*100)+'%';b.style.marginLeft='calc(var(--basket-width, 190px) / -2)';});SORT[level].forEach((type,i)=>piece(type,type+'-'+i));}
+ if(kind==='sort'){
+  const activity=SORT[level];
+  activity.targets.forEach((entry,i)=>{const e=document.createElement('span');e.className=entry.scale?'size-'+entry.scale:'';e.innerHTML=icon(entry.icon);$('goal').append(e);const label=({apple:'苹果篮子',banana:'香蕉篮子',small:'小物品篮子',big:'大物品篮子',food:'食物篮子',toy:'玩具篮子'})[entry.id];const b=target(entry.id,'basket-target'+(entry.scale?' rule-size-'+entry.scale:''),basket(entry.icon),label);b.style.left=((i+.5)/activity.targets.length*100)+'%';b.style.marginLeft='calc(var(--basket-width, 190px) / -2)';});
+  activity.items.forEach((entry,i)=>piece(entry.type,entry.type+'-'+i,{group:entry.group,scale:entry.scale}));
+ }
  if(kind==='build'){BUILD[level].forEach((type,i)=>{const e=document.createElement('span');e.innerHTML=icon(type);$('goal').append(e);const b=target('slot-'+i,'slot '+(i?'pending':'current'),icon(type),'积木位置'+(i+1));b.style.setProperty('--slot-index',String(i));});const arrow=document.createElement('div');arrow.className='build-arrow';arrow.innerHTML=icon('arrow');$('targets').append(arrow);const order=[...BUILD[level]].reverse();order.forEach((type,i)=>piece(type,type+'-'+i));}
  if(kind==='shop'){
+  const friends=document.createElement('span');friends.className='breakfast-friends';friends.innerHTML=Array.from({length:level+1},()=>icon('bunny')).join('');$('goal').append(friends);
   for(const type of SHOP[level]){const e=document.createElement('span');e.dataset.type=type;e.className='shopping-need';e.innerHTML=icon(type);$('goal').append(e);}
   target('bag','bag-target',icon('bag')+'<span class="bag-goods"></span>','购物袋：按清单放入食物');
   const stock=[...SHOP[level],...(['apple','banana','bread','milk'].filter(t=>!SHOP[level].includes(t)).slice(0,2))];
@@ -79,14 +84,14 @@ function start(k=kind,n=level){cleanup();kind=k;level=n;round=createRound(kind,l
  if(kind==='garden'){
   GARDEN.forEach((type,i)=>{const e=document.createElement('span');e.innerHTML=icon(type);e.className='garden-step'+(i===0?' current-step':'');$('goal').append(e);});
   target('pot','pot-target',potArt(0,level),'小花盆');
-  const tools=[['water','seed','soil'],['seed','soil','water'],['water','soil','seed']][level];tools.forEach(type=>piece(type,'tool-'+type));
+  const tools=[['sun','water','seed','wait','soil'],['seed','wait','soil','sun','water'],['water','sun','wait','soil','seed']][level];tools.forEach(type=>piece(type,'tool-'+type));
  }
  updateGuide();
  // Let layout settle before calculating the demonstration route.
  requestAnimationFrame(()=>{if(screen==='play'&&!round.done)showDemo(true);});status('看图样例，再跟着小手玩');
 }
 function updateGuide(){
- const next=kind==='shop'?needed(round)[0]:kind==='tidy'?items.find(i=>!i.used)?.type:kind==='garden'?GARDEN[round.placed.length]:kind==='build'?BUILD[level][round.placed.length]:kind==='feed'?'apple':'apple';
+ const next=kind==='shop'?needed(round)[0]:kind==='tidy'?items.find(i=>!i.used)?.type:kind==='garden'?GARDEN[round.placed.length]:kind==='build'?BUILD[level][round.placed.length]:kind==='sort'?SORT[level].targets[0].icon:kind==='feed'?'apple':'apple';
  $('guide-picture').innerHTML=round.done?icon('star'):icon(next||'star');
 }
 function lifeEffect(type,t){
@@ -94,7 +99,9 @@ function lifeEffect(type,t){
   audio.tone(700,.17,.05,'sine',0,320);audio.tone(1000,.23,.05,'sine',.15,430);
   const r=t.getBoundingClientRect(),board=$('board').getBoundingClientRect();
   for(let i=0;i<9;i++){const d=document.createElement('span');d.className='water-drop';d.style.left=(r.x-board.x+r.width*.35+(i%3)*20)+'px';d.style.top=(r.y-board.y+r.height*.35)+'px';$('fx').append(d);d.animate([{transform:'translateY(-45px)',opacity:0},{opacity:1,offset:.25},{transform:'translateY(65px)',opacity:0}],{duration:600,delay:i*45}).finished.then(()=>d.remove()).catch(()=>d.remove());}
- }else audio.play('place');
+ }else if(type==='sun'){audio.tone(520,.18,.04,'sine',0,720);audio.tone(780,.22,.04,'sine',.12,930);}
+ else if(type==='wait'){audio.tone(420,.12,.035,'sine',0,520);audio.tone(620,.18,.04,'sine',.15,760);}
+ else audio.play('place');
 }
 function tumble(type,targetNode){const board=$('board').getBoundingClientRect(),r=targetNode.getBoundingClientRect(),x=r.x-board.x+r.width/2,y=r.y-board.y+r.height*.7,size=kind==='feed'?40:30;const el=document.createElement('span');el.className='physical-toy';el.style.width=size+'px';el.style.height=size+'px';el.innerHTML=icon(type);$('fx').append(el);const body=M.Bodies.circle(x,y-55,size*.36,{restitution:.4,frictionAir:.035});M.Composite.add(engine.world,body);const floor=M.Bodies.rectangle(x,y+23,Math.max(85,r.width*.7),12,{isStatic:true});M.Composite.add(engine.world,floor);physics.push({body,el,size,age:0,floor});}
 function celebrate(){if(paused)return;$('celebrate').hidden=false;$('celebrate').querySelector('.reward-stars').innerHTML=[0,1,2].map(i=>icon('star',i<=level?'':'unearned')).join('');setupButton('next',level<2?'arrow':'home');$('next').setAttribute('aria-label',level<2?'玩下一关':'回小岛选新玩具');speak(kind==='garden'?'garden-done':kind==='shop'?'shop-done':kind==='tidy'?'tidy-done':level<2?'done':'all');status('完成了，点箭头继续玩');}

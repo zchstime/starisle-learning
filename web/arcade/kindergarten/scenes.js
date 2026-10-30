@@ -1,10 +1,10 @@
 import {icon} from './icons.js';
 export const ACTIVITIES={
- shop:{name:'帮忙买东西',theme:'peach',symbol:'bag',voice:'shop',hint:'shop-hint'},
+ shop:{name:'准备早餐',theme:'peach',symbol:'bag',voice:'shop',hint:'shop-hint'},
  tidy:{name:'收拾小房间',theme:'blue',symbol:'shelf',voice:'tidy',hint:'tidy-hint'},
  garden:{name:'种一盆花',theme:'green',symbol:'flower',voice:'garden',hint:'garden-hint'},
  feed:{name:'照顾小兔子',theme:'green',symbol:'bunny',voice:'feed'},
- sort:{name:'水果找家',theme:'peach',symbol:'apple',voice:'sort'},
+ sort:{name:'分类小侦探',theme:'peach',symbol:'apple',voice:'sort'},
  build:{name:'搭一间小屋',theme:'blue',symbol:'triangle',voice:'build'}
 };
 // Nested SVGs keep the same native toy artwork in both scene previews and play.
@@ -19,4 +19,4 @@ export function scene(kind){let art='';
  return `<svg class="scene-art" viewBox="0 0 320 210" aria-hidden="true"><ellipse cx="270" cy="37" rx="18" ry="17" fill="#fff2c5" opacity=".8"/><path d="m34 45 3 7 8 1-6 5 1 8-6-4-7 4 2-8-6-5 8-1Z" fill="#fff8d8"/>${art}</svg>`;
 }
 export function homeArt(id){const types={bookshelf:'book',toybox:'teddy',wardrobe:'shirt'},type=types[id];return `<span class="storage-symbol">${icon(type)}</span><span class="storage-cubby"></span><span class="stored-items"></span>`;}
-export function potArt(count=0,level=0){const colors=['#daa58e','#b3bd8e','#a0bdce'];return `<svg class="pot-art" viewBox="0 0 240 235" aria-hidden="true"><ellipse cx="120" cy="217" rx="83" ry="12" fill="#c3ccad" opacity=".4"/><path d="m61 130 13 82h92l14-82Z" fill="${colors[level]}" stroke="#a18777" stroke-width="4"/><ellipse cx="120" cy="130" rx="61" ry="15" fill="${count?'#92765f':'#e9d4b3'}" stroke="#a18777" stroke-width="4"/>${count===2?'<ellipse cx="120" cy="129" rx="7" ry="5" fill="#d0ae76"/>':''}${count===3?toy('flower',55,7,130,133):''}<path d="m118 160 6 10 12 2-9 8 2 12-11-5-10 5 2-12-9-8 12-2Z" fill="#fff0d0" opacity=".9"/></svg>`;}
+export function potArt(count=0,level=0){const colors=['#daa58e','#b3bd8e','#a0bdce'];return `<svg class="pot-art" viewBox="0 0 240 235" aria-hidden="true"><ellipse cx="120" cy="217" rx="83" ry="12" fill="#c3ccad" opacity=".4"/><path d="m61 130 13 82h92l14-82Z" fill="${colors[level]}" stroke="#a18777" stroke-width="4"/><ellipse cx="120" cy="130" rx="61" ry="15" fill="${count?'#92765f':'#e9d4b3'}" stroke="#a18777" stroke-width="4"/>${count===2?'<ellipse cx="120" cy="129" rx="7" ry="5" fill="#d0ae76"/>':''}${count===3?'<path d="M86 119q8 13 16 0m25 3q8 13 16 0m20-5q8 13 16 0" fill="none" stroke="#8bcbd4" stroke-width="5" stroke-linecap="round"/>':''}${count===4?'<path d="M120 127V93m0 25q-20 0-20-16 18 0 20 16m0-8q20 0 20-16-18 0-20 16" fill="#98bd91" stroke="#759b78" stroke-width="3"/><circle cx="190" cy="41" r="18" fill="#f5d374"/><path d="M190 10v12m0 38v12m-31-31h12m38 0h12" stroke="#e0b85a" stroke-width="6" stroke-linecap="round"/>':''}${count===5?toy('flower',55,7,130,133):''}<path d="m118 160 6 10 12 2-9 8 2 12-11-5-10 5 2-12-9-8 12-2Z" fill="#fff0d0" opacity=".9"/></svg>`;}

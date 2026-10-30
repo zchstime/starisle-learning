@@ -11,3 +11,9 @@
 @media(max-width:370px){#stars{max-width:96px}#stars .toy-icon{width:14px;height:17px}}
 .build #goal{justify-content:flex-start}.build .slot{bottom:calc(100% - 425px + var(--slot-index)*76px)}.build #targets::after{content:'';position:absolute;top:425px;left:67%;transform:translateX(-50%);width:110px;height:8px;background:#ccb38d;border-radius:8px}
 @media(max-width:750px){.build .slot{bottom:calc(100% - 370px + var(--slot-index)*67px)}.build #targets::after{top:370px;left:73%;width:95px}.build-arrow{top:277px}body[data-kind=build]:not([data-screen=hub]) #companion{top:35px;width:110px;height:130px;left:4%}}
+
+/* Learning cues: people-to-meal correspondence, visible size rules, and a five-step growth cycle. */
+.breakfast-friends{display:flex;align-items:center;margin-right:5px;padding-right:10px;border-right:2px dashed #dfcfaa}.breakfast-friends .toy-icon{width:38px!important;height:38px!important;margin-left:-9px}.breakfast-friends .toy-icon:first-child{margin-left:0}.shop #goal{max-width:min(78%,720px)}
+.sort .size-small{transform:scale(.66)}.sort .size-big{transform:scale(1.12)}.sort .piece.size-small .toy-icon{transform:scale(.68)}.sort .piece.size-big .toy-icon{transform:scale(1.08)}.sort .rule-size-small .basket-symbol{transform:scale(.65)}.sort .rule-size-big .basket-symbol{transform:scale(1.16)}
+.garden #goal{gap:8px;padding:11px}.garden #goal .toy-icon{width:43px;height:43px}.pot-target[data-stage="4"] .pot-art,.pot-target[data-stage="5"] .pot-art{animation:grow .85s ease-out;transform-origin:50% 90%}
+@media(max-width:750px){.breakfast-friends{padding-right:5px}.breakfast-friends .toy-icon{width:28px!important;height:28px!important;margin-left:-8px}.shop #goal{gap:4px;padding:8px;max-width:94%}.shop #goal .toy-icon{width:35px;height:35px}.garden #goal{left:17%;top:98px;gap:3px;padding:7px;min-width:62px}.garden #goal .toy-icon{width:31px;height:31px}.garden #tray{gap:9px 12px}.sort .piece.size-big .toy-icon{transform:scale(1.03)}}

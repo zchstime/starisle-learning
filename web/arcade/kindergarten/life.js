@@ -2,8 +2,8 @@
 export const SHOP=[['apple','banana'],['bread','apple','apple'],['milk','banana','bread','banana']];
 export const TIDY=[['book','ball','book','ball'],['book','teddy','shirt','ball'],['shirt','book','ball','sock','teddy','book']];
 export const HOMES={book:'bookshelf',ball:'toybox',teddy:'toybox',shirt:'wardrobe',sock:'wardrobe'};
-export const GARDEN=['soil','seed','water'];
-export const NAMES={apple:'苹果',banana:'香蕉',berry:'蓝莓',bread:'面包',milk:'牛奶',book:'图画书',ball:'皮球',teddy:'小熊',shirt:'上衣',sock:'袜子',soil:'小铲子和泥土',seed:'种子',water:'小水壶',square:'方形积木',circle:'圆形积木',triangle:'三角积木'};
+export const GARDEN=['soil','seed','water','sun','wait'];
+export const NAMES={apple:'苹果',banana:'香蕉',berry:'蓝莓',bread:'面包',milk:'牛奶',book:'图画书',ball:'皮球',teddy:'小熊',shirt:'上衣',sock:'袜子',soil:'小铲子和泥土',seed:'种子',water:'小水壶',sun:'阳光',wait:'等待',square:'方形积木',circle:'圆形积木',triangle:'三角积木'};
 export const LIFE=['shop','tidy','garden'];
 export function needed(round){
  const list=round.kind==='shop'?SHOP[round.level]:round.kind==='tidy'?TIDY[round.level]:null;
