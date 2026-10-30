@@ -1,10 +1,10 @@
 {
   "welcome": {
-    "text": "嗨，我是星宝！点一个玩具，我们一起玩吧！",
-    "hash": "41129619de58c1fc1ad00e1d7c1ea45826b44801efceca6557cb1de0c3a693e5",
+    "text": "嗨，我是星宝！今天一起去买东西、收玩具、种小花吧！点一幅图，我们就出发。",
+    "hash": "83e5fbca14df42f86ccf8949ed732a8f0772a1937621e5514be8841c7966a18d",
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
-    "bytes": 35949
+    "bytes": 62829
   },
   "feed": {
     "text": "小兔子饿啦。上面有几个苹果，就给小兔子送几个。看我做一次。",
@@ -103,5 +103,96 @@
     "provider": "Volcengine Doubao TTS 2.0",
     "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
     "bytes": 9069
+  },
+  "shop": {
+    "text": "帮忙买东西啦！看一看上面的图画清单。点一样需要的食物，把它装进购物袋。",
+    "hash": "05957cd5d32ccf19ce9b381e898b8851f8690669665157820f6c05b6fa198d56",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 59565
+  },
+  "shop-hint": {
+    "text": "上面画了什么，我们就拿什么。点需要的食物，也可以把它拖进袋子。",
+    "hash": "c47a1ea8f5cddc8041cb89e944fa5e49b3445a695673e8d2893a3b3289852477",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 49389
+  },
+  "shop-try": {
+    "text": "先看看图画清单，这个暂时不需要哦。",
+    "hash": "ed49817590ef2a15f17533ea5afd85bf54be05306986fa64e68387252da30254",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 30573
+  },
+  "shop-done": {
+    "text": "都买齐啦！你真是生活小帮手。点小箭头，接着玩吧！",
+    "hash": "8f5c77b738888732544c9e8e7cce5dbdc366a9ec3fa65c6c75d2a6bd1b3cce07",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 42669
+  },
+  "tidy": {
+    "text": "玩具玩好了，一起收拾吧。图画书放书架，玩具放玩具箱，衣服放衣柜。看我做一次。",
+    "hash": "bdfd1e060b759faa75e6441508ac11920a1b1a03236edbad51fd77eb3d08f9ff",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 66093
+  },
+  "tidy-hint": {
+    "text": "看收纳柜上的小图，把物品送回它的家。",
+    "hash": "7cc654ec48b4e4df4d7e79c9e1a450975317d6d5ddb7e6cf912d5f17f4a417c9",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 32685
+  },
+  "tidy-done": {
+    "text": "房间变整齐啦！你真会照顾自己的小家。点小箭头，接着玩吧！",
+    "hash": "20977c563d924db468d74ec1ac42ad8984ffd2c278b6a438e6de24d21efac2bf",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 49197
+  },
+  "garden": {
+    "text": "一起种一盆花吧！先用小铲子装泥土，再放种子，最后浇一点水。先点小铲子试试。",
+    "hash": "915cebe095bfb8c485bce5c3df1d86472a0f511fbb70049fab4464d07799d096",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 69549
+  },
+  "garden-hint": {
+    "text": "先装土，再播种，最后浇水。左边的小图会告诉你下一步。",
+    "hash": "c6adac1684e87952a8f43184c2d5a1450c8db5930fe3eb4b7944a5ca075c4bac",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 50925
+  },
+  "garden-seed": {
+    "text": "泥土装好啦。现在，放一颗种子。",
+    "hash": "675847c03e43f50f8ec2289cb27f2fd80f213197cc0bfa3c60ef42c6adbf7380",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 27117
+  },
+  "garden-water": {
+    "text": "种子住好啦。用小水壶浇一点水吧。",
+    "hash": "39a5e9f7c5c1b642c7cdaa10d76d2156142332a961f03e7fabed0bdf1f4ed514",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 30573
+  },
+  "garden-try": {
+    "text": "小花也要一步一步来。看看亮着的小图，再选一件工具。",
+    "hash": "14a14d4f5b9c94b905d24998e5afb8c1b771d6391cae763c17ca8d38ccea0a7a",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 40749
+  },
+  "garden-done": {
+    "text": "小花在动画里长大啦！真正的小花还需要阳光和每天的照顾哦。点小箭头，接着玩吧！",
+    "hash": "56895cd18ab2f0abbc71616e844c6242cc4984dce9b49aa7e9c858cbc945ee22",
+    "provider": "Volcengine Doubao TTS 2.0",
+    "speaker": "ICL_uranus_zh_female_keainvsheng_tob",
+    "bytes": 69549
   }
 }
