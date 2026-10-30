@@ -10,6 +10,17 @@ const bar=(a:number,b:number,labels:[string,string]):MathVisual=>({kind:'bars',v
 const shape=(w:number,h:number):MathVisual=>({kind:'shape',values:[w,h]});
 const clock=(h:number,m:number):MathVisual=>({kind:'clock',values:[h,m]});
 const unit=(title:string,theme:string,semester:Unit['semester'],make:Unit['make'],verified=false):Unit=>({title,theme,semester,make,verified});
+const evidenceRoles=['understand','model','fluency','diagnose','apply','transfer'] as const;
+const misconceptionFor=(kind:Level['kind']):string=>({
+ choice:'只凭题目中的单个关键词选择，没有核对完整数量关系',
+ number:'列式方向正确但忽略进退位、小数点、单位或运算顺序',
+ cargo:'只关注总量，没有使用合适的计数单位或组合方式',
+ groups:'混淆组数和每组数量，或各组没有保持同样多',
+ tiles:'没有先平均分整体，就直接按格数猜测结果',
+ sentence:'没有按数量关系的先后顺序组织表达',
+ listen:'只记住局部信息，没有核对完整任务条件',
+ picture:'观察了表面特征，但没有使用题目要求的数学属性'
+} as Record<Level['kind'],string>)[kind]||'只计算结果，没有检查数量关系和单位';
 const curriculum:Unit[][]=[
 [
  unit('初见星星','5以内数的认识和加、减法','上册',i=>{const a=[1,2,2,3,3,4][i],b=[1,1,2,1,2,1][i];return cargo(`${a} 位伙伴先到，又来 ${b} 位。给每人装一份点心。`,a+b,[1]);},true),
@@ -100,8 +111,36 @@ const curriculum:Unit[][]=[
 const g2=curriculum[1];
 curriculum[1]=[
  g2[0],
- unit('乘法星田','1～6的表内乘法','上册',i=>{const a=2+i%4,b=2+i%5;return {kind:'groups',title:'种植小队',goal:`${a}块花田，每块种${b}颗星，动手种满。`,groups:a,target:b,explanation:`${a}×${b}=${a*b}颗。`,hint:'每块田种同样多。'};}),
- unit('分享小码头','1～6的表内除法','上册',i=>{const a=2+i%4,b=2+i%5;return number('平均分果子',`${a*b}个果子平均分进${a}个篮子，每篮几个？`,b,`${a*b}÷${a}=${b}。`,'个');}),
+ unit('乘法星田','1～6的表内乘法','上册',i=>{
+  const common={
+   coachHints:['先找“有几组”和“每组几个”。','只有每组同样多时，才能直接用乘法。'],
+   evidence:{knowledgeId:'pep-math-g2-u2-equal-groups',objective:'理解乘法表示几个相同加数的和，并能在真实情境中选择、计算和解释乘法算式。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['20以内加法','按相同数量分组'],misconceptions:['把组数和每组数量相加','各组数量不相等时仍直接使用乘法'],reviewed:false}
+  };
+  const tasks:Task[]=[
+   {kind:'choice',title:'等量小侦探',goal:'哪一种摆法可以用 3 × 2 表示？',options:['3 个盘子，每盘 2 颗星','一个盘子 3 颗，另一个盘子 2 颗','3 颗星再拿走 2 颗'],target:0,hint:'乘法表示几个相同加数的和，先看每组是否同样多。',explanation:'3 个盘子，每盘都是 2 颗，就是 3 个 2，写成 3 × 2。'},
+   {kind:'groups',title:'种植小队',goal:'4 块花田，每块种 3 颗星。动手摆出 4 个 3。',groups:4,target:3,hint:'每块花田要同样多，种完后看看一共有几个 3。',explanation:'4 个 3 相加是 12，所以 4 × 3 = 12。'},
+   {kind:'number',title:'算式翻译站',goal:'5 + 5 + 5 表示 3 个 5，一共有多少？',target:15,answerUnit:'颗',visual:bar(5,5,['每组5颗','还有两组']),hint:'相同加数是 5，共出现 3 次。',explanation:'5 + 5 + 5 = 15，也可以写成 3 × 5 = 15。'},
+   {kind:'choice',title:'错例修理铺',goal:'小北说“4 个篮子，每篮 6 个苹果，可以算 4 + 6 = 10”。应该怎样修正？',options:['4 × 6 = 24','4 + 6 = 10，不用修改','6 − 4 = 2'],target:0,hint:'“4 个篮子”表示 4 组，“每篮 6 个”表示每组都是 6。',explanation:'这是 4 个 6 相加，应列乘法算式 4 × 6 = 24。'},
+   {kind:'number',title:'影院排座员',goal:'小剧场有 5 排座位，每排 4 个。一共有多少个座位？',target:20,answerUnit:'个',visual:bar(4,4,['每排4个','共5排']),hint:'每排数量相同，可以用“排数 × 每排个数”。',explanation:'5 × 4 = 20（个）。排数是 5，每排 4 个。'},
+   {kind:'number',title:'逆向补给站',goal:'6 个同样的盒子一共装 30 颗星，每盒装几颗？',target:5,answerUnit:'颗',hint:'想一想：6 乘几等于 30？也可以把 30 平均分成 6 份。',explanation:'6 × 5 = 30，所以每盒 5 颗。这道题把乘法和平均分联系起来。'}
+  ];
+  return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+ }),
+ unit('分享小码头','1～6的表内除法','上册',i=>{
+  const common={
+   coachHints:['先判断是“平均分成几份”，还是“每几个分一份”。','可以用乘法口诀检查商是否正确。'],
+   evidence:{knowledgeId:'pep-math-g2-u3-division-meaning',objective:'理解平均分与除法的含义，能区分按份数平均分和按每份数量分，并用乘法检验商。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['1～6的乘法口诀','平均分实物的经验'],misconceptions:['没有平均分也列除法','混淆份数与每份数量','商计算后不作乘法检验'],reviewed:false}
+  };
+  const tasks:Task[]=[
+   {kind:'choice',title:'公平分享侦察员',goal:'12 颗星平均放进 3 个盒子，哪一种摆法最公平？',options:['每个盒子放 4 颗','三个盒子分别放 3、4、5 颗','每个盒子放 3 颗，还剩 3 颗'],target:0,hint:'平均分要求每份同样多，而且全部分完。',explanation:'12 平均分成 3 份，每份 4 颗，写成 12 ÷ 3 = 4。'},
+   {kind:'groups',title:'码头分装员',goal:'把 15 个果子平均放进 3 个篮子。动手摆出每篮同样多。',groups:3,target:5,hint:'轮流给每个篮子放果子，直到 15 个全部分完。',explanation:'每篮 5 个，3 × 5 = 15，所以 15 ÷ 3 = 5。'},
+   {kind:'number',title:'乘除密码站',goal:'因为 5 × 6 = 30，所以 30 ÷ 5 等于多少？',target:6,answerUnit:'',hint:'除法可以想乘法：5 乘几等于 30？',explanation:'5 × 6 = 30，所以 30 ÷ 5 = 6。'},
+   {kind:'choice',title:'错商修理铺',goal:'小北算 18 ÷ 3 = 5。怎样检查并修正？',options:['3 × 6 = 18，所以商是 6','3 × 5 = 15，所以商是 5','18 − 3 = 15，所以商是 15'],target:0,hint:'把除数和商相乘，结果应该回到被除数 18。',explanation:'3 × 6 = 18，因此 18 ÷ 3 = 6。原来的商 5 少算了一组。'},
+   {kind:'number',title:'研学组队官',goal:'24 名同学，每 4 人组成一队，可以组成几队？',target:6,answerUnit:'队',visual:bar(24,4,['总人数','每队人数']),hint:'这是“每 4 人一队”，求 24 里面有几个 4。',explanation:'24 ÷ 4 = 6（队），用 4 × 6 = 24 检查。'},
+   {kind:'choice',title:'双航线挑战',goal:'20 ÷ 5 的两种故事，哪一组结果都正确？',options:['平均分成 5 份，每份 4；每 5 个装一份，装 4 份','平均分成 5 份，每份 5；每 5 个装一份，装 5 份','平均分成 4 份，每份 4；每 4 个装一份，装 4 份'],target:0,hint:'一个故事求每份几个，另一个求能分几份，但算式都可以是 20 ÷ 5。',explanation:'20 平均分成 5 份，每份 4；20 里面有 4 个 5，也能装 4 份。'}
+  ];
+  return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+ }),
  {...g2[3],theme:'厘米和米'},
  unit('大乘法星田','7～9的表内乘、除法','上册',i=>{const a=7+i%3,b=2+i;return i<3?number('补给乘法',`${a}袋，每袋${b}颗星，共几颗？`,a*b,`${a}×${b}=${a*b}。`,'颗'):number('大组分享',`${a*b}颗星平均分成${a}袋，每袋几颗？`,b,`${a*b}÷${a}=${b}。`,'颗');}),
  {...g2[5],theme:'上册复习与关联'},...g2.slice(6)
@@ -112,6 +151,22 @@ curriculum[3]=[
  unit('两种补给模型','加法模型和乘法模型','上册',i=>{const a=6+i,b=3+i%3;return number('选择数量关系',i%2?`每船${a}箱，${b}船一共几箱？`:`一船${a}箱，另一船${b}箱，一共几箱？`,i%2?a*b:a+b,i%2?`相同数量重复${b}次：${a}×${b}=${a*b}。`:`合并两部分：${a}+${b}=${a+b}。`,'箱');}),
  unit('小桥四边形','平行四边形和梯形','上册',i=>{const qs=[['两组对边分别平行的四边形','平行四边形'],['只有一组对边平行的四边形','梯形'],['四个角都是直角、对边平行且相等的图形','长方形'],['四条边相等、四个角都是直角的图形','正方形'],['小桥侧面只有一组对边平行，这个图形','梯形'],['菱形的两组对边都平行，它也属于哪一类','平行四边形']];const [q,a]=qs[i];return choose('图形标签',q+'？',a,['梯形','三角形','平行四边形','长方形','正方形'].filter(v=>v!==a).slice(0,2),'根据对边是否平行、角是否为直角来判断。');}),g4[5],...g4.slice(6)
 ];
+const g4now=curriculum[3];
+curriculum[3]=g4now.map(u=>u.theme!=='加法模型和乘法模型'?u:unit('两种补给模型','加法模型和乘法模型','上册',i=>{
+ const common={
+  coachHints:['先判断题目是在合并两个不同部分，还是重复相同数量。','“一共”不一定用加法，还要看各部分是否是相同数量的几份。'],
+  evidence:{knowledgeId:'pep-math-g4-u4-additive-multiplicative-models',objective:'区分合并、相差和等量重复等数量关系，能选择加法或乘法模型解释并解决真实问题。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['三位数加法','两位数乘一位数','读懂每份数和份数'],misconceptions:['看到“一共”就一律相加','把份数和每份数直接相加','忽略题目中额外增加的不同部分'],reviewed:false}
+ };
+ const tasks:Task[]=[
+  {kind:'choice',title:'关系侦察员',goal:'四（1）班有 28 人，四（2）班有 32 人，求两个班一共多少人。应该选择哪种模型？',options:['两个不同部分合并，用 28 + 32','每班人数相同，用 28 × 32','求相差人数，用 32 − 28'],target:0,hint:'这是把两个班的人数合并，并没有说每班同样多。',explanation:'两个不同部分合并，用加法模型：28 + 32 = 60（人）。'},
+  {kind:'groups',title:'方阵搭建师',goal:'观众排成 4 排，每排 6 人。摆出这个相同数量重复 4 次的模型。',groups:4,target:6,hint:'每一排人数相同，4 是排数，6 是每排人数。',explanation:'4 个 6 相加可以写成 4 × 6 = 24。'},
+  {kind:'number',title:'模型计算站',goal:'仓库原有 125 箱材料，又运来 87 箱。现在共有多少箱？',target:212,answerUnit:'箱',visual:bar(125,87,['原有','运来']),hint:'两个不同来源的数量合并，用加法。',explanation:'125 + 87 = 212（箱）。'},
+  {kind:'choice',title:'错模修理铺',goal:'6 个盒子，每盒 8 支笔。小北列式 6 + 8 = 14，怎样修正？',options:['相同数量重复 6 次，用 6 × 8 = 48','盒子和笔是两部分，用 6 + 8 = 14','求盒子比笔少多少，用 8 − 6 = 2'],target:0,hint:'“每盒 8 支”说明每一份数量相同，共有 6 份。',explanation:'这是 6 个 8，用乘法模型，6 × 8 = 48（支）。'},
+  {kind:'number',title:'研学车队长',goal:'4 辆车，每辆坐 35 名学生，另有 12 名老师。一共有多少人？',target:152,answerUnit:'人',visual:bar(140,12,['学生','老师']),hint:'先用乘法求学生人数，再把老师作为另一部分合并。',explanation:'35 × 4 + 12 = 140 + 12 = 152（人）。'},
+  {kind:'choice',title:'模型迁移桥',goal:'下面哪组判断全部正确？',options:['“甲地35棵、乙地28棵”用加法；“7行、每行9棵”用乘法','两种情境都用加法，因为都问一共','两种情境都用乘法，因为数字都大于1'],target:0,hint:'不同部分合并与相同数量重复，属于不同模型。',explanation:'35和28是两个不同部分；7行每行9棵是9重复7次，应分别用加法和乘法。'}
+ ];
+ return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+}));
 const g5=curriculum[4];
 curriculum[4]=[
  unit('积木观测台','观察简单组合体','上册',i=>number('积木数量',`底层排着${3+i}个小正方体，上层再放2个（没有隐藏积木），共几个？`,5+i,`${3+i}+2=${5+i}个。`,'个')),
@@ -120,10 +175,90 @@ curriculum[4]=[
  unit('字母密码屋','用字母表示数和数量关系','上册',i=>number('解开字母密码',`每包有a颗星，装3包。当a=${i+4}时，3a是多少？`,3*(i+4),`把a换成${i+4}，3×${i+4}=${3*(i+4)}。`)),
  g5[3],g5[4],...g5.slice(6,11)
 ];
+const g5now=curriculum[4];
+curriculum[4]=g5now.map(u=>u.theme!=='小数乘法'?u:unit('小数采购站','小数乘法','上册',i=>{
+ const common={
+  coachHints:['先按整数乘法算出积，再根据因数的小数位数点小数点。','算完先估一估，检查积的大小是否合理。'],
+  evidence:{knowledgeId:'pep-math-g5-u1-decimal-multiplication',objective:'理解小数乘法与整数乘法的联系，能确定积的小数点位置，并用估算检查结果、解决实际问题。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['整数乘法','小数的意义','小数位值'],misconceptions:['只数积的小数位而不看因数','小数点位置照抄其中一个因数','不估算导致积扩大或缩小10倍'],reviewed:false}
+ };
+ const tasks:Task[]=[
+  {kind:'choice',title:'小数点导航员',goal:'计算 1.2 × 3，先算 12 × 3 = 36，积应该写成多少？',options:['3.6','36','0.36'],target:0,hint:'1.2 是 12 个十分之一，36 个十分之一就是 3.6。',explanation:'一个因数有 1 位小数，积从右边起数 1 位点小数点，得到 3.6。'},
+  {kind:'number',title:'整数迁移站',goal:'2.4 × 5 等于多少？',target:120,scale:10,answerUnit:'',hint:'先算 24 × 5 = 120，再缩小到原来的十分之一。',explanation:'2.4 × 5 = 12.0，也就是 12。'},
+  {kind:'number',title:'积的位值塔',goal:'0.8 × 6 等于多少？',target:48,scale:10,answerUnit:'',visual:bar(8,6,['8个十分之一','重复6次']),hint:'8 个十分之一乘 6，得到 48 个十分之一。',explanation:'0.8 × 6 = 4.8。'},
+  {kind:'choice',title:'错点修理铺',goal:'小北算 3.5 × 4 = 140。怎样修正？',options:['35 × 4 = 140，再把积缩小10倍，得14','小数点不影响结果，140正确','把140缩小100倍，得1.4'],target:0,hint:'3.5 是 35 的十分之一，积也应是 140 的十分之一。',explanation:'3.5 × 4 = 14。估算 3.5 接近 4，4 × 4 = 16，也能判断 140 明显过大。'},
+  {kind:'number',title:'文具采购员',goal:'每盒彩笔 6.5 元，买 4 盒需要多少元？',target:260,scale:10,answerUnit:'元',visual:bar(65,4,['每盒6.5元','4盒']),hint:'单价 × 数量 = 总价，结果可以用 7 × 4 估算检查。',explanation:'6.5 × 4 = 26.0（元），即 26 元。'},
+  {kind:'choice',title:'估算检查桥',goal:'7.9 × 5 的准确结果和合理估算是哪一组？',options:['准确结果39.5，约等于40','准确结果395，约等于400','准确结果3.95，约等于4'],target:0,hint:'7.9 接近 8，8 × 5 = 40，准确结果应接近40。',explanation:'79 × 5 = 395，再点一位小数得39.5；估算结果约40。'}
+ ];
+ return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+}));
+const g5withMultiply=curriculum[4];
+curriculum[4]=g5withMultiply.map(u=>u.theme!=='小数除法'?u:unit('小数分享港','小数除法','上册',i=>{
+ const common={
+  coachHints:['除数是整数时，商的小数点要和被除数的小数点对齐。','除数是小数时，可以把被除数和除数同时扩大相同倍数。'],
+  evidence:{knowledgeId:'pep-math-g5-u2-decimal-division',objective:'理解小数除法的算理，能处理除数是整数或小数的计算，并用乘法和估算检查商。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['整数除法','小数位值','商不变规律','小数乘法'],misconceptions:['只移动除数的小数点','商的小数点与被除数错位','把商扩大10倍后没有检查'],reviewed:false}
+ };
+ const tasks:Task[]=[
+  {kind:'choice',title:'十分之一分装员',goal:'4.8 ÷ 4 表示把 48 个十分之一平均分成4份，结果是多少？',options:['1.2','12','0.12'],target:0,hint:'48个十分之一分成4份，每份12个十分之一。',explanation:'12个十分之一是1.2，所以4.8 ÷ 4 = 1.2。'},
+  {kind:'number',title:'小数商定位站',goal:'7.2 ÷ 3 等于多少？',target:24,scale:10,answerUnit:'',hint:'72个十分之一平均分成3份，每份24个十分之一。',explanation:'7.2 ÷ 3 = 2.4，商的小数点与被除数对齐。'},
+  {kind:'number',title:'除数变整数桥',goal:'5.6 ÷ 0.8 等于多少？',target:7,answerUnit:'',hint:'被除数和除数同时扩大10倍，变成56 ÷ 8。',explanation:'5.6 ÷ 0.8 = 56 ÷ 8 = 7，商不变。'},
+  {kind:'choice',title:'错商修理铺',goal:'小北算 6.3 ÷ 3 = 21。怎样修正？',options:['63个十分之一÷3=21个十分之一，商是2.1','6.3扩大10倍后商也保持21','把21缩小100倍，商是0.21'],target:0,hint:'21表示21个十分之一，而不是21个一。',explanation:'6.3 ÷ 3 = 2.1。用2.1 × 3 = 6.3可以验算。'},
+  {kind:'number',title:'果汁单价员',goal:'6瓶果汁共12.6元，平均每瓶多少元？',target:21,scale:10,answerUnit:'元',visual:bar(126,6,['总价12.6元','6瓶']),hint:'总价 ÷ 数量 = 单价。',explanation:'12.6 ÷ 6 = 2.1（元），验算2.1 × 6 = 12.6。'},
+  {kind:'choice',title:'估算验算桥',goal:'19.2 ÷ 4 的结果和验算是哪一组？',options:['商4.8，因为4.8 × 4 = 19.2','商48，因为48 × 4 = 192','商0.48，因为0.48 × 4 = 1.92'],target:0,hint:'19.2接近20，20 ÷ 4 = 5，商应接近5。',explanation:'19.2 ÷ 4 = 4.8，乘法验算和估算都合理。'}
+ ];
+ return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+}));
+const g6now=curriculum[5];
+curriculum[5]=g6now.map(u=>u.theme!=='分数乘法'?u:unit('分数采集队','分数乘法','上册',i=>{
+ const common={
+  coachHints:['求一个数的几分之几，可以用这个数乘分数。','先用分母表示平均分的份数，再用分子表示要取的份数。'],
+  evidence:{knowledgeId:'pep-math-g6-u2-fraction-multiplication',objective:'理解分数乘法表示求一个数的几分之几，能用分数乘法解决实际问题并诊断分子、分母作用混淆。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['分数的意义','整数乘法','平均分'],misconceptions:['把分子和分母作用颠倒','用总量除以分子再乘分母','只计算取一份而漏乘分子'],reviewed:false}
+ };
+ const tasks:Task[]=[
+  {kind:'choice',title:'分数意义侦察员',goal:'求 24 的 2/3，哪一步正确解释了分母3和分子2？',options:['先把24平均分成3份，再取2份','先把24平均分成2份，再取3份','把24、2、3直接相加'],target:0,hint:'分母表示平均分成几份，分子表示取几份。',explanation:'24 ÷ 3 × 2 = 16，所以 24 × 2/3 = 16。'},
+  {kind:'tiles',title:'方格建模台',goal:'12格花田的 3/4 需要点亮，请点亮对应格数。',cells:12,target:9,cols:4,hint:'12格平均分4份，每份3格，取其中3份。',explanation:'12 ÷ 4 × 3 = 9，12 的 3/4 是 9。'},
+  {kind:'number',title:'分数计算站',goal:'30 颗星的 2/5 是多少颗？',target:12,answerUnit:'颗',hint:'先求 30 的五分之一，再取2份。',explanation:'30 ÷ 5 × 2 = 12，也可以写成 30 × 2/5 = 12。'},
+  {kind:'choice',title:'分子分母修理铺',goal:'小北算 18 的 2/3 时列成 18 ÷ 2 × 3 = 27。怎样修正？',options:['18 ÷ 3 × 2 = 12','18 ÷ 2 × 3 = 27，不用修改','18 − 3 × 2 = 12'],target:0,hint:'应按分母3平均分，再按分子2取份数。',explanation:'18平均分3份，每份6，取2份是12。'},
+  {kind:'number',title:'阅读计划员',goal:'一本书有 48 页，今天读了全书的 3/8。今天读了多少页？',target:18,answerUnit:'页',visual:bar(48,18,['全书','已读']),hint:'总页数 × 已读分率 = 已读页数。',explanation:'48 × 3/8 = 48 ÷ 8 × 3 = 18（页）。'},
+  {kind:'choice',title:'情境迁移桥',goal:'40 千克种子的 3/5 用于春播。哪组算式和结果正确？',options:['40 × 3/5 = 24千克','40 ÷ 3 × 5 = 200/3千克','40 − 3/5 = 39又2/5千克'],target:0,hint:'求总量的几分之几，用总量乘这个分数。',explanation:'40平均分5份，每份8千克，取3份是24千克。'}
+ ];
+ return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+}));
+const g6withMultiply=curriculum[5];
+curriculum[5]=g6withMultiply.map(u=>u.theme!=='分数除法'?u:unit('分数寻源岛','分数除法','上册',i=>{
+ const common={
+  coachHints:['已知一个数的几分之几是多少，求原数，可以用已知量除以这个分数。','除以一个非零分数，等于乘这个分数的倒数。'],
+  evidence:{knowledgeId:'pep-math-g6-u3-fraction-division',objective:'理解分数除法与分数乘法的逆运算关系，能用乘倒数、方程和数量关系解决已知部分求整体的问题。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['分数乘法','倒数','整体与部分关系'],misconceptions:['除以分数时乘原分数而不是倒数','把已知部分直接乘分率','没有检验求出的整体是否大于对应部分'],reviewed:false}
+ };
+ const tasks:Task[]=[
+  {kind:'choice',title:'整体寻源员',goal:'12 盏灯占全部的 3/4，求全部灯数。哪一个数量关系正确？',options:['全部灯数 × 3/4 = 12','12 × 3/4 = 全部灯数','全部灯数 + 3/4 = 12'],target:0,hint:'部分量 = 整体量 × 对应分率。',explanation:'设全部有x盏，x × 3/4 = 12，所以x = 12 ÷ 3/4 = 16。'},
+  {kind:'number',title:'倒数变换站',goal:'12 ÷ 3/4 等于多少？',target:16,answerUnit:'',hint:'除以3/4，改成乘它的倒数4/3。',explanation:'12 ÷ 3/4 = 12 × 4/3 = 16。'},
+  {kind:'number',title:'分数除法计算塔',goal:'8 ÷ 2/3 等于多少？',target:12,answerUnit:'',hint:'把除以2/3改成乘3/2，再约分。',explanation:'8 ÷ 2/3 = 8 × 3/2 = 12。'},
+  {kind:'choice',title:'倒数修理铺',goal:'小北算 10 ÷ 2/5 = 10 × 2/5 = 4。怎样修正？',options:['应乘2/5的倒数5/2，结果是25','原计算正确，结果就是4','只把10变成倒数1/10'],target:0,hint:'除数变乘数时，要把除数变成倒数。',explanation:'10 ÷ 2/5 = 10 × 5/2 = 25。用25 × 2/5 = 10可以验算。'},
+  {kind:'number',title:'星路测绘员',goal:'已经走了18千米，是全程的3/5。全程多少千米？',target:30,answerUnit:'千米',visual:bar(30,18,['全程','已走3/5']),hint:'已走路程 ÷ 已走分率 = 全程。',explanation:'18 ÷ 3/5 = 18 × 5/3 = 30（千米）。'},
+  {kind:'choice',title:'方程迁移桥',goal:'一个数的2/3是20，下面哪组方程和结果正确？',options:['2/3x = 20，x = 30','x ÷ 2/3 = 20，x = 40/3','x − 2/3 = 20，x = 20又2/3'],target:0,hint:'“一个数的2/3”写成2/3乘这个数。',explanation:'2/3x = 20，两边除以2/3，x = 20 × 3/2 = 30。'}
+ ];
+ return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+}));
 // Lower-book selection follows the editions currently linked by the publisher.
 const g1=curriculum[0];curriculum[0]=[...g1.slice(0,6),g1[10],g1[6],g1[7],{...g1[9],theme:'100以内的口算加、减法'},
  unit('笔算小修理铺','100以内的笔算加、减法','下册',i=>number('两位数合并',`材料有${26+i*3}件，又来${17+i}件，共几件？`,43+i*4,`${26+i*3}+${17+i}=${43+i*4}。`,'件')),
  unit('购物小侦探','数量间的加减关系 · 欢乐购物街','下册',i=>number('找零钱',`带20元，买一份${8+i}元的材料，应找回几元？`,12-i,`20−${8+i}=${12-i}。`,'元'))];
+const g1now=curriculum[0];
+curriculum[0]=g1now.map(u=>u.theme!=='20以内的进位加法'?u:unit('凑十过小桥','20以内的进位加法','上册',i=>{
+ const common={
+  coachHints:['先看第一个数还差几能凑成 10。','把第二个数拆成“补足10”和“剩下”的两部分。'],
+  evidence:{knowledgeId:'pep-math-g1-u5-carry-addition',objective:'理解凑十法，能计算20以内进位加法，并能解释拆数、补十和剩余合并的过程。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['10的组成','10以内加法','数的分与合'],misconceptions:['拆出的数不能补足10','凑成10后漏加剩余部分','把加法误算成减法'],reviewed:false}
+ };
+ const tasks:Task[]=[
+  {kind:'choice',title:'凑十拆分师',goal:'计算 8 + 5 时，为了先把 8 凑成 10，应该怎样拆分 5？',options:['把 5 分成 2 和 3','把 5 分成 1 和 4','不用拆，把 8 变成 9'],target:0,hint:'8 还差 2 就是 10。',explanation:'把 5 分成 2 和 3，先算 8 + 2 = 10，再算 10 + 3 = 13。'},
+  {kind:'cargo',title:'十格补给舱',goal:'9 颗星先补 1 颗装满十格舱，再把剩下 4 颗放旁边。请装出 9 + 5 的总数。',target:14,units:[1,10],maxBlocks:5,explanation:'把 5 分成 1 和 4，9 + 1 = 10，10 + 4 = 14。',hint:'先装一个十，再补上剩下的 4 个一。'},
+  {kind:'number',title:'凑十计算站',goal:'9 + 6 等于多少？',target:15,answerUnit:'颗',visual:bar(9,6,['原有9颗','又来6颗']),hint:'把 6 分成 1 和 5，先让 9 凑成 10。',explanation:'9 + 1 = 10，10 + 5 = 15，所以 9 + 6 = 15。'},
+  {kind:'choice',title:'漏数修理铺',goal:'小北算 7 + 6：先用 3 把 7 凑成 10，却把答案写成 12。应该怎样修正？',options:['6 分成 3 和 3，10 + 3 = 13','6 分成 2 和 4，10 + 2 = 12','7 − 6 = 1'],target:0,hint:'从 6 里拿走 3 去补十，还剩几个？',explanation:'6 分成 3 和 3，7 + 3 = 10，还要加剩下的 3，答案是 13。'},
+  {kind:'number',title:'校车集合点',goal:'第一辆校车有 8 位同学，第二辆有 7 位，一共有多少位？',target:15,answerUnit:'位',visual:bar(8,7,['第一辆','第二辆']),hint:'把 7 分成 2 和 5，先让 8 凑成 10。',explanation:'8 + 2 = 10，10 + 5 = 15，一共有 15 位同学。'},
+  {kind:'choice',title:'方法迁移桥',goal:'哪一步能正确说明 9 + 8 = 17？',options:['8 分成 1 和 7，9 + 1 + 7 = 17','8 分成 2 和 6，9 + 2 + 6 = 17','9 和 8 都减 1，得到 15'],target:0,hint:'9 只差 1 就能凑成 10。',explanation:'从 8 中拿 1 补给 9，得到 10，剩下 7，所以 10 + 7 = 17。'}
+ ];
+ return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+}));
 const g2now=curriculum[1];curriculum[1]=[...g2now.slice(0,6),{...g2[4],semester:'下册',theme:'时间在哪里'},g2[7],
  unit('乘除关系岛','数量间的乘除关系','下册',i=>number('反向补给',`每箱${3+i%4}件，合计${(3+i%4)*(4+i)}件，一共几箱？`,4+i,`总件数÷每箱件数=${4+i}。`,'箱')),
  g2[8],unit('万以内运输','万以内数的加法和减法','下册',i=>number('补给结算',`${1230+i*110}件材料送走${410+i*10}件，还剩几件？`,820+i*100,`${1230+i*110}−${410+i*10}=${820+i*100}。`,'件')),
@@ -133,12 +268,28 @@ const g3=curriculum[2];curriculum[2]=[...g3.slice(0,6),
  g3[7],g3[9],g3[10],
  unit('数据与日期营','数据的收集与整理 · 年月日','下册',i=>i<3?number('调查整理',`选择苹果的${6+i}人，梨的${4+i*2}人，一共调查几人？`,10+i*3,`${6+i}+${4+i*2}=${10+i*3}。`,'人',bar(6+i,4+i*2,['选苹果','选梨'])):choose('日期规划',`${[4,6,11][i-3]}月开展观测，这个月有几天？`,'30天',['28天','31天'],'四、六、九、十一月有30天。')),
  unit('小数初见岛','小数的初步认识','下册',i=>number('零钱读数',`${i+1}元${i+2}角，用小数表示多少元？`,(i+1)*10+i+2,`元写在整数部分，角写在十分位。`,'元',undefined,10))];
+const g3now=curriculum[2];
+curriculum[2]=g3now.map(u=>u.theme!=='混合运算'?u:unit('混合能源站','混合运算','上册',i=>{
+ const common={
+  coachHints:['没有括号时，先算乘除，再算加减。','每算完一步，都要把没有参与计算的数和符号照写下来。'],
+  evidence:{knowledgeId:'pep-math-g3-u2-mixed-operations',objective:'掌握两级混合运算顺序，能逐步计算、诊断错误，并把两步生活问题写成综合算式。',role:(['understand','model','fluency','diagnose','apply','transfer'] as const)[i],prerequisites:['表内乘除法','两位数加减法','一步问题的数量关系'],misconceptions:['无括号算式一律从左往右算','第一步算完后漏写其他数或符号','把情境中的先后叙述直接当作运算顺序'],reviewed:false}
+ };
+ const tasks:Task[]=[
+  {kind:'choice',title:'顺序指挥官',goal:'计算 24 − 3 × 4，第一步应该算什么？',options:['先算 3 × 4','先算 24 − 3','把 24 和 4 相加'],target:0,hint:'减法和乘法同时出现时，乘法先行。',explanation:'先算 3 × 4 = 12，再算 24 − 12 = 12。'},
+  {kind:'cargo',title:'两步补给舱',goal:'24 件材料平均放进 6 箱，每箱的数量再加 18。请装出最后的数量。',target:22,units:[1,10],maxBlocks:4,hint:'先算 24 ÷ 6，再把商与 18 相加。',explanation:'24 ÷ 6 = 4，4 + 18 = 22；综合算式是 24 ÷ 6 + 18。'},
+  {kind:'number',title:'运算接力站',goal:'36 ÷ 4 + 7 的结果是多少？',target:16,answerUnit:'',hint:'先算除法 36 ÷ 4，再加 7。',explanation:'36 ÷ 4 = 9，9 + 7 = 16。'},
+  {kind:'choice',title:'错序修理铺',goal:'小北把 30 − 12 ÷ 3 算成了 6。怎样修正？',options:['先算 12 ÷ 3 = 4，再算 30 − 4 = 26','先算 30 − 12 = 18，再算 18 ÷ 3 = 6','把 30、12、3 全部相加'],target:0,hint:'除法和减法同时出现时，要先完成除法。',explanation:'正确顺序是先除后减，30 − 12 ÷ 3 = 30 − 4 = 26。'},
+  {kind:'number',title:'研学签到台',goal:'5 个小组，每组 6 人，后来有 8 人先离开。现在还有多少人？',target:22,answerUnit:'人',visual:bar(30,8,['原有人数','离开人数']),hint:'先求 5 组一共有多少人，再减去离开的 8 人。',explanation:'5 × 6 − 8 = 30 − 8 = 22（人）。'},
+  {kind:'choice',title:'算式翻译桥',goal:'每盒彩笔 4 支，买了 7 盒，又收到 5 支。哪一个算式能求总数？',options:['4 × 7 + 5','4 + 7 × 5','4 ×（7 + 5）'],target:0,hint:'先求 7 盒的支数，再加单独收到的 5 支。',explanation:'7 盒共有 4 × 7 = 28 支，再加 5 支，综合算式是 4 × 7 + 5。'}
+ ];
+ return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
+}));
 for(let g=0;g<6;g++)for(const u of curriculum[g])u.verified=true;
 const lowerSources=['1221001102241','1221001202251','1221001302251','1221001402131','1221001502141','1221001602141'];
 for(let g=0;g<6;g++)for(const u of curriculum[g])if(u.semester==='上册')u.verified=true;
 export function curriculumChapters():Chapter[]{return curriculum.flatMap((units,g)=>units.map((u,index)=>{
  const grade=g+1,id=`math.g${grade}.c${index+7}`;
  return {id,subject:'math' as const,grade,title:u.title,topic:u.theme,art:index%3===0?'island':index%3===1?'garden':'planet',alignment:u.verified?'verified-theme' as const:'theme' as const,
- curriculum:{semester:u.semester,theme:u.theme,order:index,source:'https://book.pep.com.cn/'+(u.semester==='上册'?sources[g]:lowerSources[g])+'/',verified:!!u.verified},
- levels:Array.from({length:6},(_,i)=>{const l=u.make(i);return {...l,id:`${id}.l${i+1}`,stage:i<2?'warmup' as const:i<4?'practice' as const:'challenge' as const,coachHints:[l.hint,l.explanation]};})};
+ curriculum:{semester:u.semester,theme:u.theme,order:index,source:'https://book.pep.com.cn/'+(u.semester==='上册'?sources[g]:lowerSources[g])+'/',verified:!!u.verified,publisher:'人民教育出版社',edition:'依据2022年版课标修订教材',volume:`${grade}年级${u.semester}`,unit:u.theme,reviewStatus:(g===0&&u.theme==='20以内的进位加法')||(g===1&&['1～6的表内乘法','1～6的表内除法'].includes(u.theme))||(g===2&&u.theme==='混合运算')||(g===3&&u.theme==='加法模型和乘法模型')||(g===4&&['小数乘法','小数除法'].includes(u.theme))||(g===5&&['分数乘法','分数除法'].includes(u.theme))?'editor-reviewed':'draft'},
+ levels:Array.from({length:6},(_,i)=>{const l=u.make(i);return {...l,id:`${id}.l${i+1}`,stage:i<2?'warmup' as const:i<4?'practice' as const:'challenge' as const,coachHints:[l.hint,l.explanation],evidence:l.evidence||{knowledgeId:`pep-math-g${grade}-u${index+1}`,objective:`理解并应用“${u.theme}”，能完成计算或操作，并解释方法、检查结果和解决简单真实问题。`,role:evidenceRoles[i],prerequisites:[`${grade}年级前序相关知识`,'读懂数量、关系和单位'],misconceptions:[misconceptionFor(l.kind),'得到答案后不作估算、逆运算或情境检查'],reviewed:false}};})};
 }));}

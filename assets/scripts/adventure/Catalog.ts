@@ -11,8 +11,11 @@ import {expansionChapters} from './ExpansionContent';
 export type {Subject} from './Subjects';
 export type Mechanic='cargo'|'groups'|'tiles'|'sentence'|'listen'|'choice'|'number'|'picture';
 export interface MathVisual {kind:'clock'|'ruler'|'bars'|'shape'|'grid'|'numberline'; values:number[]; labels?:string[];}
-export interface Level {activity?:PictureActivity;id:string; kind:Mechanic; title:string; goal:string; hint:string; explanation:string; target:number; passage?:string; visual?:MathVisual; answerUnit?:string; stage?:'warmup'|'practice'|'challenge'; coachHints?:string[]; maxBlocks?:number; units?:number[]; scale?:number; groups?:number; cells?:number; cols?:number; words?:string[]; answer?:string[]; voice?:string; options?:string[]; colors?:string[];}
-export interface Chapter {id:string; subject:Subject; grade:number; title:string; topic:string; art:string; levels:Level[]; curriculum?:{semester:'上册'|'下册';theme:string;order:number;source:string;verified:boolean}; alignment:'theme'|'verified-theme'|'enrichment';}
+export type EvidenceRole='understand'|'model'|'fluency'|'diagnose'|'apply'|'transfer'|'review';
+export interface LearningEvidence {knowledgeId:string;objective:string;role:EvidenceRole;prerequisites?:string[];misconceptions?:string[];reviewed?:boolean;}
+export interface Level {activity?:PictureActivity;id:string; kind:Mechanic; title:string; goal:string; hint:string; explanation:string; target:number; evidence?:LearningEvidence; passage?:string; visual?:MathVisual; answerUnit?:string; stage?:'warmup'|'practice'|'challenge'; coachHints?:string[]; maxBlocks?:number; units?:number[]; scale?:number; groups?:number; cells?:number; cols?:number; words?:string[]; answer?:string[]; voice?:string; options?:string[]; colors?:string[];}
+export interface CurriculumTrace {semester:'上册'|'下册';theme:string;order:number;source:string;verified:boolean;publisher?:string;edition?:string;volume?:string;unit?:string;lesson?:string;reviewStatus?:'draft'|'editor-reviewed'|'teacher-reviewed'|'pilot-validated';}
+export interface Chapter {id:string; subject:Subject; grade:number; title:string; topic:string; art:string; levels:Level[]; curriculum?:CurriculumTrace; alignment:'theme'|'verified-theme'|'enrichment';}
 export const CATALOG:Chapter[]=[];
 function chapter(subject:Subject,grade:number,title:string,topic:string,levels:Omit<Level,'id'>[],alignment:Chapter['alignment']='theme'){
  const index=CATALOG.filter(c=>c.subject===subject&&c.grade===grade).length;

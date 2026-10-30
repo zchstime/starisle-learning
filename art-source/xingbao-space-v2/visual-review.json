@@ -1,0 +1,16 @@
+{
+  "reviewed_glb_sha256": "235fdd8562663456d7036643c86125dac90745d733ebd669ddebd51bff79334d",
+  "actual_render_count": 11,
+  "checked": [
+    "front silhouette and neckline",
+    "left side and back volume",
+    "hero head tilt and arm separation",
+    "Happy and full blink eye closure",
+    "Think asymmetric eyebrows",
+    "Focus inward brow direction",
+    "Surprise and A/O mouth forms"
+  ],
+  "comparison": "../../previews/xingbao-space-v2/reference-comparison.jpg",
+  "expressions": "../../previews/xingbao-space-v2/expressions.jpg",
+  "scope": "Appearance and expression review. No Cocos resource replacement in this iteration."
+}

@@ -28,7 +28,9 @@ export class SoundBank {
  setMusicVolume(value:number){if(!Number.isFinite(value))return;this.musicVolume=Math.max(0,Math.min(1,value));try{this.settings.setItem('starisle.musicVolume',String(this.musicVolume));}catch{}this.duck();}
  private visibility=()=>{if(document.hidden){this.stopMusic();this.stopVoice();}else if(this.enabled)this.unlock();};
  private gesture=()=>{if(this.enabled)this.unlock();};
- private musicLevel(){return this.musicVolume*((this.voice||this.speech.playing) ? .08/.65 : 1);}
+ private externalDialogue=false;
+ private dialogue=(e:Event)=>{this.externalDialogue=!!(e as CustomEvent).detail;if(this.externalDialogue)this.stopVoice();this.duck();};
+ private musicLevel(){return this.musicVolume*((this.externalDialogue||this.voice||this.speech.playing) ? .08/.65 : 1);}
  private duck(){if(this.musicGain&&this.context)this.musicGain.gain.setTargetAtTime(this.musicLevel(),this.context.currentTime,.15);if(this.nativeMusic)this.nativeMusic.volume=this.musicLevel();}
  setMusicEnabled(on:boolean){this.musicEnabled=on;try{this.settings.setItem('starisle.music',on?'on':'off');}catch{}if(on)this.unlock();else this.stopMusic();}
  private stopMusic(){this.musicVersion++;if(this.music){try{this.music.stop();}catch{}this.music.disconnect();this.music=null;}this.musicGain?.disconnect();this.musicGain=null;this.nativeMusic?.stop();}
@@ -37,7 +39,7 @@ export class SoundBank {
  }
 
  constructor(private fx:AudioSource,private speech:AudioSource,enabled:boolean){this.enabled=enabled;this.nativeMusic=fx.node.addComponent(AudioSource);
-  if(sys.isBrowser&&typeof window!=='undefined'){try{const AC=window.AudioContext||(window as any).webkitAudioContext;if(AC){this.context=new AC();this.master=this.context.createGain();this.master.gain.value=enabled?1:0;this.analyser=this.context.createAnalyser();this.analyser.fftSize=1024;this.master.connect(this.analyser);this.analyser.connect(this.context.destination);for(const type of ['pointerdown','touchend','keydown'])window.addEventListener(type,this.gesture,{capture:true,passive:true});document.addEventListener('visibilitychange',this.visibility);}}catch(e){this.lastError=String(e);}}
+  if(sys.isBrowser&&typeof window!=='undefined'){window.addEventListener('starisle:dialogue-active',this.dialogue);try{const AC=window.AudioContext||(window as any).webkitAudioContext;if(AC){this.context=new AC();this.master=this.context.createGain();this.master.gain.value=enabled?1:0;this.analyser=this.context.createAnalyser();this.analyser.fftSize=1024;this.master.connect(this.analyser);this.analyser.connect(this.context.destination);for(const type of ['pointerdown','touchend','keydown'])window.addEventListener(type,this.gesture,{capture:true,passive:true});document.addEventListener('visibilitychange',this.visibility);}}catch(e){this.lastError=String(e);}}
  }
  get status(){return {voiceLoading:this.voiceLoading,voicePlaying:!!this.voice||this.speech.playing,state:this.context?.state||'native',enabled:this.enabled,lastPlayed:this.lastPlayed,lastError:this.lastError,peak:this.lastPeak,active:this.sources.size,musicPlaying:!!this.music||this.nativeMusic.playing,musicEnabled:this.musicEnabled,musicVolume:this.musicVolume,musicGain:this.musicGain?.gain.value};}
  unlock(){if(this.disposed)return;if(!this.context){void this.ensureMusic();return;}try{if(this.context.state!=='running')void this.context.resume().then(()=>this.ensureMusic()).catch(e=>{this.lastError=String(e);});else void this.ensureMusic();const source=this.context.createBufferSource();source.buffer=this.context.createBuffer(1,1,this.context.sampleRate);source.connect(this.master!);source.onended=()=>source.disconnect();source.start();}catch(e){this.lastError=String(e);}}
@@ -62,5 +64,5 @@ export class SoundBank {
   finally{if(voice&&token===this.voiceVersion)this.voiceLoading=false;}
  }
  stopVoice(){this.voiceVersion++;this.voiceLoading=false;this.stopLip();if(this.voice){try{this.voice.stop();}catch{}this.voice=null;}this.speech.stop();this.duck();}
- dispose(){this.disposed=true;this.stopMusic();this.nativeMusic.destroy();this.stopVoice();this.sources.forEach(s=>{try{s.stop();}catch{}});if(sys.isBrowser){document.removeEventListener('visibilitychange',this.visibility);for(const type of ['pointerdown','touchend','keydown'])window.removeEventListener(type,this.gesture,true);}void this.context?.close();}
+ dispose(){this.disposed=true;this.stopMusic();this.nativeMusic.destroy();this.stopVoice();this.sources.forEach(s=>{try{s.stop();}catch{}});if(sys.isBrowser){window.removeEventListener('starisle:dialogue-active',this.dialogue);document.removeEventListener('visibilitychange',this.visibility);for(const type of ['pointerdown','touchend','keydown'])window.removeEventListener(type,this.gesture,true);}void this.context?.close();}
 }

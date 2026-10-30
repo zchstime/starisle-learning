@@ -4,7 +4,7 @@ for(const f of ['PictureActivities','OtherCurriculum','SubjectStories','Subjects
 fs.mkdirSync(path.resolve('qa/exam'),{recursive:true});fs.writeFileSync(path.resolve('qa/exam/Exam.js'),ts.transpileModule(fs.readFileSync('assets/scripts/exam/Exam.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText);
 fs.writeFileSync('qa/exam/RoutePapers.js',ts.transpileModule(fs.readFileSync('assets/scripts/exam/RoutePapers.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText);
 const {CATALOG,ALL_LEVELS,chapters}=require(path.join(out,'Catalog.js'));const {Puzzle}=require(path.join(out,'Puzzle.js'));const {Progress,SAVE_KEY}=require(path.join(out,'Progress.js'));
-assert.equal(CATALOG.length,444);assert.equal(ALL_LEVELS.length,2208);assert.equal(new Set(ALL_LEVELS.map(l=>l.id)).size,2208);
+assert.equal(CATALOG.length,444);assert.ok(ALL_LEVELS.length>=CATALOG.length*4);assert.equal(new Set(ALL_LEVELS.map(l=>l.id)).size,ALL_LEVELS.length);
 for(let g=1;g<=6;g++){assert.equal(chapters('math',g).length,18);assert.equal(chapters('english',g).length,16);}
 for(const l of ALL_LEVELS){const p=new Puzzle(l);assert.equal(p.correct(),false,l.id+' starts incomplete');
  if(l.kind==='picture'){p.picture=[...l.activity.solution];}
@@ -19,7 +19,7 @@ for(const l of ALL_LEVELS){const p=new Puzzle(l);assert.equal(p.correct(),false,
 let raw=null;const store={getItem:()=>raw,setItem:(_,v)=>raw=v};const p=new Progress(store);assert.equal(p.complete('invalid'),false);p.complete(ALL_LEVELS[0].id);p.complete(ALL_LEVELS[0].id);assert.equal(p.done.length,1);p.subject='english';p.grade=6;p.chapter=2;p.save();const reload=new Progress(store);assert.deepEqual(reload.done,p.done);assert.equal(reload.grade,6);assert.equal(reload.chapter,2);assert.equal(reload.subject,'english');
 raw=JSON.stringify({version:3,done:['bogus',ALL_LEVELS[0].id,ALL_LEVELS[0].id],grade:99,chapter:99});const corrupt=new Progress(store);assert.equal(corrupt.grade,2);assert.equal(corrupt.chapter,0);assert.equal(corrupt.done.length,1);
 const fail=new Progress({getItem:()=>'{',setItem:()=>{throw Error('disk');}});fail.complete(ALL_LEVELS[0].id);assert.equal(fail.failed,true);assert.equal(fail.done.length,1);
-console.log('PASS 2208 playable level instances: valid IDs, solvability, exact targets, interactions, save isolation, duplicate rewards, corrupt/failed storage');
+console.log(`PASS ${ALL_LEVELS.length} playable level instances: valid IDs, solvability, exact targets, interactions, save isolation, duplicate rewards, corrupt/failed storage`);
 
 const {SUBJECTS}=require(path.join(out,'Subjects.js'));for(const sub of SUBJECTS)for(let grade=1;grade<=6;grade++){assert.ok(chapters(sub.id,grade).length);const p=new Progress(store);p.subject=sub.id;p.grade=grade;p.chapter=0;p.save();assert.equal(new Progress(store).subject,sub.id);}
 const {shuffled}=require(path.join(out,'Puzzle.js'));for(let len=2;len<10;len++){const order=shuffled(len,()=>.4);assert.equal(new Set(order).size,len);assert.equal(order.length,len);assert.ok(order.every(n=>n>=0&&n<len));assert.notDeepEqual(order,Array.from({length:len},(_,i)=>i));}

@@ -1,0 +1,17 @@
+(()=>{
+ const localPreview=['127.0.0.1','localhost','::1'].includes(location.hostname)&&new URLSearchParams(location.search).get('localPreview')==='1';
+ const stages=[{id:'kindergarten',name:'幼儿园',tag:'启蒙体验',title:'好奇心，从这里发芽',desc:'在小岛上认识颜色、数量和生活，边玩边发现。',open:true},{id:'primary',name:'小学',tag:'1—6 年级',title:'每一步，都是新的发现',desc:'语文、数学、英语与更多学科，接着你的进度探索。',open:true},{id:'middle',name:'初中',tag:'正在开发',title:'向更远的知识星海出发',desc:'初中学习星球正在开发中，开放后会在这里与你见面。'},{id:'high',name:'高中',tag:'正在开发',title:'让思考，拥有更大的天地',desc:'高中学习星球正在开发中，先到已开放的星球探索吧。'},{id:'university',name:'大学',tag:'未来计划',title:'探索你的专业与热爱',desc:'大学阶段正在规划开发中，暂未开放课程。'},{id:'lifelong',name:'终身学习',tag:'未来计划',title:'成长，没有终点',desc:'职业与兴趣学习正在规划开发中，暂未开放课程。'}];
+ let selected='primary',started=false,visible=false,focusBefore=null;
+ try{const last=localStorage.getItem('starisle.stage');if(stages.some(s=>s.id===last&&s.open))selected=last;}catch{}
+ const el=document.createElement('section');el.id='learning-stages';el.hidden=true;el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');el.setAttribute('aria-label','选择学习阶段');
+ el.innerHTML='<div class="stage-sky"></div><header><b>✦ 星屿学园</b><span>选择你的学习星球</span></header><nav aria-label="学习阶段"></nav><div class="stage-detail"><span class="stage-tag"></span><h1></h1><p></p><button class="stage-enter"></button><div class="stage-status" role="status"></div></div><div class="stage-tip">从好奇出发，让学习成为冒险</div>';
+ document.body.append(el);const nav=el.querySelector('nav'),enter=el.querySelector('.stage-enter');
+ for(const stage of stages){const b=document.createElement('button');b.type='button';b.dataset.stage=stage.id;b.innerHTML='<strong>'+stage.name+'</strong><small>'+stage.tag+'</small>';b.onclick=()=>{selected=stage.id;render();};nav.append(b);}
+ function render(){const s=stages.find(s=>s.id===selected);for(const b of nav.children)b.setAttribute('aria-pressed',String(b.dataset.stage===selected));el.querySelector('.stage-tag').textContent=s.open?'已开放 · '+s.tag:s.tag;el.querySelector('h1').textContent=s.title;el.querySelector('.stage-detail p').textContent=s.desc;enter.textContent=s.open?(s.id==='primary'?'进入小学 · 继续冒险 →':'进入幼儿园 →'):'正在开发中';enter.disabled=!s.open;el.querySelector('.stage-status').textContent=s.open?'学习进度会保留，随时可以切换阶段。':'可以选择左侧已开放的幼儿园或小学。';el.dataset.stage=selected;}
+ function show(){focusBefore=document.activeElement;visible=true;el.hidden=false;document.body.classList.add('stage-open');render();nav.querySelector('[data-stage="'+selected+'"]').focus();}
+ function hide(){visible=false;el.hidden=true;document.body.classList.remove('stage-open');focusBefore?.focus?.();}
+ enter.onclick=()=>{const s=stages.find(s=>s.id===selected);if(!s.open)return;try{localStorage.setItem('starisle.stage',s.id);}catch{}if(s.id==='kindergarten'&&!window.starisleArcade){el.querySelector('.stage-status').textContent='入口正在准备，请稍后再试。';return;}hide();if(s.id==='kindergarten')window.starisleArcade.open('kindergarten');};
+ el.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=[...el.querySelectorAll('button:not(:disabled)')],first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});
+ window.starisleStages={show};window.addEventListener('starisle:game-screen',e=>{if(!localPreview&&e.detail==='map'&&!started){started=true;show();}});
+ window.addEventListener('starisle:arcade-return',e=>{if(e.detail==='kindergarten')show();});
+})();

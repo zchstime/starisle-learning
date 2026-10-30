@@ -4,7 +4,7 @@
 
 用户确认采用 [探索服 v7](../explorations/xingbao-explorer-outfit-v7.png) 作为新 3D 模型依据，要求高度还原并为后续游戏替换准备。新版本保留弯星角、星空眼和奶油白肤色，使用浅蓝白制服、圆角星章、单侧工具仓与短靴。该服装方向取代下方旧披风版本；旧文件保留作历史参考。
 
-用户反馈初版还原差距较大，要求继续精修外观与表情。最新实际模型与验证记录见 [外观与表情精修 v2](../../../art-source/xingbao-space-v2/README.md)，[v1 初版](../../../art-source/xingbao-space-v1/README.md) 留作对照。目前尚未替换正式游戏资源；还原度以最新真实渲染评估。
+用户反馈初版还原差距较大，要求继续精修外观、表情及游戏实际配色。最新实际模型、颜色校准流程与验证记录见 [外观与游戏颜色校准 v5](../../../art-source/xingbao-space-v5/README.md)，[v1 初版](../../../art-source/xingbao-space-v1/README.md) 留作对照。v5 已接入本地游戏资源；还原度以真实游戏截图评估，仍不能宣称一比一还原。
 
 ## 历史定稿：披风与提灯（2026-10-27）
 
@@ -17,4 +17,4 @@ xingbao-multiview.png 是基于定稿补充生成的正、侧、背面设计参�
 
 生成方式：内置 image_gen，引用已确认原图。提示词要点：exact approved slimmer-face identity; coherent front / left profile / back, same scale, tiny cream body, asymmetric curled star head, blue starry eyes, teal embroidered gold-trim cape, star clasp and lantern, soft studio lighting, ivory background; avoid symmetrical starfish head, long legs and crude geometric limbs.
 
-本次只保存形象及设计参考，未将新图替换进游戏，未宣称完成新3D模型。
+以上披风记录仅描述历史设计阶段。当前游戏使用上方蓝白探索服 v5 模型。

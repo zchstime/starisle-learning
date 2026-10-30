@@ -431,6 +431,7 @@ for name,end in [('Idle',90),('Wave',60),('Celebrate',60)]:
  tr=rig.animation_data.nla_tracks.new();tr.name=name;tr.strips.new(name,1,a);tr.mute=True;rig.animation_data.action=None
 pose('neutral');clear_face();scene.frame_set(1)
 for ob in [head,face,outfit]:ob.data.name=ob.name
+_palette={};exec((ROOT/'tools/xingbao-space-palette.py').read_text(),_palette);_palette['calibrate']()
 # Portable PBR export. Microtexture remains source-side until normal-map baking.
 bpy.ops.object.select_all(action='DESELECT')
 for o in char.objects:o.select_set(True)

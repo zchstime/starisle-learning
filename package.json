@@ -10,9 +10,12 @@
     "serve": "node tools/serve.cjs",
     "build:web": "bash tools/build-web.sh",
     "test:admin": "node tools/test-admin.cjs",
-    "test:learning": "node tools/test-learning.cjs"
+    "test:learning": "node tools/test-learning.cjs",
+    "test:companion": "node tools/test-companion-dialogue.cjs && node tools/test-companion-ui.cjs && node tools/test-companion-providers.cjs",
+    "build:companion": "node tools/build-companion.cjs"
   },
   "dependencies": {
+    "@volcengine/rtc": "4.69.3",
     "ali-oss": "^6.23.0",
     "exceljs": "^4.4.0",
     "mysql2": "^3.24.6"
@@ -21,5 +24,9 @@
     "exceljs": {
       "uuid": "^11.1.1"
     }
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "jsdom": "29.1.1"
   }
 }

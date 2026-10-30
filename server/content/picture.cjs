@@ -71,7 +71,9 @@ function answer(l) { if (l.kind === 'choice' && !l.voice?.startsWith('tone_') &&
 /** Stable appended IDs preserve existing saves; no cloned numerical questions or generated facts. */
 function enrichChapters(chapters) {
     for (const c of chapters) {
-        if (c.levels.some(l => l.id === c.id + '.connect'))
+        // Curated mastery sequences already assign each stop a deliberate evidence role.
+        // Do not append an automatic activity: it would change completion gates for old saves.
+        if (c.curriculum?.reviewStatus === 'editor-reviewed' || c.levels.some(l => l.id === c.id + '.connect'))
             continue;
         const sources = [], answers = [];
         for (const l of c.levels) {

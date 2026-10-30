@@ -1,0 +1,10 @@
+{
+  "sha256": "fe6bb28426221be337736153fea192521462dba743c747bd605026e76e364e4d",
+  "bytes": 35594720,
+  "bones": 11,
+  "materials": 6,
+  "textures": 3,
+  "animations": 11,
+  "game_build": "pass",
+  "wave_playback": "pass"
+}

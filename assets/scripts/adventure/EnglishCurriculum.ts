@@ -92,6 +92,7 @@ const packs:Pack[][]=[
 const upper=['','','1212001301245','1212001401255','1212001501255','1212001601265'];
 const lower=['','','1212001302245','1212001402255','1212001502255','1212001602145'];
 const stages=['warmup','warmup','practice','practice','challenge','challenge'] as const;
+const evidenceRoles=['understand','model','fluency','diagnose','apply','transfer'] as const;
 const palette:Record<string,string>={red:'#EA9188',blue:'#8FBCE4',green:'#8DC6A8',yellow:'#F3D57F',white:'#F5F4E9',black:'#5B6C73'};
 export function englishCurriculum():Chapter[]{return packs.flatMap((units,g)=>units.map((unit,index)=>{
  const grade=g+1,id=`english.g${grade}.c${index+5}`,semester=index<6?'上册' as const:'下册' as const;
@@ -103,6 +104,6 @@ export function englishCurriculum():Chapter[]{return packs.flatMap((units,g)=>un
   if(i<4){const words=pair[0].split(' ');return {...base,kind:'sentence',title:'拼出口信',goal:'送给伙伴一张口信：'+pair[1],words,answer:words,voice:pair[0],hint:'按顺序点词卡放进信封；点已选词卡可以取回。',explanation:`${pair[0]}：${pair[1]}。`,coachHints:['先找一句话里的主语或开头词。','口信开头是 '+words.slice(0,2).join(' ')+'。']};}
   const others=[unit.lines[0][1],unit.lines[i===4?1:2][1]];
   return {...base,kind:'choice',title:grade<3?'口信小侦探':'阅读线索',goal:'读一读口信，帮星宝找到正确意思。',passage:pair[0],voice:pair[0],options:[pair[1],...others],hint:'先读口信，也可以点「听任务」。再比较三张线索卡。',explanation:`${pair[0]}：${pair[1]}。`,coachHints:['找出句子里熟悉的人物、动作或时间词。',pair[1]+'。']};
- });
- return {id,subject:'english' as const,grade,title:unit.title,topic:unit.theme,art:'journey-garden',alignment:grade<3?'enrichment' as const:'verified-theme' as const,curriculum:{semester,theme:unit.theme,order:index,source:grade<3?'':`https://book.pep.com.cn/${(index<6?upper:lower)[g]}/`,verified:grade>=3},levels};
+ }).map((level,i)=>({...level,evidence:{knowledgeId:`pep-english-g${grade}-${semester}-${index+1}`,objective:`在“${unit.theme}”情境中完成${level.title}，并能解释所用词句。`,role:evidenceRoles[i],prerequisites:grade<=2?['听辨常见课堂指令','借助图片理解基本词义']:['理解本单元核心词汇','读懂简短情境提示'],misconceptions:i<2?['只凭选项位置猜测，未听清关键词']:i<4?['忽略英语基本语序，按中文顺序逐词拼接']:['只认单个词，未结合整句语境判断'],reviewed:false}}));
+ return {id,subject:'english' as const,grade,title:unit.title,topic:unit.theme,art:'journey-garden',alignment:grade<3?'enrichment' as const:'verified-theme' as const,curriculum:{semester,theme:unit.theme,order:index,source:grade<3?'':`https://book.pep.com.cn/${(index<6?upper:lower)[g]}/`,verified:grade>=3,publisher:'人民教育出版社',edition:grade<3?'英语启蒙衔接原创样例':'依据项目当前PEP主题目录',volume:semester,unit:`主题${index+1}`,reviewStatus:'draft'},levels};
 }));}

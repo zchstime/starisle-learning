@@ -8,7 +8,7 @@ module.exports=function({origin,auth,dir,mysql,ark,oss,store:providedStore}){
  const locks=new Set();let active=0;
  const publicRecord=r=>({id:r.id,status:r.status,createdAt:r.createdAt,error:r.error,model:r.model,mode:r.mode,profile:r.profile,assessment:r.assessment,learningFeedback:assessment.feedback(r),recognitionNote:r.recognitionNote,generation:r.generation,generationNote:r.generationNote,sourceType:r.sourceType,hasSource:!!r.objectKey,questions:r.questions,summary:r.summary,points:r.points||0,answers:r.answers||{},tasks:r.tasks?.map(({answer,explanation,...q})=>q)});
  const fail=(message,status=400)=>{throw Object.assign(Error(message),{status});};
- return {close:async()=>(await storePromise).close(),async handle(req,res){
+ return {list:async user=>(await storePromise).list(user),get:async(id,user)=>(await storePromise).get(id,user),close:async()=>(await storePromise).close(),async handle(req,res){
  const url=new URL(req.url,origin);
  if(url.pathname==='/learn'||url.pathname.startsWith('/learn/')){
  const name=url.pathname==='/learn'?'index.html':url.pathname.slice(7);

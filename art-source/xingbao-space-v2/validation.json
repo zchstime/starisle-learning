@@ -24,12 +24,12 @@
   "triangle_indices": "pass",
   "embedded_images": "pass",
   "external_dependencies": 0,
-  "bytes": 25200936,
+  "bytes": 25200940,
   "meshes": 3,
   "materials": 15,
   "images": 2,
   "triangles": 599446,
   "vertices": 308103,
   "animations": 11,
-  "sha256": "3d101bc217be71c73540d6506f2cab39d2dfb412541d92506cfdb14c10aa20f3"
+  "sha256": "235fdd8562663456d7036643c86125dac90745d733ebd669ddebd51bff79334d"
 }

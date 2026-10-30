@@ -1,0 +1,35 @@
+{
+  "morph_targets": "pass",
+  "morph_names": {
+    "Face | eight expression controls": [
+      "Blink_L",
+      "Blink_R",
+      "Happy",
+      "Think",
+      "Focus",
+      "Surprise",
+      "Talk_A",
+      "Talk_O"
+    ],
+    "Head | reference-traced rounded star": [
+      "Happy"
+    ]
+  },
+  "texture_coordinates": "pass",
+  "skin_weights": "pass",
+  "animation_channels": "pass",
+  "bones": 11,
+  "header_and_chunks": "pass",
+  "finite_positions": "pass",
+  "triangle_indices": "pass",
+  "embedded_images": "pass",
+  "external_dependencies": 0,
+  "bytes": 28894068,
+  "meshes": 3,
+  "materials": 15,
+  "images": 3,
+  "triangles": 611522,
+  "vertices": 313387,
+  "animations": 11,
+  "sha256": "3a72ce28b6221224c2c7b3346b2ce4023d7aa1920a52c72b9847f1ad0bcf0693"
+}

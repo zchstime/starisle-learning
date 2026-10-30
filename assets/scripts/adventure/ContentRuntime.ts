@@ -10,6 +10,8 @@ const ID=/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,127}$/;
 interface ContentBundle {schemaVersion:number;release:number;subjects:SubjectDefinition[];chapters:Chapter[];requiredModules:{id:string;version:number}[];knownLevelIds:string[];knownChapterIds:string[];knownSubjectIds:string[];}
 let release=0,checked=0,inFlight=false;
 export function isContentPreview(){return typeof window!=='undefined'&&new URLSearchParams(window.location.search).get('contentPreview')==='1';}
+/** Built-in catalog preview is restricted to loopback hosts and never reads the admin draft. */
+export function isLocalPreview(){return typeof window!=='undefined'&&['127.0.0.1','localhost','::1'].includes(window.location.hostname)&&new URLSearchParams(window.location.search).get('localPreview')==='1';}
 /** Validate completely before mutating any shared array. All imports keep live references. */
 export function applyContent(bundle:ContentBundle){
  if(!bundle||bundle.schemaVersion!==1||!Number.isSafeInteger(bundle.release)||!Array.isArray(bundle.requiredModules)||bundle.requiredModules.some(m=>!MODULES.has(m.id)||m.version!==1))throw Error('内容需要更新版本的游戏客户端');
@@ -25,6 +27,7 @@ export function applyContent(bundle:ContentBundle){
 async function get(url:string){const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),5000);try{const response=await fetch(url,{cache:'no-store',signal:controller.signal});if(!response.ok)throw Error('内容服务暂不可用');return await response.json();}finally{clearTimeout(timer);}}
 export async function loadContent(){
  if(typeof window==='undefined'||typeof fetch==='undefined')return;
+ if(isLocalPreview())return;
  if(isContentPreview()){applyContent(await get('/api/admin/preview'));return;}
  try{const cached=window.localStorage.getItem(CACHE);if(cached)applyContent(JSON.parse(cached));}catch{/* Built-in content remains available if the cache is invalid. */}
  try{const bundle=await get('/api/content/current');applyContent(bundle);try{window.localStorage.setItem(CACHE,JSON.stringify(bundle));}catch{}}catch{/* Keep the last compatible content or the bundled curriculum. */}
@@ -32,6 +35,6 @@ export async function loadContent(){
 }
 /** Only called on a safe map screen. Do not swap puzzle data during an attempt. */
 export async function refreshContent(canApply:()=>boolean){
- if(isContentPreview()||inFlight||Date.now()-checked<30000)return false;inFlight=true;checked=Date.now();
+ if(isContentPreview()||isLocalPreview()||inFlight||Date.now()-checked<30000)return false;inFlight=true;checked=Date.now();
  try{const version=await get('/api/content/version');if(version.release===release)return false;const bundle=await get('/api/content/current');if(!canApply())return false;applyContent(bundle);try{window.localStorage.setItem(CACHE,JSON.stringify(bundle));}catch{}return true;}catch{return false;}finally{inFlight=false;}
 }

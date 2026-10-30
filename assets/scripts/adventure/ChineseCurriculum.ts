@@ -127,9 +127,11 @@ export const CHINESE_STORIES:Story[][]=[
 ]
 ];
 const source='https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html';
+const evidenceRoles=['understand','model','fluency','diagnose','apply','transfer'] as const;
 export function chineseCurriculum():Chapter[]{return CHINESE_STORIES.flatMap((stories,g)=>stories.map((story,index)=>{
  const grade=g+1,id=`chinese.g${grade}.story${index+1}`;
  const choice=(quiz:Quiz,n:number,passage?:string):Level=>({id:`${id}.l${n}`,kind:'choice',title:passage?'阅读线索灯':'字词修补师',goal:quiz[0],options:quiz.slice(1,4),target:0,passage,voice:passage||(grade<=2&&!/[a-z]/i.test(quiz[0])?quiz[0]:undefined),explanation:quiz[4],stage:passage?'challenge':'warmup',hint:passage?'读短文，选有依据的线索卡。':'读清任务，再选合适的字词卡。',coachHints:[passage?'先找与问题有关的那一句。':'把选项放回句子里读一读。',quiz[4]]});
  const order=(words:string[],n:number,title:string,goal:string):Level=>({id:`${id}.l${n}`,kind:'sentence',title,goal,words,answer:[...words],target:0,stage:'practice',hint:'按顺序点卡片，点已选卡片可取回。',coachHints:['先确定开头，再接上后面的内容。','开头是“'+words[0]+'”。'],explanation:words.join(n===4?' → ':'')});
- return {id,subject:'chinese',grade,title:story.title,topic:story.theme,art:'journey-garden',alignment:'theme',curriculum:{semester:index<3?'上册':'下册',theme:story.theme,order:index,source,verified:false},levels:[choice(story.words[0],1),choice(story.words[1],2),order(story.sentence,3,'口信拼接桥','把词卡连成一句通顺的口信。'),order(story.steps,4,'故事修复师','按事情先后或办事步骤，修好这段小路。'),choice(story.reading[0],5,story.passage),choice(story.reading[1],6,story.passage)]};
+ const levels=[choice(story.words[0],1),choice(story.words[1],2),order(story.sentence,3,'口信拼接桥','把词卡连成一句通顺的口信。'),order(story.steps,4,'故事修复师','按事情先后或办事步骤，修好这段小路。'),choice(story.reading[0],5,story.passage),choice(story.reading[1],6,story.passage)].map((level,i)=>({...level,evidence:{knowledgeId:`cn-std-g${grade}-${index+1}`,objective:`围绕“${story.theme}”完成${level.title}，用文本线索说明理由。`,role:evidenceRoles[i],prerequisites:grade<=2?['借助拼音或语境认读常用字词','听清简短任务']:['读懂句段主要意思','圈画与问题相关的关键词句'],misconceptions:i<2?['脱离语境，只按熟悉程度选择字词']:i<4?['只看单个词语，忽略句意和事情先后']:['凭印象作答，没有回到原文寻找依据'],reviewed:false}}));
+ return {id,subject:'chinese',grade,title:story.title,topic:story.theme,art:'journey-garden',alignment:'theme',curriculum:{semester:index<3?'上册':'下册',theme:story.theme,order:index,source,verified:false,edition:'义务教育课程标准主题原创样例',volume:index<3?'上册':'下册',unit:`主题${index+1}`,reviewStatus:'draft'},levels};
 }));}

@@ -3,7 +3,7 @@ import {PlayLabView} from './PlayLabView';
 import {GIFTS} from './PlayLab';
 import {learningWorld} from './SubjectWorlds';
 import {ExamView} from '../exam/ExamView';
-import {loadContent,refreshContent,isContentPreview} from './ContentRuntime';
+import {loadContent,refreshContent,isContentPreview,isLocalPreview} from './ContentRuntime';
 import {starMonster,runeDelivery,usesRunes} from './BattleView';
 import {gradeWorld,GRADE_WORLDS} from './GradeWorlds';
 import {journeyMap} from './JourneyMap';
@@ -46,8 +46,8 @@ export class Adventure {
   loading(78,'星宝正在整理探险装备…');
   await Guardian3D.preload().catch(error=>console.error('星宝模型加载失败，暂用角色原画。',error));
   loading(90,'正在唤醒小岛的声音…');
-  void this.sounds.preload(['tap','success','plant','oops','travel','jump','arrival','sparkle','reward'].map(k=>'audio/'+k));loading(96,'正在打开冒险地图…');this.companion=new Companion(this.sounds,()=>({screen:this.screen,key:this.screen==='play'?this.puzzle?.level.id:String(this.progress.grade)+this.progress.subject,valid:this.root?.isValid,done:this.progress.done.length,levelUp:this.lastBattleLevelUp,listening:this.puzzle?.level.kind==='listen'&&this.screen==='play'}),()=>{if(this.screen==='play'){this.hint=true;this.hintStep=0;this.play();}});this.map();
-  if(isContentPreview()){const id=new URLSearchParams(window.location.search).get('level');const c=CATALOG.find(c=>c.levels.some(l=>l.id===id));if(c){this.progress.subject=c.subject;this.progress.grade=c.grade;this.progress.chapter=chapters(c.subject,c.grade).indexOf(c);this.startLevel(c.levels.findIndex(l=>l.id===id),false);}}
+  void this.sounds.preload(['tap','success','plant','oops','travel','jump','arrival','sparkle','reward'].map(k=>'audio/'+k));loading(96,'正在打开冒险地图…');this.companion=new Companion(this.sounds,()=>({screen:this.screen,key:this.screen==='play'?this.puzzle?.level.id:String(this.progress.grade)+this.progress.subject,valid:this.root?.isValid,done:this.progress.done.length,levelUp:this.lastBattleLevelUp,grade:this.progress.grade,subject:this.progress.subject,title:this.screen==='play'?this.puzzle?.level.title:'',question:this.screen==='play'?this.puzzle?.level.goal:'',hint:this.screen==='play'?this.puzzle?.level.hint:'',attempt:this.screen==='play'?JSON.stringify({input:this.puzzle.input,choice:this.puzzle.choice,options:this.puzzle.level.options,cargo:this.puzzle.cargo,pots:this.puzzle.pots,selected:this.puzzle.selected,attempts:this.puzzle.attempts}):'',listening:this.puzzle?.level.kind==='listen'&&this.screen==='play'}),()=>{if(this.screen==='play'){this.hint=true;this.hintStep=0;this.play();}});this.map();
+  if(isContentPreview()||isLocalPreview()){const id=new URLSearchParams(window.location.search).get('level');const c=CATALOG.find(c=>c.levels.some(l=>l.id===id));if(c){this.progress.subject=c.subject;this.progress.grade=c.grade;this.progress.chapter=chapters(c.subject,c.grade).indexOf(c);this.startLevel(c.levels.findIndex(l=>l.id===id),false);}}
   if(typeof window!=='undefined'){window.dispatchEvent(new Event('starisle:world-ready'));setInterval(()=>{if(this.root?.isValid&&this.screen==='map')void this.checkContent();},30000);}
  }
  sound(k='tap'){if(this.progress.sound)void this.sounds.play('audio/'+k,false,k==='tap'?.72:.9);}
@@ -83,7 +83,7 @@ export class Adventure {
   const shade=panel(this.root,0,0,1440,810,'#153C50',0,'',65);shade.name='DirectoryShade';shade.on(Node.EventType.TOUCH_END,()=>this.map());
   const drawer=panel(this.root,1060,100,355,690,'#FFF8E9',30,'#FFFFFF',253);drawer.name='SubjectDirectory';drawer.on(Node.EventType.TOUCH_END,(e:any)=>{e.propagationStopped=true;});
   text(drawer,'探索目录',25,15,235,40,27,'#805A39',true);this.btn(drawer,'×',295,16,40,40,()=>this.map(),C.cream,'#805A39',25);
-  this.btn(drawer,'幼儿园',22,69,96,38,()=>this.openPlayground('kindergarten'),C.mint,'#805A39',16);
+  this.btn(drawer,'换学段',22,69,96,38,()=>{this.map();if(typeof window!=='undefined')(window as any).starisleStages?.show();},C.mint,'#805A39',16);
   for(let g=1;g<=6;g++)this.btn(drawer,g+'年级',22+(g%3)*104,69+Math.floor(g/3)*43,96,38,()=>{this.progress.grade=g;this.progress.chapter=0;this.routePage=-1;this.routeFocus=-1;this.progress.save();this.subjectDrawer();},g===this.progress.grade?C.gold:'#F0EADD','#805A39',17);
   this.btn(drawer,'游乐实验室 · 新玩法',126,155,200,38,()=>this.openPlayground('sling'),C.mint,'#805A39',16);
   text(drawer,learningWorld(this.progress.subject,this.progress.grade).name+' · 选择学科即出发',24,205,308,26,15,C.muted);
@@ -112,7 +112,7 @@ export class Adventure {
   [[.2,'轻柔'],[.4,'适中'],[.65,'明亮']].forEach(([value,label],i)=>this.btn(b,(Math.abs(this.sounds.musicVolume-Number(value))<.001?'✓ ':'')+label,280+i*225,414,205,34,()=>{this.sounds.setMusicVolume(Number(value));this.audioSettings();},Math.abs(this.sounds.musicVolume-Number(value))<.001?C.gold:C.blue,C.ink,19));
   this.btn(b,'返回游戏 →',295,456,420,70,()=>{if(this.audioReturn==='play')this.play();else if(this.audioReturn==='library')this.library();else this.map();},C.gold,'#754A17',26);
  }
- mascot(x:number,y:number,size=150){if(this.frames.guide)guardian(this.root,this.frames.guide,x,y,size,()=>{this.sound('jump');this.companion?.say('hello',true);});}
+ mascot(x:number,y:number,size=150){if(this.frames.guide)guardian(this.root,this.frames.guide,x,y,size,()=>{this.sound('jump');if(typeof window!=='undefined'&&(window as any).starisleChat)(window as any).starisleChat.open();else this.companion?.say('hello',true);});}
  map(){if(hasLearningRoute(this.progress.subject)){this.mathMap();return;}this.clear();this.screen='map';this.locked=false;this.art();this.title();this.soundButton();const c=this.chapter,p=this.progress,done=p.count(c.id),list=chapters(p.subject,p.grade);
   this.btn(this.root,'⌂  换学科 / 年级',340,29,240,54,()=>this.library(),C.cream,C.teal,20);
   panel(this.root,600,29,356,54,C.cream,25,'',245);text(this.root,`${subjectInfo(p.subject).name} · ${p.grade}年级${p.subject==='english'&&p.grade<3?'启蒙':''} · 第 ${p.chapter+1} 章`,612,31,332,50,20,C.ink,true,'center');

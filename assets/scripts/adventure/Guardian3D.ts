@@ -1,4 +1,4 @@
-import {_decorator,Component,Node,Camera,RenderTexture,SpriteFrame,Sprite,Prefab,resources,instantiate,Color,Vec3,Vec4,DirectionalLight,Graphics,UIOpacity,SkeletalAnimation,AnimationClip,EffectAsset,Material,MeshRenderer} from 'cc';
+import {_decorator,Component,Node,Camera,RenderTexture,SpriteFrame,Sprite,Prefab,resources,instantiate,Color,Vec3,Vec4,DirectionalLight,Graphics,UIOpacity,SkeletalAnimation,AnimationClip,EffectAsset,Material,MeshRenderer,Texture2D} from 'cc';
 import {node,color} from '../ui/Kit';
 import {SpeechFrame,SPEECH_FRAME_EVENT} from './SpeechMotion';
 const {ccclass}=_decorator;
@@ -55,7 +55,7 @@ export class Guardian3D extends Component {
      const texture=source.getProperty('mainTexture');
      material=new Material('Xingbao portrait '+source.name);
      material.initialize({effectAsset:Guardian3D.portraitEffect,defines:{USE_TEXTURE:!!texture,USE_VERTEX_COLOR:true}});
-     if(texture)material.setProperty('mainTexture',texture);
+     if(texture instanceof Texture2D||texture instanceof RenderTexture)material.setProperty('mainTexture',texture);
      materials.set(source,material);this.portraitMaterials.push(material);
     }
     return material;
