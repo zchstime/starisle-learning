@@ -1,4 +1,12 @@
 const KEYS=['starisle.adventure.v3','starisle.grade2.chapter-one.v2','starisle.music','starisle.musicVolume','starisle.profile.v1'];
+function validateIsland(s){
+ const ids=new Set(['garden.restore','canal.restore','observatory.restore','garden.visitors','garden.design','canal.supplies','canal.design','observatory.sunny','observatory.windy']);
+ const object=v=>v&&typeof v==='object'&&!Array.isArray(v);
+ const entry=e=>object(e)&&Number.isSafeInteger(e.at)&&e.at>0&&Number.isSafeInteger(e.attempts)&&e.attempts>=0&&e.attempts<=9999&&typeof e.hinted==='boolean'&&Array.isArray(e.values)&&e.values.length<=6&&e.values.every(v=>Number.isInteger(v)&&v>=0&&v<=6);
+ if(!object(s)||s.version!==1||!object(s.records)||!object(s.drafts))throw Error('invalid');
+ for(const [id,r] of Object.entries(s.records))if(!ids.has(id)||!object(r)||![r.first,r.latest].every(e=>entry(e)&&e.attempts>0&&typeof e.firstCorrect==='boolean'&&e.firstCorrect===(e.attempts===1))||r.first.at>r.latest.at)throw Error('invalid');
+ for(const [id,d] of Object.entries(s.drafts))if(!ids.has(id)||!entry(d)||typeof d.finished!=='boolean')throw Error('invalid');
+}
 function validate(payload){
  if(!payload||typeof payload!=='object'||Array.isArray(payload)||Object.keys(payload).some(k=>!KEYS.includes(k)))throw Error('invalid');
  for(const [key,value] of Object.entries(payload)){
@@ -9,6 +17,7 @@ function validate(payload){
  if(key===KEYS[4]){if(p.version!==1||!['xingbao','rabbit','panda','fox','cat','dragon'].includes(p.avatar)||!Number.isSafeInteger(p.updatedAt)||p.updatedAt<0||Object.keys(p).some(k=>!['version','avatar','updatedAt'].includes(k)))throw Error('invalid');continue;}
  if(key===KEYS[0]&&(p.version!==3||!Array.isArray(p.done)||p.done.length>5000||p.done.some(x=>typeof x!=='string'||x.length>128)||!Array.isArray(p.medals)||p.medals.some(x=>typeof x!=='string'||x.length>128)))throw Error('invalid');
  if(key===KEYS[0])for(const field of ['labDone','gifts'])if(p[field]!==undefined&&(!Array.isArray(p[field])||p[field].length>100||p[field].some(x=>typeof x!=='string'||x.length>128)))throw Error('invalid');
+ if(key===KEYS[0]&&p.island!==undefined)validateIsland(p.island);
  }return payload;
 }
 module.exports=function({origin,auth,store}){return async(req,res)=>{

@@ -6,11 +6,12 @@ for(const subject of SUBJECTS)for(let grade=1;grade<=6;grade++){
  let q={id:l.id,sourceId:l.id,topic:c.topic,prompt:l.goal,explanation:l.explanation,points:0,passage:l.passage};
  if(l.visual||l.kind==='listen'||l.voice?.startsWith('tone_')||l.voice?.startsWith('drum_'))return null;
  if(l.kind==='choice')return {...q,kind:'choice',options:l.options,answer:l.options[l.target]};
+ if(l.kind==='match')return {...q,kind:'match',prompts:l.pairs.map(p=>p[0]),options:l.pairs.map(p=>p[1]).reverse(),answer:l.pairs.map(p=>p[1]).join('|')};
  if(l.kind==='sentence'&&l.words.length<=6&&new Set(l.words).size===l.words.length&&l.answer.length===l.words.length)return {...q,kind:'order',options:[...l.words].reverse(),answer:l.answer.join('|')};
  if(l.kind==='number'||l.kind==='cargo')return {...q,kind:'number',prompt:l.goal+'（填写数值'+(l.answerUnit?'，单位：'+l.answerUnit:'')+'）',answer:String(l.target/(l.scale||1))};
  return null;
- }).filter(Boolean));const selected=[];
- for(let round=0;round<10&&selected.length<20;round++)for(const b of buckets){const q=b[round];if(q&&!seen.has(q.prompt)&&selected.length<20){seen.add(q.prompt);selected.push(q);}}
+ }).filter(Boolean));const candidates=buckets.flat(),available=new Set(candidates.map(q=>JSON.stringify([q.prompt,q.prompts]))),nonChoice=new Set(candidates.filter(q=>q.kind!=='choice').map(q=>JSON.stringify([q.prompt,q.prompts]))),selected=[],limit=Math.min(20,available.size),maxChoice=Math.min(Math.floor(limit/2),nonChoice.size);
+ for(let round=0;round<10&&selected.length<limit;round++)for(const b of buckets){const q=b[round],signature=q&&JSON.stringify([q.prompt,q.prompts]);if(q&&!seen.has(signature)&&selected.length<limit&&(q.kind!=='choice'||selected.filter(x=>x.kind==='choice').length<maxChoice)){seen.add(signature);selected.push(q);}}
  if(!selected.length)throw Error(subject.id+grade);
  selected.forEach((q,i)=>q.points=Math.floor(100/selected.length)+(i<100%selected.length?1:0));
  papers.push({id:`${subject.id}-g${grade}-route-final-v1`,subject:subject.id,grade,title:subject.name+(subject.id==='english'&&grade<3?'启蒙':'')+' · 星光综合试炼',minutes:30,scope:`${grade}年级${subject.name}${subject.id==='english'&&grade<3?'启蒙':''} · 基于本游戏该年级已学主题的原创复习卷，非官方试卷或完整教材覆盖。${['music','art','pe','labor','practice'].includes(subject.id)?'仅评价知识与情境判断，不替代实际技能评价。':''}`,questions:selected});

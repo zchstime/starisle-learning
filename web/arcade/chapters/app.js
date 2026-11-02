@@ -28,3 +28,9 @@ function loadPreview(){const list=gradeActivities(Number($('grade').value),$('su
 function previewOptions(){const list=gradeActivities(Number($('grade').value),$('subject').value);$('activity').replaceChildren(...list.map((l,i)=>{const o=document.createElement('option');o.value=i;o.textContent=l.title;return o;}));loadPreview();}
 if(embedded)parent.postMessage({type:'picture:ready'},location.origin);else{$('preview').hidden=false;for(let i=1;i<=6;i++){const option=document.createElement('option');option.value=i;option.textContent=i+' 年级';$('grade').append(option);}const params=new URLSearchParams(location.search);$('grade').value=String(Math.max(1,Math.min(6,Number(params.get('grade'))||1)));$('subject').value=params.get('subject')==='science'?'science':'math';$('grade').onchange=previewOptions;$('subject').onchange=previewOptions;$('activity').onchange=loadPreview;previewOptions();}
 void createHero($('xingbao'),()=>speaking,()=>document.hidden,new URL('../kindergarten/assets/xingbao.glb',import.meta.url).href).catch(()=>{$('companion').textContent='✦ 星宝';});
+
+window.starisleCompanionContext=()=>({stage:'primary',screen:'picture-task',key:level?.id,title:level?.title,question:level?.goal,hint:level?.hint,attempt:JSON.stringify({placements,selected,finished}).slice(0,500)});
+$('companion').setAttribute('role','button');$('companion').tabIndex=0;$('companion').setAttribute('aria-label','和星宝聊聊');
+$('companion').onclick=()=>window.starisleChat?.open();$('companion').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();window.starisleChat?.open();}};
+window.addEventListener('starisle:dialogue-active',e=>{if(e.detail){stopVoice();stopDemo();}audio.setPaused(!!e.detail);});
+window.addEventListener('starisle:companion-speaking',e=>{speaking=!!e.detail;$('companion').classList.toggle('speaking',speaking);});

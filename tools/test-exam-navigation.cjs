@@ -6,7 +6,7 @@ function fake(){return {children:[],setPosition(){},getComponent(){return {setCo
 const kit={C:{cream:'cream',ink:'ink',teal:'teal',gold:'gold',blue:'blue',mint:'mint',muted:'muted',line:'line'},panel:fake,text(...args){texts.push(args[1]);return fake();},sprite:fake};
 const mod={exports:{}};
 vm.runInNewContext(ts.transpileModule(fs.readFileSync('assets/scripts/exam/ExamView.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,{
- exports:mod.exports,require:id=>id==='cc'?{}:id.includes('Kit')?kit:id==='./Exam'?require('../qa/exam/Exam.js'):{},
+ exports:mod.exports,require:id=>id.includes('/Motion')?{pageArrival(){},growBar(){},rewardPop(){}}:id==='cc'?{}:id.includes('Kit')?kit:id==='./Exam'?require('../qa/exam/Exam.js'):{},
  setInterval:()=>1,clearInterval(){},Date
 });
 const paper=PAPERS[0],attempt=beginPaper(paper),progress={exams:{attempt,records:{}},sound:false,save(){}};

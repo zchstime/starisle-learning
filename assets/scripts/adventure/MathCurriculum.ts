@@ -70,7 +70,14 @@ const curriculum:Unit[][]=[
  unit('除法分航','除数是两位数的除法','上册',i=>{const a=12+i,b=20+i*2;return number('平均配送',`${a*b} 件分成 ${a} 船，每船几件？`,b,`${a*b}÷${a}=${b}。`,'件');}),
  unit('角度导航塔','角的度量','上册',i=>{const angle=[30,60,90,120,150,180][i];return choose('角度分类',`导航转角为 ${angle}°，属于哪一类？`,angle<90?'锐角':angle===90?'直角':angle<180?'钝角':'平角',['锐角','直角','钝角','平角'].filter(a=>a!==(angle<90?'锐角':angle===90?'直角':angle<180?'钝角':'平角')).slice(0,2),'锐角小于90°；直角90°；钝角大于90°小于180°；平角180°。');}),
  unit('土地小规划','面积单位','上册',i=>number('土地换算',`${i+1} 公顷等于多少平方米？`,(i+1)*10000,`1公顷=10000平方米。`,'平方米')),
- unit('数据观测台','条形统计图','上册',i=>number('读图比较',`图中两天收到的星光相差多少颗？`,(8+i)-(3+i%3),`较多的${8+i}减去较少的${3+i%3}。`,'颗',bar(8+i,3+i%3,['第一天','第二天']))),
+ unit('数据观测台','条形统计图','上册',i=>([
+  choose('读懂条形图','条形越长通常表示什么？','数量越多',['数量越少','日期越早'],'条形的长度对应数量的多少，条形越长，数量通常越多。'),
+  number('读图比较','第一天收到 8 颗星，第二天收到 3 颗，相差多少颗？',5,'8−3=5（颗）。','颗',bar(8,3,['第一天','第二天'])),
+  number('读图合计','周一收到 6 颗星，周二收到 4 颗，两天共多少颗？',10,'6+4=10（颗）。','颗',bar(6,4,['周一','周二'])),
+  choose('错图修理铺','记录表写着“晴天7天、雨天3天”，哪幅条形图的数量关系正确？','晴天条形比雨天长4格',['两根条形一样长','雨天条形比晴天长4格'],'7比3多4，晴天条形应更长，长度差表示数量差。'),
+  number('借阅统计员','故事书借出 12 本，科普书借出 7 本。故事书比科普书多借出多少本？',5,'12−7=5（本）。','本',bar(12,7,['故事书','科普书'])),
+  choose('数据结论桥','甲组植树9棵，乙组6棵。下面哪句话能由数据直接得到？','甲组比乙组多3棵',['甲组最喜欢植树','乙组明天会植更多'],'条形图能说明已经记录的数量及其差，不能推断喜好或未来情况。')
+ ] as Task[])[i]),
  unit('运算调度营','四则运算','下册',i=>number('分批调度',`要配送 ${120+i*12} 件，先分成 6 份，再增加 8 件，一份现在几件？`,28+i*2,`（${120+i*12}÷6）+8=${28+i*2}。`,'件')),
  unit('简便计算桥','运算定律','下册',i=>number('凑整补给',`每包 ${i+3} 元，先买 99 包再买 1 包，一共几元？`,(i+3)*100,`99×${i+3}+1×${i+3}=100×${i+3}。`,'元')),
  unit('小数星光币','小数的意义和加减法','下册',i=>number('小数结算',`有 ${(3+i/10).toFixed(1)} 元，用掉 1.2 元，还剩多少元？`,18+i,`${(3+i/10).toFixed(1)}−1.2=${((18+i)/10).toFixed(1)}。`,'元',undefined,10)),
@@ -266,7 +273,14 @@ const g2now=curriculum[1];curriculum[1]=[...g2now.slice(0,6),{...g2[4],semester:
 const g3=curriculum[2];curriculum[2]=[...g3.slice(0,6),
  unit('运动观察岛','生活中的运动现象','下册',i=>choose('运动标签',`${['小窗沿直轨向右推开','风车叶片绕中心转动','小车沿直路向前移动','钟表指针绕中心转动','电梯沿竖直方向升起','旋转木马绕中心转动'][i]}，主要是什么运动？`,i%2?'旋转':'平移',i%2?['平移','静止']:['旋转','静止'],'平移不改变朝向；旋转绕固定点或轴转动。')),
  g3[7],g3[9],g3[10],
- unit('数据与日期营','数据的收集与整理 · 年月日','下册',i=>i<3?number('调查整理',`选择苹果的${6+i}人，梨的${4+i*2}人，一共调查几人？`,10+i*3,`${6+i}+${4+i*2}=${10+i*3}。`,'人',bar(6+i,4+i*2,['选苹果','选梨'])):choose('日期规划',`${[4,6,11][i-3]}月开展观测，这个月有几天？`,'30天',['28天','31天'],'四、六、九、十一月有30天。')),
+ unit('数据与日期营','数据的收集与整理 · 年月日','下册',i=>([
+  number('调查整理','选择苹果的6人，选择梨的4人，一共调查几人？',10,'6+4=10（人）。','人',bar(6,4,['选苹果','选梨'])),
+  number('分类合计','晴天记录7次，雨天记录6次，一共记录多少次？',13,'7+6=13（次）。','次',bar(7,6,['晴天','雨天'])),
+  number('比较数据','步行上学8人，乘车上学5人，步行的比乘车的多几人？',3,'8−5=3（人）。','人',bar(8,5,['步行','乘车'])),
+  choose('月份天数','4月开展观测，这个月有几天？','30天',['28天','31天'],'四、六、九、十一月有30天。'),
+  choose('闰年诊断','2024年是闰年，这一年的2月有多少天？','29天',['28天','30天'],'公历年份是4的倍数时通常是闰年；整百年份还要是400的倍数。2024年2月有29天。'),
+  number('季度规划','7月、8月、9月一共有多少天？',92,'7月31天，8月31天，9月30天，31+31+30=92（天）。','天')
+ ] as Task[])[i]),
  unit('小数初见岛','小数的初步认识','下册',i=>number('零钱读数',`${i+1}元${i+2}角，用小数表示多少元？`,(i+1)*10+i+2,`元写在整数部分，角写在十分位。`,'元',undefined,10))];
 const g3now=curriculum[2];
 curriculum[2]=g3now.map(u=>u.theme!=='混合运算'?u:unit('混合能源站','混合运算','上册',i=>{
@@ -284,12 +298,22 @@ curriculum[2]=g3now.map(u=>u.theme!=='混合运算'?u:unit('混合能源站','�
  ];
  return {...tasks[i],...common,evidence:{...common.evidence,role:common.evidence.role}};
 }));
-for(let g=0;g<6;g++)for(const u of curriculum[g])u.verified=true;
 const lowerSources=['1221001102241','1221001202251','1221001302251','1221001402131','1221001502141','1221001602141'];
-for(let g=0;g<6;g++)for(const u of curriculum[g])if(u.semester==='上册')u.verified=true;
+// 2026 秋季已完成各年级上册替换；一至三年级下册已有当前修订版依据。
+// 四至六年级下册仍保留旧版主题供练习，不能冒充 2027 春季新版逐单元同步。
+for(let g=0;g<6;g++)for(const u of curriculum[g])u.verified=u.semester==='上册'||g<3;
+function levelAnswer(l:Task){if(l.kind==='choice'||l.kind==='listen')return l.options?.[l.target];if(['number','cargo'].includes(l.kind))return String(l.target/(l.scale||1))+(l.answerUnit||'');if(l.kind==='groups')return `每组${l.target}个`;if(l.kind==='tiles')return `${l.target}格`;return undefined;}
+function classifyChoice(l:Level):Level|undefined{if(l.kind!=='choice'&&l.kind!=='listen')return;const correct=(l.options||[])[l.target],parts=l.explanation.split(/[，；。]/).map(s=>s.trim()).filter(Boolean).slice(0,3);const answer=(parts.length>=2?parts:[l.goal.slice(0,80),`正确判断：${correct}`]).map(s=>s.slice(0,96));return {...l,kind:'sentence',title:'推理步骤排序',goal:`整理判断依据：${l.goal}`.slice(0,150),words:[...answer].reverse(),answer,hint:'先说明题意或数量关系，再写判断和结果。'};}
+function resultChoice(l:Level):Level|undefined{const answer=levelAnswer(l);if(!answer||l.kind==='choice'||l.kind==='listen')return;const numeric=l.target/(l.scale||1),unit=l.answerUnit||'',alternatives=Number.isFinite(numeric)?[`${numeric+1}${unit}`,`${numeric===0?2:numeric-1}${unit}`]:['多1','少1'];const options=[answer,...alternatives].filter((v,i,a)=>a.indexOf(v)===i).slice(0,3);if(options.length<2)return;return {...l,kind:'choice',title:'结果辨析站',goal:`${l.goal} 请选择正确结果。`,options,target:0,hint:'先独立计算或操作，再比较三个结果。'};}
+function diagnoseResult(l:Level):Level|undefined{const correct=levelAnswer(l);if(!correct||l.kind==='choice'||l.kind==='listen')return;const numeric=l.target/(l.scale||1),unit=l.answerUnit||'',wrong=`${numeric+1}${unit}`;return {...l,kind:'choice',title:'错解诊断站',goal:`小北把这道题的结果写成“${wrong}”。请选择正确修正结果：${l.goal}`.slice(0,150),options:[correct,wrong,'条件不足，不能判断'],target:0,hint:'先找清数量关系，再检查小北的结果与正确结果相差在哪里。'};}
+function transferReasoning(l:Level):Level|undefined{if(l.kind==='choice'||l.kind==='listen')return;let answer=l.explanation.split(/[，；。]/).map(s=>s.trim()).filter(Boolean).slice(0,3);if(answer.length<2)answer=[l.hint.slice(0,96),l.explanation.slice(0,96)].filter((s,i,a)=>!!s&&a.indexOf(s)===i);if(answer.length<2)return;answer=answer.map(s=>s.slice(0,96));return {...l,kind:'sentence',title:'迁移推理链',goal:`迁移说明：${l.goal}`.slice(0,145),words:[...answer].reverse(),answer,hint:'按“先找关系、再计算、最后写结论”的顺序整理。'};}
+function diversify(levels:Level[],theme:string){const originalKinds=new Set(levels.map(l=>l.kind));if(originalKinds.size<3){const seen=new Set<string>(),pairs:[string,string][]=[];for(const l of levels){const raw=levelAnswer(l);if(raw){let answer=raw;if(seen.has(answer))answer=`${raw}（${l.title}）`;if(!seen.has(answer)){seen.add(answer);pairs.push([l.goal.slice(0,96),answer.slice(0,96)]);}}if(pairs.length===3)break;}if(pairs.length>=2){const old=levels[1];levels[1]={...old,kind:'match',title:'单元知识配对',goal:`把“${theme}”的题目情境和对应结果配成对。`,pairs,target:0,options:undefined,words:undefined,answer:undefined,units:undefined,groups:undefined,cells:undefined,cols:undefined,visual:undefined,hint:'先点左侧题目，再点右侧对应结果。',explanation:pairs.map(pair=>pair.join(' → ')).join('；')};}}if(new Set(levels.map(l=>l.kind)).size<3){const alternate=classifyChoice(levels[2])||resultChoice(levels[2]);if(alternate)levels[2]=alternate;}const onlyKind=[...originalKinds][0];if(originalKinds.size===1&&!['choice','listen'].includes(onlyKind)){const diagnose=diagnoseResult(levels[3]),transfer=transferReasoning(levels[5]);if(diagnose)levels[3]=diagnose;if(transfer)levels[5]=transfer;}if(levels.filter(l=>l.kind==='choice').length>levels.length/2){const at=[4,5,3,2].find(i=>levels[i]?.kind==='choice');if(at!==undefined){const alternate=classifyChoice(levels[at]);if(alternate)levels[at]=alternate;}}if(originalKinds.size===1&&onlyKind==='choice'&&levels[5].kind==='choice'){const oldGoal=levels[5].goal,transfer=classifyChoice(levels[5]);if(transfer)levels[5]={...transfer,title:'迁移推理链',goal:`迁移解释：${oldGoal}`.slice(0,150)};}return levels;}
 export function curriculumChapters():Chapter[]{return curriculum.flatMap((units,g)=>units.map((u,index)=>{
  const grade=g+1,id=`math.g${grade}.c${index+7}`;
+ const unitNumber=units.slice(0,index+1).filter(x=>x.semester===u.semester).length;
+ const levels:Level[]=Array.from({length:6},(_,i)=>{const l=u.make(i);return {...l,id:`${id}.l${i+1}`,stage:i<2?'warmup' as const:i<4?'practice' as const:'challenge' as const,coachHints:[l.hint,l.explanation],evidence:l.evidence||{knowledgeId:`pep-math-g${grade}-${u.semester}-u${unitNumber}`,objective:`理解并应用“${u.theme}”，能完成计算或操作，并解释方法、检查结果和解决简单真实问题。`,role:evidenceRoles[i],prerequisites:[`${grade}年级前序相关知识`,'读懂数量、关系和单位'],misconceptions:[misconceptionFor(l.kind),'得到答案后不作估算、逆运算或情境检查'],reviewed:false}};});
+ diversify(levels,u.theme);
  return {id,subject:'math' as const,grade,title:u.title,topic:u.theme,art:index%3===0?'island':index%3===1?'garden':'planet',alignment:u.verified?'verified-theme' as const:'theme' as const,
- curriculum:{semester:u.semester,theme:u.theme,order:index,source:'https://book.pep.com.cn/'+(u.semester==='上册'?sources[g]:lowerSources[g])+'/',verified:!!u.verified,publisher:'人民教育出版社',edition:'依据2022年版课标修订教材',volume:`${grade}年级${u.semester}`,unit:u.theme,reviewStatus:(g===0&&u.theme==='20以内的进位加法')||(g===1&&['1～6的表内乘法','1～6的表内除法'].includes(u.theme))||(g===2&&u.theme==='混合运算')||(g===3&&u.theme==='加法模型和乘法模型')||(g===4&&['小数乘法','小数除法'].includes(u.theme))||(g===5&&['分数乘法','分数除法'].includes(u.theme))?'editor-reviewed':'draft'},
- levels:Array.from({length:6},(_,i)=>{const l=u.make(i);return {...l,id:`${id}.l${i+1}`,stage:i<2?'warmup' as const:i<4?'practice' as const:'challenge' as const,coachHints:[l.hint,l.explanation],evidence:l.evidence||{knowledgeId:`pep-math-g${grade}-u${index+1}`,objective:`理解并应用“${u.theme}”，能完成计算或操作，并解释方法、检查结果和解决简单真实问题。`,role:evidenceRoles[i],prerequisites:[`${grade}年级前序相关知识`,'读懂数量、关系和单位'],misconceptions:[misconceptionFor(l.kind),'得到答案后不作估算、逆运算或情境检查'],reviewed:false}};})};
+ curriculum:{semester:u.semester,theme:u.theme,order:index,source:'https://book.pep.com.cn/'+(u.semester==='上册'?sources[g]:lowerSources[g])+'/',verified:!!u.verified,publisher:'人民教育出版社',edition:u.verified?'依据2022年版课标修订教材':'旧版主题练习，待新版目录核对',volume:`${grade}年级${u.semester}`,unit:u.verified?`第${unitNumber}单元 ${u.theme}`:`待核对专题 ${u.theme}`,unitNumber:u.verified?unitNumber:undefined,unitType:u.verified?'textbook':'theme',objectives:[`理解${u.theme}的核心概念或数量关系`,`用计算、操作或图示解决${u.theme}的基础问题`,`辨析常见错误，并在新情境中迁移应用`],reviewStatus:(g===0&&u.theme==='20以内的进位加法')||(g===1&&['1～6的表内乘法','1～6的表内除法'].includes(u.theme))||(g===2&&u.theme==='混合运算')||(g===3&&u.theme==='加法模型和乘法模型')||(g===4&&['小数乘法','小数除法'].includes(u.theme))||(g===5&&['分数乘法','分数除法'].includes(u.theme))?'editor-reviewed':'draft'},
+ levels};
 }));}

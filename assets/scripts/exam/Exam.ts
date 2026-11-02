@@ -1,12 +1,12 @@
 import {ROUTE_PAPERS} from './RoutePapers';
 /** Versioned, subject-neutral trial contracts. Content remains independently authored. */
-export interface ExamQuestion {id:string;kind:'number'|'choice'|'order';prompt:string;options?:string[];answer:string;explanation:string;points:number;topic:string;passage?:string;sourceId?:string;}
+export interface ExamQuestion {id:string;kind:'number'|'choice'|'order'|'match';prompt:string;prompts?:string[];options?:string[];answer:string;explanation:string;points:number;topic:string;passage?:string;sourceId?:string;}
 export interface ExamPaper {id:string;title:string;subject:string;grade:number;minutes:number;scope:string;questions:ExamQuestion[];}
 export interface ExamAttempt {paperId:string;answers:Record<string,string>;marked:string[];startedAt:number;deadline:number;updatedAt:number;submitted:boolean;}
 export interface ExamRecord {best:number;latest:number;at:number;}
 export interface ExamSave {records:Record<string,ExamRecord>;attempt?:ExamAttempt;drafts?:Record<string,ExamAttempt>;}
 export const rewardTier=(score:number)=>score>=100?{name:'璀璨星冠',points:300,color:'#FFD269'}:score>=90?{name:'金翼星章',points:220,color:'#F1C369'}:score>=80?{name:'银月星章',points:160,color:'#AEDBE9'}:score>=60?{name:'青芽星章',points:100,color:'#9CD6B8'}:{name:'勇气星章',points:40,color:'#C6B8EC'};
-export function answeredQuestion(q:ExamQuestion,value:string){return !!value&&(q.kind!=='number'||/^-?\d+(?:\.\d+)?$/.test(value))&&(q.kind!=='order'||value.split('|').length===q.options.length);}
+export function answeredQuestion(q:ExamQuestion,value:string){return !!value&&(q.kind!=='number'||/^-?\d+(?:\.\d+)?$/.test(value))&&(q.kind!=='order'||value.split('|').length===q.options.length)&&(q.kind!=='match'||value.split('|').length===q.prompts.length&&value.split('|').every(Boolean));}
 /** Numeric fields accept equivalent decimal notation, never empty input or JS expressions. */
 export function correctAnswer(q:ExamQuestion,value:string){const v=String(value??'').trim();if(q.kind!=='number')return v===q.answer;return /^-?\d+(?:\.\d+)?$/.test(v)&&Number.isFinite(Number(v))&&Number(v)===Number(q.answer);}
 export function editNumber(current:string,key:string){if(key==='清空')return '';if(key==='退格')return current.slice(0,-1);if(key==='-')return current.startsWith('-')?current.slice(1):current.length<12?'-'+current:current;if(key==='.')return current.includes('.')?current:current.length<12?(current===''?'0.':current==='-'?'-0.':current+'.'):current;return /^\d$/.test(key)&&current.length<12?current+key:current;}

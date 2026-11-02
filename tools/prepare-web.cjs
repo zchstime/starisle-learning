@@ -4,6 +4,9 @@ html=html.replace(/<title>.*?<\/title>/,'<title>星屿学园 · 全学科探索<
 if(!html.includes('id="starisle-shell"'))html=html.replace('</head>',`<style id="starisle-shell">html,body{margin:0!important;padding:0!important;width:100%;height:100%;overflow:hidden;background:#B7E5E9!important}h1.header,p.footer{display:none!important}#GameDiv{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;margin:0!important;border:0!important;box-shadow:none!important}#Cocos3dGameContainer{width:100%;height:100%}canvas{outline:0!important;touch-action:none}#rotate-tip{display:none;position:fixed;bottom:18px;left:10%;width:80%;box-sizing:border-box;padding:16px 20px;border-radius:20px;background:#fffdf5;color:#173f4c;font:600 17px system-ui;text-align:center;pointer-events:none;box-shadow:0 4px 24px #173f4c22}@media(orientation:portrait) and (max-width:700px){#rotate-tip{display:block}}</style></head>`);
 if(!html.includes('id="rotate-tip"'))html=html.replace('</body>','<div id="rotate-tip">↻ 横过来玩，星光积木看得更清楚</div></body>');fs.writeFileSync(p,html);
 console.log('Prepared responsive game shell');
+fs.cpSync(path.resolve(__dirname,'../web/motion'),path.join(out,'motion'),{recursive:true});
+if(!html.includes('/motion/motion.css'))html=html.replace('</head>','<link rel="stylesheet" href="/motion/motion.css"><script defer src="/motion/motion.js"></script></head>');
+fs.writeFileSync(p,html);
 
 fs.cpSync(path.resolve(__dirname,'../web/auth'),path.join(out,'auth'),{recursive:true});
 fs.copyFileSync(path.resolve(__dirname,'../assets/resources/art/island.png'),path.join(out,'auth/island.png'));
@@ -32,6 +35,8 @@ fs.cpSync(path.resolve(__dirname,'../web/arcade'),path.join(out,'arcade'),{recur
 if(!html.includes('/arcade/launcher.js'))html=html.replace('</body>','<script src="/arcade/launcher.js"></script></body>');
 fs.writeFileSync(p,html);
 
+// Independent junior H5 learning surface; not a Cocos scene or primary save format.
+fs.cpSync(path.resolve(__dirname,'../web/junior'),path.join(out,'junior'),{recursive:true});
 fs.cpSync(path.resolve(__dirname,'../web/stages'),path.join(out,'stages'),{recursive:true});
 fs.copyFileSync(path.resolve(__dirname,'../assets/resources/art/planet.png'),path.join(out,'stages/planet.png'));
 if(!html.includes('/stages/stages.css'))html=html.replace('</head>','<link rel="stylesheet" href="/stages/stages.css"></head>');
@@ -42,3 +47,13 @@ fs.writeFileSync(p,html);
 require('./build-companion.cjs');
 if(!html.includes('/companion/app.js'))html=html.replace('</body>','<script src="/companion/app.js"></script></body>');
 fs.writeFileSync(p,html);
+
+// Version the boot scripts by their actual contents so an older browser cache
+// cannot keep loading a previous settings manifest after a release.
+const crypto=require('node:crypto');
+const bootName=(html.match(/index\.[\w-]+\.js/)||[])[0];
+if(bootName){
+ let boot=fs.readFileSync(path.join(out,bootName),'utf8');const appName=(boot.match(/application\.[\w-]+\.js/)||[])[0];
+ if(appName){const app=fs.readFileSync(path.join(out,appName));const newApp='application.'+crypto.createHash('sha256').update(app).digest('hex').slice(0,12)+'.js';fs.writeFileSync(path.join(out,newApp),app);boot=boot.replaceAll(appName,newApp);}
+ const newBoot='index.'+crypto.createHash('sha256').update(boot).digest('hex').slice(0,12)+'.js';fs.writeFileSync(path.join(out,newBoot),boot);html=html.replaceAll(bootName,newBoot);fs.writeFileSync(p,html);
+}

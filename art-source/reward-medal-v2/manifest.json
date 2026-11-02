@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-11-01",
+  "asset": "assets/resources/art/reward-medal-v2.png",
+  "prompt": "Use case: stylized-concept. Production game UI reward asset for a gentle floating-island learning adventure, original design. ONE centered exquisite small gold and ivory star medallion, round scalloped warm gold rim, creamy porcelain five-point star inset, small mint turquoise glass gem at center, two short mint ribbon tails underneath, tiny pale gold laurel sprigs framing lower sides. Soft dimensional toy-like 3D render, subtle ambient occlusion, refined bevels, warm pearlescent highlights, pastel palette, frontal near-orthographic view, readable at 120 pixels. Transparent background, clean alpha silhouette, generous clear padding, square composition. No text, no letters, no numbers, no watermark, no external glow, no environment, no characters, no extra badges. High quality polished cozy game inventory sprite.",
+  "uses": [
+    "Adventure reward",
+    "earned journal medals",
+    "Exam result"
+  ],
+  "alpha_verified": true
+}

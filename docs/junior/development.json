@@ -1,0 +1,1017 @@
+{
+  "generatedAt": "2026-11-01T13:35:22.921Z",
+  "status": "engineering-verified-teaching-review-pending",
+  "scope": {
+    "surface": "Independent Web/H5 /junior, shared auth and companion service; not a Cocos scene",
+    "schoolSystem": "6-3 sample organization",
+    "textbookEdition": null,
+    "textbookCoverage": "Not claimed",
+    "teacherReview": false,
+    "studentPilot": false,
+    "productionDeployment": false
+  },
+  "counts": {
+    "subjects": 14,
+    "units": 21,
+    "tasks": 84,
+    "mechanics": 16,
+    "audioLines": 9
+  },
+  "subjects": [
+    {
+      "id": "math",
+      "name": "数学",
+      "ability": "推理与建模",
+      "topics": "数与式 · 方程 · 几何 · 函数 · 统计",
+      "color": "#247777",
+      "units": [
+        {
+          "id": "m7-classify",
+          "title": "数卡归档工坊",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "按正负零分类",
+            "区分整数和分数",
+            "按数值而不是写法判断类别"
+          ],
+          "tasks": [
+            {
+              "id": "m7-classify.1",
+              "title": "正负零三个仓",
+              "kind": "classify",
+              "phase": "探索"
+            },
+            {
+              "id": "m7-classify.2",
+              "title": "零为什么单独放",
+              "kind": "writing",
+              "phase": "解释"
+            },
+            {
+              "id": "m7-classify.3",
+              "title": "按数值重新归档",
+              "kind": "classify",
+              "phase": "应用"
+            },
+            {
+              "id": "m7-classify.4",
+              "title": "换一组再归档",
+              "kind": "classify",
+              "phase": "复习"
+            }
+          ]
+        },
+        {
+          "id": "m7-order",
+          "title": "左右航标比较站",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "用数轴左右位置比较有理数",
+            "比较两个负数的大小",
+            "联系温度情境解释大小关系"
+          ],
+          "tasks": [
+            {
+              "id": "m7-order.1",
+              "title": "两个负数的航标",
+              "kind": "numberline",
+              "phase": "探索"
+            },
+            {
+              "id": "m7-order.2",
+              "title": "纠正远近误区",
+              "kind": "writing",
+              "phase": "解释"
+            },
+            {
+              "id": "m7-order.3",
+              "title": "哪座营地更暖",
+              "kind": "numberline",
+              "phase": "应用"
+            },
+            {
+              "id": "m7-order.4",
+              "title": "分数航标复习",
+              "kind": "numberline",
+              "phase": "复习"
+            }
+          ]
+        },
+        {
+          "id": "m7-absolute-distance",
+          "title": "原点测距站",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "用到原点的距离理解绝对值",
+            "区分负数的大小和绝对值大小",
+            "说明零的绝对值为零"
+          ],
+          "tasks": [
+            {
+              "id": "m7-absolute-distance.1",
+              "title": "左侧信标测距",
+              "kind": "numberline",
+              "phase": "探索"
+            },
+            {
+              "id": "m7-absolute-distance.2",
+              "title": "谁更大，谁更远",
+              "kind": "writing",
+              "phase": "解释"
+            },
+            {
+              "id": "m7-absolute-distance.3",
+              "title": "原点也有答案",
+              "kind": "numberline",
+              "phase": "应用"
+            },
+            {
+              "id": "m7-absolute-distance.4",
+              "title": "分数测距复习",
+              "kind": "numberline",
+              "phase": "复习"
+            }
+          ]
+        },
+        {
+          "id": "m7-rational-position",
+          "title": "镜像数轴探险",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "把分数与小数对应到数轴位置",
+            "理解相反数到原点距离相等",
+            "解释零的相反数仍为零"
+          ],
+          "tasks": [
+            {
+              "id": "m7-rational-position.1",
+              "title": "半格停靠站",
+              "kind": "numberline",
+              "phase": "探索"
+            },
+            {
+              "id": "m7-rational-position.2",
+              "title": "镜像航标的理由",
+              "kind": "writing",
+              "phase": "解释"
+            },
+            {
+              "id": "m7-rational-position.3",
+              "title": "寻找对称信标",
+              "kind": "numberline",
+              "phase": "应用"
+            },
+            {
+              "id": "m7-rational-position.4",
+              "title": "四分之一航线",
+              "kind": "numberline",
+              "phase": "复习"
+            }
+          ]
+        },
+        {
+          "id": "m7-numberline",
+          "title": "数轴上的远行",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "理解数轴的方向与单位",
+            "用有理数表示位置变化",
+            "区分位移与路程"
+          ],
+          "tasks": [
+            {
+              "id": "m7-numberline.1",
+              "title": "夜间温度计",
+              "kind": "numberline",
+              "phase": "探索"
+            },
+            {
+              "id": "m7-numberline.2",
+              "title": "返回与距离",
+              "kind": "numberline",
+              "phase": "解释"
+            },
+            {
+              "id": "m7-numberline.3",
+              "title": "电梯调度",
+              "kind": "numberline",
+              "phase": "应用"
+            },
+            {
+              "id": "m7-numberline.4",
+              "title": "换个起点再试",
+              "kind": "numberline",
+              "phase": "复习"
+            }
+          ]
+        },
+        {
+          "id": "m7-equation",
+          "title": "社团预算解密",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "从情境理解未知量",
+            "保持等式等价",
+            "代回验证与纠错"
+          ],
+          "tasks": [
+            {
+              "id": "m7-equation.1",
+              "title": "材料费去哪了",
+              "kind": "equation",
+              "phase": "探索"
+            },
+            {
+              "id": "m7-equation.2",
+              "title": "括号里的数量",
+              "kind": "equation",
+              "phase": "解释"
+            },
+            {
+              "id": "m7-equation.3",
+              "title": "修复错误解法",
+              "kind": "equation",
+              "phase": "应用"
+            },
+            {
+              "id": "m7-equation.4",
+              "title": "两家商店",
+              "kind": "equation",
+              "phase": "复习"
+            }
+          ]
+        },
+        {
+          "id": "m8-function",
+          "title": "图像会怎样改变",
+          "grade": 8,
+          "semester": "下册",
+          "objectives": [
+            "观察一次函数的变化",
+            "联系解析式与坐标",
+            "用函数解释情境"
+          ],
+          "tasks": [
+            {
+              "id": "m8-function.1",
+              "title": "斜率实验",
+              "kind": "graph",
+              "phase": "探索"
+            },
+            {
+              "id": "m8-function.2",
+              "title": "向下的直线",
+              "kind": "graph",
+              "phase": "解释"
+            },
+            {
+              "id": "m8-function.3",
+              "title": "水箱注水模型",
+              "kind": "graph",
+              "phase": "应用"
+            },
+            {
+              "id": "m8-function.4",
+              "title": "独立迁移",
+              "kind": "graph",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chinese",
+      "name": "语文",
+      "ability": "阅读与表达",
+      "topics": "阅读 · 古诗文 · 写作 · 口语交际",
+      "color": "#a7604c",
+      "units": [
+        {
+          "id": "c7-reading",
+          "title": "藏在文字里的线索",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "筛选相关原文证据",
+            "解释人物行为",
+            "区分文本事实与推测"
+          ],
+          "tasks": [
+            {
+              "id": "c7-reading.1",
+              "title": "她为什么停下",
+              "kind": "evidence",
+              "phase": "探索"
+            },
+            {
+              "id": "c7-reading.2",
+              "title": "地图的含义",
+              "kind": "evidence",
+              "phase": "解释"
+            },
+            {
+              "id": "c7-reading.3",
+              "title": "事实还是推测",
+              "kind": "evidence",
+              "phase": "应用"
+            },
+            {
+              "id": "c7-reading.4",
+              "title": "给出另一种解释",
+              "kind": "writing",
+              "phase": "复习"
+            }
+          ]
+        },
+        {
+          "id": "c7-writing",
+          "title": "让一段文字发生变化",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "用动作与细节表达",
+            "组织段落顺序",
+            "依据反馈修订作品"
+          ],
+          "tasks": [
+            {
+              "id": "c7-writing.1",
+              "title": "把紧张写出来",
+              "kind": "writing",
+              "phase": "探索"
+            },
+            {
+              "id": "c7-writing.2",
+              "title": "换一个观察位置",
+              "kind": "writing",
+              "phase": "解释"
+            },
+            {
+              "id": "c7-writing.3",
+              "title": "修订编辑室",
+              "kind": "revision",
+              "phase": "应用"
+            },
+            {
+              "id": "c7-writing.4",
+              "title": "再编辑一次",
+              "kind": "revision",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "英语",
+      "ability": "交流与应用",
+      "topics": "听说 · 阅读 · 语言运用 · 写作",
+      "color": "#5d6fb0",
+      "units": [
+        {
+          "id": "e7-campus",
+          "title": "Welcome to our club",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "询问活动时间和地点",
+            "传达个人兴趣",
+            "写出完整邀请信息"
+          ],
+          "tasks": [
+            {
+              "id": "e7-campus.1",
+              "title": "Meet the club guide",
+              "kind": "dialogue",
+              "phase": "探索"
+            },
+            {
+              "id": "e7-campus.2",
+              "title": "Help a new student",
+              "kind": "dialogue",
+              "phase": "解释"
+            },
+            {
+              "id": "e7-campus.3",
+              "title": "Write an invitation",
+              "kind": "writing",
+              "phase": "应用"
+            },
+            {
+              "id": "e7-campus.4",
+              "title": "A change of plan",
+              "kind": "dialogue",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biology",
+      "name": "生物学",
+      "ability": "生命与实验",
+      "topics": "生命结构 · 生命过程 · 遗传 · 生态",
+      "color": "#56834d",
+      "units": [
+        {
+          "id": "b7-plant",
+          "title": "温室里的实验",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "设置对照实验",
+            "控制无关变量",
+            "用数据支持有限结论"
+          ],
+          "tasks": [
+            {
+              "id": "b7-plant.1",
+              "title": "光照会改变什么",
+              "kind": "experiment",
+              "phase": "探索"
+            },
+            {
+              "id": "b7-plant.2",
+              "title": "结论需要边界",
+              "kind": "writing",
+              "phase": "解释"
+            },
+            {
+              "id": "b7-plant.3",
+              "title": "水量对照实验",
+              "kind": "experiment",
+              "phase": "应用"
+            },
+            {
+              "id": "b7-plant.4",
+              "title": "设计下一次实验",
+              "kind": "writing",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "物理",
+      "ability": "现象与规律",
+      "topics": "运动 · 力 · 声光热 · 电磁 · 实验",
+      "color": "#387895",
+      "units": [
+        {
+          "id": "p9-circuit",
+          "title": "电路参数实验",
+          "grade": 9,
+          "semester": "上册",
+          "objectives": [
+            "认识理想欧姆电路",
+            "设置单变量实验",
+            "从数据计算电流"
+          ],
+          "tasks": [
+            {
+              "id": "p9-circuit.1",
+              "title": "点亮研究台",
+              "kind": "circuit",
+              "phase": "探索"
+            },
+            {
+              "id": "p9-circuit.2",
+              "title": "电压增加之后",
+              "kind": "circuit",
+              "phase": "解释"
+            },
+            {
+              "id": "p9-circuit.3",
+              "title": "改变电阻",
+              "kind": "circuit",
+              "phase": "应用"
+            },
+            {
+              "id": "p9-circuit.4",
+              "title": "设计一份实验报告",
+              "kind": "writing",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "name": "化学",
+      "ability": "物质与变化",
+      "topics": "物质 · 反应 · 微观模型 · 实验",
+      "color": "#8970a7",
+      "units": [
+        {
+          "id": "ch9-balance",
+          "title": "反应前后的原子",
+          "grade": 9,
+          "semester": "上册",
+          "objectives": [
+            "区分系数与下标",
+            "保持各元素原子数相等",
+            "使用最简整数系数"
+          ],
+          "tasks": [
+            {
+              "id": "ch9-balance.1",
+              "title": "水的生成",
+              "kind": "balance",
+              "phase": "探索"
+            },
+            {
+              "id": "ch9-balance.2",
+              "title": "镁的氧化",
+              "kind": "balance",
+              "phase": "解释"
+            },
+            {
+              "id": "ch9-balance.3",
+              "title": "过氧化氢分解",
+              "kind": "balance",
+              "phase": "应用"
+            },
+            {
+              "id": "ch9-balance.4",
+              "title": "碳与氧气",
+              "kind": "balance",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "name": "历史",
+      "ability": "史料与解释",
+      "topics": "时空脉络 · 史料研读 · 因果分析",
+      "color": "#997246",
+      "units": [
+        {
+          "id": "h7-evidence",
+          "title": "一份资料能说明多少",
+          "grade": 7,
+          "semester": "下册",
+          "objectives": [
+            "区分资料来源与目的",
+            "判断证据支持的范围",
+            "交叉比较不同资料"
+          ],
+          "tasks": [
+            {
+              "id": "h7-evidence.1",
+              "title": "账册中的变化",
+              "kind": "evidence",
+              "phase": "探索"
+            },
+            {
+              "id": "h7-evidence.2",
+              "title": "宣传语可靠吗",
+              "kind": "evidence",
+              "phase": "解释"
+            },
+            {
+              "id": "h7-evidence.3",
+              "title": "能否建立因果",
+              "kind": "evidence",
+              "phase": "应用"
+            },
+            {
+              "id": "h7-evidence.4",
+              "title": "写一段有边界的解释",
+              "kind": "writing",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "name": "地理",
+      "ability": "空间与环境",
+      "topics": "地图 · 自然环境 · 区域 · 人地关系",
+      "color": "#378276",
+      "units": [
+        {
+          "id": "g7-climate",
+          "title": "读懂气候数据",
+          "grade": 7,
+          "semester": "下册",
+          "objectives": [
+            "读取月均气温和降水",
+            "比较季节差异",
+            "用数据支持有限推断"
+          ],
+          "tasks": [
+            {
+              "id": "g7-climate.1",
+              "title": "找出季节差异",
+              "kind": "data",
+              "phase": "探索"
+            },
+            {
+              "id": "g7-climate.2",
+              "title": "换一个地区",
+              "kind": "data",
+              "phase": "解释"
+            },
+            {
+              "id": "g7-climate.3",
+              "title": "安排一次考察",
+              "kind": "writing",
+              "phase": "应用"
+            },
+            {
+              "id": "g7-climate.4",
+              "title": "结论是否过头",
+              "kind": "writing",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "civics",
+      "name": "道德与法治",
+      "ability": "规则与责任",
+      "topics": "成长 · 社会 · 法治 · 责任",
+      "color": "#a16472",
+      "units": [
+        {
+          "id": "d7-community",
+          "title": "为公共空间提建议",
+          "grade": 7,
+          "semester": "下册",
+          "objectives": [
+            "识别不同参与者的需要",
+            "提出有依据的建议",
+            "比较方案的影响"
+          ],
+          "tasks": [
+            {
+              "id": "d7-community.1",
+              "title": "听见不同需要",
+              "kind": "writing",
+              "phase": "探索"
+            },
+            {
+              "id": "d7-community.2",
+              "title": "设计一份方案",
+              "kind": "project",
+              "phase": "解释"
+            },
+            {
+              "id": "d7-community.3",
+              "title": "回应反对意见",
+              "kind": "writing",
+              "phase": "应用"
+            },
+            {
+              "id": "d7-community.4",
+              "title": "小型议事记录",
+              "kind": "project",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "信息科技",
+      "ability": "算法与创造",
+      "topics": "数据 · 算法 · 网络 · 人工智能",
+      "color": "#48738b",
+      "units": [
+        {
+          "id": "it7-algorithm",
+          "title": "给探测车写指令",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "用顺序指令描述路径",
+            "观察执行过程",
+            "定位与修复算法错误"
+          ],
+          "tasks": [
+            {
+              "id": "it7-algorithm.1",
+              "title": "第一次导航",
+              "kind": "robot",
+              "phase": "探索"
+            },
+            {
+              "id": "it7-algorithm.2",
+              "title": "转向不等于移动",
+              "kind": "robot",
+              "phase": "解释"
+            },
+            {
+              "id": "it7-algorithm.3",
+              "title": "绕过阻挡",
+              "kind": "robot",
+              "phase": "应用"
+            },
+            {
+              "id": "it7-algorithm.4",
+              "title": "写一份调试笔记",
+              "kind": "writing",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arts",
+      "name": "艺术",
+      "ability": "感受与创作",
+      "topics": "音乐 · 美术 · 艺术实践",
+      "color": "#a66991",
+      "units": [
+        {
+          "id": "a7-create",
+          "title": "节奏与色彩工作室",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "感受重复与变化",
+            "组织节奏与视觉节律",
+            "解释创作意图"
+          ],
+          "tasks": [
+            {
+              "id": "a7-create.1",
+              "title": "写一段八拍节奏",
+              "kind": "rhythm",
+              "phase": "探索"
+            },
+            {
+              "id": "a7-create.2",
+              "title": "留白也有声音",
+              "kind": "rhythm",
+              "phase": "解释"
+            },
+            {
+              "id": "a7-create.3",
+              "title": "一个社团标识",
+              "kind": "design",
+              "phase": "应用"
+            },
+            {
+              "id": "a7-create.4",
+              "title": "重复中的变化",
+              "kind": "design",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "name": "体育与健康",
+      "ability": "运动与生活",
+      "topics": "运动技能 · 健康生活 · 实践记录",
+      "color": "#8c8047",
+      "units": [
+        {
+          "id": "pe7-observe",
+          "title": "我的运动观察记录",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "制定适合自己的活动计划",
+            "如实记录活动过程",
+            "根据体验反思调整"
+          ],
+          "tasks": [
+            {
+              "id": "pe7-observe.1",
+              "title": "准备一份活动计划",
+              "kind": "project",
+              "phase": "探索"
+            },
+            {
+              "id": "pe7-observe.2",
+              "title": "记录一次真实活动",
+              "kind": "project",
+              "phase": "解释"
+            },
+            {
+              "id": "pe7-observe.3",
+              "title": "观察动作与节奏",
+              "kind": "writing",
+              "phase": "应用"
+            },
+            {
+              "id": "pe7-observe.4",
+              "title": "调整下一次计划",
+              "kind": "project",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "labor",
+      "name": "劳动",
+      "ability": "设计与实践",
+      "topics": "生活劳动 · 生产劳动 · 服务劳动",
+      "color": "#927a55",
+      "units": [
+        {
+          "id": "l7-organize",
+          "title": "让书桌更好用",
+          "grade": 7,
+          "semester": "上册",
+          "objectives": [
+            "观察真实使用问题",
+            "规划整理步骤",
+            "记录实践并评价效果"
+          ],
+          "tasks": [
+            {
+              "id": "l7-organize.1",
+              "title": "观察书桌",
+              "kind": "project",
+              "phase": "探索"
+            },
+            {
+              "id": "l7-organize.2",
+              "title": "制定整理顺序",
+              "kind": "project",
+              "phase": "解释"
+            },
+            {
+              "id": "l7-organize.3",
+              "title": "实践过程记录",
+              "kind": "project",
+              "phase": "应用"
+            },
+            {
+              "id": "l7-organize.4",
+              "title": "一周后怎样评价",
+              "kind": "writing",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "name": "综合实践",
+      "ability": "研究与协作",
+      "topics": "问题发现 · 调查 · 设计 · 反思",
+      "color": "#6b7790",
+      "units": [
+        {
+          "id": "pr8-water",
+          "title": "校园用水小研究",
+          "grade": 8,
+          "semester": "上册",
+          "objectives": [
+            "提出可调查的问题",
+            "设计记录方式",
+            "区分数据与推断"
+          ],
+          "tasks": [
+            {
+              "id": "pr8-water.1",
+              "title": "缩小研究问题",
+              "kind": "project",
+              "phase": "探索"
+            },
+            {
+              "id": "pr8-water.2",
+              "title": "设计记录表",
+              "kind": "project",
+              "phase": "解释"
+            },
+            {
+              "id": "pr8-water.3",
+              "title": "解释一组模拟数据",
+              "kind": "writing",
+              "phase": "应用"
+            },
+            {
+              "id": "pr8-water.4",
+              "title": "写一页建议",
+              "kind": "project",
+              "phase": "复习"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "id": "foundation",
+      "status": "implemented",
+      "items": [
+        "Independent junior entry",
+        "Subject/grade/learning-mode classification",
+        "Account-scoped drafts and submission versions",
+        "SQLite and MySQL store implementations with CAS; SQLite tested"
+      ]
+    },
+    {
+      "id": "six-pilots",
+      "status": "implemented",
+      "items": [
+        "Number line",
+        "Linear equations",
+        "Reading evidence",
+        "Writing revision",
+        "Scripted English dialogue",
+        "Plant control experiments"
+      ]
+    },
+    {
+      "id": "subject-expansion",
+      "status": "implemented",
+      "items": [
+        "Function graph",
+        "Ohm circuit",
+        "Atom balance",
+        "Source evaluation",
+        "Climate data",
+        "Robot programming",
+        "Rhythm and pixel design",
+        "Practical research journals"
+      ]
+    },
+    {
+      "id": "engineering-qa",
+      "status": "verified",
+      "items": [
+        "Domain and API tests",
+        "DOM interaction and reload tests",
+        "Desktop and 390px browser checks",
+        "Primary and companion regression"
+      ]
+    },
+    {
+      "id": "textbook-mapping",
+      "status": "planned",
+      "items": [
+        "Select and record actual textbook edition, school system and regional science organization",
+        "Map each chosen unit to textbook source and lesson objectives",
+        "Expand grades 8 and 9 beyond current samples"
+      ]
+    },
+    {
+      "id": "teaching-validation",
+      "status": "requires-human-evidence",
+      "items": [
+        "Teacher review of prompts and rubrics",
+        "Student usability pilot",
+        "Validate difficulty and learning transfer; do not invent evidence"
+      ]
+    },
+    {
+      "id": "authoring-platform",
+      "status": "planned",
+      "items": [
+        "Junior task editors in existing admin",
+        "Draft preview and versioned publication",
+        "Evidence-grounded AI feedback with review and appeals"
+      ]
+    },
+    {
+      "id": "native-clients",
+      "status": "planned",
+      "items": [
+        "Cocos/native/mini-program equivalents after Web learning flow validation"
+      ]
+    }
+  ],
+  "limitations": [
+    "No complete textbook coverage",
+    "No automatic human-quality grading for open work",
+    "No phonetic pronunciation scoring",
+    "Simulated science data is not experimental measurement",
+    "Practical journals are self-reports",
+    "Existing primary admin does not edit junior templates; current content is repository-authored",
+    "MySQL adapter implemented, not verified against live production database",
+    "No real student pilot or production deployment in this increment"
+  ]
+}

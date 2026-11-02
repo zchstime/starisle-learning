@@ -15,4 +15,9 @@ export function labTasks(subject:string,grade:number):LabTask[]{const g=Math.max
  if(subject==='english')return [{id:base+'.words',title:'单词快递站',kind:'pairs',intro:'把单词快递送到对应的中文站台。',pairs:vocabulary[i].map(s=>s.split('|')),note:`${g}年级英语词义拓展；原创配对任务。`},{id:base+'.talk',title:'小岛对话剧场',kind:'dialogue',intro:'你来扮演小向导，接住朋友的话。',lines:dialogues[i].map(([say,a,b])=>({say,answers:[a,b],correct:0,why:`朋友说“${say}”，这里用“${a}”回应。`})),note:'情境回应练习，不是语音识别或口语评分。'}];
  if(subject==='chinese'){const p=poems[i];return [{id:base+'.poem',title:'点亮诗词灯笼',kind:'poem',intro:p[0]+' · 依次补上两个空缺',poem:[p[1],p[2]],words:[p[3],p[4],p[5]],answer:[p[3],p[4]],note:'古典诗词选段复习，学段拓展；未声称逐课教材对应。'},{id:base+'.idiom',title:'成语故事渡船',kind:'pairs',intro:'为成语找到合适的情境，让小船靠岸。',pairs:idioms[i].map(s=>s.split('|')),note:`${g}年级词语理解拓展；情境释义为原创。`}];}return [];}
 export const LAB_IDS=new Set(['english','chinese'].flatMap(s=>Array.from({length:6},(_,i)=>labTasks(s,i+1)).flat().map(t=>t.id)));
-export const GIFTS=[{id:'sprout',name:'新芽探险家',cost:200,symbol:'♧',color:'#BCE5C6'},{id:'moon',name:'月光守护者',cost:600,symbol:'☾',color:'#DCD4F2'},{id:'sun',name:'晨光领航员',cost:1200,symbol:'☀',color:'#FFE0A0'}];
+export interface Gift {id:string;name:string;cost:number;symbol:string;color:string;art?:string;description?:string;}
+export const GIFTS:Gift[]=[{id:'sprout',name:'新芽探险家',cost:200,symbol:'♧',color:'#BCE5C6'},{id:'moon',name:'月光守护者',cost:600,symbol:'☾',color:'#DCD4F2'},{id:'sun',name:'晨光领航员',cost:1200,symbol:'☀',color:'#FFE0A0'},
+ {id:'star-lantern',name:'晚安星灯',cost:100,symbol:'✦',color:'#E0F2E9',art:'gifts/star-lantern',description:'把一颗温暖的小星星，放在花园入口。'},
+ {id:'moon-telescope',name:'月光望远镜',cost:500,symbol:'☾',color:'#E9E1F6',art:'gifts/moon-telescope',description:'为星宝布置一个仰望月亮的角落。'},
+ {id:'cloud-airship',name:'云朵飞艇',cost:1200,symbol:'☁',color:'#E0EFF5',art:'gifts/cloud-airship',description:'把下一次远航的梦想，停在自己的花园。'}];
+export const DECOR_GIFTS=GIFTS.filter(g=>!!g.art);

@@ -4,7 +4,7 @@ const assert=require('node:assert/strict');
 const ts=require('/Applications/CocosCreator-3.8.8.app/Contents/Resources/app.asar.unpacked/node_modules/typescript');
 const root=path.join(__dirname,'..');
 const out=fs.mkdtempSync('/tmp/starisle-curriculum-');
-for(const file of ['Catalog.ts','MathCurriculum.ts','EnglishCurriculum.ts','ChineseCurriculum.ts','Subjects.ts','PictureActivities.ts','OtherCurriculum.ts','StarterContent.ts','ChallengeContent.ts','ExpansionContent.ts']){
+for(const file of ['Homework.ts','Catalog.ts','MathCurriculum.ts','EnglishCurriculum.ts','ChineseCurriculum.ts','Subjects.ts','PictureActivities.ts','OtherCurriculum.ts','StarterContent.ts','ChallengeContent.ts','ExpansionContent.ts']){
  const source=path.join(root,'assets/scripts/adventure',file);
  fs.writeFileSync(path.join(out,file.replace('.ts','.js')),ts.transpileModule(fs.readFileSync(source,'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.CommonJS}}).outputText);
 }
@@ -114,9 +114,10 @@ const chinese=require(path.join(out,'ChineseCurriculum.js')).chineseCurriculum()
 for(const [name,items] of [['英语',english],['语文',chinese]]){
  assert.ok(items.length>0,name+'课程生成');
  for(const chapter of items){
-  assert.equal(chapter.levels.length,6,chapter.id+' 六阶段任务完整');
-  assert.deepEqual(chapter.levels.map(l=>l.evidence&&l.evidence.role),expectedRoles,chapter.id+' 六阶段证据完整');
-  assert.ok(chapter.levels.every(l=>l.evidence.knowledgeId&&l.evidence.objective&&l.evidence.prerequisites.length&&l.evidence.misconceptions.length),chapter.id+' 证据字段完整');
+  const core=chapter.levels.filter(l=>l.evidence);
+  assert.equal(core.length,6,chapter.id+' 六阶段任务完整');
+  assert.deepEqual(core.map(l=>l.evidence.role),expectedRoles,chapter.id+' 六阶段证据完整');
+  assert.ok(core.every(l=>l.evidence.knowledgeId&&l.evidence.objective&&l.evidence.prerequisites.length&&l.evidence.misconceptions.length),chapter.id+' 证据字段完整');
   assert.equal(chapter.curriculum.reviewStatus,'draft',chapter.id+' 不冒充人工精审');
  }
 }

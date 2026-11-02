@@ -142,3 +142,6 @@ try{
  start();if(results.some(r=>r.status==='rejected'))say('部分装饰模型未加载，物理玩法可继续；刷新可重试加载模型。');requestAnimationFrame(tick);
  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();setPause(true);$('overlay-title').textContent='画面连接暂时中断';$('overlay-text').textContent='请刷新页面重新载入；已完成的星章保留在本机。';$('continue').textContent='刷新游戏';$('continue').onclick=()=>location.reload();});
 }catch(e){console.error(e);$('title').textContent='游戏暂时没有加载成功';$('goal').textContent='请检查浏览器是否支持 WebGL，或刷新后重试。';say('可以点击左上角回小岛，原来的课程进度不受影响。');$('tools').innerHTML='<button onclick="location.reload()">重新加载</button>';}
+
+window.starisleCompanionContext=()=>({stage:'primary',screen:'playground',key:mode+':'+level,title:document.title,question:document.getElementById('goal')?.textContent||mode,attempt:document.getElementById('feedback')?.textContent||''});
+window.addEventListener('starisle:dialogue-active',e=>audio.setPaused(paused||e.detail));

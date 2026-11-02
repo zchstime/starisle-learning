@@ -1,15 +1,19 @@
 import {icon} from './icons.js';
+import {EXPLORATIONS} from './discovery.js';
+import {discoveryScene} from './discovery-art.js';
+import {playfulScene} from './playful-art.js';
 export const ACTIVITIES={
  shop:{name:'准备早餐',theme:'peach',symbol:'bag',voice:'shop',hint:'shop-hint'},
  tidy:{name:'收拾小房间',theme:'blue',symbol:'shelf',voice:'tidy',hint:'tidy-hint'},
  garden:{name:'种一盆花',theme:'green',symbol:'flower',voice:'garden',hint:'garden-hint'},
  feed:{name:'照顾小兔子',theme:'green',symbol:'bunny',voice:'feed'},
  sort:{name:'分类小侦探',theme:'peach',symbol:'apple',voice:'sort'},
- build:{name:'搭一间小屋',theme:'blue',symbol:'triangle',voice:'build'}
+ build:{name:'搭一间小屋',theme:'blue',symbol:'triangle',voice:'build'},
+ ...EXPLORATIONS
 };
 // Nested SVGs keep the same native toy artwork in both scene previews and play.
 const toy=(name,x,y,w,h)=>`<g transform="translate(${x} ${y}) scale(${w/100} ${h/100})">${icon(name).replace(/^<svg[^>]*>|<\/svg>$/g,'')}</g>`;
-export function scene(kind){let art='';
+export function scene(kind){let art=playfulScene(kind,toy)||discoveryScene(kind,toy);
  if(kind==='shop')art=`<path d="M71 63h178v119H71Z" fill="#fff4d9" stroke="#c1a38a" stroke-width="3"/><path d="m55 62 24-37h160l26 37Z" fill="#eaa79f"/><path d="m95 25-8 37m46-37-4 37m45-37 3 37m31-37 14 37" stroke="#fff1d8" stroke-width="20"/><path d="M54 62q15 21 30 0 16 21 31 0 15 21 30 0 16 21 31 0 16 21 31 0 15 21 30 0 16 21 30 0" fill="#ecc0ad"/><rect x="82" y="112" width="155" height="57" rx="8" fill="#d6ba93"/>${toy('apple',81,88,50,50)}${toy('banana',132,87,49,50)}${toy('bread',181,86,50,52)}${toy('bag',236,129,60,60)}<path d="M72 178h178" stroke="#a88c71" stroke-width="7" stroke-linecap="round"/>`;
  if(kind==='tidy')art=`<rect x="54" y="29" width="210" height="154" rx="15" fill="#f9efd9"/><rect x="64" y="40" width="76" height="127" rx="6" fill="#d7bfa0"/><path d="M70 98h63M70 157h63" stroke="#b89e7c" stroke-width="5"/>${toy('book',75,51,55,49)}${toy('teddy',74,101,51,55)}<path d="M159 116h89l-8 57h-75Z" fill="#a6c2bd" stroke="#7faaa7" stroke-width="3"/>${toy('ball',170,81,56,56)}${toy('shirt',208,32,55,55)}<path d="M45 184h232" stroke="#d6b792" stroke-width="8" stroke-linecap="round"/>`;
  if(kind==='garden')art=`<path d="M50 167V77l108-54 110 54v90Z" fill="#e9f4e4" stroke="#9eb9a5" stroke-width="4"/><path d="M158 25v141M53 82h212M93 57v108m131-108v108" stroke="#afc7b3" stroke-width="4"/><path d="m122 126 7 56h62l8-56Z" fill="#dba78d" stroke="#b48471" stroke-width="3"/>${toy('flower',112,39,97,107)}${toy('water',205,126,76,66)}<path d="M39 185h246" stroke="#d8c59e" stroke-width="7" stroke-linecap="round"/>`;

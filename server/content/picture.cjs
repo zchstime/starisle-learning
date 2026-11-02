@@ -66,7 +66,8 @@ function gradeActivities(grade, subject) {
     return [picture(prefix + '.sort', grade === 5 ? '食物链搭建' : '观察分类站', row[5], a, grade === 5 ? '草 → 蝗虫 → 青蛙 → 蛇；箭头表示食物中的能量传递方向。' : row[0].map((v, i) => v + '：' + row[2][row[4][i]]).join('；') + '。'), picture(prefix + '.sequence', '科学过程桥', goals[grade - 1], ordered('看图，把过程按先后顺序放好。可以点小手看一次操作示范。', processes[grade - 1], icons[grade - 1]), goals[grade - 1])];
 }
 function answer(l) { if (l.kind === 'choice' && !l.voice?.startsWith('tone_') && !l.voice?.startsWith('drum_'))
-    return l.options?.[l.target]; if (['number', 'cargo'].includes(l.kind))
+    return l.options?.[l.target]; if (l.kind === 'match')
+    return l.pairs?.at(-1)?.[1]; if (['number', 'cargo'].includes(l.kind))
     return String(l.target / (l.scale || 1)) + (l.answerUnit || ''); return null; }
 /** Stable appended IDs preserve existing saves; no cloned numerical questions or generated facts. */
 function enrichChapters(chapters) {
@@ -87,7 +88,7 @@ function enrichChapters(chapters) {
         }
         if (sources.length >= 2) {
             const a = { mode: 'match', instruction: '每张线索都有自己的伙伴。把线索送到对应的答案旁，全部配好后点星星检查。', cards: sources.map((l, i) => item('c' + i, l.goal, 'clue')), slots: answers.map((v, i) => item('s' + i, v, 'answer')), solution: answers.map((_, i) => 's' + i), capacity: answers.map(() => 1) };
-            c.levels.push(picture(c.id + '.connect', '线索连连看', '把这一章的线索和结果配成对。', a, sources.map(l => l.explanation).join(' ').slice(0, 300)));
+            c.levels.push(picture(c.id + '.connect', '线索连连看', `把“${c.topic}”的线索和结果配成对。`, a, sources.map(l => l.explanation).join(' ').slice(0, 300)));
         }
     }
     for (let grade = 1; grade <= 6; grade++)

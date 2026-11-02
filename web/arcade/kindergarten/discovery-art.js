@@ -1,0 +1,30 @@
+// The same warm outlines and wooden materials as the original six scenes.
+const colors={coral:'#e8a194',teal:'#81b6b3',gold:'#edca80',light:'#d5e7cc',mid:'#8bb98d',dark:'#447b60'};
+const shapes={circle:'<circle cx="50" cy="50" r="32"/>',square:'<rect x="19" y="19" width="62" height="62" rx="7"/>',triangle:'<path d="M50 15 87 81H13Z" stroke-linejoin="round"/>',oval:'<ellipse cx="50" cy="50" rx="23" ry="35"/>'};
+const hands='<path d="M20 59q-6-15 1-18 5-1 9 13V29q0-8 7-7 5 1 5 8v23-26q0-7 6-7t6 7v27-21q0-7 6-7t6 7v23-15q0-6 6-6t6 7v24q-1 21-26 22-23 0-32-29Z" fill="#f1d0ac" stroke="#b99276" stroke-width="2.5"/>';
+const drops='<path d="M18 14q-10 15 0 15t0-15m61-7q-10 15 0 15t0-15" fill="#91c4cf"/>';
+export function discoveryArt(name){
+ if(name.startsWith('shape-'))return `<g fill="#91c2ba" stroke="#638e88" stroke-width="3">${shapes[name.slice(6)]||''}</g><circle cx="50" cy="49" r="6" fill="#fff2cf" stroke="#bca077" stroke-width="2"/>`;
+ if(name.startsWith('rod-')){const width=10+Number(name.slice(4))*14;return `<rect x="9" y="43" width="${width}" height="14" rx="5" fill="#df9f92" stroke="#b88073" stroke-width="2"/><path d="M14 47h${width-10}" stroke="#f5c7b5" stroke-width="4" stroke-linecap="round"/>`;}
+ if(name.startsWith('tile-'))return `<rect x="18" y="15" width="64" height="70" rx="7" fill="${colors[name.slice(5)]}" stroke="#a79c7d" stroke-width="2"/><path d="M21 24h58M21 76h58" stroke="#fff2d5" stroke-width="11"/>`;
+ if(name.startsWith('bead-'))return `<g fill="${{circle:colors.coral,square:colors.teal,triangle:colors.gold}[name.slice(5)]}" stroke="#a78b72" stroke-width="3">${shapes[name.slice(5)]||''}</g><circle cx="50" cy="50" r="7" fill="#fff9e7" stroke="#b59b7d" stroke-width="2"/>`;
+ if(name==='plate')return '<circle cx="50" cy="52" r="36" fill="#fff9e5" stroke="#8cb6b4" stroke-width="4"/><circle cx="50" cy="52" r="25" fill="#e0ede2" stroke="#b2d0c3" stroke-width="2"/><path d="M29 31q11-10 23-8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>';
+ if(name==='cup')return '<path d="M67 31q31-4 17 28-6 9-16 4" fill="none" stroke="#8baab5" stroke-width="7"/><path d="m21 23 5 57q20 13 41 0l5-57Z" fill="#bad5d9" stroke="#8baab5" stroke-width="3"/><ellipse cx="46" cy="23" rx="25" ry="8" fill="#fff6de" stroke="#8baab5" stroke-width="3"/><path d="M32 38v28" stroke="#eaf4ed" stroke-width="5" stroke-linecap="round"/>';
+ if(name==='sprout')return '<ellipse cx="50" cy="83" rx="35" ry="9" fill="#c9b28c"/><path d="M50 82V43m0 15Q17 60 18 30q27-1 32 28m0-12Q76 49 81 19 51 17 50 46" fill="#9ec298" stroke="#749f7c" stroke-width="3"/>';
+ if(name.endsWith('-hands'))return `${hands}${name==='wet-hands'||name==='rinse-hands'?drops:''}${name==='soap-hands'?'<rect x="10" y="11" width="28" height="17" rx="8" fill="#eab9c0" stroke="#b98d95" stroke-width="2"/><g fill="#fffaf0" stroke="#aac7cf" stroke-width="2"><circle cx="50" cy="47" r="12"/><circle cx="66" cy="56" r="10"/><circle cx="40" cy="61" r="9"/><circle cx="72" cy="22" r="6"/></g>':''}${name==='rinse-hands'?'<path d="M12 9h40v9H36v12H23V18H12Z" fill="#97babc"/><path d="M28 33v14m7-14v12m-14-12v12" stroke="#88c3d0" stroke-width="3"/>':''}${name==='dry-hands'?'<path d="M12 46q33 13 76 0v37q-38 12-76 0Z" fill="#fff4db" stroke="#cbb490" stroke-width="3"/><path d="M20 78h59" stroke="#a7c3bc" stroke-width="5"/>':''}`;
+ if(name==='eggs')return '<path d="M13 77Q4 23 87 20q2 64-74 57Z" fill="#a4c4a1" stroke="#759d83" stroke-width="3"/><g fill="#fff5d7" stroke="#c7ba8f" stroke-width="2"><ellipse cx="35" cy="52" rx="7" ry="9"/><ellipse cx="53" cy="45" rx="7" ry="9"/><ellipse cx="63" cy="62" rx="7" ry="9"/></g>';
+ if(name==='caterpillar')return '<path d="M13 81h76" stroke="#b9a582" stroke-width="4"/><g fill="#b8ce93" stroke="#7f9c72" stroke-width="2"><circle cx="22" cy="64" r="12"/><circle cx="40" cy="61" r="14"/><circle cx="60" cy="55" r="15"/><circle cx="78" cy="42" r="17"/></g><path d="m71 27-4-11m17 12 5-10" stroke="#7f9c72" stroke-width="3"/><circle cx="82" cy="40" r="3" fill="#476b71"/>';
+ if(name==='chrysalis')return '<path d="M12 17h76M50 17v14" stroke="#ab8d6b" stroke-width="6" stroke-linecap="round"/><path d="M50 30q-30 24-6 58 37-16 16-56Z" fill="#b9c58e" stroke="#81996e" stroke-width="3"/><path d="m35 49 27 9m-24 9 21 7" stroke="#e0dcb2" stroke-width="4"/>';
+ if(name==='butterfly')return '<g stroke="#b58d91" stroke-width="3"><path d="M48 48C7-12-9 62 40 60 1 74 27 105 49 66" fill="#eab5b8"/><path d="M52 48C93-12 109 62 60 60 99 74 73 105 51 66" fill="#eab5b8"/></g><path d="M50 40v32m-2-32-8-13m12 13 8-13" stroke="#9a826d" stroke-width="5" stroke-linecap="round"/><g fill="#fff0ca"><circle cx="25" cy="43" r="8"/><circle cx="75" cy="43" r="8"/></g>';
+ return null;
+}
+export function discoveryScene(kind,toy){
+ const base='<rect x="38" y="35" width="244" height="153" rx="20" fill="#ead7b6" stroke="#c5aa83" stroke-width="3"/><rect x="47" y="44" width="226" height="135" rx="15" fill="#fff6e0"/>';
+ if(kind==='inset')return base+toy('shape-circle',53,75,69,69)+toy('shape-triangle',125,75,69,69)+toy('shape-square',197,75,69,69);
+ if(kind==='rods')return base+[1,2,3,4,5].map((n,i)=>toy('rod-'+n,66,44+i*25,180,46)).join('');
+ if(kind==='colors')return base+['coral','teal','gold'].map((c,i)=>toy('tile-'+c,58+i*72,44,63,66)+toy('tile-'+c,58+i*72,112,63,66)).join('');
+ if(kind==='beads')return '<path d="M40 101q120 100 240 0" fill="none" stroke="#b99e7a" stroke-width="5"/>'+['circle','square','circle','square','circle'].map((s,i)=>toy('bead-'+s,35+i*49,87+Math.sin(i/4*Math.PI)*34,55,55)).join('');
+ if(kind==='table')return base+toy('bunny',54,29,68,68)+toy('bunny',182,29,68,68)+toy('plate',53,100,74,74)+toy('cup',117,110,47,54)+toy('plate',176,100,74,74)+toy('cup',238,110,40,54);
+ if(kind==='sequence')return base+toy('eggs',47,90,50,61)+toy('caterpillar',104,90,50,61)+toy('chrysalis',164,82,50,70)+toy('butterfly',220,80,50,72)+'<path d="M95 121h8m-4-4 4 4-4 4m53-4h8m-4-4 4 4-4 4m53-4h8m-4-4 4 4-4 4" fill="none" stroke="#b89e7c" stroke-width="3" stroke-linecap="round"/>';
+ return '';
+}

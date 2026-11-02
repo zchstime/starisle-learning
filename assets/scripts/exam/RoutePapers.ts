@@ -79,6 +79,26 @@ export const ROUTE_PAPERS = [
     "answer": "2"
    },
    {
+    "id": "math.g1.c8.l2",
+    "sourceId": "math.g1.c8.l2",
+    "topic": "6～10的认识和加、减法",
+    "prompt": "把“6～10的认识和加、减法”的题目情境和对应结果配成对。",
+    "explanation": "共有 6 份点心，送出 1 份，还剩几份？ → 5份；共有 7 份点心，送出 2 份，还剩几份？ → 5份（点心配送）；共有 9 份点心，送出 1 份，还剩几份？ → 8份",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "共有 6 份点心，送出 1 份，还剩几份？",
+     "共有 7 份点心，送出 2 份，还剩几份？",
+     "共有 9 份点心，送出 1 份，还剩几份？"
+    ],
+    "options": [
+     "8份",
+     "5份（点心配送）",
+     "5份"
+    ],
+    "answer": "5份|5份（点心配送）|8份"
+   },
+   {
     "id": "math.g1.c9.l1",
     "sourceId": "math.g1.c9.l1",
     "topic": "认识立体图形",
@@ -92,6 +112,41 @@ export const ROUTE_PAPERS = [
      "圆柱"
     ],
     "answer": "球"
+   },
+   {
+    "id": "math.g1.c10.l2",
+    "sourceId": "math.g1.c10.l2",
+    "topic": "11～20的认识",
+    "prompt": "把“11～20的认识”的题目情境和对应结果配成对。",
+    "explanation": "1 个十和 1 个一，合起来是多少？ → 11颗；1 个十和 2 个一，合起来是多少？ → 12颗；1 个十和 3 个一，合起来是多少？ → 13颗",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "1 个十和 1 个一，合起来是多少？",
+     "1 个十和 2 个一，合起来是多少？",
+     "1 个十和 3 个一，合起来是多少？"
+    ],
+    "options": [
+     "13颗",
+     "12颗",
+     "11颗"
+    ],
+    "answer": "11颗|12颗|13颗"
+   },
+   {
+    "id": "math.g1.c11.l1",
+    "sourceId": "math.g1.c11.l1",
+    "topic": "20以内的进位加法",
+    "prompt": "计算 8 + 5 时，为了先把 8 凑成 10，应该怎样拆分 5？",
+    "explanation": "把 5 分成 2 和 3，先算 8 + 2 = 10，再算 10 + 3 = 13。",
+    "points": 5,
+    "kind": "choice",
+    "options": [
+     "把 5 分成 2 和 3",
+     "把 5 分成 1 和 4",
+     "不用拆，把 8 变成 9"
+    ],
+    "answer": "把 5 分成 2 和 3"
    },
    {
     "id": "math.g1.c12.l1",
@@ -187,41 +242,6 @@ export const ROUTE_PAPERS = [
     "points": 5,
     "kind": "number",
     "answer": "5"
-   },
-   {
-    "id": "math.g1.c3.l2",
-    "sourceId": "math.g1.c3.l2",
-    "topic": "20以内进位加法",
-    "prompt": "灯塔需要 9 + 7 颗星光（填写数值）",
-    "explanation": "9 + 7 = 16",
-    "points": 5,
-    "kind": "number",
-    "answer": "16"
-   },
-   {
-    "id": "math.g1.c4.l2",
-    "sourceId": "math.g1.c4.l2",
-    "topic": "100以内数与加减法",
-    "prompt": "装上 20 + 16 颗星光（填写数值）",
-    "explanation": "20 + 16 = 36",
-    "points": 5,
-    "kind": "number",
-    "answer": "36"
-   },
-   {
-    "id": "math.g1.c5.l2",
-    "sourceId": "math.g1.c5.l2",
-    "topic": "数量比较与生活运算",
-    "prompt": "要跨过更宽的河面，选哪块桥板？",
-    "explanation": "桥板需要足够长，才能跨过河面。",
-    "points": 5,
-    "kind": "choice",
-    "options": [
-     "短于河宽",
-     "长于河宽",
-     "只有一小截"
-    ],
-    "answer": "长于河宽"
    }
   ]
  },
@@ -292,11 +312,16 @@ export const ROUTE_PAPERS = [
     "id": "math.g3.c8.l1",
     "sourceId": "math.g3.c8.l1",
     "topic": "混合运算",
-    "prompt": "能源值是 24 − 3 × 2，请输入能源值。（填写数值）",
-    "explanation": "先乘后减：24−6=18。",
+    "prompt": "计算 24 − 3 × 4，第一步应该算什么？",
+    "explanation": "先算 3 × 4 = 12，再算 24 − 12 = 12。",
     "points": 5,
-    "kind": "number",
-    "answer": "18"
+    "kind": "choice",
+    "options": [
+     "先算 3 × 4",
+     "先算 24 − 3",
+     "把 24 和 4 相加"
+    ],
+    "answer": "先算 3 × 4"
    },
    {
     "id": "math.g3.c9.l1",
@@ -334,6 +359,26 @@ export const ROUTE_PAPERS = [
     "answer": "线段"
    },
    {
+    "id": "math.g3.c12.l2",
+    "sourceId": "math.g3.c12.l2",
+    "topic": "分数的初步认识",
+    "prompt": "把“分数的初步认识”的题目情境和对应结果配成对。",
+    "explanation": "把花田平均分成 2 份，点亮其中 1 份。 → 6格；把花田平均分成 3 份，点亮其中 1 份。 → 4格；把花田平均分成 4 份，点亮其中 1 份。 → 3格",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "把花田平均分成 2 份，点亮其中 1 份。",
+     "把花田平均分成 3 份，点亮其中 1 份。",
+     "把花田平均分成 4 份，点亮其中 1 份。"
+    ],
+    "options": [
+     "3格",
+     "4格",
+     "6格"
+    ],
+    "answer": "6格|4格|3格"
+   },
+   {
     "id": "math.g3.c13.l1",
     "sourceId": "math.g3.c13.l1",
     "topic": "生活中的运动现象",
@@ -359,19 +404,64 @@ export const ROUTE_PAPERS = [
     "answer": "21"
    },
    {
-    "id": "math.g3.c17.l4",
-    "sourceId": "math.g3.c17.l4",
-    "topic": "数据的收集与整理 · 年月日",
-    "prompt": "4月开展观测，这个月有几天？",
-    "explanation": "四、六、九、十一月有30天。",
+    "id": "math.g3.c15.l2",
+    "sourceId": "math.g3.c15.l2",
+    "topic": "长方形和正方形的周长",
+    "prompt": "把“长方形和正方形的周长”的题目情境和对应结果配成对。",
+    "explanation": "长方形花田长 5 米、宽 3 米，围一圈要几米？ → 16米；长方形花田长 6 米、宽 4 米，围一圈要几米？ → 20米；长方形花田长 7 米、宽 5 米，围一圈要几米？ → 24米",
     "points": 5,
-    "kind": "choice",
-    "options": [
-     "30天",
-     "28天",
-     "31天"
+    "kind": "match",
+    "prompts": [
+     "长方形花田长 5 米、宽 3 米，围一圈要几米？",
+     "长方形花田长 6 米、宽 4 米，围一圈要几米？",
+     "长方形花田长 7 米、宽 5 米，围一圈要几米？"
     ],
-    "answer": "30天"
+    "options": [
+     "24米",
+     "20米",
+     "16米"
+    ],
+    "answer": "16米|20米|24米"
+   },
+   {
+    "id": "math.g3.c16.l2",
+    "sourceId": "math.g3.c16.l2",
+    "topic": "面积和面积单位",
+    "prompt": "把“面积和面积单位”的题目情境和对应结果配成对。",
+    "explanation": "长 3 米、宽 2 米，每格1平方米，铺满后面积是多少？ → 6格；长 4 米、宽 3 米，每格1平方米，铺满后面积是多少？ → 12格；长 5 米、宽 2 米，每格1平方米，铺满后面积是多少？ → 10格",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "长 3 米、宽 2 米，每格1平方米，铺满后面积是多少？",
+     "长 4 米、宽 3 米，每格1平方米，铺满后面积是多少？",
+     "长 5 米、宽 2 米，每格1平方米，铺满后面积是多少？"
+    ],
+    "options": [
+     "10格",
+     "12格",
+     "6格"
+    ],
+    "answer": "6格|12格|10格"
+   },
+   {
+    "id": "math.g3.c17.l2",
+    "sourceId": "math.g3.c17.l2",
+    "topic": "数据的收集与整理 · 年月日",
+    "prompt": "把“数据的收集与整理 · 年月日”的题目情境和对应结果配成对。",
+    "explanation": "选择苹果的6人，选择梨的4人，一共调查几人？ → 10人；晴天记录7次，雨天记录6次，一共记录多少次？ → 13次；步行上学8人，乘车上学5人，步行的比乘车的多几人？ → 3人",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "选择苹果的6人，选择梨的4人，一共调查几人？",
+     "晴天记录7次，雨天记录6次，一共记录多少次？",
+     "步行上学8人，乘车上学5人，步行的比乘车的多几人？"
+    ],
+    "options": [
+     "3人",
+     "13次",
+     "10人"
+    ],
+    "answer": "10人|13次|3人"
    },
    {
     "id": "math.g3.c18.l1",
@@ -427,41 +517,6 @@ export const ROUTE_PAPERS = [
     "points": 5,
     "kind": "number",
     "answer": "16"
-   },
-   {
-    "id": "math.g3.c7.l2",
-    "sourceId": "math.g3.c7.l2",
-    "topic": "观察物体",
-    "prompt": "正对竖直圆柱的上底面看，看到什么图形？",
-    "explanation": "观察方向不同，看到的形状可能不同。",
-    "points": 5,
-    "kind": "choice",
-    "options": [
-     "圆形",
-     "三角形",
-     "长方形"
-    ],
-    "answer": "圆形"
-   },
-   {
-    "id": "math.g3.c8.l2",
-    "sourceId": "math.g3.c8.l2",
-    "topic": "混合运算",
-    "prompt": "能源值是 27 − 3 × 3，请输入能源值。（填写数值）",
-    "explanation": "先乘后减：27−9=18。",
-    "points": 5,
-    "kind": "number",
-    "answer": "18"
-   },
-   {
-    "id": "math.g3.c9.l2",
-    "sourceId": "math.g3.c9.l2",
-    "topic": "毫米、分米和千米",
-    "prompt": "3 分米长的绳子，等于多少厘米？（填写数值，单位：厘米）",
-    "explanation": "1分米=10厘米。",
-    "points": 5,
-    "kind": "number",
-    "answer": "30"
    }
   ]
  },
@@ -577,11 +632,16 @@ export const ROUTE_PAPERS = [
     "id": "math.g4.c10.l1",
     "sourceId": "math.g4.c10.l1",
     "topic": "加法模型和乘法模型",
-    "prompt": "一船6箱，另一船3箱，一共几箱？（填写数值，单位：箱）",
-    "explanation": "合并两部分：6+3=9。",
+    "prompt": "四（1）班有 28 人，四（2）班有 32 人，求两个班一共多少人。应该选择哪种模型？",
+    "explanation": "两个不同部分合并，用加法模型：28 + 32 = 60（人）。",
     "points": 5,
-    "kind": "number",
-    "answer": "9"
+    "kind": "choice",
+    "options": [
+     "两个不同部分合并，用 28 + 32",
+     "每班人数相同，用 28 × 32",
+     "求相差人数，用 32 − 28"
+    ],
+    "answer": "两个不同部分合并，用 28 + 32"
    },
    {
     "id": "math.g4.c11.l1",
@@ -597,6 +657,21 @@ export const ROUTE_PAPERS = [
      "三角形"
     ],
     "answer": "平行四边形"
+   },
+   {
+    "id": "math.g4.c12.l1",
+    "sourceId": "math.g4.c12.l1",
+    "topic": "条形统计图",
+    "prompt": "条形越长通常表示什么？",
+    "explanation": "条形的长度对应数量的多少，条形越长，数量通常越多。",
+    "points": 5,
+    "kind": "choice",
+    "options": [
+     "数量越多",
+     "数量越少",
+     "日期越早"
+    ],
+    "answer": "数量越多"
    },
    {
     "id": "math.g4.c13.l1",
@@ -639,6 +714,26 @@ export const ROUTE_PAPERS = [
     "answer": "80"
    },
    {
+    "id": "math.g4.c17.l2",
+    "sourceId": "math.g4.c17.l2",
+    "topic": "平均数",
+    "prompt": "把“平均数”的题目情境和对应结果配成对。",
+    "explanation": "三天采集 8、10、12 颗星，平均每天几颗？ → 10颗；三天采集 9、11、13 颗星，平均每天几颗？ → 11颗；三天采集 10、12、14 颗星，平均每天几颗？ → 12颗",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "三天采集 8、10、12 颗星，平均每天几颗？",
+     "三天采集 9、11、13 颗星，平均每天几颗？",
+     "三天采集 10、12、14 颗星，平均每天几颗？"
+    ],
+    "options": [
+     "12颗",
+     "11颗",
+     "10颗"
+    ],
+    "answer": "10颗|11颗|12颗"
+   },
+   {
     "id": "math.g4.c18.l1",
     "sourceId": "math.g4.c18.l1",
     "topic": "数量关系与解决问题",
@@ -667,26 +762,6 @@ export const ROUTE_PAPERS = [
     "points": 5,
     "kind": "number",
     "answer": "2730"
-   },
-   {
-    "id": "math.g4.c3.l2",
-    "sourceId": "math.g4.c3.l2",
-    "topic": "小数的意义和加减法",
-    "prompt": "有 3.5 元，用掉 1.2 元，把余额装进钱袋（填写数值）",
-    "explanation": "3.5 − 1.2 = 2.3 元",
-    "points": 5,
-    "kind": "number",
-    "answer": "2.3"
-   },
-   {
-    "id": "math.g4.c4.l2",
-    "sourceId": "math.g4.c4.l2",
-    "topic": "四则运算与运算顺序",
-    "prompt": "装上 60 − 24 ÷ 3 颗能源（填写数值）",
-    "explanation": "先除后减：60 − 8 = 52",
-    "points": 5,
-    "kind": "number",
-    "answer": "52"
    }
   ]
  },
@@ -752,20 +827,30 @@ export const ROUTE_PAPERS = [
     "id": "math.g5.c8.l1",
     "sourceId": "math.g5.c8.l1",
     "topic": "小数乘法",
-    "prompt": "每袋 1.2 元，买 2 袋，一共几元？（填写数值，单位：元）",
-    "explanation": "1.2×2=2.4。",
+    "prompt": "计算 1.2 × 3，先算 12 × 3 = 36，积应该写成多少？",
+    "explanation": "一个因数有 1 位小数，积从右边起数 1 位点小数点，得到 3.6。",
     "points": 5,
-    "kind": "number",
-    "answer": "2.4"
+    "kind": "choice",
+    "options": [
+     "3.6",
+     "36",
+     "0.36"
+    ],
+    "answer": "3.6"
    },
    {
     "id": "math.g5.c9.l1",
     "sourceId": "math.g5.c9.l1",
     "topic": "小数除法",
-    "prompt": "4.8 元买 4 袋，每袋几元？（填写数值，单位：元）",
-    "explanation": "4.8÷4=1.2。",
+    "prompt": "4.8 ÷ 4 表示把 48 个十分之一平均分成4份，结果是多少？",
+    "explanation": "12个十分之一是1.2，所以4.8 ÷ 4 = 1.2。",
     "points": 5,
-    "kind": "number",
+    "kind": "choice",
+    "options": [
+     "1.2",
+     "12",
+     "0.12"
+    ],
     "answer": "1.2"
    },
    {
@@ -787,6 +872,26 @@ export const ROUTE_PAPERS = [
     "points": 5,
     "kind": "number",
     "answer": "12"
+   },
+   {
+    "id": "math.g5.c12.l2",
+    "sourceId": "math.g5.c12.l2",
+    "topic": "多边形的面积",
+    "prompt": "把“多边形的面积”的题目情境和对应结果配成对。",
+    "explanation": "三角形底 6 米，高 3 米，面积几平方米？ → 9平方米；三角形底 7 米，高 4 米，面积几平方米？ → 14平方米；三角形底 8 米，高 3 米，面积几平方米？ → 12平方米",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "三角形底 6 米，高 3 米，面积几平方米？",
+     "三角形底 7 米，高 4 米，面积几平方米？",
+     "三角形底 8 米，高 3 米，面积几平方米？"
+    ],
+    "options": [
+     "12平方米",
+     "14平方米",
+     "9平方米"
+    ],
+    "answer": "9平方米|14平方米|12平方米"
    },
    {
     "id": "math.g5.c13.l1",
@@ -819,6 +924,46 @@ export const ROUTE_PAPERS = [
     "answer": "3"
    },
    {
+    "id": "math.g5.c15.l2",
+    "sourceId": "math.g5.c15.l2",
+    "topic": "分数的意义和性质",
+    "prompt": "把“分数的意义和性质”的题目情境和对应结果配成对。",
+    "explanation": "用12格花田表示 1/2。 → 6格；用12格花田表示 1/3。 → 4格；用12格花田表示 1/4。 → 3格",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "用12格花田表示 1/2。",
+     "用12格花田表示 1/3。",
+     "用12格花田表示 1/4。"
+    ],
+    "options": [
+     "3格",
+     "4格",
+     "6格"
+    ],
+    "answer": "6格|4格|3格"
+   },
+   {
+    "id": "math.g5.c16.l2",
+    "sourceId": "math.g5.c16.l2",
+    "topic": "分数加减法",
+    "prompt": "把“分数加减法”的题目情境和对应结果配成对。",
+    "explanation": "把花田的 2/12 加上 1/12 点亮。 → 3格；把花田的 3/12 加上 1/12 点亮。 → 4格；把花田的 4/12 加上 1/12 点亮。 → 5格",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "把花田的 2/12 加上 1/12 点亮。",
+     "把花田的 3/12 加上 1/12 点亮。",
+     "把花田的 4/12 加上 1/12 点亮。"
+    ],
+    "options": [
+     "5格",
+     "4格",
+     "3格"
+    ],
+    "answer": "3格|4格|5格"
+   },
+   {
     "id": "math.g5.c17.l1",
     "sourceId": "math.g5.c17.l1",
     "topic": "长方体和正方体",
@@ -827,6 +972,26 @@ export const ROUTE_PAPERS = [
     "points": 5,
     "kind": "number",
     "answer": "24"
+   },
+   {
+    "id": "math.g5.c18.l2",
+    "sourceId": "math.g5.c18.l2",
+    "topic": "折线统计图",
+    "prompt": "把“折线统计图”的题目情境和对应结果配成对。",
+    "explanation": "两次记录从 12 增到 20，增加多少？ → 8颗；两次记录从 13 增到 22，增加多少？ → 9颗；两次记录从 14 增到 24，增加多少？ → 10颗",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "两次记录从 12 增到 20，增加多少？",
+     "两次记录从 13 增到 22，增加多少？",
+     "两次记录从 14 增到 24，增加多少？"
+    ],
+    "options": [
+     "10颗",
+     "9颗",
+     "8颗"
+    ],
+    "answer": "8颗|9颗|10颗"
    },
    {
     "id": "math.g5.c1.l2",
@@ -867,46 +1032,6 @@ export const ROUTE_PAPERS = [
     "points": 5,
     "kind": "number",
     "answer": "1.2"
-   },
-   {
-    "id": "math.g5.c7.l2",
-    "sourceId": "math.g5.c7.l2",
-    "topic": "观察简单组合体",
-    "prompt": "底层排着4个小正方体，上层再放2个（没有隐藏积木），共几个？（填写数值，单位：个）",
-    "explanation": "4+2=6个。",
-    "points": 5,
-    "kind": "number",
-    "answer": "6"
-   },
-   {
-    "id": "math.g5.c8.l2",
-    "sourceId": "math.g5.c8.l2",
-    "topic": "小数乘法",
-    "prompt": "每袋 1.3 元，买 3 袋，一共几元？（填写数值，单位：元）",
-    "explanation": "1.3×3=3.9。",
-    "points": 5,
-    "kind": "number",
-    "answer": "3.9"
-   },
-   {
-    "id": "math.g5.c9.l2",
-    "sourceId": "math.g5.c9.l2",
-    "topic": "小数除法",
-    "prompt": "5.2 元买 4 袋，每袋几元？（填写数值，单位：元）",
-    "explanation": "5.2÷4=1.3。",
-    "points": 5,
-    "kind": "number",
-    "answer": "1.3"
-   },
-   {
-    "id": "math.g5.c10.l2",
-    "sourceId": "math.g5.c10.l2",
-    "topic": "图形的运动",
-    "prompt": "小旗从方格第2列平移到第6列，向右移动几格？（填写数值，单位：格）",
-    "explanation": "终点列数−起点列数=6−2=4。",
-    "points": 5,
-    "kind": "number",
-    "answer": "4"
    }
   ]
  },
@@ -977,21 +1102,71 @@ export const ROUTE_PAPERS = [
     "id": "math.g6.c8.l1",
     "sourceId": "math.g6.c8.l1",
     "topic": "分数乘法",
-    "prompt": "24 颗星的 2/3 要送进灯塔，送多少颗？（填写数值，单位：颗）",
-    "explanation": "24×2/3=16。",
+    "prompt": "求 24 的 2/3，哪一步正确解释了分母3和分子2？",
+    "explanation": "24 ÷ 3 × 2 = 16，所以 24 × 2/3 = 16。",
     "points": 5,
-    "kind": "number",
-    "answer": "16"
+    "kind": "choice",
+    "options": [
+     "先把24平均分成3份，再取2份",
+     "先把24平均分成2份，再取3份",
+     "把24、2、3直接相加"
+    ],
+    "answer": "先把24平均分成3份，再取2份"
    },
    {
     "id": "math.g6.c9.l1",
     "sourceId": "math.g6.c9.l1",
     "topic": "分数除法",
-    "prompt": "修好的 12 盏灯占全部的 3/4，一共有几盏？（填写数值，单位：盏）",
-    "explanation": "12÷3/4=16。",
+    "prompt": "12 盏灯占全部的 3/4，求全部灯数。哪一个数量关系正确？",
+    "explanation": "设全部有x盏，x × 3/4 = 12，所以x = 12 ÷ 3/4 = 16。",
     "points": 5,
-    "kind": "number",
-    "answer": "16"
+    "kind": "choice",
+    "options": [
+     "全部灯数 × 3/4 = 12",
+     "12 × 3/4 = 全部灯数",
+     "全部灯数 + 3/4 = 12"
+    ],
+    "answer": "全部灯数 × 3/4 = 12"
+   },
+   {
+    "id": "math.g6.c10.l2",
+    "sourceId": "math.g6.c10.l2",
+    "topic": "生活中的负数",
+    "prompt": "把“生活中的负数”的题目情境和对应结果配成对。",
+    "explanation": "温度比 0℃ 低 1℃，请用正负数记录。 → -1℃；温度比 0℃ 低 2℃，请用正负数记录。 → -2℃；温度比 0℃ 低 3℃，请用正负数记录。 → -3℃",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "温度比 0℃ 低 1℃，请用正负数记录。",
+     "温度比 0℃ 低 2℃，请用正负数记录。",
+     "温度比 0℃ 低 3℃，请用正负数记录。"
+    ],
+    "options": [
+     "-3℃",
+     "-2℃",
+     "-1℃"
+    ],
+    "answer": "-1℃|-2℃|-3℃"
+   },
+   {
+    "id": "math.g6.c11.l2",
+    "sourceId": "math.g6.c11.l2",
+    "topic": "圆",
+    "prompt": "把“圆”的题目情境和对应结果配成对。",
+    "explanation": "圆形花坛的半径是 2 米，直径几米？ → 4米；圆形花坛的半径是 3 米，直径几米？ → 6米；圆形花坛的半径是 4 米，直径几米？ → 8米",
+    "points": 5,
+    "kind": "match",
+    "prompts": [
+     "圆形花坛的半径是 2 米，直径几米？",
+     "圆形花坛的半径是 3 米，直径几米？",
+     "圆形花坛的半径是 4 米，直径几米？"
+    ],
+    "options": [
+     "8米",
+     "6米",
+     "4米"
+    ],
+    "answer": "4米|6米|8米"
    },
    {
     "id": "math.g6.c12.l1",
@@ -1102,31 +1277,6 @@ export const ROUTE_PAPERS = [
     "points": 5,
     "kind": "number",
     "answer": "36"
-   },
-   {
-    "id": "math.g6.c7.l2",
-    "sourceId": "math.g6.c7.l2",
-    "topic": "确定位置",
-    "prompt": "灯塔在第 3 列、第 4 行。正确数对是？",
-    "explanation": "有序数对先列后行。",
-    "points": 5,
-    "kind": "choice",
-    "options": [
-     "（3，4）",
-     "（10，3）",
-     "（4，10）"
-    ],
-    "answer": "（3，4）"
-   },
-   {
-    "id": "math.g6.c8.l2",
-    "sourceId": "math.g6.c8.l2",
-    "topic": "分数乘法",
-    "prompt": "30 颗星的 2/3 要送进灯塔，送多少颗？（填写数值，单位：颗）",
-    "explanation": "30×2/3=20。",
-    "points": 5,
-    "kind": "number",
-    "answer": "20"
    }
   ]
  },
@@ -1840,38 +1990,39 @@ export const ROUTE_PAPERS = [
     "id": "english.g3.c5.l3",
     "sourceId": "english.g3.c5.l3",
     "topic": "Making friends",
-    "prompt": "送给伙伴一张口信：我的名字是星宝",
-    "explanation": "My name is Star：我的名字是星宝。",
+    "prompt": "送给伙伴一张口信：你好，我是星宝",
+    "explanation": "Hello I am Star：你好，我是星宝。",
     "points": 5,
     "kind": "order",
     "options": [
      "Star",
-     "is",
-     "name",
-     "My"
+     "am",
+     "I",
+     "Hello"
     ],
-    "answer": "My|name|is|Star"
+    "answer": "Hello|I|am|Star"
    },
    {
     "id": "english.g3.c6.l3",
     "sourceId": "english.g3.c6.l3",
     "topic": "Different families",
-    "prompt": "送给伙伴一张口信：这是我的妈妈",
-    "explanation": "This is my mother：这是我的妈妈。",
+    "prompt": "送给伙伴一张口信：这是我的家庭照片",
+    "explanation": "This is my family photo：这是我的家庭照片。",
     "points": 5,
     "kind": "order",
     "options": [
-     "mother",
+     "photo",
+     "family",
      "my",
      "is",
      "This"
     ],
-    "answer": "This|is|my|mother"
+    "answer": "This|is|my|family|photo"
    },
    {
     "id": "english.g3.c7.l3",
     "sourceId": "english.g3.c7.l3",
-    "topic": "Our animal friends",
+    "topic": "Amazing animals",
     "prompt": "送给伙伴一张口信：我有一只小狗",
     "explanation": "I have a little dog：我有一只小狗。",
     "points": 5,
@@ -1954,7 +2105,7 @@ export const ROUTE_PAPERS = [
    {
     "id": "english.g3.c12.l3",
     "sourceId": "english.g3.c12.l3",
-    "topic": "My words and actions",
+    "topic": "Expressing yourself",
     "prompt": "送给伙伴一张口信：请帮助我",
     "explanation": "Please help me：请帮助我。",
     "points": 5,
@@ -1969,7 +2120,7 @@ export const ROUTE_PAPERS = [
    {
     "id": "english.g3.c13.l3",
     "sourceId": "english.g3.c13.l3",
-    "topic": "Tools and senses for learning",
+    "topic": "Learning better",
     "prompt": "送给伙伴一张口信：我用眼睛看",
     "explanation": "I see with my eyes：我用眼睛看。",
     "points": 5,
@@ -2003,7 +2154,7 @@ export const ROUTE_PAPERS = [
    {
     "id": "english.g3.c15.l3",
     "sourceId": "english.g3.c15.l3",
-    "topic": "Old things",
+    "topic": "Old toys",
     "prompt": "送给伙伴一张口信：这是我的旧玩具",
     "explanation": "This is my old toy：这是我的旧玩具。",
     "points": 5,
@@ -3302,91 +3453,109 @@ export const ROUTE_PAPERS = [
     "id": "chinese.g1.story1.l2",
     "sourceId": "chinese.g1.story1.l2",
     "topic": "识字与拼音",
-    "prompt": "给月亮挂字牌，选出“月”的读音。",
-    "explanation": "月读 yuè，月亮的月。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "日读 rì，可以组成“日出”。；月读 yuè，月亮的月。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "给太阳挂字牌，选出读音是 rì 的字。",
+     "给月亮挂字牌，选出“月”的读音。"
+    ],
     "options": [
      "yuè",
-     "rì",
-     "mù"
+     "日"
     ],
-    "answer": "yuè"
+    "answer": "日|yuè"
    },
    {
     "id": "chinese.g1.story2.l2",
     "sourceId": "chinese.g1.story2.l2",
     "topic": "形近字与量词",
-    "prompt": "给树挂上量词：一（ ）树。",
-    "explanation": "树木通常说“一棵树”。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "木可以组成树木。；树木通常说“一棵树”。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "小树需要“木”字牌，选哪张？",
+     "给树挂上量词：一（ ）树。"
+    ],
     "options": [
      "棵",
-     "只",
-     "条"
+     "木"
     ],
-    "answer": "棵"
+    "answer": "木|棵"
    },
    {
     "id": "chinese.g1.story3.l2",
     "sourceId": "chinese.g1.story3.l2",
     "topic": "词语与完整句",
-    "prompt": "别人帮了你，应送哪张词卡？",
-    "explanation": "得到帮助后可以说“谢谢”。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "“请问”能礼貌地开启询问。；得到帮助后可以说“谢谢”。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "想借铅笔，开头说哪个词更有礼貌？",
+     "别人帮了你，应送哪张词卡？"
+    ],
     "options": [
      "谢谢",
-     "快走",
-     "不要"
+     "请问"
     ],
-    "answer": "谢谢"
+    "answer": "请问|谢谢"
    },
    {
     "id": "chinese.g1.story4.l2",
     "sourceId": "chinese.g1.story4.l2",
     "topic": "反义词与描述",
-    "prompt": "给草地挑颜色词：绿绿的（ ）。",
-    "explanation": "绿绿的草地，颜色与事物对应。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "大和小表示相反的大小。；绿绿的草地，颜色与事物对应。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "小路标需要“大”的反义词。",
+     "给草地挑颜色词：绿绿的（ ）。"
+    ],
     "options": [
      "草地",
-     "白云",
-     "雪花"
+     "小"
     ],
-    "answer": "草地"
+    "answer": "小|草地"
    },
    {
     "id": "chinese.g1.story5.l2",
     "sourceId": "chinese.g1.story5.l2",
     "topic": "读句与时间顺序",
-    "prompt": "要问“你带伞了吗”，结尾用什么？",
-    "explanation": "向别人提问，句末用问号。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "说下雨，动作词用“下”。；向别人提问，句末用问号。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "雨点落下来，选对动作词：雨（ ）了。",
+     "要问“你带伞了吗”，结尾用什么？"
+    ],
     "options": [
      "？",
-     "。",
-     "，"
+     "下"
     ],
-    "answer": "？"
+    "answer": "下|？"
    },
    {
     "id": "chinese.g1.story6.l2",
     "sourceId": "chinese.g1.story6.l2",
     "topic": "读懂短文与表达",
-    "prompt": "“晚上”的反义词卡选哪张？",
-    "explanation": "白天与晚上相对。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "星星用量词“颗”。；白天与晚上相对。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "给星空找量词：一（ ）星星。",
+     "“晚上”的反义词卡选哪张？"
+    ],
     "options": [
      "白天",
-     "夜里",
-     "夜晚"
+     "颗"
     ],
-    "answer": "白天"
+    "answer": "颗|白天"
    },
    {
     "id": "chinese.g1.c1.l3",
@@ -3614,91 +3783,109 @@ export const ROUTE_PAPERS = [
     "id": "chinese.g2.story1.l2",
     "sourceId": "chinese.g2.story1.l2",
     "topic": "形近字与词语搭配",
-    "prompt": "给动作选伙伴：（ ）眼睛。",
-    "explanation": "眨眼睛是合适的动宾搭配。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "杯子盛水；怀、坏与杯字形相近。；眨眼睛是合适的动宾搭配。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "把信送到正确词语里：一（ ）清水。",
+     "给动作选伙伴：（ ）眼睛。"
+    ],
     "options": [
      "眨",
-     "站",
-     "跑"
+     "杯"
     ],
-    "answer": "眨"
+    "answer": "杯|眨"
    },
    {
     "id": "chinese.g2.story2.l2",
     "sourceId": "chinese.g2.story2.l2",
     "topic": "拟声词与生动表达",
-    "prompt": "给溪水选动作：溪水（ ）向前。",
-    "explanation": "流淌描写水的流动。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "沙沙可描写风吹树叶的声音。；流淌描写水的流动。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "风吹树叶，哪张声音卡合适？",
+     "给溪水选动作：溪水（ ）向前。"
+    ],
     "options": [
      "流淌",
-     "站立",
-     "啃咬"
+     "沙沙"
     ],
-    "answer": "流淌"
+    "answer": "沙沙|流淌"
    },
    {
     "id": "chinese.g2.story3.l2",
     "sourceId": "chinese.g2.story3.l2",
     "topic": "留言与信息提取",
-    "prompt": "“明天下午三点”告诉对方什么？",
-    "explanation": "这组词交代了具体时间。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "称呼说明留言写给谁。；这组词交代了具体时间。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "给同学留言，先写什么能表明收信人？",
+     "“明天下午三点”告诉对方什么？"
+    ],
     "options": [
      "时间",
-     "地点",
-     "人物长相"
+     "同学的称呼"
     ],
-    "answer": "时间"
+    "answer": "同学的称呼|时间"
    },
    {
     "id": "chinese.g2.story4.l2",
     "sourceId": "chinese.g2.story4.l2",
     "topic": "因果与人物行为",
-    "prompt": "“连忙”最接近哪个词？",
-    "explanation": "连忙表示赶紧做一件事。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "因为和所以能连接原因与结果。；连忙表示赶紧做一件事。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "下雨不能出门，选合适的连接词：（ ）下雨，所以改在屋里读书。",
+     "“连忙”最接近哪个词？"
+    ],
     "options": [
      "赶紧",
-     "慢慢",
-     "一直"
+     "因为"
     ],
-    "answer": "赶紧"
+    "answer": "因为|赶紧"
    },
    {
     "id": "chinese.g2.story5.l2",
     "sourceId": "chinese.g2.story5.l2",
     "topic": "顺序与观察记录",
-    "prompt": "观察日记中的哪句话更具体？",
-    "explanation": "叶子的数量是具体的观察结果。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "这里的冒出是长出来。；叶子的数量是具体的观察结果。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "种子冒出小芽，“冒”可换成哪个词？",
+     "观察日记中的哪句话更具体？"
+    ],
     "options": [
      "小芽长出了两片叶子。",
-     "小芽真好。",
-     "小芽很不错。"
+     "长出"
     ],
-    "answer": "小芽长出了两片叶子。"
+    "answer": "长出|小芽长出了两片叶子。"
    },
    {
     "id": "chinese.g2.story6.l2",
     "sourceId": "chinese.g2.story6.l2",
     "topic": "事件经过与概括",
-    "prompt": "“终于把书送到了”中，“终于”表示什么？",
-    "explanation": "终于强调经历过程后达到结果。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "为难可表示感到难办。；终于强调经历过程后达到结果。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "想说“不知道怎么办”，哪个词合适？",
+     "“终于把书送到了”中，“终于”表示什么？"
+    ],
     "options": [
      "经过努力后实现",
-     "还没开始",
-     "永远做不到"
+     "为难"
     ],
-    "answer": "经过努力后实现"
+    "answer": "为难|经过努力后实现"
    },
    {
     "id": "chinese.g2.c1.l3",
@@ -3927,91 +4114,109 @@ export const ROUTE_PAPERS = [
     "id": "chinese.g3.story1.l2",
     "sourceId": "chinese.g3.story1.l2",
     "topic": "联系语境理解词语",
-    "prompt": "“清晨的空气很（ ）”，选合适词语。",
-    "explanation": "清新形容空气；清脆常形容声音。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "雾散开后，景物会更清楚。；清新形容空气；清脆常形容声音。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "“薄雾慢慢散开”，这里“散开”是什么意思？",
+     "“清晨的空气很（ ）”，选合适词语。"
+    ],
     "options": [
      "清新",
-     "清楚",
-     "清脆"
+     "逐渐消散"
     ],
-    "answer": "清新"
+    "answer": "逐渐消散|清新"
    },
    {
     "id": "chinese.g3.story2.l2",
     "sourceId": "chinese.g3.story2.l2",
     "topic": "句意与语序",
-    "prompt": "“绿叶在风中跳舞”把什么写得像人？",
-    "explanation": "绿叶被赋予人的舞蹈动作。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "慢慢修饰靠岸的速度。；绿叶被赋予人的舞蹈动作。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "“小船慢慢靠岸”，“慢慢”说明什么？",
+     "“绿叶在风中跳舞”把什么写得像人？"
+    ],
     "options": [
      "绿叶",
-     "风中的人",
-     "舞台"
+     "动作的速度"
     ],
-    "answer": "绿叶"
+    "answer": "动作的速度|绿叶"
    },
    {
     "id": "chinese.g3.story3.l2",
     "sourceId": "chinese.g3.story3.l2",
     "topic": "实用阅读与清楚表达",
-    "prompt": "通知里的语言怎样更方便执行？",
-    "explanation": "明确的信息能减少误解。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "参加者需要知道何时、何地集合。；明确的信息能减少误解。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "通知“周五举行活动”还缺哪类重要信息？",
+     "通知里的语言怎样更方便执行？"
+    ],
     "options": [
      "清楚具体",
-     "只用夸张句",
-     "尽量模糊"
+     "具体时间和地点"
     ],
-    "answer": "清楚具体"
+    "answer": "具体时间和地点|清楚具体"
    },
    {
     "id": "chinese.g3.story4.l2",
     "sourceId": "chinese.g3.story4.l2",
     "topic": "预测与依据",
-    "prompt": "“门缝里透出灯光”，“透出”说明灯光怎样？",
-    "explanation": "联系门缝可理解透出的意思。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "有根据的预测要联系已有内容。；联系门缝可理解透出的意思。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "预测故事后续时，应该主要依据什么？",
+     "“门缝里透出灯光”，“透出”说明灯光怎样？"
+    ],
     "options": [
      "从缝隙显露出来",
-     "彻底熄灭",
-     "变成声音"
+     "已有情节线索"
     ],
-    "answer": "从缝隙显露出来"
+    "answer": "已有情节线索|从缝隙显露出来"
    },
    {
     "id": "chinese.g3.story5.l2",
     "sourceId": "chinese.g3.story5.l2",
     "topic": "关键句与段意",
-    "prompt": "概括一段话时，怎样处理次要细节？",
-    "explanation": "概括保留主要内容，不罗列所有细节。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "开头句应能统领后面的内容。；概括保留主要内容，不罗列所有细节。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "一段话后面都在介绍花的颜色，开头选哪句？",
+     "概括一段话时，怎样处理次要细节？"
+    ],
     "options": [
      "可以适当省去",
-     "必须全部重复",
-     "全部改成想象"
+     "花园里的花五颜六色。"
     ],
-    "answer": "可以适当省去"
+    "answer": "花园里的花五颜六色。|可以适当省去"
    },
    {
     "id": "chinese.g3.story6.l2",
     "sourceId": "chinese.g3.story6.l2",
     "topic": "细节与有序记录",
-    "prompt": "日记中的“第二天”有什么作用？",
-    "explanation": "时间词帮助把连续观察连起来。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "数量和位置都能通过观察核对。；时间词帮助把连续观察连起来。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "观察植物后，哪条记录有可核对的细节？",
+     "日记中的“第二天”有什么作用？"
+    ],
     "options": [
      "提示时间变化",
-     "说明植物颜色",
-     "表示作者姓名"
+     "叶边出现了三个小芽。"
     ],
-    "answer": "提示时间变化"
+    "answer": "叶边出现了三个小芽。|提示时间变化"
    },
    {
     "id": "chinese.g3.c1.l3",
@@ -4240,91 +4445,109 @@ export const ROUTE_PAPERS = [
     "id": "chinese.g4.story1.l2",
     "sourceId": "chinese.g4.story1.l2",
     "topic": "提问与阅读策略",
-    "prompt": "“谨慎地前进”中的“谨慎”接近什么？",
-    "explanation": "联系前进的情境，谨慎表示小心。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "问题应围绕事件原因。；联系前进的情境，谨慎表示小心。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "阅读“飞船为何绕行”时，哪个问题更有助于理解？",
+     "“谨慎地前进”中的“谨慎”接近什么？"
+    ],
     "options": [
      "小心慎重",
-     "随心所欲",
-     "兴高采烈"
+     "绕行是为了避开什么？"
     ],
-    "answer": "小心慎重"
+    "answer": "绕行是为了避开什么？|小心慎重"
    },
    {
     "id": "chinese.g4.story2.l2",
     "sourceId": "chinese.g4.story2.l2",
     "topic": "动作与人物特点",
-    "prompt": "“一言不发”是什么意思？",
-    "explanation": "一言不发指不说话。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "反复攥纸条能传达紧张情绪。；一言不发指不说话。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "表现人物紧张，哪个动作细节更贴切？",
+     "“一言不发”是什么意思？"
+    ],
     "options": [
      "一句话也不说",
-     "说了一句话",
-     "不断大声讨论"
+     "反复攥紧手里的纸条"
     ],
-    "answer": "一句话也不说"
+    "answer": "反复攥紧手里的纸条|一句话也不说"
    },
    {
     "id": "chinese.g4.story3.l2",
     "sourceId": "chinese.g4.story3.l2",
     "topic": "游览顺序与过渡",
-    "prompt": "两段分别写山脚和山顶，哪个过渡更顺畅？",
-    "explanation": "过渡连接前后的地点。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "走过石桥说明游览位置变化。；过渡连接前后的地点。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "按游览顺序介绍公园，哪个词能提示换地点？",
+     "两段分别写山脚和山顶，哪个过渡更顺畅？"
+    ],
     "options": [
      "沿石阶向上，我们来到山顶。",
-     "山下的饭很香。",
-     "昨天我看了一本书。"
+     "走过石桥"
     ],
-    "answer": "沿石阶向上，我们来到山顶。"
+    "answer": "走过石桥|沿石阶向上，我们来到山顶。"
    },
    {
     "id": "chinese.g4.story4.l2",
     "sourceId": "chinese.g4.story4.l2",
     "topic": "抓特点与准确表达",
-    "prompt": "“有时会躲进箱子”中的“有时”能去掉吗？",
-    "explanation": "有时表示并非一直如此。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "观察具体对象，避免无依据的绝对说法。；有时表示并非一直如此。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "介绍动物特点，哪句话更准确？",
+     "“有时会躲进箱子”中的“有时”能去掉吗？"
+    ],
     "options": [
      "不宜，会改变发生频率",
-     "能，意思完全相同",
-     "能，表示每天都躲"
+     "这只猫的耳尖有一小撮白毛。"
     ],
-    "answer": "不宜，会改变发生频率"
+    "answer": "这只猫的耳尖有一小撮白毛。|不宜，会改变发生频率"
    },
    {
     "id": "chinese.g4.story5.l2",
     "sourceId": "chinese.g4.story5.l2",
     "topic": "起因经过结果",
-    "prompt": "“虽然遇雨，但是按时到达”表达什么关系？",
-    "explanation": "虽然与但是表示转折。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "摘要需要简要说清事情。；虽然与但是表示转折。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "摘要应该优先保留什么？",
+     "“虽然遇雨，但是按时到达”表达什么关系？"
+    ],
     "options": [
      "转折",
-     "并列数量",
-     "时间先后"
+     "主要人物和关键事件"
     ],
-    "answer": "转折"
+    "answer": "主要人物和关键事件|转折"
    },
    {
     "id": "chinese.g4.story6.l2",
     "sourceId": "chinese.g4.story6.l2",
     "topic": "想象与修辞",
-    "prompt": "描写安静的夜，哪句最贴合？",
-    "explanation": "轻鸣与月光营造安静的氛围。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "像连接月亮和小船，后者是比喻对象。；轻鸣与月光营造安静的氛围。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "“月亮像小船”把月亮比作什么？",
+     "描写安静的夜，哪句最贴合？"
+    ],
     "options": [
      "小虫轻鸣，月光铺满石阶。",
-     "车队轰鸣，鼓声震天。",
-     "商场叫卖声此起彼伏。"
+     "小船"
     ],
-    "answer": "小虫轻鸣，月光铺满石阶。"
+    "answer": "小船|小虫轻鸣，月光铺满石阶。"
    },
    {
     "id": "chinese.g4.c1.l3",
@@ -4552,91 +4775,109 @@ export const ROUTE_PAPERS = [
     "id": "chinese.g5.story1.l2",
     "sourceId": "chinese.g5.story1.l2",
     "topic": "动作描写与内心",
-    "prompt": "“沉默片刻”中“片刻”是什么意思？",
-    "explanation": "片刻表示短暂时间。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "伸出又缩回，比直接贴标签更具体。；片刻表示短暂时间。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "写人物犹豫，哪句通过动作表现？",
+     "“沉默片刻”中“片刻”是什么意思？"
+    ],
     "options": [
      "很短的一段时间",
-     "整整一年",
-     "没有时间"
+     "他的手伸向门铃，又缩了回来。"
     ],
-    "answer": "很短的一段时间"
+    "answer": "他的手伸向门铃，又缩了回来。|很短的一段时间"
    },
    {
     "id": "chinese.g5.story2.l2",
     "sourceId": "chinese.g5.story2.l2",
     "topic": "说明方法与信息准确",
-    "prompt": "“大约需要十分钟”保留“大约”的作用是？",
-    "explanation": "估计范围不能改成绝对精确值。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "20升是具体数量。；估计范围不能改成绝对精确值。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "“水箱能装20升水”主要用了什么方法？",
+     "“大约需要十分钟”保留“大约”的作用是？"
+    ],
     "options": [
      "说明时间是估计值",
-     "证明恰好十分钟",
-     "表示完全不知道"
+     "列数字"
     ],
-    "answer": "说明时间是估计值"
+    "answer": "列数字|说明时间是估计值"
    },
    {
     "id": "chinese.g5.story3.l2",
     "sourceId": "chinese.g5.story3.l2",
     "topic": "复述与情节因果",
-    "prompt": "“信守约定”接近哪个意思？",
-    "explanation": "信守约定就是履行承诺。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "复述可以用自己的语言，保留主要事实和顺序。；信守约定就是履行承诺。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "复述故事时，改变哪项最不影响主要情节？",
+     "“信守约定”接近哪个意思？"
+    ],
     "options": [
      "按照承诺去做",
-     "随意更换承诺",
-     "只记住别人的错"
+     "换用自己的说法"
     ],
-    "answer": "按照承诺去做"
+    "answer": "换用自己的说法|按照承诺去做"
    },
    {
     "id": "chinese.g5.story4.l2",
     "sourceId": "chinese.g5.story4.l2",
     "topic": "带着问题寻找信息",
-    "prompt": "“除周一外每日开放”说明什么？",
-    "explanation": "除外意味着不包含周一。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "带着目的查找时间信息。；除外意味着不包含周一。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "要查开放时间，先找哪类词更有效？",
+     "“除周一外每日开放”说明什么？"
+    ],
     "options": [
      "周一不开放",
-     "只有周一开放",
-     "每天都不开放"
+     "日期和时刻"
     ],
-    "answer": "周一不开放"
+    "answer": "日期和时刻|周一不开放"
    },
    {
     "id": "chinese.g5.story5.l2",
     "sourceId": "chinese.g5.story5.l2",
     "topic": "动态静态与表达顺序",
-    "prompt": "描写日落过程，哪组词最能体现顺序？",
-    "explanation": "这组词标出过程的不同阶段。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "泛起涟漪描写运动和变化。；这组词标出过程的不同阶段。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "哪个句子写出了动态变化？",
+     "描写日落过程，哪组词最能体现顺序？"
+    ],
     "options": [
      "起初—渐渐—最后",
-     "虽然—但是—因为",
-     "这里—那里—旁边"
+     "水面泛起一圈圈涟漪。"
     ],
-    "answer": "起初—渐渐—最后"
+    "answer": "水面泛起一圈圈涟漪。|起初—渐渐—最后"
    },
    {
     "id": "chinese.g5.story6.l2",
     "sourceId": "chinese.g5.story6.l2",
     "topic": "观点理由与可行建议",
-    "prompt": "哪条建议更便于执行？",
-    "explanation": "具体时间、人员和行动便于执行。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "理由要直接支持建议。；具体时间、人员和行动便于执行。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "建议增设书架，哪条理由最相关？",
+     "哪条建议更便于执行？"
+    ],
     "options": [
      "每周五安排两人整理图书角。",
-     "让图书角永远特别好。",
-     "大家随便想点办法。"
+     "现有书架已放不下新增图书。"
     ],
-    "answer": "每周五安排两人整理图书角。"
+    "answer": "现有书架已放不下新增图书。|每周五安排两人整理图书角。"
    },
    {
     "id": "chinese.g5.c1.l3",
@@ -4866,91 +5107,109 @@ export const ROUTE_PAPERS = [
     "id": "chinese.g6.story1.l2",
     "sourceId": "chinese.g6.story1.l2",
     "topic": "中心意思与材料选择",
-    "prompt": "选材料时，“详略得当”指什么？",
-    "explanation": "详略由表达目的决定。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "分工合作直接服务中心意思。；详略由表达目的决定。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "围绕“合作让任务更顺利”，应选哪个材料？",
+     "选材料时，“详略得当”指什么？"
+    ],
     "options": [
      "关键材料详写，次要材料略写",
-     "所有细节一样长",
-     "只写最容易的事"
+     "大家分工完成展板"
     ],
-    "answer": "关键材料详写，次要材料略写"
+    "answer": "大家分工完成展板|关键材料详写，次要材料略写"
    },
    {
     "id": "chinese.g6.story2.l2",
     "sourceId": "chinese.g6.story2.l2",
     "topic": "环境人物与情节",
-    "prompt": "判断人物特点更可靠的依据是什么？",
-    "explanation": "人物言行要放到情节处境里理解。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "环境可烘托气氛，不能据此定性人物。；人物言行要放到情节处境里理解。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "“风拍打窗户，他握紧了信”中，环境描写可能有什么作用？",
+     "判断人物特点更可靠的依据是什么？"
+    ],
     "options": [
      "言行及具体处境",
-     "只看名字",
-     "只看衣服颜色"
+     "衬托紧张气氛"
     ],
-    "answer": "言行及具体处境"
+    "answer": "衬托紧张气氛|言行及具体处境"
    },
    {
     "id": "chinese.g6.story3.l2",
     "sourceId": "chinese.g6.story3.l2",
     "topic": "非连续文本与选择信息",
-    "prompt": "遇到两个时刻表，应该先核对什么？",
-    "explanation": "时效和适用范围影响信息可用性。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "阅读内容应匹配实际目的。；时效和适用范围影响信息可用性。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "要规划乘车路线，最需要哪类信息？",
+     "遇到两个时刻表，应该先核对什么？"
+    ],
     "options": [
      "适用日期和线路",
-     "哪个字更漂亮",
-     "哪页更厚"
+     "线路、站点和时刻"
     ],
-    "answer": "适用日期和线路"
+    "answer": "线路、站点和时刻|适用日期和线路"
    },
    {
     "id": "chinese.g6.story4.l2",
     "sourceId": "chinese.g6.story4.l2",
     "topic": "观点证据与表达边界",
-    "prompt": "讨论时哪句话兼顾观点与依据？",
-    "explanation": "清楚表达观点，并说明可核对的理由。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "有限次数不足以支持绝对结论。；清楚表达观点，并说明可核对的理由。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "“三次测试都成功，所以永远不会失败”有什么问题？",
+     "讨论时哪句话兼顾观点与依据？"
+    ],
     "options": [
      "我建议保留，因为记录显示使用率很高。",
-     "我说的永远对。",
-     "不许别人提出意见。"
+     "有限证据不能证明永远"
     ],
-    "answer": "我建议保留，因为记录显示使用率很高。"
+    "answer": "有限证据不能证明永远|我建议保留，因为记录显示使用率很高。"
    },
    {
     "id": "chinese.g6.story5.l2",
     "sourceId": "chinese.g6.story5.l2",
     "topic": "文言启蒙与语境",
-    "prompt": "“童子问其故”中，“故”结合语境应理解为？",
-    "explanation": "问其故就是询问其中的原因。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "吾是文言中的第一人称。；问其故就是询问其中的原因。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "“吾欲观书”中，“吾”可理解为？",
+     "“童子问其故”中，“故”结合语境应理解为？"
+    ],
     "options": [
      "原因",
-     "故乡",
-     "故意"
+     "我"
     ],
-    "answer": "原因"
+    "answer": "我|原因"
    },
    {
     "id": "chinese.g6.story6.l2",
     "sourceId": "chinese.g6.story6.l2",
     "topic": "综合阅读与修改表达",
-    "prompt": "编辑活动报道，最应先核对什么？",
-    "explanation": "报道首先要确保基本事实准确。",
+    "prompt": "把两条字词线索分别连到合适答案。",
+    "explanation": "消除“都到了”与“没来”的矛盾。；报道首先要确保基本事实准确。",
     "points": 5,
-    "kind": "choice",
+    "kind": "match",
+    "prompts": [
+     "“全班同学都到了，只有小禾没来”怎样修改更准确？",
+     "编辑活动报道，最应先核对什么？"
+    ],
     "options": [
      "时间、人物与事实",
-     "形容词是否足够多",
-     "每句是否一样长"
+     "除小禾外，全班同学都到了。"
     ],
-    "answer": "时间、人物与事实"
+    "answer": "除小禾外，全班同学都到了。|时间、人物与事实"
    },
    {
     "id": "chinese.g6.c1.l3",
@@ -5117,31 +5376,41 @@ export const ROUTE_PAPERS = [
     "id": "science.g1.mission1.l2",
     "sourceId": "science.g1.mission1.l2",
     "topic": "科学 · 1年级基础探索",
-    "prompt": "哪条是眼睛直接观察到的？",
-    "explanation": "叶边有小齿。把这个办法用在刚才的情境中。",
+    "prompt": "把「落叶侦察队」里的问题、做法和行动线索配对",
+    "explanation": "比较两片叶子的形状，用什么办法？ → 并排观察轮廓；哪条是眼睛直接观察到的？ → 叶边有小齿；行动的第一步 → 拿起落叶",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "叶边有小齿",
-     "它昨天很开心",
-     "它一定最香"
+    "kind": "match",
+    "prompts": [
+     "比较两片叶子的形状，用什么办法？",
+     "哪条是眼睛直接观察到的？",
+     "行动的第一步"
     ],
-    "answer": "叶边有小齿"
+    "options": [
+     "拿起落叶",
+     "叶边有小齿",
+     "并排观察轮廓"
+    ],
+    "answer": "并排观察轮廓|叶边有小齿|拿起落叶"
    },
    {
     "id": "science.g1.mission2.l2",
     "sourceId": "science.g1.mission2.l2",
     "topic": "科学 · 1年级应用实践",
-    "prompt": "观察结束怎样留下证据？",
-    "explanation": "画出云的样子。把这个办法用在刚才的情境中。",
+    "prompt": "把「风雨记录屋」里的问题、做法和行动线索配对",
+    "explanation": "记录今天的天气，应写什么？ → 今天看到的云和雨；观察结束怎样留下证据？ → 画出云的样子；行动的第一步 → 观察天空",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "画出云的样子",
-     "只记在心里",
-     "随意画太阳"
+    "kind": "match",
+    "prompts": [
+     "记录今天的天气，应写什么？",
+     "观察结束怎样留下证据？",
+     "行动的第一步"
     ],
-    "answer": "画出云的样子"
+    "options": [
+     "观察天空",
+     "画出云的样子",
+     "今天看到的云和雨"
+    ],
+    "answer": "今天看到的云和雨|画出云的样子|观察天空"
    },
    {
     "id": "science.g1.c1.l3",
@@ -5307,31 +5576,41 @@ export const ROUTE_PAPERS = [
     "id": "science.g2.mission1.l2",
     "sourceId": "science.g2.mission1.l2",
     "topic": "科学 · 2年级基础探索",
-    "prompt": "两块同样大小材料比较吸水，要保持什么相同？",
-    "explanation": "滴水量。把这个办法用在刚才的情境中。",
+    "prompt": "把「材料造船厂」里的问题、做法和行动线索配对",
+    "explanation": "纸巾遇水变软，船底选什么更耐水？ → 塑料片；两块同样大小材料比较吸水，要保持什么相同？ → 滴水量；行动的第一步 → 准备材料",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "滴水量",
-     "吸水结果",
-     "材料种类"
+    "kind": "match",
+    "prompts": [
+     "纸巾遇水变软，船底选什么更耐水？",
+     "两块同样大小材料比较吸水，要保持什么相同？",
+     "行动的第一步"
     ],
-    "answer": "滴水量"
+    "options": [
+     "准备材料",
+     "滴水量",
+     "塑料片"
+    ],
+    "answer": "塑料片|滴水量|准备材料"
    },
    {
     "id": "science.g2.mission2.l2",
     "sourceId": "science.g2.mission2.l2",
     "topic": "科学 · 2年级应用实践",
-    "prompt": "发现叶子变黄，先怎么做？",
-    "explanation": "观察并记录条件。把这个办法用在刚才的情境中。",
+    "prompt": "把「种子小花园」里的问题、做法和行动线索配对",
+    "explanation": "两盆同种小苗，一盆缺水，比较时要注意？ → 其他主要条件相近；发现叶子变黄，先怎么做？ → 观察并记录条件；行动的第一步 → 查看土壤",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "观察并记录条件",
-     "立刻说一定缺水",
-     "把记录扔掉"
+    "kind": "match",
+    "prompts": [
+     "两盆同种小苗，一盆缺水，比较时要注意？",
+     "发现叶子变黄，先怎么做？",
+     "行动的第一步"
     ],
-    "answer": "观察并记录条件"
+    "options": [
+     "查看土壤",
+     "观察并记录条件",
+     "其他主要条件相近"
+    ],
+    "answer": "其他主要条件相近|观察并记录条件|查看土壤"
    },
    {
     "id": "science.g2.c1.l3",
@@ -5499,31 +5778,41 @@ export const ROUTE_PAPERS = [
     "id": "science.g3.mission1.l2",
     "sourceId": "science.g3.mission1.l2",
     "topic": "科学 · 3年级基础探索",
-    "prompt": "观察影子需要哪组条件？",
-    "explanation": "光源和遮光物。把这个办法用在刚才的情境中。",
+    "prompt": "把「影子追踪岛」里的问题、做法和行动线索配对",
+    "explanation": "同一物体换了光照方向，影子可能怎样？ → 位置改变；观察影子需要哪组条件？ → 光源和遮光物；行动的第一步 → 固定物体",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "光源和遮光物",
-     "只有黑色纸",
-     "只有声音"
+    "kind": "match",
+    "prompts": [
+     "同一物体换了光照方向，影子可能怎样？",
+     "观察影子需要哪组条件？",
+     "行动的第一步"
     ],
-    "answer": "光源和遮光物"
+    "options": [
+     "固定物体",
+     "光源和遮光物",
+     "位置改变"
+    ],
+    "answer": "位置改变|光源和遮光物|固定物体"
    },
    {
     "id": "science.g3.mission2.l2",
     "sourceId": "science.g3.mission2.l2",
     "topic": "科学 · 3年级应用实践",
-    "prompt": "让声音实验更有依据，应当？",
-    "explanation": "多次拨动并观察。把这个办法用在刚才的情境中。",
+    "prompt": "把「声音传信桥」里的问题、做法和行动线索配对",
+    "explanation": "拨动橡皮筋发声时，橡皮筋在？ → 振动；让声音实验更有依据，应当？ → 多次拨动并观察；行动的第一步 → 绷好橡皮筋",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "多次拨动并观察",
-     "只凭想象",
-     "只看颜色"
+    "kind": "match",
+    "prompts": [
+     "拨动橡皮筋发声时，橡皮筋在？",
+     "让声音实验更有依据，应当？",
+     "行动的第一步"
     ],
-    "answer": "多次拨动并观察"
+    "options": [
+     "绷好橡皮筋",
+     "多次拨动并观察",
+     "振动"
+    ],
+    "answer": "振动|多次拨动并观察|绷好橡皮筋"
    },
    {
     "id": "science.g3.c1.l3",
@@ -5691,31 +5980,41 @@ export const ROUTE_PAPERS = [
     "id": "science.g4.mission1.l2",
     "sourceId": "science.g4.mission1.l2",
     "topic": "科学 · 4年级基础探索",
-    "prompt": "比较冰在两处的变化，哪项要相同？",
-    "explanation": "冰块初始大小。把这个办法用在刚才的情境中。",
+    "prompt": "把「冰水观察站」里的问题、做法和行动线索配对",
+    "explanation": "冰放在温暖处变成水，这叫？ → 融化；比较冰在两处的变化，哪项要相同？ → 冰块初始大小；行动的第一步 → 取相同冰块",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "冰块初始大小",
-     "环境温度",
-     "融化时间"
+    "kind": "match",
+    "prompts": [
+     "冰放在温暖处变成水，这叫？",
+     "比较冰在两处的变化，哪项要相同？",
+     "行动的第一步"
     ],
-    "answer": "冰块初始大小"
+    "options": [
+     "取相同冰块",
+     "冰块初始大小",
+     "融化"
+    ],
+    "answer": "融化|冰块初始大小|取相同冰块"
    },
    {
     "id": "science.g4.mission2.l2",
     "sourceId": "science.g4.mission2.l2",
     "topic": "科学 · 4年级应用实践",
-    "prompt": "学校低压电池实验该怎样做？",
-    "explanation": "按老师指导操作。把这个办法用在刚才的情境中。",
+    "prompt": "把「电路点灯台」里的问题、做法和行动线索配对",
+    "explanation": "模拟电路中灯不亮，先检查什么？ → 连接是否完整；学校低压电池实验该怎样做？ → 按老师指导操作；行动的第一步 → 查看示意图",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "按老师指导操作",
-     "连接家用插座",
-     "用金属直接短接电池"
+    "kind": "match",
+    "prompts": [
+     "模拟电路中灯不亮，先检查什么？",
+     "学校低压电池实验该怎样做？",
+     "行动的第一步"
     ],
-    "answer": "按老师指导操作"
+    "options": [
+     "查看示意图",
+     "按老师指导操作",
+     "连接是否完整"
+    ],
+    "answer": "连接是否完整|按老师指导操作|查看示意图"
    },
    {
     "id": "science.g4.c1.l3",
@@ -5884,31 +6183,41 @@ export const ROUTE_PAPERS = [
     "id": "science.g5.mission1.l2",
     "sourceId": "science.g5.mission1.l2",
     "topic": "科学 · 5年级基础探索",
-    "prompt": "一次结果不同于预测，应该？",
-    "explanation": "复查并重复实验。把这个办法用在刚才的情境中。",
+    "prompt": "把「摆动实验室」里的问题、做法和行动线索配对",
+    "explanation": "研究摆线长短，只主动改变什么？ → 摆线长度；一次结果不同于预测，应该？ → 复查并重复实验；行动的第一步 → 明确问题",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "复查并重复实验",
-     "删掉结果",
-     "改成预测值"
+    "kind": "match",
+    "prompts": [
+     "研究摆线长短，只主动改变什么？",
+     "一次结果不同于预测，应该？",
+     "行动的第一步"
     ],
-    "answer": "复查并重复实验"
+    "options": [
+     "明确问题",
+     "复查并重复实验",
+     "摆线长度"
+    ],
+    "answer": "摆线长度|复查并重复实验|明确问题"
    },
    {
     "id": "science.g5.mission2.l2",
     "sourceId": "science.g5.mission2.l2",
     "topic": "科学 · 5年级应用实践",
-    "prompt": "比较搅拌对溶解的影响，应保持？",
-    "explanation": "盐和水的用量相同。把这个办法用在刚才的情境中。",
+    "prompt": "把「溶解探索船」里的问题、做法和行动线索配对",
+    "explanation": "盐溶于水后看不见，说明什么？ → 分散在水中；比较搅拌对溶解的影响，应保持？ → 盐和水的用量相同；行动的第一步 → 准备等量材料",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "盐和水的用量相同",
-     "搅拌方式都不同",
-     "水温也随意变化"
+    "kind": "match",
+    "prompts": [
+     "盐溶于水后看不见，说明什么？",
+     "比较搅拌对溶解的影响，应保持？",
+     "行动的第一步"
     ],
-    "answer": "盐和水的用量相同"
+    "options": [
+     "准备等量材料",
+     "盐和水的用量相同",
+     "分散在水中"
+    ],
+    "answer": "分散在水中|盐和水的用量相同|准备等量材料"
    },
    {
     "id": "science.g5.c1.l3",
@@ -6078,31 +6387,41 @@ export const ROUTE_PAPERS = [
     "id": "science.g6.mission1.l2",
     "sourceId": "science.g6.mission1.l2",
     "topic": "科学 · 6年级基础探索",
-    "prompt": "恢复栖息地前，最需要什么？",
-    "explanation": "调查生物和环境。把这个办法用在刚才的情境中。",
+    "prompt": "把「生态修复港」里的问题、做法和行动线索配对",
+    "explanation": "草地昆虫减少，食虫鸟可能怎样？ → 食物来源减少；恢复栖息地前，最需要什么？ → 调查生物和环境；行动的第一步 → 调查现状",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "调查生物和环境",
-     "只画漂亮招牌",
-     "随意放入外来动物"
+    "kind": "match",
+    "prompts": [
+     "草地昆虫减少，食虫鸟可能怎样？",
+     "恢复栖息地前，最需要什么？",
+     "行动的第一步"
     ],
-    "answer": "调查生物和环境"
+    "options": [
+     "调查现状",
+     "调查生物和环境",
+     "食物来源减少"
+    ],
+    "answer": "食物来源减少|调查生物和环境|调查现状"
    },
    {
     "id": "science.g6.mission2.l2",
     "sourceId": "science.g6.mission2.l2",
     "topic": "科学 · 6年级应用实践",
-    "prompt": "长期观察月相，记录应包括？",
-    "explanation": "日期与月面形状。把这个办法用在刚才的情境中。",
+    "prompt": "把「月相观察台」里的问题、做法和行动线索配对",
+    "explanation": "一天看到半个月亮，能断言月球只剩一半吗？ → 不能；长期观察月相，记录应包括？ → 日期与月面形状；行动的第一步 → 选择观察时间",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "日期与月面形状",
-     "只写心情",
-     "只画最圆的一次"
+    "kind": "match",
+    "prompts": [
+     "一天看到半个月亮，能断言月球只剩一半吗？",
+     "长期观察月相，记录应包括？",
+     "行动的第一步"
     ],
-    "answer": "日期与月面形状"
+    "options": [
+     "选择观察时间",
+     "日期与月面形状",
+     "不能"
+    ],
+    "answer": "不能|日期与月面形状|选择观察时间"
    },
    {
     "id": "science.g6.c1.l3",
@@ -6272,31 +6591,41 @@ export const ROUTE_PAPERS = [
     "id": "ethics.g1.mission1.l2",
     "sourceId": "ethics.g1.mission1.l2",
     "topic": "道德与法治 · 1年级基础探索",
-    "prompt": "借用同学橡皮前，先做什么？",
-    "explanation": "征得同意。把这个办法用在刚才的情境中。",
+    "prompt": "把「友善入学岛」里的问题、做法和行动线索配对",
+    "explanation": "新伙伴找不到教室，怎样回应？ → 带他找老师问路；借用同学橡皮前，先做什么？ → 征得同意；行动的第一步 → 礼貌询问",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "征得同意",
-     "直接拿走",
-     "藏进书包"
+    "kind": "match",
+    "prompts": [
+     "新伙伴找不到教室，怎样回应？",
+     "借用同学橡皮前，先做什么？",
+     "行动的第一步"
     ],
-    "answer": "征得同意"
+    "options": [
+     "礼貌询问",
+     "征得同意",
+     "带他找老师问路"
+    ],
+    "answer": "带他找老师问路|征得同意|礼貌询问"
    },
    {
     "id": "ethics.g1.mission2.l2",
     "sourceId": "ethics.g1.mission2.l2",
     "topic": "道德与法治 · 1年级应用实践",
-    "prompt": "发现走廊有纸屑，怎样做？",
-    "explanation": "放进合适垃圾桶。把这个办法用在刚才的情境中。",
+    "prompt": "把「爱护校园树」里的问题、做法和行动线索配对",
+    "explanation": "想摘校园花送朋友，怎样更好？ → 画朵花送他；发现走廊有纸屑，怎样做？ → 放进合适垃圾桶；行动的第一步 → 看清垃圾",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "放进合适垃圾桶",
-     "踢给别人",
-     "踩着玩"
+    "kind": "match",
+    "prompts": [
+     "想摘校园花送朋友，怎样更好？",
+     "发现走廊有纸屑，怎样做？",
+     "行动的第一步"
     ],
-    "answer": "放进合适垃圾桶"
+    "options": [
+     "看清垃圾",
+     "放进合适垃圾桶",
+     "画朵花送他"
+    ],
+    "answer": "画朵花送他|放进合适垃圾桶|看清垃圾"
    },
    {
     "id": "ethics.g1.c1.l3",
@@ -6465,31 +6794,41 @@ export const ROUTE_PAPERS = [
     "id": "ethics.g2.mission1.l2",
     "sourceId": "ethics.g2.mission1.l2",
     "topic": "道德与法治 · 2年级基础探索",
-    "prompt": "答应归还的书弄脏了，怎么办？",
-    "explanation": "如实说明并补救。把这个办法用在刚才的情境中。",
+    "prompt": "把「约定小邮局」里的问题、做法和行动线索配对",
+    "explanation": "值日轮到你，发现时间冲突，应当？ → 提前商量调整；答应归还的书弄脏了，怎么办？ → 如实说明并补救；行动的第一步 → 说明情况",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "如实说明并补救",
-     "说本来就脏",
-     "扔掉书"
+    "kind": "match",
+    "prompts": [
+     "值日轮到你，发现时间冲突，应当？",
+     "答应归还的书弄脏了，怎么办？",
+     "行动的第一步"
     ],
-    "answer": "如实说明并补救"
+    "options": [
+     "说明情况",
+     "如实说明并补救",
+     "提前商量调整"
+    ],
+    "answer": "提前商量调整|如实说明并补救|说明情况"
    },
    {
     "id": "ethics.g2.mission2.l2",
     "sourceId": "ethics.g2.mission2.l2",
     "topic": "道德与法治 · 2年级应用实践",
-    "prompt": "伙伴提出不同搭法，应？",
-    "explanation": "听他说理由。把这个办法用在刚才的情境中。",
+    "prompt": "把「合作搭桥村」里的问题、做法和行动线索配对",
+    "explanation": "一起搭积木，有人没轮到，怎么办？ → 商量轮流操作；伙伴提出不同搭法，应？ → 听他说理由；行动的第一步 → 说出想法",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "听他说理由",
-     "立刻打断",
-     "把作品推倒"
+    "kind": "match",
+    "prompts": [
+     "一起搭积木，有人没轮到，怎么办？",
+     "伙伴提出不同搭法，应？",
+     "行动的第一步"
     ],
-    "answer": "听他说理由"
+    "options": [
+     "说出想法",
+     "听他说理由",
+     "商量轮流操作"
+    ],
+    "answer": "商量轮流操作|听他说理由|说出想法"
    },
    {
     "id": "ethics.g2.c1.l3",
@@ -6570,7 +6909,7 @@ export const ROUTE_PAPERS = [
     "topic": "规则与共同生活",
     "prompt": "小组对海报配色有不同意见，先做什么？",
     "explanation": "认真倾听，再一起商量。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "听听彼此的理由",
@@ -6585,7 +6924,7 @@ export const ROUTE_PAPERS = [
     "topic": "集体约定",
     "prompt": "班级想制定图书角规则，先怎样做？",
     "explanation": "共同讨论规则的目的与内容。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "一起讨论需要",
@@ -6600,7 +6939,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 3年级基础探索",
     "prompt": "图书馆有人阅读，讨论应该？",
     "explanation": "放低声音。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "放低声音",
@@ -6615,7 +6954,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 3年级应用实践",
     "prompt": "多找了零钱，该怎么做？",
     "explanation": "提醒并退回多余部分。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "提醒并退回多余部分",
@@ -6630,7 +6969,7 @@ export const ROUTE_PAPERS = [
     "topic": "规则与共同生活",
     "prompt": "发现公共水龙头没有关紧，怎样做？",
     "explanation": "珍惜公共资源，从身边的小事做起。",
-    "points": 8,
+    "points": 10,
     "kind": "choice",
     "options": [
      "及时关好",
@@ -6640,64 +6979,44 @@ export const ROUTE_PAPERS = [
     "answer": "及时关好"
    },
    {
-    "id": "ethics.g3.c2.l2",
-    "sourceId": "ethics.g3.c2.l2",
-    "topic": "集体约定",
-    "prompt": "伙伴建议与自己不同，先做什么？",
-    "explanation": "听取理由后再表达看法。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "打断并嘲笑",
-     "听完他的理由",
-     "不让他说"
-    ],
-    "answer": "听完他的理由"
-   },
-   {
     "id": "ethics.g3.mission1.l2",
     "sourceId": "ethics.g3.mission1.l2",
     "topic": "道德与法治 · 3年级基础探索",
-    "prompt": "公共座椅坏了，应当？",
-    "explanation": "告诉管理人员。把这个办法用在刚才的情境中。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "告诉管理人员",
-     "继续破坏",
-     "假装修好"
+    "prompt": "把「公共生活站」里的问题、做法和行动线索配对",
+    "explanation": "图书馆有人阅读，讨论应该？ → 放低声音；公共座椅坏了，应当？ → 告诉管理人员；行动的第一步 → 发现问题",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "图书馆有人阅读，讨论应该？",
+     "公共座椅坏了，应当？",
+     "行动的第一步"
     ],
-    "answer": "告诉管理人员"
+    "options": [
+     "发现问题",
+     "告诉管理人员",
+     "放低声音"
+    ],
+    "answer": "放低声音|告诉管理人员|发现问题"
    },
    {
     "id": "ethics.g3.mission2.l2",
     "sourceId": "ethics.g3.mission2.l2",
     "topic": "道德与法治 · 3年级应用实践",
-    "prompt": "不小心损坏借来的物品，应该？",
-    "explanation": "告知主人商量处理。把这个办法用在刚才的情境中。",
-    "points": 8,
-    "kind": "choice",
+    "prompt": "把「诚信商店街」里的问题、做法和行动线索配对",
+    "explanation": "多找了零钱，该怎么做？ → 提醒并退回多余部分；不小心损坏借来的物品，应该？ → 告知主人商量处理；行动的第一步 → 说明经过",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "多找了零钱，该怎么做？",
+     "不小心损坏借来的物品，应该？",
+     "行动的第一步"
+    ],
     "options": [
+     "说明经过",
      "告知主人商量处理",
-     "悄悄放回",
-     "推给没参与的人"
+     "提醒并退回多余部分"
     ],
-    "answer": "告知主人商量处理"
-   },
-   {
-    "id": "ethics.g3.c1.l3",
-    "sourceId": "ethics.g3.c1.l3",
-    "topic": "规则与共同生活",
-    "prompt": "答应归还的书还没看完，该怎么办？",
-    "explanation": "尊重约定，需要改变时诚实沟通。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "藏着不说",
-     "和主人商量延期",
-     "说书丢了"
-    ],
-    "answer": "和主人商量延期"
+    "answer": "提醒并退回多余部分|告知主人商量处理|说明经过"
    },
    {
     "id": "ethics.g3.c2.l3",
@@ -6705,7 +7024,7 @@ export const ROUTE_PAPERS = [
     "topic": "集体约定",
     "prompt": "为值日小队制定安排",
     "explanation": "清楚的约定便于大家合作。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "按约执行",
@@ -6721,7 +7040,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 3年级基础探索",
     "prompt": "完成「公共生活站」的行动计划",
     "explanation": "发现问题，然后说明地点情况，然后告知工作人员。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "告知工作人员",
@@ -6736,7 +7055,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 3年级应用实践",
     "prompt": "完成「诚信商店街」的行动计划",
     "explanation": "说明经过，然后表达歉意，然后商量处理，然后认真补救。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "认真补救",
@@ -6762,7 +7081,7 @@ export const ROUTE_PAPERS = [
     "topic": "规则与共同生活",
     "prompt": "小组对海报配色有不同意见，先做什么？",
     "explanation": "认真倾听，再一起商量。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "听听彼此的理由",
@@ -6777,7 +7096,7 @@ export const ROUTE_PAPERS = [
     "topic": "诚信与尊重",
     "prompt": "不小心弄坏了公共物品，怎样处理？",
     "explanation": "诚实面对问题，承担适当责任。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "藏起来",
@@ -6792,7 +7111,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 4年级基础探索",
     "prompt": "同学介绍不同习俗，怎样交流？",
     "explanation": "先听再礼貌提问。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "先听再礼貌提问",
@@ -6807,7 +7126,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 4年级应用实践",
     "prompt": "新同学口音不同，可以？",
     "explanation": "耐心倾听。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "耐心倾听",
@@ -6822,7 +7141,7 @@ export const ROUTE_PAPERS = [
     "topic": "规则与共同生活",
     "prompt": "发现公共水龙头没有关紧，怎样做？",
     "explanation": "珍惜公共资源，从身边的小事做起。",
-    "points": 8,
+    "points": 10,
     "kind": "choice",
     "options": [
      "及时关好",
@@ -6832,64 +7151,44 @@ export const ROUTE_PAPERS = [
     "answer": "及时关好"
    },
    {
-    "id": "ethics.g4.c2.l2",
-    "sourceId": "ethics.g4.c2.l2",
-    "topic": "诚信与尊重",
-    "prompt": "伙伴的兴趣和自己不同，应该？",
-    "explanation": "兴趣可以不同，彼此都应被尊重。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "允许不同并尊重",
-     "强迫完全一样",
-     "取笑他"
-    ],
-    "answer": "允许不同并尊重"
-   },
-   {
     "id": "ethics.g4.mission1.l2",
     "sourceId": "ethics.g4.mission1.l2",
     "topic": "道德与法治 · 4年级基础探索",
-    "prompt": "看见家乡介绍有错误，应该？",
-    "explanation": "查证后提出修改。把这个办法用在刚才的情境中。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "查证后提出修改",
-     "不查就争吵",
-     "照错转发"
+    "prompt": "把「家乡交流馆」里的问题、做法和行动线索配对",
+    "explanation": "同学介绍不同习俗，怎样交流？ → 先听再礼貌提问；看见家乡介绍有错误，应该？ → 查证后提出修改；行动的第一步 → 寻找资料",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "同学介绍不同习俗，怎样交流？",
+     "看见家乡介绍有错误，应该？",
+     "行动的第一步"
     ],
-    "answer": "查证后提出修改"
+    "options": [
+     "寻找资料",
+     "查证后提出修改",
+     "先听再礼貌提问"
+    ],
+    "answer": "先听再礼貌提问|查证后提出修改|寻找资料"
    },
    {
     "id": "ethics.g4.mission2.l2",
     "sourceId": "ethics.g4.mission2.l2",
     "topic": "道德与法治 · 4年级应用实践",
-    "prompt": "小组成员做事速度不同，应该？",
-    "explanation": "合理分工相互支持。把这个办法用在刚才的情境中。",
-    "points": 8,
-    "kind": "choice",
+    "prompt": "把「差异友好园」里的问题、做法和行动线索配对",
+    "explanation": "新同学口音不同，可以？ → 耐心倾听；小组成员做事速度不同，应该？ → 合理分工相互支持；行动的第一步 → 了解特长",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "新同学口音不同，可以？",
+     "小组成员做事速度不同，应该？",
+     "行动的第一步"
+    ],
     "options": [
+     "了解特长",
      "合理分工相互支持",
-     "只让最快的人做",
-     "排除较慢的人"
+     "耐心倾听"
     ],
-    "answer": "合理分工相互支持"
-   },
-   {
-    "id": "ethics.g4.c1.l3",
-    "sourceId": "ethics.g4.c1.l3",
-    "topic": "规则与共同生活",
-    "prompt": "答应归还的书还没看完，该怎么办？",
-    "explanation": "尊重约定，需要改变时诚实沟通。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "藏着不说",
-     "和主人商量延期",
-     "说书丢了"
-    ],
-    "answer": "和主人商量延期"
+    "answer": "耐心倾听|合理分工相互支持|了解特长"
    },
    {
     "id": "ethics.g4.c2.l3",
@@ -6897,7 +7196,7 @@ export const ROUTE_PAPERS = [
     "topic": "诚信与尊重",
     "prompt": "答应带小组材料后发现忘带了",
     "explanation": "遇到困难及时沟通，不掩盖问题。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "按新约定行动",
@@ -6912,7 +7211,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 4年级基础探索",
     "prompt": "完成「家乡交流馆」的行动计划",
     "explanation": "寻找资料，然后核对信息，然后注明来源，然后分享介绍。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "分享介绍",
@@ -6928,7 +7227,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 4年级应用实践",
     "prompt": "完成「差异友好园」的行动计划",
     "explanation": "了解特长，然后共同分工，然后互相配合，然后回顾合作。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "回顾合作",
@@ -6954,7 +7253,7 @@ export const ROUTE_PAPERS = [
     "topic": "规则与共同生活",
     "prompt": "制定班级新规则，哪种方式更合适？",
     "explanation": "让成员表达意见，了解共同规则的意义。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "只听一个人的",
@@ -6969,7 +7268,7 @@ export const ROUTE_PAPERS = [
     "topic": "责任与协商",
     "prompt": "负责记录的小队员遇到困难，应该？",
     "explanation": "承担责任也包括及时沟通与求助。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "默默放弃",
@@ -6984,7 +7283,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 5年级基础探索",
     "prompt": "选班级活动方案，第一步应？",
     "explanation": "收集大家意见。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "收集大家意见",
@@ -6999,7 +7298,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 5年级应用实践",
     "prompt": "排队上车时，怎样照顾大家？",
     "explanation": "按顺序留出通道。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "按顺序留出通道",
@@ -7014,7 +7313,7 @@ export const ROUTE_PAPERS = [
     "topic": "规则与共同生活",
     "prompt": "新同学的家乡习惯与你不同，怎么做？",
     "explanation": "尊重差异，有助于彼此理解。",
-    "points": 8,
+    "points": 10,
     "kind": "choice",
     "options": [
      "好奇了解并尊重",
@@ -7024,64 +7323,44 @@ export const ROUTE_PAPERS = [
     "answer": "好奇了解并尊重"
    },
    {
-    "id": "ethics.g5.c2.l2",
-    "sourceId": "ethics.g5.c2.l2",
-    "topic": "责任与协商",
-    "prompt": "建议修改活动安排，怎样表达更合适？",
-    "explanation": "理由与倾听有助于共同协商。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "说明理由并听取意见",
-     "只喊不喜欢",
-     "拒绝任何讨论"
-    ],
-    "answer": "说明理由并听取意见"
-   },
-   {
     "id": "ethics.g5.mission1.l2",
     "sourceId": "ethics.g5.mission1.l2",
     "topic": "道德与法治 · 5年级基础探索",
-    "prompt": "投票后有人不同意，怎样做？",
-    "explanation": "尊重结果并听取建议。把这个办法用在刚才的情境中。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "尊重结果并听取建议",
-     "禁止他发言",
-     "嘲笑少数意见"
+    "prompt": "把「协商议事厅」里的问题、做法和行动线索配对",
+    "explanation": "选班级活动方案，第一步应？ → 收集大家意见；投票后有人不同意，怎样做？ → 尊重结果并听取建议；行动的第一步 → 收集方案",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "选班级活动方案，第一步应？",
+     "投票后有人不同意，怎样做？",
+     "行动的第一步"
     ],
-    "answer": "尊重结果并听取建议"
+    "options": [
+     "收集方案",
+     "尊重结果并听取建议",
+     "收集大家意见"
+    ],
+    "answer": "收集大家意见|尊重结果并听取建议|收集方案"
    },
    {
     "id": "ethics.g5.mission2.l2",
     "sourceId": "ethics.g5.mission2.l2",
     "topic": "道德与法治 · 5年级应用实践",
-    "prompt": "遇到别人需要帮助，应先？",
-    "explanation": "询问对方需要。把这个办法用在刚才的情境中。",
-    "points": 8,
-    "kind": "choice",
+    "prompt": "把「文明出行岛」里的问题、做法和行动线索配对",
+    "explanation": "排队上车时，怎样照顾大家？ → 按顺序留出通道；遇到别人需要帮助，应先？ → 询问对方需要；行动的第一步 → 观察情况",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "排队上车时，怎样照顾大家？",
+     "遇到别人需要帮助，应先？",
+     "行动的第一步"
+    ],
     "options": [
+     "观察情况",
      "询问对方需要",
-     "强行拉走",
-     "拍照起哄"
+     "按顺序留出通道"
     ],
-    "answer": "询问对方需要"
-   },
-   {
-    "id": "ethics.g5.c1.l3",
-    "sourceId": "ethics.g5.c1.l3",
-    "topic": "规则与共同生活",
-    "prompt": "准备转发一条未经证实的消息，先做什么？",
-    "explanation": "对信息负责，先核实再分享。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "核实来源与事实",
-     "立即转发",
-     "加上夸张标题"
-    ],
-    "answer": "核实来源与事实"
+    "answer": "按顺序留出通道|询问对方需要|观察情况"
    },
    {
     "id": "ethics.g5.c2.l3",
@@ -7089,7 +7368,7 @@ export const ROUTE_PAPERS = [
     "topic": "责任与协商",
     "prompt": "小组出现分工争议",
     "explanation": "围绕问题协商，避免互相指责。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "确认新分工",
@@ -7104,7 +7383,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 5年级基础探索",
     "prompt": "完成「协商议事厅」的行动计划",
     "explanation": "收集方案，然后讨论理由，然后按约定作决定，然后共同执行。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "共同执行",
@@ -7120,7 +7399,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 5年级应用实践",
     "prompt": "完成「文明出行岛」的行动计划",
     "explanation": "观察情况，然后礼貌询问，然后提供适当帮助，然后尊重对方选择。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "尊重对方选择",
@@ -7146,7 +7425,7 @@ export const ROUTE_PAPERS = [
     "topic": "规则与共同生活",
     "prompt": "制定班级新规则，哪种方式更合适？",
     "explanation": "让成员表达意见，了解共同规则的意义。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "只听一个人的",
@@ -7161,7 +7440,7 @@ export const ROUTE_PAPERS = [
     "topic": "参与与证据",
     "prompt": "讨论是否增设安静阅读区，最先明确什么？",
     "explanation": "明确共同问题，再比较不同方案。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "谁嗓门最大",
@@ -7176,7 +7455,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 6年级基础探索",
     "prompt": "小组没按时完成，作为成员应？",
     "explanation": "说明自己的情况并改进。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "说明自己的情况并改进",
@@ -7191,7 +7470,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 6年级应用实践",
     "prompt": "改善公共阅读角，哪种建议更具体？",
     "explanation": "增设清晰的分类标签。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "增设清晰的分类标签",
@@ -7206,7 +7485,7 @@ export const ROUTE_PAPERS = [
     "topic": "规则与共同生活",
     "prompt": "新同学的家乡习惯与你不同，怎么做？",
     "explanation": "尊重差异，有助于彼此理解。",
-    "points": 8,
+    "points": 10,
     "kind": "choice",
     "options": [
      "好奇了解并尊重",
@@ -7216,64 +7495,44 @@ export const ROUTE_PAPERS = [
     "answer": "好奇了解并尊重"
    },
    {
-    "id": "ethics.g6.c2.l2",
-    "sourceId": "ethics.g6.c2.l2",
-    "topic": "参与与证据",
-    "prompt": "听说活动取消，但没有正式通知，先？",
-    "explanation": "未核实的信息不宜当作确定事实传播。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "立刻广泛传播",
-     "编更多细节",
-     "向负责老师核实"
-    ],
-    "answer": "向负责老师核实"
-   },
-   {
     "id": "ethics.g6.mission1.l2",
     "sourceId": "ethics.g6.mission1.l2",
     "topic": "道德与法治 · 6年级基础探索",
-    "prompt": "面对未经核实的消息，首先？",
-    "explanation": "核实来源和证据。把这个办法用在刚才的情境中。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "核实来源和证据",
-     "转给全班",
-     "换标题再发"
+    "prompt": "把「责任行动港」里的问题、做法和行动线索配对",
+    "explanation": "小组没按时完成，作为成员应？ → 说明自己的情况并改进；面对未经核实的消息，首先？ → 核实来源和证据；行动的第一步 → 核实信息",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "小组没按时完成，作为成员应？",
+     "面对未经核实的消息，首先？",
+     "行动的第一步"
     ],
-    "answer": "核实来源和证据"
+    "options": [
+     "核实信息",
+     "核实来源和证据",
+     "说明自己的情况并改进"
+    ],
+    "answer": "说明自己的情况并改进|核实来源和证据|核实信息"
    },
    {
     "id": "ethics.g6.mission2.l2",
     "sourceId": "ethics.g6.mission2.l2",
     "topic": "道德与法治 · 6年级应用实践",
-    "prompt": "提出建议时，怎样更有说服力？",
-    "explanation": "说明观察到的问题。把这个办法用在刚才的情境中。",
-    "points": 8,
-    "kind": "choice",
+    "prompt": "把「社区提案馆」里的问题、做法和行动线索配对",
+    "explanation": "改善公共阅读角，哪种建议更具体？ → 增设清晰的分类标签；提出建议时，怎样更有说服力？ → 说明观察到的问题；行动的第一步 → 调查问题",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "改善公共阅读角，哪种建议更具体？",
+     "提出建议时，怎样更有说服力？",
+     "行动的第一步"
+    ],
     "options": [
+     "调查问题",
      "说明观察到的问题",
-     "只说别人不好",
-     "编造调查人数"
+     "增设清晰的分类标签"
     ],
-    "answer": "说明观察到的问题"
-   },
-   {
-    "id": "ethics.g6.c1.l3",
-    "sourceId": "ethics.g6.c1.l3",
-    "topic": "规则与共同生活",
-    "prompt": "准备转发一条未经证实的消息，先做什么？",
-    "explanation": "对信息负责，先核实再分享。",
-    "points": 8,
-    "kind": "choice",
-    "options": [
-     "核实来源与事实",
-     "立即转发",
-     "加上夸张标题"
-    ],
-    "answer": "核实来源与事实"
+    "answer": "增设清晰的分类标签|说明观察到的问题|调查问题"
    },
    {
     "id": "ethics.g6.c2.l3",
@@ -7281,7 +7540,7 @@ export const ROUTE_PAPERS = [
     "topic": "参与与证据",
     "prompt": "给校园改进提出建议",
     "explanation": "关心公共生活，也认真了解不同需要。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "跟进反馈",
@@ -7297,7 +7556,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 6年级基础探索",
     "prompt": "完成「责任行动港」的行动计划",
     "explanation": "核实信息，然后辨别事实与观点，然后说明依据，然后谨慎分享。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "谨慎分享",
@@ -7313,7 +7572,7 @@ export const ROUTE_PAPERS = [
     "topic": "道德与法治 · 6年级应用实践",
     "prompt": "完成「社区提案馆」的行动计划",
     "explanation": "调查问题，然后整理证据，然后提出可行建议，然后收集反馈。",
-    "points": 8,
+    "points": 10,
     "kind": "order",
     "options": [
      "收集反馈",
@@ -7367,16 +7626,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g1.mission1.l2",
     "sourceId": "music.g1.mission1.l2",
     "topic": "音乐 · 1年级基础探索",
-    "prompt": "乐曲结束后，应该？",
-    "explanation": "按结束信号停下。把这个办法用在刚才的情境中。",
+    "prompt": "把「节奏起航台」里的问题、做法和行动线索配对",
+    "explanation": "一起开始拍手，需要看什么？ → 共同开始信号；乐曲结束后，应该？ → 按结束信号停下；行动的第一步 → 看开始信号",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "按结束信号停下",
-     "一直敲响",
-     "大声盖过音乐"
+    "kind": "match",
+    "prompts": [
+     "一起开始拍手，需要看什么？",
+     "乐曲结束后，应该？",
+     "行动的第一步"
     ],
-    "answer": "按结束信号停下"
+    "options": [
+     "看开始信号",
+     "按结束信号停下",
+     "共同开始信号"
+    ],
+    "answer": "共同开始信号|按结束信号停下|看开始信号"
    },
    {
     "id": "music.g1.mission2.l1",
@@ -7428,16 +7692,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g1.mission2.l2",
     "sourceId": "music.g1.mission2.l2",
     "topic": "音乐 · 1年级应用实践",
-    "prompt": "听到停顿时，应该？",
-    "explanation": "按安排保持安静。把这个办法用在刚才的情境中。",
+    "prompt": "把「声音礼物屋」里的问题、做法和行动线索配对",
+    "explanation": "想表现小雨，伴奏可以怎样？ → 轻轻敲击；听到停顿时，应该？ → 按安排保持安静；行动的第一步 → 听示范",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "按安排保持安静",
-     "随意加快",
-     "必须一直唱"
+    "kind": "match",
+    "prompts": [
+     "想表现小雨，伴奏可以怎样？",
+     "听到停顿时，应该？",
+     "行动的第一步"
     ],
-    "answer": "按安排保持安静"
+    "options": [
+     "听示范",
+     "按安排保持安静",
+     "轻轻敲击"
+    ],
+    "answer": "轻轻敲击|按安排保持安静|听示范"
    },
    {
     "id": "music.g1.c2.l3",
@@ -7514,16 +7783,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g2.mission1.l2",
     "sourceId": "music.g2.mission1.l2",
     "topic": "音乐 · 2年级基础探索",
-    "prompt": "想让伙伴听清主旋律，伴奏应？",
-    "explanation": "控制音量。把这个办法用在刚才的情境中。",
+    "prompt": "把「旋律小台阶」里的问题、做法和行动线索配对",
+    "explanation": "同一段旋律唱得更快，改变的是？ → 速度；想让伙伴听清主旋律，伴奏应？ → 控制音量；行动的第一步 → 听一遍旋律",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "控制音量",
-     "越响越好",
-     "完全不听"
+    "kind": "match",
+    "prompts": [
+     "同一段旋律唱得更快，改变的是？",
+     "想让伙伴听清主旋律，伴奏应？",
+     "行动的第一步"
     ],
-    "answer": "控制音量"
+    "options": [
+     "听一遍旋律",
+     "控制音量",
+     "速度"
+    ],
+    "answer": "速度|控制音量|听一遍旋律"
    },
    {
     "id": "music.g2.mission2.l1",
@@ -7575,16 +7849,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g2.mission2.l2",
     "sourceId": "music.g2.mission2.l2",
     "topic": "音乐 · 2年级应用实践",
-    "prompt": "演唱前听前奏，可以帮助？",
-    "explanation": "找到开始位置。把这个办法用在刚才的情境中。",
+    "prompt": "把「动物音乐林」里的问题、做法和行动线索配对",
+    "explanation": "表现慢慢走的大象，可以选？ → 较慢稳定的节奏；演唱前听前奏，可以帮助？ → 找到开始位置；行动的第一步 → 听前奏",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "找到开始位置",
-     "改变歌词数量",
-     "不用听伙伴"
+    "kind": "match",
+    "prompts": [
+     "表现慢慢走的大象，可以选？",
+     "演唱前听前奏，可以帮助？",
+     "行动的第一步"
     ],
-    "answer": "找到开始位置"
+    "options": [
+     "听前奏",
+     "找到开始位置",
+     "较慢稳定的节奏"
+    ],
+    "answer": "较慢稳定的节奏|找到开始位置|听前奏"
    },
    {
     "id": "music.g2.c2.l3",
@@ -7663,16 +7942,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g3.mission1.l2",
     "sourceId": "music.g3.mission1.l2",
     "topic": "音乐 · 3年级基础探索",
-    "prompt": "反复出现的短节奏，可以作为？",
-    "explanation": "伴奏型。把这个办法用在刚才的情境中。",
+    "prompt": "把「节拍合作桥」里的问题、做法和行动线索配对",
+    "explanation": "两人节奏不同步，先做什么？ → 用共同的稳定拍点；反复出现的短节奏，可以作为？ → 伴奏型；行动的第一步 → 听共同拍点",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "伴奏型",
-     "画面边框",
-     "天气记录"
+    "kind": "match",
+    "prompts": [
+     "两人节奏不同步，先做什么？",
+     "反复出现的短节奏，可以作为？",
+     "行动的第一步"
     ],
-    "answer": "伴奏型"
+    "options": [
+     "听共同拍点",
+     "伴奏型",
+     "用共同的稳定拍点"
+    ],
+    "answer": "用共同的稳定拍点|伴奏型|听共同拍点"
    },
    {
     "id": "music.g3.mission2.l1",
@@ -7724,16 +8008,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g3.mission2.l2",
     "sourceId": "music.g3.mission2.l2",
     "topic": "音乐 · 3年级应用实践",
-    "prompt": "如果漏拍，下一次先？",
-    "explanation": "放慢练习难点。把这个办法用在刚才的情境中。",
+    "prompt": "把「问答节奏船」里的问题、做法和行动线索配对",
+    "explanation": "前一组拍出节奏，后一组模仿属于？ → 节奏回应；如果漏拍，下一次先？ → 放慢练习难点；行动的第一步 → 听清节奏",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "放慢练习难点",
-     "责怪伙伴",
-     "立即加速"
+    "kind": "match",
+    "prompts": [
+     "前一组拍出节奏，后一组模仿属于？",
+     "如果漏拍，下一次先？",
+     "行动的第一步"
     ],
-    "answer": "放慢练习难点"
+    "options": [
+     "听清节奏",
+     "放慢练习难点",
+     "节奏回应"
+    ],
+    "answer": "节奏回应|放慢练习难点|听清节奏"
    },
    {
     "id": "music.g3.c2.l3",
@@ -7812,16 +8101,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g4.mission1.l2",
     "sourceId": "music.g4.mission1.l2",
     "topic": "音乐 · 4年级基础探索",
-    "prompt": "比较两件乐器音色，怎样更公平？",
-    "explanation": "演奏相同片段。把这个办法用在刚才的情境中。",
+    "prompt": "把「音色探索馆」里的问题、做法和行动线索配对",
+    "explanation": "同一旋律换不同乐器，最容易改变？ → 音色；比较两件乐器音色，怎样更公平？ → 演奏相同片段；行动的第一步 → 选同一片段",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "演奏相同片段",
-     "每次换不同乐曲",
-     "只看外观"
+    "kind": "match",
+    "prompts": [
+     "同一旋律换不同乐器，最容易改变？",
+     "比较两件乐器音色，怎样更公平？",
+     "行动的第一步"
     ],
-    "answer": "演奏相同片段"
+    "options": [
+     "选同一片段",
+     "演奏相同片段",
+     "音色"
+    ],
+    "answer": "音色|演奏相同片段|选同一片段"
    },
    {
     "id": "music.g4.mission2.l1",
@@ -7873,16 +8167,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g4.mission2.l2",
     "sourceId": "music.g4.mission2.l2",
     "topic": "音乐 · 4年级应用实践",
-    "prompt": "渐强与突然强一样吗？",
-    "explanation": "不同，渐强有过程。把这个办法用在刚才的情境中。",
+    "prompt": "把「强弱故事屋」里的问题、做法和行动线索配对",
+    "explanation": "表现脚步渐渐走远，声音可以？ → 逐渐变弱；渐强与突然强一样吗？ → 不同，渐强有过程；行动的第一步 → 确定情境",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "不同，渐强有过程",
-     "完全一样",
-     "都指速度变快"
+    "kind": "match",
+    "prompts": [
+     "表现脚步渐渐走远，声音可以？",
+     "渐强与突然强一样吗？",
+     "行动的第一步"
     ],
-    "answer": "不同，渐强有过程"
+    "options": [
+     "确定情境",
+     "不同，渐强有过程",
+     "逐渐变弱"
+    ],
+    "answer": "逐渐变弱|不同，渐强有过程|确定情境"
    },
    {
     "id": "music.g4.c2.l3",
@@ -7961,16 +8260,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g5.mission1.l2",
     "sourceId": "music.g5.mission1.l2",
     "topic": "音乐 · 5年级基础探索",
-    "prompt": "设计对比乐段，可以尝试？",
-    "explanation": "改变速度或力度。把这个办法用在刚才的情境中。",
+    "prompt": "把「乐句呼应岛」里的问题、做法和行动线索配对",
+    "explanation": "开头主题在结尾再现，常形成？ → 前后呼应；设计对比乐段，可以尝试？ → 改变速度或力度；行动的第一步 → 听原主题",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "改变速度或力度",
-     "只改纸张颜色",
-     "不听原段"
+    "kind": "match",
+    "prompts": [
+     "开头主题在结尾再现，常形成？",
+     "设计对比乐段，可以尝试？",
+     "行动的第一步"
     ],
-    "answer": "改变速度或力度"
+    "options": [
+     "听原主题",
+     "改变速度或力度",
+     "前后呼应"
+    ],
+    "answer": "前后呼应|改变速度或力度|听原主题"
    },
    {
     "id": "music.g5.mission2.l1",
@@ -8022,16 +8326,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g5.mission2.l2",
     "sourceId": "music.g5.mission2.l2",
     "topic": "音乐 · 5年级应用实践",
-    "prompt": "修改配乐后，怎样判断效果？",
-    "explanation": "配合画面重新听。把这个办法用在刚才的情境中。",
+    "prompt": "把「配乐创作室」里的问题、做法和行动线索配对",
+    "explanation": "为平静夜晚配乐，先考虑？ → 情境与表达意图；修改配乐后，怎样判断效果？ → 配合画面重新听；行动的第一步 → 观察画面",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "配合画面重新听",
-     "只看文件名",
-     "只看音量按钮"
+    "kind": "match",
+    "prompts": [
+     "为平静夜晚配乐，先考虑？",
+     "修改配乐后，怎样判断效果？",
+     "行动的第一步"
     ],
-    "answer": "配合画面重新听"
+    "options": [
+     "观察画面",
+     "配合画面重新听",
+     "情境与表达意图"
+    ],
+    "answer": "情境与表达意图|配合画面重新听|观察画面"
    },
    {
     "id": "music.g5.c2.l3",
@@ -8111,16 +8420,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g6.mission1.l2",
     "sourceId": "music.g6.mission1.l2",
     "topic": "音乐 · 6年级基础探索",
-    "prompt": "评价合奏时，哪条更具体？",
-    "explanation": "第二段伴奏盖住旋律。把这个办法用在刚才的情境中。",
+    "prompt": "把「毕业音乐会」里的问题、做法和行动线索配对",
+    "explanation": "排练录音最适合用来？ → 比较效果再调整；评价合奏时，哪条更具体？ → 第二段伴奏盖住旋律；行动的第一步 → 确定节目",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "第二段伴奏盖住旋律",
-     "就是不好听",
-     "大家都不行"
+    "kind": "match",
+    "prompts": [
+     "排练录音最适合用来？",
+     "评价合奏时，哪条更具体？",
+     "行动的第一步"
     ],
-    "answer": "第二段伴奏盖住旋律"
+    "options": [
+     "确定节目",
+     "第二段伴奏盖住旋律",
+     "比较效果再调整"
+    ],
+    "answer": "比较效果再调整|第二段伴奏盖住旋律|确定节目"
    },
    {
     "id": "music.g6.mission2.l1",
@@ -8172,16 +8486,21 @@ export const ROUTE_PAPERS = [
     "id": "music.g6.mission2.l2",
     "sourceId": "music.g6.mission2.l2",
     "topic": "音乐 · 6年级应用实践",
-    "prompt": "同伴建议主旋律不清楚，可以？",
-    "explanation": "减弱伴奏再比较。把这个办法用在刚才的情境中。",
+    "prompt": "把「音乐展评港」里的问题、做法和行动线索配对",
+    "explanation": "介绍原创片段时，应该说明？ → 表达想法和使用材料；同伴建议主旋律不清楚，可以？ → 减弱伴奏再比较；行动的第一步 → 展示作品",
     "points": 11,
-    "kind": "choice",
-    "options": [
-     "减弱伴奏再比较",
-     "立刻删除作品",
-     "拒绝所有建议"
+    "kind": "match",
+    "prompts": [
+     "介绍原创片段时，应该说明？",
+     "同伴建议主旋律不清楚，可以？",
+     "行动的第一步"
     ],
-    "answer": "减弱伴奏再比较"
+    "options": [
+     "展示作品",
+     "减弱伴奏再比较",
+     "表达想法和使用材料"
+    ],
+    "answer": "表达想法和使用材料|减弱伴奏再比较|展示作品"
    },
    {
     "id": "music.g6.c2.l3",
@@ -8231,7 +8550,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩与图案",
     "prompt": "红色和黄色颜料相混，选接近的颜色",
     "explanation": "红色与黄色颜料混合，通常得到橙色。",
-    "points": 10,
+    "points": 13,
     "kind": "choice",
     "options": [
      "橙色",
@@ -8246,7 +8565,7 @@ export const ROUTE_PAPERS = [
     "topic": "线条与形状",
     "prompt": "想画波浪起伏，哪种线更贴近？",
     "explanation": "波浪线能表现起伏的感觉。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "波浪线",
@@ -8261,7 +8580,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 1年级基础探索",
     "prompt": "画弯弯的小路，选哪种线？",
     "explanation": "曲线。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "曲线",
@@ -8276,7 +8595,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 1年级应用实践",
     "prompt": "一片叶子画好后反复排列，可以形成？",
     "explanation": "重复纹样。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "重复纹样",
@@ -8286,49 +8605,24 @@ export const ROUTE_PAPERS = [
     "answer": "重复纹样"
    },
    {
-    "id": "art.g1.c1.l2",
-    "sourceId": "art.g1.c1.l2",
-    "topic": "色彩与图案",
-    "prompt": "红、蓝、红、蓝，接下来选什么？",
-    "explanation": "按红、蓝交替重复。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "绿色",
-     "红色",
-     "黄色"
-    ],
-    "answer": "红色"
-   },
-   {
-    "id": "art.g1.c2.l2",
-    "sourceId": "art.g1.c2.l2",
-    "topic": "线条与形状",
-    "prompt": "画一扇圆窗，主要用什么形状？",
-    "explanation": "圆形适合表现圆窗的外轮廓。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "三角形",
-     "圆形",
-     "直线段"
-    ],
-    "answer": "圆形"
-   },
-   {
     "id": "art.g1.mission1.l2",
     "sourceId": "art.g1.mission1.l2",
     "topic": "美术 · 1年级基础探索",
-    "prompt": "让太阳成为画面主角，可以？",
-    "explanation": "画大些并突出颜色。把这个办法用在刚才的情境中。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "画大些并突出颜色",
-     "全部遮住",
-     "画到纸外看不见"
+    "prompt": "把「线条造景岛」里的问题、做法和行动线索配对",
+    "explanation": "画弯弯的小路，选哪种线？ → 曲线；让太阳成为画面主角，可以？ → 画大些并突出颜色；行动的第一步 → 想好主题",
+    "points": 12,
+    "kind": "match",
+    "prompts": [
+     "画弯弯的小路，选哪种线？",
+     "让太阳成为画面主角，可以？",
+     "行动的第一步"
     ],
-    "answer": "画大些并突出颜色"
+    "options": [
+     "想好主题",
+     "画大些并突出颜色",
+     "曲线"
+    ],
+    "answer": "曲线|画大些并突出颜色|想好主题"
    },
    {
     "id": "art.g1.mission2.l3",
@@ -8336,7 +8630,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 1年级应用实践",
     "prompt": "完成「纹样花园」的行动计划",
     "explanation": "设计单元，然后沿边排列，然后检查重复，然后补充颜色。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "补充颜色",
@@ -8347,27 +8641,12 @@ export const ROUTE_PAPERS = [
     "answer": "设计单元|沿边排列|检查重复|补充颜色"
    },
    {
-    "id": "art.g1.c1.l3",
-    "sourceId": "art.g1.c1.l3",
-    "topic": "色彩与图案",
-    "prompt": "给小屋选一个三角形屋顶",
-    "explanation": "三角形有三条边、三个角。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "三角形",
-     "圆形",
-     "正方形"
-    ],
-    "answer": "三角形"
-   },
-   {
     "id": "art.g1.c2.l3",
     "sourceId": "art.g1.c2.l3",
     "topic": "线条与形状",
     "prompt": "按步骤画一朵简单的花",
     "explanation": "从主要形状逐步添加细节。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "添上茎叶",
@@ -8382,7 +8661,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 1年级基础探索",
     "prompt": "完成「线条造景岛」的行动计划",
     "explanation": "想好主题，然后画主要形状，然后添加细节，然后欣赏作品。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "欣赏作品",
@@ -8408,7 +8687,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩与图案",
     "prompt": "红色和黄色颜料相混，选接近的颜色",
     "explanation": "红色与黄色颜料混合，通常得到橙色。",
-    "points": 10,
+    "points": 13,
     "kind": "choice",
     "options": [
      "橙色",
@@ -8423,7 +8702,7 @@ export const ROUTE_PAPERS = [
     "topic": "规律与组合",
     "prompt": "黄、绿、黄、绿，下一面旗子是什么颜色？",
     "explanation": "重复单元是黄、绿。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "黄",
@@ -8438,7 +8717,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 2年级基础探索",
     "prompt": "三角形加长方形可以拼成？",
     "explanation": "屋顶和房身。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "屋顶和房身",
@@ -8453,7 +8732,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 2年级应用实践",
     "prompt": "折纸前先看示意图，可以帮助？",
     "explanation": "了解步骤。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "了解步骤",
@@ -8463,49 +8742,24 @@ export const ROUTE_PAPERS = [
     "answer": "了解步骤"
    },
    {
-    "id": "art.g2.c1.l2",
-    "sourceId": "art.g2.c1.l2",
-    "topic": "色彩与图案",
-    "prompt": "红、蓝、红、蓝，接下来选什么？",
-    "explanation": "按红、蓝交替重复。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "绿色",
-     "红色",
-     "黄色"
-    ],
-    "answer": "红色"
-   },
-   {
-    "id": "art.g2.c2.l2",
-    "sourceId": "art.g2.c2.l2",
-    "topic": "规律与组合",
-    "prompt": "用一个三角形和一个正方形，更容易拼成？",
-    "explanation": "三角形可作屋顶，正方形可作房身。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "圆球",
-     "小房子",
-     "弯月"
-    ],
-    "answer": "小房子"
-   },
-   {
     "id": "art.g2.mission1.l2",
     "sourceId": "art.g2.mission1.l2",
     "topic": "美术 · 2年级基础探索",
-    "prompt": "重复的圆方圆方，下一组是？",
-    "explanation": "圆方。把这个办法用在刚才的情境中。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "圆方",
-     "三角圆",
-     "方方"
+    "prompt": "把「图形拼搭屋」里的问题、做法和行动线索配对",
+    "explanation": "三角形加长方形可以拼成？ → 屋顶和房身；重复的圆方圆方，下一组是？ → 圆方；行动的第一步 → 选择图形",
+    "points": 12,
+    "kind": "match",
+    "prompts": [
+     "三角形加长方形可以拼成？",
+     "重复的圆方圆方，下一组是？",
+     "行动的第一步"
     ],
-    "answer": "圆方"
+    "options": [
+     "选择图形",
+     "圆方",
+     "屋顶和房身"
+    ],
+    "answer": "屋顶和房身|圆方|选择图形"
    },
    {
     "id": "art.g2.mission2.l3",
@@ -8513,7 +8767,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 2年级应用实践",
     "prompt": "完成「手工纸城」的行动计划",
     "explanation": "看示意图，然后对齐折叠，然后压平折痕，然后整理作品。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "整理作品",
@@ -8524,27 +8778,12 @@ export const ROUTE_PAPERS = [
     "answer": "看示意图|对齐折叠|压平折痕|整理作品"
    },
    {
-    "id": "art.g2.c1.l3",
-    "sourceId": "art.g2.c1.l3",
-    "topic": "色彩与图案",
-    "prompt": "给小屋选一个三角形屋顶",
-    "explanation": "三角形有三条边、三个角。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "三角形",
-     "圆形",
-     "正方形"
-    ],
-    "answer": "三角形"
-   },
-   {
     "id": "art.g2.c2.l3",
     "sourceId": "art.g2.c2.l3",
     "topic": "规律与组合",
     "prompt": "设计一个重复的图案边框",
     "explanation": "有规律地重复，形成装饰节奏。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "沿边排列",
@@ -8559,7 +8798,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 2年级基础探索",
     "prompt": "完成「图形拼搭屋」的行动计划",
     "explanation": "选择图形，然后试着组合，然后固定排列，然后添加装饰。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "添加装饰",
@@ -8585,7 +8824,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩与图案",
     "prompt": "为温暖的篝火选一组主色调",
     "explanation": "红、橙常给人温暖的感受。",
-    "points": 10,
+    "points": 13,
     "kind": "choice",
     "options": [
      "红与橙",
@@ -8600,7 +8839,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩探索",
     "prompt": "常见颜料中，红色加黄色通常接近什么颜色？",
     "explanation": "红与黄混合通常得到橙色，可少量尝试比例。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "绿色",
@@ -8615,7 +8854,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 3年级基础探索",
     "prompt": "常见颜料黄加蓝，通常接近？",
     "explanation": "绿色。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "绿色",
@@ -8630,7 +8869,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 3年级应用实践",
     "prompt": "表现篝火温暖感，常选？",
     "explanation": "红橙色。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "红橙色",
@@ -8640,49 +8879,24 @@ export const ROUTE_PAPERS = [
     "answer": "红橙色"
    },
    {
-    "id": "art.g3.c1.l2",
-    "sourceId": "art.g3.c1.l2",
-    "topic": "色彩与图案",
-    "prompt": "黄色和蓝色颜料相混，选接近的颜色",
-    "explanation": "黄色与蓝色颜料混合，通常得到绿色。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "橙色",
-     "绿色",
-     "紫色"
-    ],
-    "answer": "绿色"
-   },
-   {
-    "id": "art.g3.c2.l2",
-    "sourceId": "art.g3.c2.l2",
-    "topic": "色彩探索",
-    "prompt": "同样大的小树，近处一般画得？",
-    "explanation": "近大远小是一种常用的空间表现方法。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "较大",
-     "一定更小",
-     "完全看不见"
-    ],
-    "answer": "较大"
-   },
-   {
     "id": "art.g3.mission1.l2",
     "sourceId": "art.g3.mission1.l2",
     "topic": "美术 · 3年级基础探索",
-    "prompt": "想把一种颜色调浅，可少量加入？",
-    "explanation": "白色。把这个办法用在刚才的情境中。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "白色",
-     "黑色",
-     "泥沙"
+    "prompt": "把「色彩探索桥」里的问题、做法和行动线索配对",
+    "explanation": "常见颜料黄加蓝，通常接近？ → 绿色；想把一种颜色调浅，可少量加入？ → 白色；行动的第一步 → 取少量颜料",
+    "points": 12,
+    "kind": "match",
+    "prompts": [
+     "常见颜料黄加蓝，通常接近？",
+     "想把一种颜色调浅，可少量加入？",
+     "行动的第一步"
     ],
-    "answer": "白色"
+    "options": [
+     "取少量颜料",
+     "白色",
+     "绿色"
+    ],
+    "answer": "绿色|白色|取少量颜料"
    },
    {
     "id": "art.g3.mission2.l3",
@@ -8690,7 +8904,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 3年级应用实践",
     "prompt": "完成「冷暖风景林」的行动计划",
     "explanation": "确定场景，然后选择主色，然后少量试色，然后完成画面。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "完成画面",
@@ -8701,27 +8915,12 @@ export const ROUTE_PAPERS = [
     "answer": "确定场景|选择主色|少量试色|完成画面"
    },
    {
-    "id": "art.g3.c1.l3",
-    "sourceId": "art.g3.c1.l3",
-    "topic": "色彩与图案",
-    "prompt": "想让花纹有规律地重复，选择哪一组？",
-    "explanation": "重复的单元让图案形成节奏。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "圆方圆方",
-     "圆圆方三角",
-     "方圆三角圆"
-    ],
-    "answer": "圆方圆方"
-   },
-   {
     "id": "art.g3.c2.l3",
     "sourceId": "art.g3.c2.l3",
     "topic": "色彩探索",
     "prompt": "试着调出自己喜欢的绿色",
     "explanation": "少量试调，再观察变化。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "记录比例与效果",
@@ -8736,7 +8935,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 3年级基础探索",
     "prompt": "完成「色彩探索桥」的行动计划",
     "explanation": "取少量颜料，然后逐步混合，然后观察颜色，然后记录配比。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "记录配比",
@@ -8762,7 +8961,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩与图案",
     "prompt": "为温暖的篝火选一组主色调",
     "explanation": "红、橙常给人温暖的感受。",
-    "points": 10,
+    "points": 13,
     "kind": "choice",
     "options": [
      "红与橙",
@@ -8777,7 +8976,7 @@ export const ROUTE_PAPERS = [
     "topic": "构图与表达",
     "prompt": "想突出一只小船，哪种处理更直接？",
     "explanation": "大小、色彩等对比可以突出重点。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "用对比突出小船",
@@ -8792,7 +8991,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 4年级基础探索",
     "prompt": "同样大的物体画出远近，通常？",
     "explanation": "近大远小。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "近大远小",
@@ -8807,7 +9006,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 4年级应用实践",
     "prompt": "画面太挤，想突出主题，可以？",
     "explanation": "减少无关元素并留白。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 13,
     "kind": "choice",
     "options": [
      "减少无关元素并留白",
@@ -8817,49 +9016,24 @@ export const ROUTE_PAPERS = [
     "answer": "减少无关元素并留白"
    },
    {
-    "id": "art.g4.c1.l2",
-    "sourceId": "art.g4.c1.l2",
-    "topic": "色彩与图案",
-    "prompt": "黄色和蓝色颜料相混，选接近的颜色",
-    "explanation": "黄色与蓝色颜料混合，通常得到绿色。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "橙色",
-     "绿色",
-     "紫色"
-    ],
-    "answer": "绿色"
-   },
-   {
-    "id": "art.g4.c2.l2",
-    "sourceId": "art.g4.c2.l2",
-    "topic": "构图与表达",
-    "prompt": "一棵树挡住另一棵树一部分，通常谁在前？",
-    "explanation": "遮挡关系可以表现物体的前后。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "被挡住的树",
-     "挡住别人的树",
-     "无法画树"
-    ],
-    "answer": "挡住别人的树"
-   },
-   {
     "id": "art.g4.mission1.l2",
     "sourceId": "art.g4.mission1.l2",
     "topic": "美术 · 4年级基础探索",
-    "prompt": "前面物体遮住后面一部分，表示？",
-    "explanation": "前后关系。把这个办法用在刚才的情境中。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "前后关系",
-     "气味差别",
-     "声音大小"
+    "prompt": "把「空间故事岛」里的问题、做法和行动线索配对",
+    "explanation": "同样大的物体画出远近，通常？ → 近大远小；前面物体遮住后面一部分，表示？ → 前后关系；行动的第一步 → 安排近景",
+    "points": 12,
+    "kind": "match",
+    "prompts": [
+     "同样大的物体画出远近，通常？",
+     "前面物体遮住后面一部分，表示？",
+     "行动的第一步"
     ],
-    "answer": "前后关系"
+    "options": [
+     "安排近景",
+     "前后关系",
+     "近大远小"
+    ],
+    "answer": "近大远小|前后关系|安排近景"
    },
    {
     "id": "art.g4.mission2.l3",
@@ -8867,7 +9041,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 4年级应用实践",
     "prompt": "完成「版面设计船」的行动计划",
     "explanation": "找出主题，然后挑选重要内容，然后安排层次，然后检查效果。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "检查效果",
@@ -8878,27 +9052,12 @@ export const ROUTE_PAPERS = [
     "answer": "找出主题|挑选重要内容|安排层次|检查效果"
    },
    {
-    "id": "art.g4.c1.l3",
-    "sourceId": "art.g4.c1.l3",
-    "topic": "色彩与图案",
-    "prompt": "想让花纹有规律地重复，选择哪一组？",
-    "explanation": "重复的单元让图案形成节奏。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "圆方圆方",
-     "圆圆方三角",
-     "方圆三角圆"
-    ],
-    "answer": "圆方圆方"
-   },
-   {
     "id": "art.g4.c2.l3",
     "sourceId": "art.g4.c2.l3",
     "topic": "构图与表达",
     "prompt": "为一个故事画插图",
     "explanation": "画面内容围绕关键情节组织。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "补充环境细节",
@@ -8913,7 +9072,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 4年级基础探索",
     "prompt": "完成「空间故事岛」的行动计划",
     "explanation": "安排近景，然后安排远景，然后处理遮挡，然后检查空间。",
-    "points": 9,
+    "points": 12,
     "kind": "order",
     "options": [
      "检查空间",
@@ -8954,7 +9113,7 @@ export const ROUTE_PAPERS = [
     "topic": "视觉信息设计",
     "prompt": "远处也要看清活动名，标题应该？",
     "explanation": "字号与对比能帮助识别标题。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "足够大且清楚",
@@ -8969,7 +9128,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 5年级基础探索",
     "prompt": "海报让远处看清标题，应？",
     "explanation": "字号大且对比清楚。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "字号大且对比清楚",
@@ -8984,7 +9143,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 5年级应用实践",
     "prompt": "写生前最该先观察？",
     "explanation": "整体形状和比例。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "整体形状和比例",
@@ -8999,7 +9158,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩与图案",
     "prompt": "海报要突出一本书，哪种办法更直接？",
     "explanation": "大小对比与留白能帮助突出主体。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "放大主体并留空",
@@ -9009,34 +9168,24 @@ export const ROUTE_PAPERS = [
     "answer": "放大主体并留空"
    },
    {
-    "id": "art.g5.c2.l2",
-    "sourceId": "art.g5.c2.l2",
-    "topic": "视觉信息设计",
-    "prompt": "阅读节海报最需要清楚展示什么？",
-    "explanation": "海报应传达与活动有关的关键信息。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "无关购物清单",
-     "活动名称与时间地点",
-     "所有人的家庭地址"
-    ],
-    "answer": "活动名称与时间地点"
-   },
-   {
     "id": "art.g5.mission1.l2",
     "sourceId": "art.g5.mission1.l2",
     "topic": "美术 · 5年级基础探索",
-    "prompt": "阅读节海报必需的内容是？",
-    "explanation": "活动名称时间地点。把这个办法用在刚才的情境中。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "活动名称时间地点",
-     "所有人的私人电话",
-     "无关物品清单"
+    "prompt": "把「视觉传信站」里的问题、做法和行动线索配对",
+    "explanation": "海报让远处看清标题，应？ → 字号大且对比清楚；阅读节海报必需的内容是？ → 活动名称时间地点；行动的第一步 → 确定主题",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "海报让远处看清标题，应？",
+     "阅读节海报必需的内容是？",
+     "行动的第一步"
     ],
-    "answer": "活动名称时间地点"
+    "options": [
+     "确定主题",
+     "活动名称时间地点",
+     "字号大且对比清楚"
+    ],
+    "answer": "字号大且对比清楚|活动名称时间地点|确定主题"
    },
    {
     "id": "art.g5.mission2.l3",
@@ -9044,7 +9193,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 5年级应用实践",
     "prompt": "完成「观察写生台」的行动计划",
     "explanation": "观察整体，然后标出比例，然后表现明暗，然后对照调整。",
-    "points": 9,
+    "points": 10,
     "kind": "order",
     "options": [
      "对照调整",
@@ -9060,7 +9209,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩与图案",
     "prompt": "给自己的小岛海报安排创作步骤",
     "explanation": "先想清主题，再逐步创作和调整。",
-    "points": 9,
+    "points": 10,
     "kind": "order",
     "options": [
      "观察修改",
@@ -9076,7 +9225,7 @@ export const ROUTE_PAPERS = [
     "topic": "视觉信息设计",
     "prompt": "检查自己设计的海报",
     "explanation": "既要表达主题，也要让信息容易读懂。",
-    "points": 9,
+    "points": 10,
     "kind": "order",
     "options": [
      "调整画面层次",
@@ -9091,7 +9240,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 5年级基础探索",
     "prompt": "完成「视觉传信站」的行动计划",
     "explanation": "确定主题，然后安排标题信息，然后加入图像，然后检查可读性。",
-    "points": 9,
+    "points": 10,
     "kind": "order",
     "options": [
      "检查可读性",
@@ -9132,7 +9281,7 @@ export const ROUTE_PAPERS = [
     "topic": "展示与评价",
     "prompt": "给作品写说明，哪项最有帮助？",
     "explanation": "作品说明帮助观众理解创作意图。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "只写很好看",
@@ -9147,7 +9296,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 6年级基础探索",
     "prompt": "展览说明牌应该帮助观众？",
     "explanation": "理解作品主题与材料。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "理解作品主题与材料",
@@ -9162,7 +9311,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 6年级应用实践",
     "prompt": "设计校园指示牌，优先考虑？",
     "explanation": "清楚易懂。把这个办法用在刚才的情境中。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "清楚易懂",
@@ -9177,7 +9326,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩与图案",
     "prompt": "海报要突出一本书，哪种办法更直接？",
     "explanation": "大小对比与留白能帮助突出主体。",
-    "points": 9,
+    "points": 10,
     "kind": "choice",
     "options": [
      "放大主体并留空",
@@ -9187,34 +9336,24 @@ export const ROUTE_PAPERS = [
     "answer": "放大主体并留空"
    },
    {
-    "id": "art.g6.c2.l2",
-    "sourceId": "art.g6.c2.l2",
-    "topic": "展示与评价",
-    "prompt": "评价伙伴作品，更有帮助的是？",
-    "explanation": "具体且尊重的反馈能帮助创作交流。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "具体说出观察与建议",
-     "只说难看",
-     "比较谁最有钱"
-    ],
-    "answer": "具体说出观察与建议"
-   },
-   {
     "id": "art.g6.mission1.l2",
     "sourceId": "art.g6.mission1.l2",
     "topic": "美术 · 6年级基础探索",
-    "prompt": "评价作品，哪条更具体？",
-    "explanation": "蓝橙对比突出主体。把这个办法用在刚才的情境中。",
-    "points": 9,
-    "kind": "choice",
-    "options": [
-     "蓝橙对比突出主体",
-     "完全不好看",
-     "只能照我画"
+    "prompt": "把「作品策展馆」里的问题、做法和行动线索配对",
+    "explanation": "展览说明牌应该帮助观众？ → 理解作品主题与材料；评价作品，哪条更具体？ → 蓝橙对比突出主体；行动的第一步 → 选择作品",
+    "points": 10,
+    "kind": "match",
+    "prompts": [
+     "展览说明牌应该帮助观众？",
+     "评价作品，哪条更具体？",
+     "行动的第一步"
     ],
-    "answer": "蓝橙对比突出主体"
+    "options": [
+     "选择作品",
+     "蓝橙对比突出主体",
+     "理解作品主题与材料"
+    ],
+    "answer": "理解作品主题与材料|蓝橙对比突出主体|选择作品"
    },
    {
     "id": "art.g6.mission2.l3",
@@ -9222,7 +9361,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 6年级应用实践",
     "prompt": "完成「公共艺术坊」的行动计划",
     "explanation": "了解需求，然后画出草图，然后邀请试用，然后修改定稿。",
-    "points": 9,
+    "points": 10,
     "kind": "order",
     "options": [
      "修改定稿",
@@ -9238,7 +9377,7 @@ export const ROUTE_PAPERS = [
     "topic": "色彩与图案",
     "prompt": "给自己的小岛海报安排创作步骤",
     "explanation": "先想清主题，再逐步创作和调整。",
-    "points": 9,
+    "points": 10,
     "kind": "order",
     "options": [
      "观察修改",
@@ -9254,7 +9393,7 @@ export const ROUTE_PAPERS = [
     "topic": "展示与评价",
     "prompt": "把毕业作品展示给大家",
     "explanation": "选择、布置和说明共同构成展示。",
-    "points": 9,
+    "points": 10,
     "kind": "order",
     "options": [
      "邀请交流",
@@ -9270,7 +9409,7 @@ export const ROUTE_PAPERS = [
     "topic": "美术 · 6年级基础探索",
     "prompt": "完成「作品策展馆」的行动计划",
     "explanation": "选择作品，然后写简短说明，然后安排展示，然后听取反馈。",
-    "points": 9,
+    "points": 10,
     "kind": "order",
     "options": [
      "听取反馈",
@@ -9385,31 +9524,41 @@ export const ROUTE_PAPERS = [
     "id": "pe.g1.mission1.l2",
     "sourceId": "pe.g1.mission1.l2",
     "topic": "体育与健康 · 1年级基础探索",
-    "prompt": "身体感觉不舒服，应该？",
-    "explanation": "停止活动告诉老师。把这个办法用在刚才的情境中。",
+    "prompt": "把「活力准备岛」里的问题、做法和行动线索配对",
+    "explanation": "游戏开始前先观察？ → 场地是否有障碍；身体感觉不舒服，应该？ → 停止活动告诉老师；行动的第一步 → 检查场地",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "停止活动告诉老师",
-     "硬撑比赛",
-     "偷偷离开不说"
+    "kind": "match",
+    "prompts": [
+     "游戏开始前先观察？",
+     "身体感觉不舒服，应该？",
+     "行动的第一步"
     ],
-    "answer": "停止活动告诉老师"
+    "options": [
+     "检查场地",
+     "停止活动告诉老师",
+     "场地是否有障碍"
+    ],
+    "answer": "场地是否有障碍|停止活动告诉老师|检查场地"
    },
    {
     "id": "pe.g1.mission2.l2",
     "sourceId": "pe.g1.mission2.l2",
     "topic": "体育与健康 · 1年级应用实践",
-    "prompt": "运动中发现鞋带松了，应？",
-    "explanation": "到安全位置停下整理。把这个办法用在刚才的情境中。",
+    "prompt": "把「整理放松站」里的问题、做法和行动线索配对",
+    "explanation": "活动结束后应该？ → 按老师指导整理放松；运动中发现鞋带松了，应？ → 到安全位置停下整理；行动的第一步 → 停止游戏",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "到安全位置停下整理",
-     "边跑边系",
-     "不管继续追逐"
+    "kind": "match",
+    "prompts": [
+     "活动结束后应该？",
+     "运动中发现鞋带松了，应？",
+     "行动的第一步"
     ],
-    "answer": "到安全位置停下整理"
+    "options": [
+     "停止游戏",
+     "到安全位置停下整理",
+     "按老师指导整理放松"
+    ],
+    "answer": "按老师指导整理放松|到安全位置停下整理|停止游戏"
    },
    {
     "id": "pe.g1.c1.l3",
@@ -9578,31 +9727,41 @@ export const ROUTE_PAPERS = [
     "id": "pe.g2.mission1.l2",
     "sourceId": "pe.g2.mission1.l2",
     "topic": "体育与健康 · 2年级基础探索",
-    "prompt": "器材用完该放哪里？",
-    "explanation": "指定存放处。把这个办法用在刚才的情境中。",
+    "prompt": "把「投接合作屋」里的问题、做法和行动线索配对",
+    "explanation": "传球前先确认？ → 队友已经准备好；器材用完该放哪里？ → 指定存放处；行动的第一步 → 发出传球信号",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "指定存放处",
-     "通道中央",
-     "随手抛出"
+    "kind": "match",
+    "prompts": [
+     "传球前先确认？",
+     "器材用完该放哪里？",
+     "行动的第一步"
     ],
-    "answer": "指定存放处"
+    "options": [
+     "发出传球信号",
+     "指定存放处",
+     "队友已经准备好"
+    ],
+    "answer": "队友已经准备好|指定存放处|发出传球信号"
    },
    {
     "id": "pe.g2.mission2.l2",
     "sourceId": "pe.g2.mission2.l2",
     "topic": "体育与健康 · 2年级应用实践",
-    "prompt": "别人还没完成时，应该？",
-    "explanation": "留出活动空间。把这个办法用在刚才的情境中。",
+    "prompt": "把「规则伙伴园」里的问题、做法和行动线索配对",
+    "explanation": "排队轮流跳圈，应当？ → 等前一人离开再开始；别人还没完成时，应该？ → 留出活动空间；行动的第一步 → 听清顺序",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "留出活动空间",
-     "抢占他的落点",
-     "催促并拉扯"
+    "kind": "match",
+    "prompts": [
+     "排队轮流跳圈，应当？",
+     "别人还没完成时，应该？",
+     "行动的第一步"
     ],
-    "answer": "留出活动空间"
+    "options": [
+     "听清顺序",
+     "留出活动空间",
+     "等前一人离开再开始"
+    ],
+    "answer": "等前一人离开再开始|留出活动空间|听清顺序"
    },
    {
     "id": "pe.g2.c1.l3",
@@ -9770,31 +9929,41 @@ export const ROUTE_PAPERS = [
     "id": "pe.g3.mission1.l2",
     "sourceId": "pe.g3.mission1.l2",
     "topic": "体育与健康 · 3年级基础探索",
-    "prompt": "队友失误时怎样帮助？",
-    "explanation": "鼓励并练习交接。把这个办法用在刚才的情境中。",
+    "prompt": "把「接力协作桥」里的问题、做法和行动线索配对",
+    "explanation": "接力时最重要的合作是？ → 按规则完成交接；队友失误时怎样帮助？ → 鼓励并练习交接；行动的第一步 → 明确交接区",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "鼓励并练习交接",
-     "不停责怪",
-     "取消他的参与"
+    "kind": "match",
+    "prompts": [
+     "接力时最重要的合作是？",
+     "队友失误时怎样帮助？",
+     "行动的第一步"
     ],
-    "answer": "鼓励并练习交接"
+    "options": [
+     "明确交接区",
+     "鼓励并练习交接",
+     "按规则完成交接"
+    ],
+    "answer": "按规则完成交接|鼓励并练习交接|明确交接区"
    },
    {
     "id": "pe.g3.mission2.l2",
     "sourceId": "pe.g3.mission2.l2",
     "topic": "体育与健康 · 3年级应用实践",
-    "prompt": "比赛结果不满意，可以？",
-    "explanation": "按规则沟通。把这个办法用在刚才的情境中。",
+    "prompt": "把「公平赛场岛」里的问题、做法和行动线索配对",
+    "explanation": "你碰球出界但别人没看见，应该？ → 如实说明；比赛结果不满意，可以？ → 按规则沟通；行动的第一步 → 听清判定",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "按规则沟通",
-     "推翻器材",
-     "辱骂对手"
+    "kind": "match",
+    "prompts": [
+     "你碰球出界但别人没看见，应该？",
+     "比赛结果不满意，可以？",
+     "行动的第一步"
     ],
-    "answer": "按规则沟通"
+    "options": [
+     "听清判定",
+     "按规则沟通",
+     "如实说明"
+    ],
+    "answer": "如实说明|按规则沟通|听清判定"
    },
    {
     "id": "pe.g3.c1.l3",
@@ -9963,31 +10132,41 @@ export const ROUTE_PAPERS = [
     "id": "pe.g4.mission1.l2",
     "sourceId": "pe.g4.mission1.l2",
     "topic": "体育与健康 · 4年级基础探索",
-    "prompt": "动作还不熟练时，应该？",
-    "explanation": "按老师指导分步练。把这个办法用在刚才的情境中。",
+    "prompt": "把「练习记录台」里的问题、做法和行动线索配对",
+    "explanation": "记录进步应比较？ → 自己前后真实表现；动作还不熟练时，应该？ → 按老师指导分步练；行动的第一步 → 了解动作",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "按老师指导分步练",
-     "盲目增加难度",
-     "只追求速度"
+    "kind": "match",
+    "prompts": [
+     "记录进步应比较？",
+     "动作还不熟练时，应该？",
+     "行动的第一步"
     ],
-    "answer": "按老师指导分步练"
+    "options": [
+     "了解动作",
+     "按老师指导分步练",
+     "自己前后真实表现"
+    ],
+    "answer": "自己前后真实表现|按老师指导分步练|了解动作"
    },
    {
     "id": "pe.g4.mission2.l2",
     "sourceId": "pe.g4.mission2.l2",
     "topic": "体育与健康 · 4年级应用实践",
-    "prompt": "小组有人能力较弱，应该？",
-    "explanation": "合理调整任务并支持。把这个办法用在刚才的情境中。",
+    "prompt": "把「合作闯关屋」里的问题、做法和行动线索配对",
+    "explanation": "多人运球任务失败，先回顾？ → 配合在哪一步出问题；小组有人能力较弱，应该？ → 合理调整任务并支持；行动的第一步 → 明确任务",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "合理调整任务并支持",
-     "不让他参加",
-     "要求立刻加倍难度"
+    "kind": "match",
+    "prompts": [
+     "多人运球任务失败，先回顾？",
+     "小组有人能力较弱，应该？",
+     "行动的第一步"
     ],
-    "answer": "合理调整任务并支持"
+    "options": [
+     "明确任务",
+     "合理调整任务并支持",
+     "配合在哪一步出问题"
+    ],
+    "answer": "配合在哪一步出问题|合理调整任务并支持|明确任务"
    },
    {
     "id": "pe.g4.c1.l3",
@@ -10156,31 +10335,41 @@ export const ROUTE_PAPERS = [
     "id": "pe.g5.mission1.l2",
     "sourceId": "pe.g5.mission1.l2",
     "topic": "体育与健康 · 5年级基础探索",
-    "prompt": "同伴提出改进意见，先？",
-    "explanation": "听具体原因。把这个办法用在刚才的情境中。",
+    "prompt": "把「战术讨论岛」里的问题、做法和行动线索配对",
+    "explanation": "小组比赛前分工可以帮助？ → 明确各自职责；同伴提出改进意见，先？ → 听具体原因；行动的第一步 → 观察比赛",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "听具体原因",
-     "马上争吵",
-     "拒绝再练"
+    "kind": "match",
+    "prompts": [
+     "小组比赛前分工可以帮助？",
+     "同伴提出改进意见，先？",
+     "行动的第一步"
     ],
-    "answer": "听具体原因"
+    "options": [
+     "观察比赛",
+     "听具体原因",
+     "明确各自职责"
+    ],
+    "answer": "明确各自职责|听具体原因|观察比赛"
    },
    {
     "id": "pe.g5.mission2.l2",
     "sourceId": "pe.g5.mission2.l2",
     "topic": "体育与健康 · 5年级应用实践",
-    "prompt": "同伴需要帮助练习，先？",
-    "explanation": "询问并按老师指导配合。把这个办法用在刚才的情境中。",
+    "prompt": "把「运动观察馆」里的问题、做法和行动线索配对",
+    "explanation": "评价动作进步应看？ → 动作质量与个人变化；同伴需要帮助练习，先？ → 询问并按老师指导配合；行动的第一步 → 观察动作",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "询问并按老师指导配合",
-     "突然拉扯肢体",
-     "让他模仿危险动作"
+    "kind": "match",
+    "prompts": [
+     "评价动作进步应看？",
+     "同伴需要帮助练习，先？",
+     "行动的第一步"
     ],
-    "answer": "询问并按老师指导配合"
+    "options": [
+     "观察动作",
+     "询问并按老师指导配合",
+     "动作质量与个人变化"
+    ],
+    "answer": "动作质量与个人变化|询问并按老师指导配合|观察动作"
    },
    {
     "id": "pe.g5.c1.l3",
@@ -10349,31 +10538,41 @@ export const ROUTE_PAPERS = [
     "id": "pe.g6.mission1.l2",
     "sourceId": "pe.g6.mission1.l2",
     "topic": "体育与健康 · 6年级基础探索",
-    "prompt": "计划执行后最需要？",
-    "explanation": "根据真实记录调整。把这个办法用在刚才的情境中。",
+    "prompt": "把「自主运动港」里的问题、做法和行动线索配对",
+    "explanation": "制定练习计划，首先考虑？ → 自己的情况与目标；计划执行后最需要？ → 根据真实记录调整；行动的第一步 → 确定目标",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "根据真实记录调整",
-     "从不改变",
-     "隐藏困难"
+    "kind": "match",
+    "prompts": [
+     "制定练习计划，首先考虑？",
+     "计划执行后最需要？",
+     "行动的第一步"
     ],
-    "answer": "根据真实记录调整"
+    "options": [
+     "确定目标",
+     "根据真实记录调整",
+     "自己的情况与目标"
+    ],
+    "answer": "自己的情况与目标|根据真实记录调整|确定目标"
    },
    {
     "id": "pe.g6.mission2.l2",
     "sourceId": "pe.g6.mission2.l2",
     "topic": "体育与健康 · 6年级应用实践",
-    "prompt": "评价活动成功，还应看？",
-    "explanation": "参与合作与秩序。把这个办法用在刚才的情境中。",
+    "prompt": "把「班级运动会」里的问题、做法和行动线索配对",
+    "explanation": "组织活动应先检查？ → 规则场地与器材；评价活动成功，还应看？ → 参与合作与秩序；行动的第一步 → 明确活动目标",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "参与合作与秩序",
-     "只有第一名",
-     "只看观众数量"
+    "kind": "match",
+    "prompts": [
+     "组织活动应先检查？",
+     "评价活动成功，还应看？",
+     "行动的第一步"
     ],
-    "answer": "参与合作与秩序"
+    "options": [
+     "明确活动目标",
+     "参与合作与秩序",
+     "规则场地与器材"
+    ],
+    "answer": "规则场地与器材|参与合作与秩序|明确活动目标"
    },
    {
     "id": "pe.g6.c1.l3",
@@ -10544,31 +10743,41 @@ export const ROUTE_PAPERS = [
     "id": "labor.g1.mission1.l2",
     "sourceId": "labor.g1.mission1.l2",
     "topic": "劳动 · 1年级基础探索",
-    "prompt": "整理前先做什么？",
-    "explanation": "区分物品类别。把这个办法用在刚才的情境中。",
+    "prompt": "把「书桌整理屋」里的问题、做法和行动线索配对",
+    "explanation": "每天要用的文具适合放？ → 容易取放的位置；整理前先做什么？ → 区分物品类别；行动的第一步 → 分类物品",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "区分物品类别",
-     "全部塞进抽屉",
-     "全部丢掉"
+    "kind": "match",
+    "prompts": [
+     "每天要用的文具适合放？",
+     "整理前先做什么？",
+     "行动的第一步"
     ],
-    "answer": "区分物品类别"
+    "options": [
+     "分类物品",
+     "区分物品类别",
+     "容易取放的位置"
+    ],
+    "answer": "容易取放的位置|区分物品类别|分类物品"
    },
    {
     "id": "labor.g1.mission2.l2",
     "sourceId": "labor.g1.mission2.l2",
     "topic": "劳动 · 1年级应用实践",
-    "prompt": "水杯和书本应怎样放？",
-    "explanation": "盖紧水杯分开放。把这个办法用在刚才的情境中。",
+    "prompt": "把「书包补给站」里的问题、做法和行动线索配对",
+    "explanation": "明天书包带什么，依据是？ → 课表与实际需要；水杯和书本应怎样放？ → 盖紧水杯分开放；行动的第一步 → 查看课表",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "盖紧水杯分开放",
-     "敞口放一起",
-     "把水倒在书上"
+    "kind": "match",
+    "prompts": [
+     "明天书包带什么，依据是？",
+     "水杯和书本应怎样放？",
+     "行动的第一步"
     ],
-    "answer": "盖紧水杯分开放"
+    "options": [
+     "查看课表",
+     "盖紧水杯分开放",
+     "课表与实际需要"
+    ],
+    "answer": "课表与实际需要|盖紧水杯分开放|查看课表"
    },
    {
     "id": "labor.g1.c1.l3",
@@ -10737,31 +10946,41 @@ export const ROUTE_PAPERS = [
     "id": "labor.g2.mission1.l2",
     "sourceId": "labor.g2.mission1.l2",
     "topic": "劳动 · 2年级基础探索",
-    "prompt": "叠衣服前先检查？",
-    "explanation": "口袋有无物品。把这个办法用在刚才的情境中。",
+    "prompt": "把「衣物收纳岛」里的问题、做法和行动线索配对",
+    "explanation": "干净与待洗衣物，应当？ → 分开放置；叠衣服前先检查？ → 口袋有无物品；行动的第一步 → 检查口袋",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "口袋有无物品",
-     "衣服售价",
-     "别人穿什么"
+    "kind": "match",
+    "prompts": [
+     "干净与待洗衣物，应当？",
+     "叠衣服前先检查？",
+     "行动的第一步"
     ],
-    "answer": "口袋有无物品"
+    "options": [
+     "检查口袋",
+     "口袋有无物品",
+     "分开放置"
+    ],
+    "answer": "分开放置|口袋有无物品|检查口袋"
    },
    {
     "id": "labor.g2.mission2.l2",
     "sourceId": "labor.g2.mission2.l2",
     "topic": "劳动 · 2年级应用实践",
-    "prompt": "用完清洁工具，应该？",
-    "explanation": "按要求清理归位。把这个办法用在刚才的情境中。",
+    "prompt": "把「清洁小队屋」里的问题、做法和行动线索配对",
+    "explanation": "擦桌前先移开什么？ → 书本和电器等物品；用完清洁工具，应该？ → 按要求清理归位；行动的第一步 → 移开物品",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "按要求清理归位",
-     "留在路中间",
-     "随便丢进书包"
+    "kind": "match",
+    "prompts": [
+     "擦桌前先移开什么？",
+     "用完清洁工具，应该？",
+     "行动的第一步"
     ],
-    "answer": "按要求清理归位"
+    "options": [
+     "移开物品",
+     "按要求清理归位",
+     "书本和电器等物品"
+    ],
+    "answer": "书本和电器等物品|按要求清理归位|移开物品"
    },
    {
     "id": "labor.g2.c1.l3",
@@ -10931,31 +11150,41 @@ export const ROUTE_PAPERS = [
     "id": "labor.g3.mission1.l2",
     "sourceId": "labor.g3.mission1.l2",
     "topic": "劳动 · 3年级基础探索",
-    "prompt": "养护记录最有用的是？",
-    "explanation": "日期与实际变化。把这个办法用在刚才的情境中。",
+    "prompt": "把「植物照护站」里的问题、做法和行动线索配对",
+    "explanation": "给盆栽浇水前先？ → 观察土壤和植物；养护记录最有用的是？ → 日期与实际变化；行动的第一步 → 观察土壤",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "日期与实际变化",
-     "猜测未来高度",
-     "别人的名字"
+    "kind": "match",
+    "prompts": [
+     "给盆栽浇水前先？",
+     "养护记录最有用的是？",
+     "行动的第一步"
     ],
-    "answer": "日期与实际变化"
+    "options": [
+     "观察土壤",
+     "日期与实际变化",
+     "观察土壤和植物"
+    ],
+    "answer": "观察土壤和植物|日期与实际变化|观察土壤"
    },
    {
     "id": "labor.g3.mission2.l2",
     "sourceId": "labor.g3.mission2.l2",
     "topic": "劳动 · 3年级应用实践",
-    "prompt": "剪裁纸盒需要工具时，应？",
-    "explanation": "在成人指导下用合适工具。把这个办法用在刚才的情境中。",
+    "prompt": "把「纸盒再利用」里的问题、做法和行动线索配对",
+    "explanation": "做收纳盒前，先量什么？ → 要收纳物品的大小；剪裁纸盒需要工具时，应？ → 在成人指导下用合适工具；行动的第一步 → 确定用途",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "在成人指导下用合适工具",
-     "随意玩剪刀",
-     "用破损刀片"
+    "kind": "match",
+    "prompts": [
+     "做收纳盒前，先量什么？",
+     "剪裁纸盒需要工具时，应？",
+     "行动的第一步"
     ],
-    "answer": "在成人指导下用合适工具"
+    "options": [
+     "确定用途",
+     "在成人指导下用合适工具",
+     "要收纳物品的大小"
+    ],
+    "answer": "要收纳物品的大小|在成人指导下用合适工具|确定用途"
    },
    {
     "id": "labor.g3.c1.l3",
@@ -11125,31 +11354,41 @@ export const ROUTE_PAPERS = [
     "id": "labor.g4.mission1.l2",
     "sourceId": "labor.g4.mission1.l2",
     "topic": "劳动 · 4年级基础探索",
-    "prompt": "发现餐具有裂口，应该？",
-    "explanation": "告诉成人并换完好餐具。把这个办法用在刚才的情境中。",
+    "prompt": "把「餐桌服务台」里的问题、做法和行动线索配对",
+    "explanation": "布置餐桌前应先？ → 清洁双手与桌面；发现餐具有裂口，应该？ → 告诉成人并换完好餐具；行动的第一步 → 清洁准备",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "告诉成人并换完好餐具",
-     "继续使用",
-     "用手摸裂口边缘"
+    "kind": "match",
+    "prompts": [
+     "布置餐桌前应先？",
+     "发现餐具有裂口，应该？",
+     "行动的第一步"
     ],
-    "answer": "告诉成人并换完好餐具"
+    "options": [
+     "清洁准备",
+     "告诉成人并换完好餐具",
+     "清洁双手与桌面"
+    ],
+    "answer": "清洁双手与桌面|告诉成人并换完好餐具|清洁准备"
    },
    {
     "id": "labor.g4.mission2.l2",
     "sourceId": "labor.g4.mission2.l2",
     "topic": "劳动 · 4年级应用实践",
-    "prompt": "看到异常变化，先？",
-    "explanation": "记录情况请教老师。把这个办法用在刚才的情境中。",
+    "prompt": "把「种植记录园」里的问题、做法和行动线索配对",
+    "explanation": "观察两周植物变化，怎样记录？ → 固定时间记录高度叶片；看到异常变化，先？ → 记录情况请教老师；行动的第一步 → 定时观察",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "记录情况请教老师",
-     "随意混用药剂",
-     "拔掉所有植物"
+    "kind": "match",
+    "prompts": [
+     "观察两周植物变化，怎样记录？",
+     "看到异常变化，先？",
+     "行动的第一步"
     ],
-    "answer": "记录情况请教老师"
+    "options": [
+     "定时观察",
+     "记录情况请教老师",
+     "固定时间记录高度叶片"
+    ],
+    "answer": "固定时间记录高度叶片|记录情况请教老师|定时观察"
    },
    {
     "id": "labor.g4.c1.l3",
@@ -11320,31 +11559,41 @@ export const ROUTE_PAPERS = [
     "id": "labor.g5.mission1.l2",
     "sourceId": "labor.g5.mission1.l2",
     "topic": "劳动 · 5年级基础探索",
-    "prompt": "整理结束怎样验收？",
-    "explanation": "按分类和数量核对。把这个办法用在刚才的情境中。",
+    "prompt": "把「劳动计划港」里的问题、做法和行动线索配对",
+    "explanation": "多人整理图书，先分工可以？ → 减少重复遗漏；整理结束怎样验收？ → 按分类和数量核对；行动的第一步 → 明确任务",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "按分类和数量核对",
-     "只看谁动作快",
-     "完全不看结果"
+    "kind": "match",
+    "prompts": [
+     "多人整理图书，先分工可以？",
+     "整理结束怎样验收？",
+     "行动的第一步"
     ],
-    "answer": "按分类和数量核对"
+    "options": [
+     "明确任务",
+     "按分类和数量核对",
+     "减少重复遗漏"
+    ],
+    "answer": "减少重复遗漏|按分类和数量核对|明确任务"
    },
    {
     "id": "labor.g5.mission2.l2",
     "sourceId": "labor.g5.mission2.l2",
     "topic": "劳动 · 5年级应用实践",
-    "prompt": "剩余可用材料应该？",
-    "explanation": "分类保存再利用。把这个办法用在刚才的情境中。",
+    "prompt": "把「节约用材岛」里的问题、做法和行动线索配对",
+    "explanation": "制作前画排料图，有助于？ → 减少材料浪费；剩余可用材料应该？ → 分类保存再利用；行动的第一步 → 确定尺寸",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "分类保存再利用",
-     "全部丢弃",
-     "散落地面"
+    "kind": "match",
+    "prompts": [
+     "制作前画排料图，有助于？",
+     "剩余可用材料应该？",
+     "行动的第一步"
     ],
-    "answer": "分类保存再利用"
+    "options": [
+     "确定尺寸",
+     "分类保存再利用",
+     "减少材料浪费"
+    ],
+    "answer": "减少材料浪费|分类保存再利用|确定尺寸"
    },
    {
     "id": "labor.g5.c1.l3",
@@ -11514,31 +11763,41 @@ export const ROUTE_PAPERS = [
     "id": "labor.g6.mission1.l2",
     "sourceId": "labor.g6.mission1.l2",
     "topic": "劳动 · 6年级基础探索",
-    "prompt": "同伴方法不同，怎样比较？",
-    "explanation": "在相同要求下试做。把这个办法用在刚才的情境中。",
+    "prompt": "把「校园服务坊」里的问题、做法和行动线索配对",
+    "explanation": "改进劳动流程，依据应是？ → 实际记录的问题；同伴方法不同，怎样比较？ → 在相同要求下试做；行动的第一步 → 记录过程",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "在相同要求下试做",
-     "只比谁声音大",
-     "不看效果"
+    "kind": "match",
+    "prompts": [
+     "改进劳动流程，依据应是？",
+     "同伴方法不同，怎样比较？",
+     "行动的第一步"
     ],
-    "answer": "在相同要求下试做"
+    "options": [
+     "记录过程",
+     "在相同要求下试做",
+     "实际记录的问题"
+    ],
+    "answer": "实际记录的问题|在相同要求下试做|记录过程"
    },
    {
     "id": "labor.g6.mission2.l2",
     "sourceId": "labor.g6.mission2.l2",
     "topic": "劳动 · 6年级应用实践",
-    "prompt": "修补完成应检查？",
-    "explanation": "能否正常翻阅。把这个办法用在刚才的情境中。",
+    "prompt": "把「服务项目港」里的问题、做法和行动线索配对",
+    "explanation": "组织图书修补，先判断？ → 哪些适合自己处理；修补完成应检查？ → 能否正常翻阅；行动的第一步 → 分类检查",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "能否正常翻阅",
-     "封面是否更贵",
-     "是否贴满胶带"
+    "kind": "match",
+    "prompts": [
+     "组织图书修补，先判断？",
+     "修补完成应检查？",
+     "行动的第一步"
     ],
-    "answer": "能否正常翻阅"
+    "options": [
+     "分类检查",
+     "能否正常翻阅",
+     "哪些适合自己处理"
+    ],
+    "answer": "哪些适合自己处理|能否正常翻阅|分类检查"
    },
    {
     "id": "labor.g6.c1.l3",
@@ -11706,31 +11965,41 @@ export const ROUTE_PAPERS = [
     "id": "it.g1.mission1.l2",
     "sourceId": "it.g1.mission1.l2",
     "topic": "信息科技 · 1年级基础探索",
-    "prompt": "看到不认识的弹窗，先？",
-    "explanation": "请老师帮助判断。把这个办法用在刚才的情境中。",
+    "prompt": "把「数字小书屋」里的问题、做法和行动线索配对",
+    "explanation": "在学校设备上打开作品，应先？ → 听老师说明操作；看到不认识的弹窗，先？ → 请老师帮助判断；行动的第一步 → 确认任务",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "请老师帮助判断",
-     "随便点同意",
-     "输入家庭地址"
+    "kind": "match",
+    "prompts": [
+     "在学校设备上打开作品，应先？",
+     "看到不认识的弹窗，先？",
+     "行动的第一步"
     ],
-    "answer": "请老师帮助判断"
+    "options": [
+     "确认任务",
+     "请老师帮助判断",
+     "听老师说明操作"
+    ],
+    "answer": "听老师说明操作|请老师帮助判断|确认任务"
    },
    {
     "id": "it.g1.mission2.l2",
     "sourceId": "it.g1.mission2.l2",
     "topic": "信息科技 · 1年级应用实践",
-    "prompt": "操作遇到困难，可以？",
-    "explanation": "举手求助。把这个办法用在刚才的情境中。",
+    "prompt": "把「设备爱护岛」里的问题、做法和行动线索配对",
+    "explanation": "使用完学校设备，应当？ → 按老师要求退出整理；操作遇到困难，可以？ → 举手求助；行动的第一步 → 保存作品",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "举手求助",
-     "敲打屏幕",
-     "随便拆机器"
+    "kind": "match",
+    "prompts": [
+     "使用完学校设备，应当？",
+     "操作遇到困难，可以？",
+     "行动的第一步"
     ],
-    "answer": "举手求助"
+    "options": [
+     "保存作品",
+     "举手求助",
+     "按老师要求退出整理"
+    ],
+    "answer": "按老师要求退出整理|举手求助|保存作品"
    },
    {
     "id": "it.g1.c1.l3",
@@ -11898,31 +12167,41 @@ export const ROUTE_PAPERS = [
     "id": "it.g2.mission1.l2",
     "sourceId": "it.g2.mission1.l2",
     "topic": "信息科技 · 2年级基础探索",
-    "prompt": "保存自己的画，应该？",
-    "explanation": "放在指定文件夹。把这个办法用在刚才的情境中。",
+    "prompt": "把「图标找朋友」里的问题、做法和行动线索配对",
+    "explanation": "文件名写清主题，有助于？ → 以后查找；保存自己的画，应该？ → 放在指定文件夹；行动的第一步 → 完成作品",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "放在指定文件夹",
-     "覆盖别人作品",
-     "随意关闭不保存"
+    "kind": "match",
+    "prompts": [
+     "文件名写清主题，有助于？",
+     "保存自己的画，应该？",
+     "行动的第一步"
     ],
-    "answer": "放在指定文件夹"
+    "options": [
+     "完成作品",
+     "放在指定文件夹",
+     "以后查找"
+    ],
+    "answer": "以后查找|放在指定文件夹|完成作品"
    },
    {
     "id": "it.g2.mission2.l2",
     "sourceId": "it.g2.mission2.l2",
     "topic": "信息科技 · 2年级应用实践",
-    "prompt": "修改前保留原画，可以？",
-    "explanation": "另存一个副本。把这个办法用在刚才的情境中。",
+    "prompt": "把「数字画板屋」里的问题、做法和行动线索配对",
+    "explanation": "画错一笔，想回到上一步，选择？ → 撤销；修改前保留原画，可以？ → 另存一个副本；行动的第一步 → 打开自己的画",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "另存一个副本",
-     "直接覆盖别人文件",
-     "随机改文件名"
+    "kind": "match",
+    "prompts": [
+     "画错一笔，想回到上一步，选择？",
+     "修改前保留原画，可以？",
+     "行动的第一步"
     ],
-    "answer": "另存一个副本"
+    "options": [
+     "打开自己的画",
+     "另存一个副本",
+     "撤销"
+    ],
+    "answer": "撤销|另存一个副本|打开自己的画"
    },
    {
     "id": "it.g2.c1.l3",
@@ -12092,31 +12371,41 @@ export const ROUTE_PAPERS = [
     "id": "it.g3.mission1.l2",
     "sourceId": "it.g3.mission1.l2",
     "topic": "信息科技 · 3年级基础探索",
-    "prompt": "执行结果不对，应该？",
-    "explanation": "逐步检查指令。把这个办法用在刚才的情境中。",
+    "prompt": "把「步骤机器人」里的问题、做法和行动线索配对",
+    "explanation": "机器人要先前进再右转，程序应？ → 按这个先后排列；执行结果不对，应该？ → 逐步检查指令；行动的第一步 → 明确目标",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "逐步检查指令",
-     "一直重复错误",
-     "删除所有文件"
+    "kind": "match",
+    "prompts": [
+     "机器人要先前进再右转，程序应？",
+     "执行结果不对，应该？",
+     "行动的第一步"
     ],
-    "answer": "逐步检查指令"
+    "options": [
+     "明确目标",
+     "逐步检查指令",
+     "按这个先后排列"
+    ],
+    "answer": "按这个先后排列|逐步检查指令|明确目标"
    },
    {
     "id": "it.g3.mission2.l2",
     "sourceId": "it.g3.mission2.l2",
     "topic": "信息科技 · 3年级应用实践",
-    "prompt": "搜索到信息后，应该？",
-    "explanation": "查看来源并核对。把这个办法用在刚才的情境中。",
+    "prompt": "把「搜索线索岛」里的问题、做法和行动线索配对",
+    "explanation": "想找月球资料，关键词选？ → 月球表面特点；搜索到信息后，应该？ → 查看来源并核对；行动的第一步 → 明确问题",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "查看来源并核对",
-     "只看标题就相信",
-     "全部复制不看"
+    "kind": "match",
+    "prompts": [
+     "想找月球资料，关键词选？",
+     "搜索到信息后，应该？",
+     "行动的第一步"
     ],
-    "answer": "查看来源并核对"
+    "options": [
+     "明确问题",
+     "查看来源并核对",
+     "月球表面特点"
+    ],
+    "answer": "月球表面特点|查看来源并核对|明确问题"
    },
    {
     "id": "it.g3.c1.l3",
@@ -12286,31 +12575,41 @@ export const ROUTE_PAPERS = [
     "id": "it.g4.mission1.l2",
     "sourceId": "it.g4.mission1.l2",
     "topic": "信息科技 · 4年级基础探索",
-    "prompt": "发现重复记录，应该？",
-    "explanation": "核对后处理。把这个办法用在刚才的情境中。",
+    "prompt": "把「数据整理站」里的问题、做法和行动线索配对",
+    "explanation": "调查喜欢的水果，表格每行应？ → 对应一条记录；发现重复记录，应该？ → 核对后处理；行动的第一步 → 确定字段",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "核对后处理",
-     "当作更多人",
-     "修改成喜欢的答案"
+    "kind": "match",
+    "prompts": [
+     "调查喜欢的水果，表格每行应？",
+     "发现重复记录，应该？",
+     "行动的第一步"
     ],
-    "answer": "核对后处理"
+    "options": [
+     "确定字段",
+     "核对后处理",
+     "对应一条记录"
+    ],
+    "answer": "对应一条记录|核对后处理|确定字段"
    },
    {
     "id": "it.g4.mission2.l2",
     "sourceId": "it.g4.mission2.l2",
     "topic": "信息科技 · 4年级应用实践",
-    "prompt": "图表没有项目名称，会？",
-    "explanation": "难以知道比较什么。把这个办法用在刚才的情境中。",
+    "prompt": "把「信息图工坊」里的问题、做法和行动线索配对",
+    "explanation": "用条形图展示人数，应先？ → 核对数据；图表没有项目名称，会？ → 难以知道比较什么；行动的第一步 → 整理数据",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "难以知道比较什么",
-     "一定更准确",
-     "人数自动增加"
+    "kind": "match",
+    "prompts": [
+     "用条形图展示人数，应先？",
+     "图表没有项目名称，会？",
+     "行动的第一步"
     ],
-    "answer": "难以知道比较什么"
+    "options": [
+     "整理数据",
+     "难以知道比较什么",
+     "核对数据"
+    ],
+    "answer": "核对数据|难以知道比较什么|整理数据"
    },
    {
     "id": "it.g4.c1.l3",
@@ -12478,31 +12777,41 @@ export const ROUTE_PAPERS = [
     "id": "it.g5.mission1.l2",
     "sourceId": "it.g5.mission1.l2",
     "topic": "信息科技 · 5年级基础探索",
-    "prompt": "程序中的判断语句用于？",
-    "explanation": "按条件选择操作。把这个办法用在刚才的情境中。",
+    "prompt": "把「算法探险屋」里的问题、做法和行动线索配对",
+    "explanation": "重复前进三次，可以用？ → 重复指令；程序中的判断语句用于？ → 按条件选择操作；行动的第一步 → 确定条件",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "按条件选择操作",
-     "随意加快声音",
-     "隐藏错误"
+    "kind": "match",
+    "prompts": [
+     "重复前进三次，可以用？",
+     "程序中的判断语句用于？",
+     "行动的第一步"
     ],
-    "answer": "按条件选择操作"
+    "options": [
+     "确定条件",
+     "按条件选择操作",
+     "重复指令"
+    ],
+    "answer": "重复指令|按条件选择操作|确定条件"
    },
    {
     "id": "it.g5.mission2.l2",
     "sourceId": "it.g5.mission2.l2",
     "topic": "信息科技 · 5年级应用实践",
-    "prompt": "测试程序边界，可以选择？",
-    "explanation": "最少与最多的输入。把这个办法用在刚才的情境中。",
+    "prompt": "把「调试机器人」里的问题、做法和行动线索配对",
+    "explanation": "程序每次都多走一步，应该？ → 检查循环次数；测试程序边界，可以选择？ → 最少与最多的输入；行动的第一步 → 复现问题",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "最少与最多的输入",
-     "永远同一个普通值",
-     "不用任何输入"
+    "kind": "match",
+    "prompts": [
+     "程序每次都多走一步，应该？",
+     "测试程序边界，可以选择？",
+     "行动的第一步"
     ],
-    "answer": "最少与最多的输入"
+    "options": [
+     "复现问题",
+     "最少与最多的输入",
+     "检查循环次数"
+    ],
+    "answer": "检查循环次数|最少与最多的输入|复现问题"
    },
    {
     "id": "it.g5.c1.l3",
@@ -12672,31 +12981,41 @@ export const ROUTE_PAPERS = [
     "id": "it.g6.mission1.l2",
     "sourceId": "it.g6.mission1.l2",
     "topic": "信息科技 · 6年级基础探索",
-    "prompt": "分享作品前，应检查？",
-    "explanation": "是否含个人敏感信息。把这个办法用在刚才的情境中。",
+    "prompt": "把「数字作品港」里的问题、做法和行动线索配对",
+    "explanation": "制作报告引用图片，应当？ → 确认授权并注明来源；分享作品前，应检查？ → 是否含个人敏感信息；行动的第一步 → 整理资料",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "是否含个人敏感信息",
-     "是否字越多越好",
-     "有没有所有人电话"
+    "kind": "match",
+    "prompts": [
+     "制作报告引用图片，应当？",
+     "分享作品前，应检查？",
+     "行动的第一步"
     ],
-    "answer": "是否含个人敏感信息"
+    "options": [
+     "整理资料",
+     "是否含个人敏感信息",
+     "确认授权并注明来源"
+    ],
+    "answer": "确认授权并注明来源|是否含个人敏感信息|整理资料"
    },
    {
     "id": "it.g6.mission2.l2",
     "sourceId": "it.g6.mission2.l2",
     "topic": "信息科技 · 6年级应用实践",
-    "prompt": "网上请求发验证码，应该？",
-    "explanation": "不提供并求助可信成人。把这个办法用在刚才的情境中。",
+    "prompt": "把「可信信息港」里的问题、做法和行动线索配对",
+    "explanation": "AI给出一个结论，应该？ → 核对证据与来源；网上请求发验证码，应该？ → 不提供并求助可信成人；行动的第一步 → 识别请求",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "不提供并求助可信成人",
-     "立即转发",
-     "发给所有陌生人"
+    "kind": "match",
+    "prompts": [
+     "AI给出一个结论，应该？",
+     "网上请求发验证码，应该？",
+     "行动的第一步"
     ],
-    "answer": "不提供并求助可信成人"
+    "options": [
+     "识别请求",
+     "不提供并求助可信成人",
+     "核对证据与来源"
+    ],
+    "answer": "核对证据与来源|不提供并求助可信成人|识别请求"
    },
    {
     "id": "it.g6.c1.l3",
@@ -12865,31 +13184,41 @@ export const ROUTE_PAPERS = [
     "id": "practice.g1.mission1.l2",
     "sourceId": "practice.g1.mission1.l2",
     "topic": "综合实践 · 1年级基础探索",
-    "prompt": "观察记录最好包括？",
-    "explanation": "地点与看到的特征。把这个办法用在刚才的情境中。",
+    "prompt": "把「校园发现队」里的问题、做法和行动线索配对",
+    "explanation": "调查校园植物，先做什么？ → 明确想了解的问题；观察记录最好包括？ → 地点与看到的特征；行动的第一步 → 提出问题",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "地点与看到的特征",
-     "同学秘密",
-     "猜测答案"
+    "kind": "match",
+    "prompts": [
+     "调查校园植物，先做什么？",
+     "观察记录最好包括？",
+     "行动的第一步"
     ],
-    "answer": "地点与看到的特征"
+    "options": [
+     "提出问题",
+     "地点与看到的特征",
+     "明确想了解的问题"
+    ],
+    "answer": "明确想了解的问题|地点与看到的特征|提出问题"
    },
    {
     "id": "practice.g1.mission2.l2",
     "sourceId": "practice.g1.mission2.l2",
     "topic": "综合实践 · 1年级应用实践",
-    "prompt": "看到有趣现象，可以？",
-    "explanation": "画下来并记地点。把这个办法用在刚才的情境中。",
+    "prompt": "把「社区观察屋」里的问题、做法和行动线索配对",
+    "explanation": "观察社区设施时应？ → 在成人陪同下按计划观察；看到有趣现象，可以？ → 画下来并记地点；行动的第一步 → 商量路线",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "画下来并记地点",
-     "随意破坏",
-     "替所有人下结论"
+    "kind": "match",
+    "prompts": [
+     "观察社区设施时应？",
+     "看到有趣现象，可以？",
+     "行动的第一步"
     ],
-    "answer": "画下来并记地点"
+    "options": [
+     "商量路线",
+     "画下来并记地点",
+     "在成人陪同下按计划观察"
+    ],
+    "answer": "在成人陪同下按计划观察|画下来并记地点|商量路线"
    },
    {
     "id": "practice.g1.c1.l3",
@@ -13058,31 +13387,41 @@ export const ROUTE_PAPERS = [
     "id": "practice.g2.mission1.l2",
     "sourceId": "practice.g2.mission1.l2",
     "topic": "综合实践 · 2年级基础探索",
-    "prompt": "没有听清回答，应该？",
-    "explanation": "礼貌请他再说一次。把这个办法用在刚才的情境中。",
+    "prompt": "把「采访小记者」里的问题、做法和行动线索配对",
+    "explanation": "采访同学前应先？ → 说明目的征得同意；没有听清回答，应该？ → 礼貌请他再说一次；行动的第一步 → 准备问题",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "礼貌请他再说一次",
-     "随意编造",
-     "马上争论"
+    "kind": "match",
+    "prompts": [
+     "采访同学前应先？",
+     "没有听清回答，应该？",
+     "行动的第一步"
     ],
-    "answer": "礼貌请他再说一次"
+    "options": [
+     "准备问题",
+     "礼貌请他再说一次",
+     "说明目的征得同意"
+    ],
+    "answer": "说明目的征得同意|礼貌请他再说一次|准备问题"
    },
    {
     "id": "practice.g2.mission2.l2",
     "sourceId": "practice.g2.mission2.l2",
     "topic": "综合实践 · 2年级应用实践",
-    "prompt": "汇总时发现漏记，应该？",
-    "explanation": "核实补记。把这个办法用在刚才的情境中。",
+    "prompt": "把「物品调查站」里的问题、做法和行动线索配对",
+    "explanation": "想知道大家带什么水杯，记录应？ → 按统一项目记录；汇总时发现漏记，应该？ → 核实补记；行动的第一步 → 明确项目",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "核实补记",
-     "自己猜一个",
-     "忽略并说完整"
+    "kind": "match",
+    "prompts": [
+     "想知道大家带什么水杯，记录应？",
+     "汇总时发现漏记，应该？",
+     "行动的第一步"
     ],
-    "answer": "核实补记"
+    "options": [
+     "明确项目",
+     "核实补记",
+     "按统一项目记录"
+    ],
+    "answer": "按统一项目记录|核实补记|明确项目"
    },
    {
     "id": "practice.g2.c1.l3",
@@ -13251,31 +13590,41 @@ export const ROUTE_PAPERS = [
     "id": "practice.g3.mission1.l2",
     "sourceId": "practice.g3.mission1.l2",
     "topic": "综合实践 · 3年级基础探索",
-    "prompt": "调查结果只来自本班，应说？",
-    "explanation": "本班受访同学的结果。把这个办法用在刚才的情境中。",
+    "prompt": "把「问卷设计岛」里的问题、做法和行动线索配对",
+    "explanation": "调查喜欢的课间活动，问题应？ → 清楚且与主题有关；调查结果只来自本班，应说？ → 本班受访同学的结果；行动的第一步 → 确定问题",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "本班受访同学的结果",
-     "全校一定如此",
-     "全国都是如此"
+    "kind": "match",
+    "prompts": [
+     "调查喜欢的课间活动，问题应？",
+     "调查结果只来自本班，应说？",
+     "行动的第一步"
     ],
-    "answer": "本班受访同学的结果"
+    "options": [
+     "确定问题",
+     "本班受访同学的结果",
+     "清楚且与主题有关"
+    ],
+    "answer": "清楚且与主题有关|本班受访同学的结果|确定问题"
    },
    {
     "id": "practice.g3.mission2.l2",
     "sourceId": "practice.g3.mission2.l2",
     "topic": "综合实践 · 3年级应用实践",
-    "prompt": "计划中的材料不够，应？",
-    "explanation": "调整方案并说明。把这个办法用在刚才的情境中。",
+    "prompt": "把「活动策划屋」里的问题、做法和行动线索配对",
+    "explanation": "组织班级读书分享，先明确？ → 目的时间和参与方式；计划中的材料不够，应？ → 调整方案并说明；行动的第一步 → 确定目标",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "调整方案并说明",
-     "假装准备好了",
-     "让别人猜"
+    "kind": "match",
+    "prompts": [
+     "组织班级读书分享，先明确？",
+     "计划中的材料不够，应？",
+     "行动的第一步"
     ],
-    "answer": "调整方案并说明"
+    "options": [
+     "确定目标",
+     "调整方案并说明",
+     "目的时间和参与方式"
+    ],
+    "answer": "目的时间和参与方式|调整方案并说明|确定目标"
    },
    {
     "id": "practice.g3.c1.l3",
@@ -13444,31 +13793,41 @@ export const ROUTE_PAPERS = [
     "id": "practice.g4.mission1.l2",
     "sourceId": "practice.g4.mission1.l2",
     "topic": "综合实践 · 4年级基础探索",
-    "prompt": "两个方案都有优点，应该？",
-    "explanation": "根据目标比较取舍。把这个办法用在刚才的情境中。",
+    "prompt": "把「方案比较站」里的问题、做法和行动线索配对",
+    "explanation": "给阅读角选位置，应比较？ → 光线空间与使用方便；两个方案都有优点，应该？ → 根据目标比较取舍；行动的第一步 → 明确需求",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "根据目标比较取舍",
-     "只凭声音大小",
-     "不看条件"
+    "kind": "match",
+    "prompts": [
+     "给阅读角选位置，应比较？",
+     "两个方案都有优点，应该？",
+     "行动的第一步"
     ],
-    "answer": "根据目标比较取舍"
+    "options": [
+     "明确需求",
+     "根据目标比较取舍",
+     "光线空间与使用方便"
+    ],
+    "answer": "光线空间与使用方便|根据目标比较取舍|明确需求"
    },
    {
     "id": "practice.g4.mission2.l2",
     "sourceId": "practice.g4.mission2.l2",
     "topic": "综合实践 · 4年级应用实践",
-    "prompt": "想估计长期情况，还应？",
-    "explanation": "多时段观察记录。把这个办法用在刚才的情境中。",
+    "prompt": "把「节水调查桥」里的问题、做法和行动线索配对",
+    "explanation": "观察到一次水龙头滴水，可以说明？ → 这次观察发现滴水；想估计长期情况，还应？ → 多时段观察记录；行动的第一步 → 明确观察点",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "多时段观察记录",
-     "只把数字放大",
-     "不再调查"
+    "kind": "match",
+    "prompts": [
+     "观察到一次水龙头滴水，可以说明？",
+     "想估计长期情况，还应？",
+     "行动的第一步"
     ],
-    "answer": "多时段观察记录"
+    "options": [
+     "明确观察点",
+     "多时段观察记录",
+     "这次观察发现滴水"
+    ],
+    "answer": "这次观察发现滴水|多时段观察记录|明确观察点"
    },
    {
     "id": "practice.g4.c1.l3",
@@ -13638,31 +13997,41 @@ export const ROUTE_PAPERS = [
     "id": "practice.g5.mission1.l2",
     "sourceId": "practice.g5.mission1.l2",
     "topic": "综合实践 · 5年级基础探索",
-    "prompt": "汇报项目时，应展示？",
-    "explanation": "过程证据与结果。把这个办法用在刚才的情境中。",
+    "prompt": "把「项目协作港」里的问题、做法和行动线索配对",
+    "explanation": "小组项目进度慢，先？ → 检查任务与分工；汇报项目时，应展示？ → 过程证据与结果；行动的第一步 → 明确目标",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "过程证据与结果",
-     "虚构成功次数",
-     "只有口号"
+    "kind": "match",
+    "prompts": [
+     "小组项目进度慢，先？",
+     "汇报项目时，应展示？",
+     "行动的第一步"
     ],
-    "answer": "过程证据与结果"
+    "options": [
+     "明确目标",
+     "过程证据与结果",
+     "检查任务与分工"
+    ],
+    "answer": "检查任务与分工|过程证据与结果|明确目标"
    },
    {
     "id": "practice.g5.mission2.l2",
     "sourceId": "practice.g5.mission2.l2",
     "topic": "综合实践 · 5年级应用实践",
-    "prompt": "使用者说太小，应？",
-    "explanation": "核对需求调整尺寸。把这个办法用在刚才的情境中。",
+    "prompt": "把「原型试用岛」里的问题、做法和行动线索配对",
+    "explanation": "做了收纳盒样品，下一步？ → 请同伴试用并记录；使用者说太小，应？ → 核对需求调整尺寸；行动的第一步 → 明确需求",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "核对需求调整尺寸",
-     "批评他不会用",
-     "隐藏反馈"
+    "kind": "match",
+    "prompts": [
+     "做了收纳盒样品，下一步？",
+     "使用者说太小，应？",
+     "行动的第一步"
     ],
-    "answer": "核对需求调整尺寸"
+    "options": [
+     "明确需求",
+     "核对需求调整尺寸",
+     "请同伴试用并记录"
+    ],
+    "answer": "请同伴试用并记录|核对需求调整尺寸|明确需求"
    },
    {
     "id": "practice.g5.c1.l3",
@@ -13832,31 +14201,41 @@ export const ROUTE_PAPERS = [
     "id": "practice.g6.mission1.l2",
     "sourceId": "practice.g6.mission1.l2",
     "topic": "综合实践 · 6年级基础探索",
-    "prompt": "别人提出疑问，怎样回应？",
-    "explanation": "根据记录说明。把这个办法用在刚才的情境中。",
+    "prompt": "把「成果发布馆」里的问题、做法和行动线索配对",
+    "explanation": "展示调查结果，应说明？ → 方法范围与局限；别人提出疑问，怎样回应？ → 根据记录说明；行动的第一步 → 整理证据",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "根据记录说明",
-     "立即争吵",
-     "编一个数字"
+    "kind": "match",
+    "prompts": [
+     "展示调查结果，应说明？",
+     "别人提出疑问，怎样回应？",
+     "行动的第一步"
     ],
-    "answer": "根据记录说明"
+    "options": [
+     "整理证据",
+     "根据记录说明",
+     "方法范围与局限"
+    ],
+    "answer": "方法范围与局限|根据记录说明|整理证据"
    },
    {
     "id": "practice.g6.mission2.l2",
     "sourceId": "practice.g6.mission2.l2",
     "topic": "综合实践 · 6年级应用实践",
-    "prompt": "结论证据不足，应怎样写？",
-    "explanation": "说明尚需进一步调查。把这个办法用在刚才的情境中。",
+    "prompt": "把「毕业研究港」里的问题、做法和行动线索配对",
+    "explanation": "两次调查结果不同，应该？ → 比较时间样本与方法；结论证据不足，应怎样写？ → 说明尚需进一步调查；行动的第一步 → 整理多次记录",
     "points": 8,
-    "kind": "choice",
-    "options": [
-     "说明尚需进一步调查",
-     "写成已经证明",
-     "编造新记录"
+    "kind": "match",
+    "prompts": [
+     "两次调查结果不同，应该？",
+     "结论证据不足，应怎样写？",
+     "行动的第一步"
     ],
-    "answer": "说明尚需进一步调查"
+    "options": [
+     "整理多次记录",
+     "说明尚需进一步调查",
+     "比较时间样本与方法"
+    ],
+    "answer": "比较时间样本与方法|说明尚需进一步调查|整理多次记录"
    },
    {
     "id": "practice.g6.c1.l3",

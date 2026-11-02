@@ -1,0 +1,20 @@
+/* Shared visual rhythm. Only presentation containers enter; draggable objects keep their transforms. */
+@keyframes si-arrive{from{opacity:0;translate:0 12px}to{opacity:1;translate:0 0}}
+@keyframes si-medal{0%{opacity:0;scale:.72}70%{scale:1.06}100%{opacity:1;scale:1}}
+@keyframes si-glow{0%,100%{filter:drop-shadow(0 0 2px #ffe8a538)}50%{filter:drop-shadow(0 0 12px #ffe8a5a0)}}
+@keyframes si-cloud{from{background-position:0% 50%}to{background-position:100% 50%}}
+html[data-motion=on] :is(.intro,.mission,.stage-detail,.hero,.lesson,#view>section,.pause-card){animation:si-arrive .38s cubic-bezier(.2,.75,.3,1) both}
+html[data-motion=on] :is(.course-card,.scene-card,.hub-toys>button){animation:si-arrive .42s cubic-bezier(.2,.75,.3,1) both}
+html[data-motion=on] :is(.course-card,.scene-card,.hub-toys>button):nth-child(2){animation-delay:.045s}
+html[data-motion=on] :is(.course-card,.scene-card,.hub-toys>button):nth-child(3){animation-delay:.09s}
+html[data-motion=on] :is(.course-card,.scene-card,.hub-toys>button):nth-child(n+4){animation-delay:.13s}
+html[data-motion=on] :is(#complete:not([hidden])>div,#celebrate:not([hidden]) .reward-stars,.earned .badge){animation:si-medal .5s cubic-bezier(.2,.75,.3,1) both}
+html[data-motion=on] :is(.brand-mark,.hub-sparkles){animation:si-glow 4.5s ease-in-out infinite}
+html[data-motion=on] button:not(.piece):not(.target):not(.slot):not(.dragging):not([draggable]){transition:translate .13s ease,box-shadow .18s ease,background-color .18s ease,border-color .18s ease}
+html[data-motion=on] button:not(:disabled):not(.piece):not(.target):not(.slot):not(.dragging):not([draggable]):active{translate:0 2px}
+:is(.course-card,.bubble,.pause-card){box-shadow:0 10px 26px #234e6010,inset 0 1px 0 #ffffffb0}
+.stage-sky::after{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 12% 78%,#fff6e82b,transparent 38%),radial-gradient(ellipse at 83% 30%,#c6e9ff2b,transparent 35%);background-size:140% 120%}
+html[data-motion=on] .stage-sky::after{animation:si-cloud 18s ease-in-out infinite alternate}
+html[data-motion-visibility=hidden] *,html[data-motion-visibility=hidden] *::before,html[data-motion-visibility=hidden] *::after{animation-play-state:paused!important}
+html[data-motion=off] *,html[data-motion=off] *::before,html[data-motion=off] *::after{animation:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){html[data-motion] *,html[data-motion] *::before,html[data-motion] *::after{animation:none!important;transition:none!important}}

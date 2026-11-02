@@ -1,0 +1,12 @@
+{
+  "mode": "built-in image_gen",
+  "asset": "web/junior/assets/research-station.png",
+  "prompt": "Use case: stylized-concept. Asset type: wide panoramic environment background for a Chinese middle-school interactive learning game, Starisle Research Station. Primary request: original premium 3D illustrated floating research campus for teenage learners age 12-15. Scene: one large floating island with an elegant astronomy observatory, glass botanical greenhouse, open-air geometry sculpture, and beautiful archive library connected by paths, small waterfalls into luminous clouds. No characters. Style: detailed stylized 3D environment, subtle hand-painted finish, refined proportions suited to teenagers, warm ivory stone, dark teal roofs, copper instruments, botanical greens. Lighting: tranquil luminous late afternoon, soft blue sky with warm apricot horizon. Composition: landscape 16:9, island and architectural landmarks concentrated on the right two thirds, left third mostly open calm sky so actual UI text can overlay. Rich layered depth, crisp attractive landmarks, no text, no letters, no labels, no UI, no watermark. Finished production environment art, not a mockup.",
+  "scientificVisuals": "Code-native SVG diagrams bound to task data, not decorative model-generated scientific evidence",
+  "audio": {
+    "fixedDialogue": "9 offline macOS Samantha synthesized WAV clips with text manifest",
+    "feedback": "Original Web Audio sine-note cues",
+    "composition": "Five synthesized pitches plus rests, eight-beat sequencer",
+    "defaults": "Silent; explicit playback enables sound; stop on navigation and hidden page"
+  }
+}

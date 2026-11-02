@@ -4,3 +4,4 @@
 @media(prefers-reduced-motion:reduce){.target.ready,.speech-waves,.piece.shake,#celebrate .reward-stars .toy-icon{animation:none}.hub-toys>button{transition:none}}
 @media(max-width:750px){.basket-target{--basket-width:105px}.build #goal>span{height:57px}.build #goal>span .toy-icon{height:57px}}@media(min-width:751px){.build #goal>span{height:65px}}@media(max-width:360px){.basket-target{--basket-width:95px}}
 .reward-stars .unearned{opacity:.28;filter:grayscale(1)}
+#companion[role="button"]{pointer-events:auto;cursor:pointer}#companion[role="button"]:focus-visible{outline:3px solid #367f70;border-radius:24px}

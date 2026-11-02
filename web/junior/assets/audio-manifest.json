@@ -1,0 +1,68 @@
+{
+  "licenseNote": "System-generated demonstration speech; not a human recording or pronunciation score.",
+  "lines": [
+    {
+      "file": "e7-campus-1-0.wav",
+      "text": "Hello! Welcome to the photo club. What would you like to know?",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.1"
+    },
+    {
+      "file": "e7-campus-1-1.wav",
+      "text": "We meet on Friday at four. What else would you like to know?",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.1"
+    },
+    {
+      "file": "e7-campus-1-2.wav",
+      "text": "We meet in the art room. Would you like to join us?",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.1"
+    },
+    {
+      "file": "e7-campus-2-0.wav",
+      "text": "When does the science club meet?",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.2"
+    },
+    {
+      "file": "e7-campus-2-1.wav",
+      "text": "Where do you meet?",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.2"
+    },
+    {
+      "file": "e7-campus-2-2.wav",
+      "text": "Thank you for your help!",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.2"
+    },
+    {
+      "file": "e7-campus-4-0.wav",
+      "text": "Is the basketball game still on Friday?",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.4"
+    },
+    {
+      "file": "e7-campus-4-1.wav",
+      "text": "Where is the game now?",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.4"
+    },
+    {
+      "file": "e7-campus-4-2.wav",
+      "text": "I will check my plan.",
+      "voice": "macOS Samantha",
+      "type": "system-synthesized",
+      "taskId": "e7-campus.4"
+    }
+  ]
+}

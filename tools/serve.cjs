@@ -21,8 +21,10 @@ const speechConfig=process.env.SPEECH_API_KEY?{apiKey:process.env.SPEECH_API_KEY
 const asrConfig=process.env.ASR_API_KEY?{apiKey:process.env.ASR_API_KEY}:readConfig('asr');
 const rtcConfig=process.env.RTC_APP_ID?{appId:process.env.RTC_APP_ID,appKey:process.env.RTC_APP_KEY,accessKeyId:process.env.VOLCENGINE_ACCESS_KEY_ID,secretKey:process.env.VOLCENGINE_SECRET_ACCESS_KEY,model:process.env.RTC_MODEL,speaker:process.env.RTC_SPEAKER}:readConfig('rtc');
 const companion=require('../server/companion/http.cjs')({origin,auth,dir:process.env.COMPANION_DATA_DIR||path.resolve(__dirname,'../local/companion'),mysql:mysqlConfig,learning,chat:arkConfig?require('../server/providers/ark-companion.cjs')(arkConfig):null,speech:speechConfig?require('../server/providers/volc-speech.cjs')(speechConfig):null,asr:asrConfig?require('../server/providers/volc-asr.cjs')(asrConfig):null,rtc:rtcConfig?require('../server/providers/volc-rtc.cjs')(rtcConfig):null});
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.css':'text/css','.png':'image/png','.jpg':'image/jpeg','.wav':'audio/wav','.wasm':'application/wasm'};
+const junior=require('../server/junior/http.cjs')({origin,auth,dir:process.env.JUNIOR_DATA_DIR||path.resolve(__dirname,'../local/junior'),mysql:mysqlConfig});
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json','.css':'text/css','.png':'image/png','.jpg':'image/jpeg','.wav':'audio/wav','.wasm':'application/wasm'};
 const server=http.createServer(async(req,res)=>{
+ if(await junior.handle(req,res))return;
  if(await companion.handle(req,res))return;
  if(await learning.handle(req,res))return;
  if(await admin.handle(req,res))return;
@@ -35,4 +37,4 @@ const server=http.createServer(async(req,res)=>{
 });
 server.listen(port,'127.0.0.1',()=>console.log(`星屿学园 ${origin} / ${mode==='demo'?'本地演示，不发送短信':'短信登录'}`));
 
-for(const signal of ['SIGTERM','SIGINT'])process.once(signal,()=>{server.close();void companion.close().finally(()=>process.exit(0));setTimeout(()=>process.exit(1),25000).unref();});
+for(const signal of ['SIGTERM','SIGINT'])process.once(signal,()=>{server.close();void Promise.allSettled([companion.close(),junior.close()]).finally(()=>process.exit(0));setTimeout(()=>process.exit(1),25000).unref();});

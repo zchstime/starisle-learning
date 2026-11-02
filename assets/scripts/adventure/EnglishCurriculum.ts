@@ -33,17 +33,17 @@ const packs:Pack[][]=[
  p('大小观察屋','启蒙进阶 · 描述','big|大的;small|小的;tall|高的','The dog is big|狗很大;The cat is small|猫很小;The tree is tall|树很高;My bag is small|我的包很小')
 ],
 [
- p('朋友初见','Making friends','hello|你好;friend|朋友;name|名字','My name is Star|我的名字是星宝;Nice to meet you|很高兴见到你;I can help my friend|我能帮助我的朋友;My friends are kind|我的朋友们很友善'),
- p('家庭明信片','Different families','mother|妈妈;father|爸爸;family|家庭','This is my mother|这是我的妈妈;This is my father|这是我的爸爸;I have a small family|我有一个小家庭;We love our family|我们爱我们的家人'),
- p('动物救援站','Our animal friends','dog|狗;cat|猫;bird|鸟','I have a little dog|我有一只小狗;The cat is my friend|猫是我的朋友;Birds can fly|鸟会飞;My dog likes to run|我的狗喜欢跑'),
+ p('朋友初见','Making friends','hello|你好;friend|朋友;name|名字','Hello I am Star|你好，我是星宝;Nice to meet you|很高兴见到你;I can help my friend|我能帮助我的朋友;My friends are kind|我的朋友们很友善'),
+ p('家庭明信片','Different families','mother|妈妈;father|爸爸;family|家庭','This is my family photo|这是我的家庭照片;My mother likes reading|我的妈妈喜欢阅读;My father can cook|我的爸爸会做饭;We help each other|我们互相帮助'),
+ p('动物救援站','Amazing animals','dog|狗;cat|猫;bird|鸟','I have a little dog|我有一只小狗;The cat is my friend|猫是我的朋友;Birds can fly|鸟会飞;My dog likes to run|我的狗喜欢跑'),
  p('植物小花园','Plants around us','tree|树;flower|花;seed|种子','This is a green tree|这是一棵绿树;I can water the flowers|我会给花浇水;The seed needs water|种子需要水;The flowers are yellow|花是黄色的'),
  p('彩虹调色屋','The colourful world','red|红色;blue|蓝色;green|绿色','I like red flowers|我喜欢红花;The sky is blue|天空是蓝色的;The grass is green|草是绿色的;My bag has many colours|我的包有许多颜色'),
  p('有用的数字','Useful numbers','one|一;two|二;three|三','I have two pencils|我有两支铅笔;I can see three birds|我能看见三只鸟;We need one more chair|我们还需要一把椅子;There are two red bags|有两个红包'),
  p('认识新伙伴','Meeting new people','teacher|老师;student|学生;school|学校','I am a new student|我是一个新学生;This is our teacher|这是我们的老师;My new friend is nice|我的新朋友很好;We go to the same school|我们上同一所学校'),
- p('友善行动队','My words and actions','please|请;thanks|谢谢;sorry|对不起','Please help me|请帮助我;Thank you for your help|谢谢你的帮助;I am sorry for that|我为那件事感到抱歉;We share our books|我们分享我们的书'),
- p('感官工具屋','Tools and senses for learning','eyes|眼睛;ears|耳朵;hands|手','I see with my eyes|我用眼睛看;I hear with my ears|我用耳朵听;I draw with a pencil|我用铅笔画画;We learn with our hands|我们用双手学习'),
+ p('友善行动队','Expressing yourself','please|请;thanks|谢谢;sorry|对不起','Please help me|请帮助我;Thank you for your help|谢谢你的帮助;I am sorry for that|我为那件事感到抱歉;We share our books|我们分享我们的书'),
+ p('感官工具屋','Learning better','eyes|眼睛;ears|耳朵;hands|手','I see with my eyes|我用眼睛看;I hear with my ears|我用耳朵听;I draw with a pencil|我用铅笔画画;We learn with our hands|我们用双手学习'),
  p('健康小餐桌','Healthy food','fruit|水果;milk|牛奶;bread|面包','I like fruit and milk|我喜欢水果和牛奶;I eat an egg for breakfast|我早餐吃一个鸡蛋;The apples are fresh|苹果很新鲜;We need water every day|我们每天需要水'),
- p('旧物新朋友','Old things','old|旧的;new|新的;toy|玩具','This is my old toy|这是我的旧玩具;I have a new book|我有一本新书;We can use old boxes|我们可以利用旧盒子;I give my old toys to friends|我把旧玩具送给朋友'),
+ p('旧物新朋友','Old toys','old|旧的;new|新的;toy|玩具','This is my old toy|这是我的旧玩具;I have a new book|我有一本新书;We can use old boxes|我们可以利用旧盒子;I give my old toys to friends|我把旧玩具送给朋友'),
  p('生活数字站','Numbers in life','ten|十;five|五;six|六','I have five old books|我有五本旧书;We need six apples|我们需要六个苹果;My number is ten|我的号码是十;There are ten flowers|有十朵花')
 ],
 [
@@ -96,14 +96,16 @@ const evidenceRoles=['understand','model','fluency','diagnose','apply','transfer
 const palette:Record<string,string>={red:'#EA9188',blue:'#8FBCE4',green:'#8DC6A8',yellow:'#F3D57F',white:'#F5F4E9',black:'#5B6C73'};
 export function englishCurriculum():Chapter[]{return packs.flatMap((units,g)=>units.map((unit,index)=>{
  const grade=g+1,id=`english.g${grade}.c${index+5}`,semester=index<6?'上册' as const:'下册' as const;
+ const unitNumber=index<6?index+1:index-5,isGrade6Revision=grade===6&&index>=10;
+ const textbookUnit=grade>=3&&!isGrade6Revision;
  const wordOptions=unit.words.map(w=>w[1]),colors=unit.words.every(w=>!!palette[w[0]])?unit.words.map(w=>palette[w[0]]):undefined;
- const levels:Level[]=Array.from({length:6},(_,i)=>{
+ const levels:Level[]=Array.from({length:6},(_,i):Level=>{
   const base={id:`${id}.l${i+1}`,stage:stages[i],target:0,explanation:'',hint:'',goal:'',title:''};
-  if(i<2){const word=unit.words[i];return {...base,kind:'listen',title:'听音送气球',goal:'听听伙伴说了什么，把对应的气球送过去。',target:i,voice:word[0],options:wordOptions,colors,hint:'点「再听一次」，听清后选择对应的气球。',explanation:`${word[0]} 表示「${word[1]}」。`,coachHints:['可以重复听，不用抢时间。',`${word[0]} 表示「${word[1]}」。`]};}
+  if(i<2){const word=unit.words[i];return {...base,kind:'listen',title:'听音送气球',goal:`听辨“${unit.theme}”主题词汇（第 ${i+1} 组），把对应气球送过去。`,target:i,voice:word[0],options:wordOptions,colors,hint:'点「再听一次」，听清后选择对应的气球。',explanation:`${word[0]} 表示「${word[1]}」。`,coachHints:['可以重复听，不用抢时间。',`${word[0]} 表示「${word[1]}」。`]};}
   const pair=unit.lines[i-2];
   if(i<4){const words=pair[0].split(' ');return {...base,kind:'sentence',title:'拼出口信',goal:'送给伙伴一张口信：'+pair[1],words,answer:words,voice:pair[0],hint:'按顺序点词卡放进信封；点已选词卡可以取回。',explanation:`${pair[0]}：${pair[1]}。`,coachHints:['先找一句话里的主语或开头词。','口信开头是 '+words.slice(0,2).join(' ')+'。']};}
   const others=[unit.lines[0][1],unit.lines[i===4?1:2][1]];
-  return {...base,kind:'choice',title:grade<3?'口信小侦探':'阅读线索',goal:'读一读口信，帮星宝找到正确意思。',passage:pair[0],voice:pair[0],options:[pair[1],...others],hint:'先读口信，也可以点「听任务」。再比较三张线索卡。',explanation:`${pair[0]}：${pair[1]}。`,coachHints:['找出句子里熟悉的人物、动作或时间词。',pair[1]+'。']};
- }).map((level,i)=>({...level,evidence:{knowledgeId:`pep-english-g${grade}-${semester}-${index+1}`,objective:`在“${unit.theme}”情境中完成${level.title}，并能解释所用词句。`,role:evidenceRoles[i],prerequisites:grade<=2?['听辨常见课堂指令','借助图片理解基本词义']:['理解本单元核心词汇','读懂简短情境提示'],misconceptions:i<2?['只凭选项位置猜测，未听清关键词']:i<4?['忽略英语基本语序，按中文顺序逐词拼接']:['只认单个词，未结合整句语境判断'],reviewed:false}}));
- return {id,subject:'english' as const,grade,title:unit.title,topic:unit.theme,art:'journey-garden',alignment:grade<3?'enrichment' as const:'verified-theme' as const,curriculum:{semester,theme:unit.theme,order:index,source:grade<3?'':`https://book.pep.com.cn/${(index<6?upper:lower)[g]}/`,verified:grade>=3,publisher:'人民教育出版社',edition:grade<3?'英语启蒙衔接原创样例':'依据项目当前PEP主题目录',volume:semester,unit:`主题${index+1}`,reviewStatus:'draft'},levels};
+  return {...base,kind:'choice',title:grade<3?'口信小侦探':'阅读线索',goal:`阅读“${unit.theme}”主题口信（第 ${i-3} 封），找到正确意思。`,passage:pair[0],voice:pair[0],options:[pair[1],...others],hint:'先读口信，也可以点「听任务」。再比较三张线索卡。',explanation:`${pair[0]}：${pair[1]}。`,coachHints:['找出句子里熟悉的人物、动作或时间词。',pair[1]+'。']};
+ }).map((level,i)=>({...level,evidence:{knowledgeId:`pep-english-g${grade}-${semester}-u${unitNumber}`,objective:`在“${unit.theme}”情境中完成${level.title}，并能解释所用词句。`,role:evidenceRoles[i],prerequisites:grade<=2?['听辨常见课堂指令','借助图片理解基本词义']:['理解本单元核心词汇','读懂简短情境提示'],misconceptions:i<2?['只凭选项位置猜测，未听清关键词']:i<4?['忽略英语基本语序，按中文顺序逐词拼接']:['只认单个词，未结合整句语境判断'],reviewed:false}}));
+ return {id,subject:'english' as const,grade,title:unit.title,topic:unit.theme,art:'journey-garden',alignment:textbookUnit?'verified-theme' as const:'enrichment' as const,curriculum:{semester,theme:unit.theme,order:index,source:textbookUnit?`https://book.pep.com.cn/${(index<6?upper:lower)[g]}/`:'',verified:textbookUnit,publisher:'人民教育出版社',edition:grade<3?'英语启蒙衔接原创样例':isGrade6Revision?'六年级下册总复习拓展':'依据项目当前PEP主题目录',volume:`${grade}年级${semester}`,unit:textbookUnit?`Unit ${unitNumber} ${unit.theme}`:isGrade6Revision?`总复习 · ${unit.theme}`:`启蒙主题 ${unit.theme}`,unitNumber:textbookUnit?unitNumber:undefined,unitType:textbookUnit?'textbook':isGrade6Revision?'revision':'theme',objectives:[`听懂并认读“${unit.theme}”主题核心词汇`,`在情境中理解并按正确语序表达目标句`,`通过简短阅读或听力获取信息并完成主题任务`],reviewStatus:'draft'},levels};
 }));}

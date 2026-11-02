@@ -1,6 +1,7 @@
 import {SHOP,TIDY,HOMES,GARDEN,needed} from './life.js';
+import {DISCOVERY,isDiscovery,lesson,acceptsDiscovery} from './discovery.js';
 // Picture-first preschool tasks. Child-facing quantities never require numerals.
-export const KINDS=['feed','sort','build','shop','tidy','garden'];
+export const KINDS=['feed','sort','build','shop','tidy','garden',...Object.keys(DISCOVERY)];
 export const FEED=[2,3,4];
 export const SORT=[
  {rule:'kind',targets:[{id:'apple',icon:'apple'},{id:'banana',icon:'banana'}],items:[{type:'apple',group:'apple'},{type:'banana',group:'banana'},{type:'apple',group:'apple'},{type:'banana',group:'banana'}]},
@@ -18,7 +19,8 @@ export function accept(round,item,target){
  if(round.kind==='shop')ok=target==='bag'&&needed(round).includes(item.type);
  if(round.kind==='tidy')ok=Object.hasOwn(HOMES,item.type)&&HOMES[item.type]===target&&needed(round).includes(item.type);
  if(round.kind==='garden')ok=target==='pot'&&item.type===GARDEN[round.placed.length];
+ if(isDiscovery(round.kind))ok=acceptsDiscovery(round,item,target);
  if(!ok)return {ok:false,reason:'mismatch'};
- round.placed.push({id:item.id,type:item.type,target});const required=round.kind==='shop'?SHOP[round.level].length:round.kind==='tidy'?TIDY[round.level].length:round.kind==='garden'?GARDEN.length:round.kind==='feed'?FEED[round.level]:round.kind==='sort'?SORT[round.level].items.length:BUILD[round.level].length;
+ round.placed.push({id:item.id,type:item.type,target});const required=isDiscovery(round.kind)?lesson(round).targets.length:round.kind==='shop'?SHOP[round.level].length:round.kind==='tidy'?TIDY[round.level].length:round.kind==='garden'?GARDEN.length:round.kind==='feed'?FEED[round.level]:round.kind==='sort'?SORT[round.level].items.length:BUILD[round.level].length;
  round.done=round.placed.length===required;return {ok:true,done:round.done,count:round.placed.length};
 }

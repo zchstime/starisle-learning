@@ -1,7 +1,7 @@
 (()=>{
  const params=new URLSearchParams(location.search),localPreview=['127.0.0.1','localhost','::1'].includes(location.hostname)&&params.get('localPreview')==='1';
- if(params.get('contentPreview')==='1'||localPreview){window.starisleAuthReady=Promise.resolve();window.starisleAccount=null;return;}
- let ready,booted=false,user=null,until=0,busy=false;
+ const preview=params.get('contentPreview')==='1'||localPreview;
+ let ready,booted=preview,user=null,until=0,busy=false;
  window.starisleAuthReady=new Promise(r=>ready=r);
  const host=document.createElement('section');host.id='account-screen';host.innerHTML=`<div class="welcome"><span class="brand">✦ 星屿学园</span><h1>每一次探索<br>都闪闪发光</h1><p>和星宝一起，开启今天的小岛冒险。</p><div class="island-label">探索 · 成长 · 收集星章</div></div><div class="login-card"><div class="star">✦</div><h2 id="auth-title">欢迎来到星屿</h2><p id="intro">手机号验证登录，首次验证自动注册</p><div id="mode" class="mode">正在连接账号服务…</div><form id="phone-form"><label for="phone">手机号码</label><div class="phone-wrap"><span>+86</span><input id="phone" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="11" placeholder="请输入手机号码" required pattern="1[3-9][0-9]{9}"></div><label for="code">验证码</label><div class="code-wrap"><input id="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6 位验证码" required pattern="[0-9]{6}"><button type="button" id="send">获取验证码</button></div><p id="demo" class="demo" hidden></p><button class="primary" id="enter" type="submit">登录 / 注册，开始冒险 →</button></form><div id="profile" hidden><div id="learning-profile"></div><p id="identity"></p><p><span id="cloud-status">正在检查云存档…</span></p><button id="resume" class="primary">继续探索 →</button><button id="import" class="secondary">带上本机游客进度</button><button id="logout" class="secondary">退出账号</button></div><p id="status" role="status" aria-live="polite"></p><button id="guest" class="secondary">先以游客身份探索 →</button><p class="fine">游客进度会保留。未成年人请在监护人陪同下使用。</p></div>`;
  document.body.append(host);const $=id=>host.querySelector('#'+id),status=s=>$('status').textContent=s;
@@ -11,10 +11,16 @@
  $('guest').onclick=()=>{sessionStorage.setItem('starisle.guest','1');enter();};$('resume').onclick=enter;
  $('send').onclick=async()=>{if(busy||Date.now()<until)return;if(!$('phone').checkValidity()){$('phone').reportValidity();return;}busy=true;$('send').disabled=true;try{const r=await api('code',{phone:$('phone').value});until=Date.now()+r.cooldown*1000;$('demo').hidden=!r.demoCode;$('demo').textContent=r.demoCode?'演示验证码：'+r.demoCode+'（未发送短信）':'';status(r.demoCode?'请使用上方演示码体验注册。':'验证码已发送，有效期 5 分钟。');$('code').focus();}catch(e){status(e.message);}finally{busy=false;tick();}};
  function tick(){const n=Math.max(0,Math.ceil((until-Date.now())/1000));$('send').disabled=busy||n>0;$('send').textContent=n?n+' 秒后重发':'获取验证码';}setInterval(tick,1000);
- $('phone-form').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;$('enter').disabled=true;try{const r=await api('verify',{phone:$('phone').value,code:$('code').value});user=r.user;sessionStorage.removeItem('starisle.guest');if(booted)location.reload();else enter();}catch(e){status(e.message);}finally{busy=false;$('enter').disabled=false;}};
+ $('phone-form').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;$('enter').disabled=true;try{const r=await api('verify',{phone:$('phone').value,code:$('code').value});user=r.user;sessionStorage.removeItem('starisle.guest');if(preview){const url=new URL(location.href);url.searchParams.delete('localPreview');url.searchParams.delete('contentPreview');location.replace(url.href);}else if(booted)location.reload();else enter();}catch(e){status(e.message);}finally{busy=false;$('enter').disabled=false;}};
  $('logout').onclick=async()=>{try{await api('logout',{});sessionStorage.removeItem('starisle.guest');location.reload();}catch(e){status(e.message);}};
  $('import').onclick=()=>{try{for(const key of ['starisle.adventure.v3','starisle.grade2.chapter-one.v2']){const dest='starisle.account.'+user.id+'.'+key,value=localStorage.getItem(key);if(value&&!localStorage.getItem(dest))localStorage.setItem(dest,value);}location.reload();}catch{status('本机存储不可用，游客进度没有改动。');}};
  window.addEventListener('starisle:cloud-status',e=>{$('cloud-status').textContent=e.detail;});
- window.addEventListener('starisle:account',show);show();
+ // Preview skips the startup login gate, but keeps the account entry usable.
+ // Read only the service mode on demand; preview progress stays with the guest
+ // until a successful login reloads into the normal account/cloud-save flow.
+ let previewConfigLoaded=false;
+ window.addEventListener('starisle:account',()=>{show();if(preview&&!previewConfigLoaded){previewConfigLoaded=true;api('config').then(config=>{$('mode').textContent=config.mode==='demo'?'本地演示 · 不发送真实短信':'手机验证码安全登录';}).catch(()=>{previewConfigLoaded=false;$('mode').textContent='账号服务暂不可用';status('请稍后重试，也可以先以游客身份探索。');});}});
+ if(preview){window.starisleAccount=null;host.hidden=true;ready();return;}
+ show();
  Promise.all([api('config'),api('me')]).then(([config,me])=>{$('mode').textContent=config.mode==='demo'?'本地演示 · 不发送真实短信':'手机验证码安全登录';user=me.user;if(user||sessionStorage.getItem('starisle.guest'))enter();else show();}).catch(()=>{$('mode').textContent='账号服务暂不可用';status('请稍后重试，也可以先以游客身份探索。');});
 })();

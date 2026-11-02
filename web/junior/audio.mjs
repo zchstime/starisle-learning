@@ -1,0 +1,10 @@
+let enabled=false,context=null,playing=null;const activeNodes=new Set();
+export function setSound(on){enabled=!!on;if(!on)stopAudio();return enabled;}
+export function soundEnabled(){return enabled;}
+export function stopAudio(){for(const node of activeNodes){try{node.stop();}catch{}}activeNodes.clear();if(playing){playing.pause();playing.currentTime=0;playing=null;}if(context)void context.suspend();}
+export async function cue(kind='tap'){
+ if(!enabled)return;try{context||=new(window.AudioContext||window.webkitAudioContext)();await context.resume();const notes=kind==='complete'?[392,493.88,587.33]:kind==='observe'?[329.63,440]:[440];notes.forEach((f,i)=>{const osc=context.createOscillator(),gain=context.createGain(),at=context.currentTime+i*.10;osc.type='sine';osc.frequency.value=f;gain.gain.setValueAtTime(0,at);gain.gain.linearRampToValueAtTime(.055,at+.012);gain.gain.exponentialRampToValueAtTime(.001,at+.20);osc.connect(gain);gain.connect(context.destination);activeNodes.add(osc);osc.start(at);osc.stop(at+.22);osc.onended=()=>{activeNodes.delete(osc);osc.disconnect();gain.disconnect();};});}catch{/* Sound is optional; learning remains available. */}
+}
+export async function playLine(id){stopAudio();playing=new Audio('/junior/assets/'+id+'.wav');playing.volume=.75;try{await playing.play();}catch{throw Error('示范音频暂时不能播放，可以直接阅读字幕。');}}
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopAudio();});window.addEventListener('pagehide',stopAudio);
+export async function playRhythm(notes,onBeat=()=>{}){stopAudio();context||=new(window.AudioContext||window.webkitAudioContext)();await context.resume();const frequencies=[0,261.63,293.66,329.63,392,440],start=context.currentTime;notes.forEach((n,i)=>{if(n){const osc=context.createOscillator(),gain=context.createGain(),at=start+i*.38;osc.frequency.value=frequencies[n];gain.gain.setValueAtTime(0,at);gain.gain.linearRampToValueAtTime(.12,at+.012);gain.gain.exponentialRampToValueAtTime(.001,at+.3);osc.connect(gain);gain.connect(context.destination);activeNodes.add(osc);osc.start(at);osc.stop(at+.32);osc.onended=()=>{activeNodes.delete(osc);osc.disconnect();gain.disconnect();};}});}

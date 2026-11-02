@@ -2,6 +2,7 @@ import {enrichChapters,PictureActivity} from './PictureActivities';
 import {otherCurriculum} from './OtherCurriculum';
 import {chineseCurriculum} from './ChineseCurriculum';
 import {englishCurriculum} from './EnglishCurriculum';
+import {addHomework} from './Homework';
 /** Original tasks mapped to PEP learning themes; chapter numbers are GAME order, not textbook unit numbers. */
 import {curriculumChapters} from './MathCurriculum';
 import {Subject} from './Subjects';
@@ -9,12 +10,19 @@ import {starterChapters} from './StarterContent';
 import {challengeChapters} from './ChallengeContent';
 import {expansionChapters} from './ExpansionContent';
 export type {Subject} from './Subjects';
-export type Mechanic='cargo'|'groups'|'tiles'|'sentence'|'listen'|'choice'|'number'|'picture';
+export type Mechanic='cargo'|'groups'|'tiles'|'sentence'|'match'|'listen'|'choice'|'number'|'picture'|'draw'|'trace'|'rhythm'|'practice'|'highlight'|'cloze'|'compose';
+export interface HomeworkTrace {sourceLevelIds:string[];objective:string;origin:'original-followup';reviewStatus:'draft';}
+export interface WritingTask {prompt:string;minLength:number;maxLength:number;checks:string[];example:string;}
+export interface ClozeField {label:string;answers:string[];}
+export interface HomeworkFields {homework?:HomeworkTrace;tokens?:string[];markedAnswer?:number[];fields?:ClozeField[];writing?:WritingTask;}
+export interface DrawPoint {x:number;y:number;}
+export interface DrawStroke {color:string;points:DrawPoint[];}
+export type PracticeMode='observe'|'experiment'|'move'|'labor'|'roleplay'|'project'|'device';
 export interface MathVisual {kind:'clock'|'ruler'|'bars'|'shape'|'grid'|'numberline'; values:number[]; labels?:string[];}
 export type EvidenceRole='understand'|'model'|'fluency'|'diagnose'|'apply'|'transfer'|'review';
 export interface LearningEvidence {knowledgeId:string;objective:string;role:EvidenceRole;prerequisites?:string[];misconceptions?:string[];reviewed?:boolean;}
-export interface Level {activity?:PictureActivity;id:string; kind:Mechanic; title:string; goal:string; hint:string; explanation:string; target:number; evidence?:LearningEvidence; passage?:string; visual?:MathVisual; answerUnit?:string; stage?:'warmup'|'practice'|'challenge'; coachHints?:string[]; maxBlocks?:number; units?:number[]; scale?:number; groups?:number; cells?:number; cols?:number; words?:string[]; answer?:string[]; voice?:string; options?:string[]; colors?:string[];}
-export interface CurriculumTrace {semester:'上册'|'下册';theme:string;order:number;source:string;verified:boolean;publisher?:string;edition?:string;volume?:string;unit?:string;lesson?:string;reviewStatus?:'draft'|'editor-reviewed'|'teacher-reviewed'|'pilot-validated';}
+export interface Level extends HomeworkFields {activity?:PictureActivity;id:string; kind:Mechanic; title:string; goal:string; hint:string; explanation:string; target:number; evidence?:LearningEvidence; passage?:string; visual?:MathVisual; answerUnit?:string; stage?:'warmup'|'practice'|'challenge'; coachHints?:string[]; maxBlocks?:number; units?:number[]; scale?:number; groups?:number; cells?:number; cols?:number; words?:string[]; answer?:string[]; pairs?:[string,string][]; voice?:string; options?:string[]; colors?:string[]; drawPrompt?:string; minStrokes?:number; minColors?:number; palette?:string[]; traceChar?:string; tracePrompt?:string; rhythm?:number[]; bpm?:number; practiceMode?:PracticeMode; practiceSteps?:string[];}
+export interface CurriculumTrace {semester:'上册'|'下册';theme:string;order:number;source:string;verified:boolean;publisher?:string;edition?:string;volume?:string;unit?:string;unitNumber?:number;unitType?:'textbook'|'revision'|'theme';objectives?:string[];lesson?:string;reviewStatus?:'draft'|'editor-reviewed'|'teacher-reviewed'|'pilot-validated';}
 export interface Chapter {id:string; subject:Subject; grade:number; title:string; topic:string; art:string; levels:Level[]; curriculum?:CurriculumTrace; alignment:'theme'|'verified-theme'|'enrichment';}
 export const CATALOG:Chapter[]=[];
 function chapter(subject:Subject,grade:number,title:string,topic:string,levels:Omit<Level,'id'>[],alignment:Chapter['alignment']='theme'){
@@ -107,5 +115,7 @@ chapter('english',6,'时光信箱','过去的经历',[
  sentence('告诉朋友你昨天踢足球了','I played football yesterday','我昨天踢足球了。'),sentence('告诉朋友你昨晚看电视了','I watched TV last night','我昨晚看电视了。'),sentence('告诉朋友你上周末去游泳了','I went swimming last weekend','我上周末去游泳了。')]);
 CATALOG.push(...starterChapters(),...expansionChapters(),...challengeChapters(),...curriculumChapters(),...englishCurriculum(),...chineseCurriculum(),...otherCurriculum());
 enrichChapters(CATALOG);
+addHomework(CATALOG);
 export const ALL_LEVELS=CATALOG.flatMap(c=>c.levels);
 export function chapters(subject:Subject,grade:number){return CATALOG.filter(c=>c.subject===subject&&c.grade===grade);}
+export function unitLabel(c:Chapter){const x=c.curriculum;if(!x)return c.title;if(x.verified&&x.unitType==='textbook'&&x.unitNumber)return `${x.semester} · 第${x.unitNumber}单元`;if(x.unitType==='revision')return `${x.semester} · 总复习`;return `${x.semester} · 课程主题`;}

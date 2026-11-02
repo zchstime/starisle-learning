@@ -2,6 +2,7 @@ import {learningWorld} from './SubjectWorlds';
 import {Node,Graphics} from 'cc';
 import {node,panel,text,color,C} from '../ui/Kit';
 import {RouteStop,ROUTE_PAGE_SIZE,routeUnlocked} from './LearningRoute';
+import {unitLabel} from './Catalog';
 interface View {
  root:Node;route:RouteStop[];done:string[];grade:number;subject:string;subjectId?:string;page:number;next:number;focus:number;medals:number;points:number;heroLevel:number;message:string;
  btn:(p:Node,s:string,x:number,y:number,w:number,h:number,f:()=>void,fill?:string,ink?:string,size?:number)=>Node;
@@ -13,11 +14,7 @@ export function journeyMap(v:View){
  const focus=route[v.focus>=0?v.focus:next>=0?next:start]||route[start],finished=route.filter(s=>done.includes(s.task.id)).length;
  if(typeof window==='undefined'||!(window as any).starisleProfileUI)btn(root,'个人中心',31,28,190,54,v.account,'#FFF5DF','#855B35',21);
  btn(root,v.subject+' · '+v.grade+'年级 ▾',290,28,265,53,v.library,'#FFF5DF','#855B35',21);
- // A named home action makes photo learning discoverable without a persistent overlay during questions.
- if(typeof window!=='undefined'){
-  btn(root,'拍照识题 · AI训练  ›',31,104,255,54,()=>window.location.assign('/learn'),'#E7F6F0','#286C65',20);
-  text(root,'上传作业，生成专属练习',43,162,245,25,15,'#FFFFFF',true);
- }
+ // Photo learning remains an independent preview until it is ready for the main navigation.
  const count=panel(root,1002,28,178,53,'#477DB8',26,'',160);text(count,'✦ '+finished+' / '+route.length,10,0,158,53,25,'#FFFFFF',true,'center');
  btn(root,'♪',1200,28,63,57,v.audio,'#EAF4FF','#5C80AA',29);btn(root,'勋章',1281,28,123,57,v.journal,'#FFF2D4','#855B35',21);
  // Learning level and points live in the personal center, avoiding duplicate HUD stats.
@@ -31,10 +28,10 @@ export function journeyMap(v:View){
  for(let group=0;group<4;group++){
   const first=start+group*3,chunk=route.slice(first,first+3);if(!chunk.length)continue;
   const [x,y]=homes[group],active=chunk.some(s=>s.ordinal===next),complete=chunk.every(s=>done.includes(s.task.id));
-  const title=chunk[0].unit.title,stage=chunk[0].level<3?'探索':'挑战';
+  const title=unitLabel(chunk[0].unit)+' · '+chunk[0].unit.title,stage=chunk[0].level<3?'探索':'挑战';
   const card=panel(root,x-136,y,272,107,active?'#FFF0C9':'#FFF9EC',24,'#FFFFFF',238);
   btn(card,names[group]+(complete?'  ✓':'  ›'),0,0,272,47,()=>{const s=chunk.find(s=>!done.includes(s.task.id))||chunk[0];if(routeUnlocked(route,done,s.ordinal))v.open(s.ordinal);else v.preview(s.ordinal);},active?'#FFE1A0':'#FFF3DF','#855331',22);
-  text(card,(active?'下一站 · ':complete?'已完成 · ':'')+title+' · '+stage,12,49,248,25,14,'#6A7D85',false,'center');
+  text(card,(active?'下一题 · ':complete?'已完成 · ':'')+title+' · '+stage,8,47,256,34,13,'#6A7D85',false,'center');
   chunk.forEach((s,j)=>{
    const cx=x+(j-1)*61,cy=y+104,isDone=done.includes(s.task.id),isNext=s.ordinal===next,open=routeUnlocked(route,done,s.ordinal),r=22;
    const hit=node(root,'RouteStop:'+s.task.id,cx-r,cy-r,r*2,r*2),g=hit.addComponent(Graphics);
@@ -45,7 +42,8 @@ export function journeyMap(v:View){
   });
  }
  v.mascot(28,675,105);
- const today=panel(root,155,714,325,68,'#FFFCF1',30,'#FFFFFF',245);text(today,'当前目标',16,5,290,24,16,'#8F5F35',true);text(today,v.message||(focus?focus.unit.title+' · 第 '+(focus.ordinal+1)+' 站':'新关卡正在准备中'),16,29,290,30,15,'#6C8193');
+ const objective=focus?.unit.curriculum?.objectives?.[0]||'',objectiveText=objective.length>26?objective.slice(0,26)+'…':objective;
+ const today=panel(root,155,714,325,68,'#FFFCF1',30,'#FFFFFF',245);text(today,'当前单元目标',16,5,290,24,16,'#8F5F35',true);text(today,v.message||objectiveText||(focus?unitLabel(focus.unit)+' · '+focus.unit.title:'新单元正在准备中'),16,29,290,30,14,'#6C8193');
  btn(root,!route.length?'选择其他学科 →':next<0?(v.grade<6?'前往下一年级 →':'探索新星海 →'):'✦ 开始探索',510,711,420,76,route.length?v.resume:v.library,'#FFDC80','#8C531E',31);
  if(page>0)btn(root,'‹ 上片',1002,643,130,46,()=>v.turn(-1),'#FFF6E5','#92704D',19);
  if(page<pages-1)btn(root,'下片 ›',1150,643,130,46,()=>v.turn(1),'#FFF6E5','#92704D',19);

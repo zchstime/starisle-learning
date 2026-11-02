@@ -1,3 +1,5 @@
+import {discoveryArt} from './discovery-art.js';
+import {playfulArt} from './playful-art.js';
 // Project-native vector toy artwork; consistent outlines and large silhouettes.
 const fruit={
  bread:'<path d="M22 42C4 17 37 8 50 18c17-10 47 2 29 24v42H22Z" fill="#eac18a" stroke="#b58a5a" stroke-width="3"/><path d="M31 43C17 27 38 20 50 27c14-6 32 1 19 16v32H31Z" fill="#fff0cd"/><path d="m42 42-5 13m25-13-5 13" stroke="#d8b17c" stroke-width="4" stroke-linecap="round"/>',
@@ -35,5 +37,5 @@ const fruit={
  star:'<path d="m50 9 12 26 29 4-21 21 5 30-25-14-26 14 5-30L8 39l29-4Z" fill="#f8d87d" stroke="#d4ae57" stroke-width="3" stroke-linejoin="round"/>',
  hand:'<path d="M32 49V20c0-10 13-10 13 0v24-8c0-9 12-9 12 0v9-5c0-8 12-8 12 0v8-3c0-8 12-8 12 0v22c0 20-12 26-26 26-17 0-26-9-34-23l-8-15c-4-8 6-13 12-6l7 10Z" fill="#fff9e9" stroke="#b79566" stroke-width="3" stroke-linejoin="round"/>'
 };
-export const icon=(name,cls='')=>'<svg class="toy-icon '+cls+'" viewBox="0 0 100 100" aria-hidden="true">'+(fruit[name]||fruit.star)+'</svg>';
+export const icon=(name,cls='')=>'<svg class="toy-icon '+cls+'" viewBox="'+(name.startsWith('rod-')?'0 25 100 50':'0 0 100 100')+'"'+(name.startsWith('rod-')?' preserveAspectRatio="xMidYMid meet"':name.startsWith('puzzle-')||name.startsWith('mirror-')?' preserveAspectRatio="none"':'')+' aria-hidden="true">'+(playfulArt(name)||discoveryArt(name)||fruit[name]||fruit.star)+'</svg>';
 export function basket(type){return '<svg class="basket-art" viewBox="0 0 200 145" aria-hidden="true"><path d="M36 60q0-72 64-50 64-22 64 50" fill="none" stroke="#bd9364" stroke-width="12"/><path d="M14 57h172l-15 74H29Z" fill="#edc88e" stroke="#bd9364" stroke-width="5"/><path d="M40 65 48 127m32-62 3 62m35-62-3 62m42-62-8 62M25 86h150M29 109h143" stroke="#d7af76" stroke-width="4"/></svg>'+icon(type,'basket-symbol');}
